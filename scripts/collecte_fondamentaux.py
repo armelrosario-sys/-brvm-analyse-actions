@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Phase 2B - Fondamentaux depuis Sika Finance (fiche societe, 5 exercices)
-+ complement manuel (capitaux propres, dettes) pour ROE / D/E / PBR.
+Phase 2B - Fondamentaux depuis Sika Finance (fiche societe, 5 exercices),
+fusionnes avec le complement automatique issu des rapports annuels
+(fondamentaux_complement_auto.csv, statuts VALIDE/PROBABLE) et les corrections
+manuelles facultatives (fondamentaux_complement.csv, prioritaires).
 Chaque champ exporte porte sa source. Anomalies consignees, jamais masquees.
 Sorties : table fondamentaux (SQLite) + docs/data/fondamentaux.json
 """
@@ -20,6 +22,7 @@ from bs4 import BeautifulSoup
 RACINE = Path(__file__).resolve().parent.parent
 CHEMIN_DB = RACINE / "data" / "marche.db"
 CHEMIN_SUFFIXES = RACINE / "data" / "sika_suffixes.json"
+CHEMIN_COMPLEMENT = RACINE / "data" / "fondamentaux_complement.csv"
 CHEMIN_COMPLEMENT_AUTO = RACINE / "data" / "fondamentaux_complement_auto.csv"
 CHEMIN_SORTIE = RACINE / "docs" / "data" / "fondamentaux.json"
 CHEMIN_COURS = RACINE / "docs" / "data" / "cours.json"
@@ -62,10 +65,11 @@ def page_societe(ticker, suffixes, anomalies):
         url = f"https://www.sikafinance.com/marches/societe/{ticker}.{suf}"
         try:
             rep = requests.get(url, headers=ENTETES, timeout=45)
-            if rep.status_code == 200 and "Chiffre d'affaires" in rep.text or \
-               rep.status_code == 200 and "chiffres" in rep.text.lower():
-                if ticker.upper() in rep.text or "fiche société" in rep.text.lower():
-                    return rep.text, suf
+            if rep.status_code == 200 and (
+                    "Chiffre d'affaires" in rep.text
+                    or "Produit net bancaire" in rep.text
+                    or "fiche société" in rep.text.lower()):
+                return rep.text, suf
         except Exception as exc:
             anomalies.append(f"{ticker}.{suf} : {type(exc).__name__}")
         time.sleep(1.0)
@@ -76,7 +80,6 @@ def extraire(html, ticker, anomalies):
     soupe = BeautifulSoup(html, "lxml")
     donnees = {}
 
-    # Nombre de titres / flottant / valorisation (texte libre de la fiche)
     texte = soupe.get_text(" ", strip=True)
     for motif, cle in [
         (r"Nombre de titres\s*:\s*([\d\s\u202f\xa0]+)", "nombre_titres"),
@@ -87,7 +90,6 @@ def extraire(html, ticker, anomalies):
         if m:
             donnees[cle] = nombre_fr(m.group(1))
 
-    # Tableau des exercices
     exercices, series = [], {}
     for table in soupe.find_all("table"):
         lignes = table.find_all("tr")
@@ -177,16 +179,15 @@ def principal():
                     ligne[champ] = {"valeur": serie[i], "source": "sikafinance"}
                     con.execute("INSERT OR REPLACE INTO fondamentaux VALUES (?,?,?,?,?)",
                                 (t, ex, champ, serie[i], "sikafinance"))
-           comp = complement.get((t, ex), {})
+            comp = complement.get((t, ex), {})
             source_comp = comp.get("_source", "complement_manuel")
             for champ, v in comp.items():
                 if champ == "_source":
                     continue
                 if v is not None:
-                    ligne[champ] = {"valeur": v, "source": "source_comp"}
+                    ligne[champ] = {"valeur": v, "source": source_comp}
                     con.execute("INSERT OR REPLACE INTO fondamentaux VALUES (?,?,?,?,?)",
-                                (t, ex, champ, v, "source_comp"))
-            # Ratios calcules (uniquement si les deux composantes existent)
+                                (t, ex, champ, v, source_comp))
             rn = ligne.get("rn", {}).get("valeur")
             cp = ligne.get("capitaux_propres", {}).get("valeur")
             det = ligne.get("dettes_financieres", {}).get("valeur")
