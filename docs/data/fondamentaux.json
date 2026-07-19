@@ -1,0 +1,6932 @@
+{
+ "maj": "2026-07-19T21:52:55+00:00",
+ "anomalies": [],
+ "valeurs": {
+  "ABJC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 10912000.0,
+   "flottant_pct": 19.99,
+   "capitalisation_mfcfa": 32627.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 8377.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 953.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 87.37,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 34.22,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 57.73,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 10804.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 28.97,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1268.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 33.05,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 116.26,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 25.72,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 82.8,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 11254.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 4.17,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1335.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 5.28,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 122.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 24.51,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 206.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 12467.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 10.78,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1519.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 13.78,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 139.22,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.48,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 13298.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 6.67,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1351.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -11.08,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 123.78,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 24.16,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 201.52,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BICB": {
+   "suffixe_sika": "bj",
+   "nombre_titres": 57759800.0,
+   "flottant_pct": 33.0,
+   "capitalisation_mfcfa": 363887.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 14898.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5776.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 100.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 63.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 24209.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 62.5,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 10705.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 85.34,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 185.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 34.05,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 39196.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 61.91,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 27270.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 154.74,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 472.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.35,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 45207.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 15.34,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 30341.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 11.26,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 525.29,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.99,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 254.5,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 51739.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.45,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 24182.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -20.3,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 418.66,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.05,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 254.6,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BICC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 16666670.0,
+   "flottant_pct": 32.51,
+   "capitalisation_mfcfa": 468333.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 44167.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9603.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 576.18,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 48.77,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 518.4,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 47275.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.04,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 12391.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 29.03,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 743.46,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 37.8,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 401.8,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 55508.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 17.42,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 16696.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 34.74,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1002.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 28.04,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 540.9,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 68063.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 22.62,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 26226.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 57.08,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1574.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.85,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 830.72,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 79563.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 16.9,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 36520.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 39.25,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2191.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.83,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1157.2,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 99783.0,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 36.6,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 4.69,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "BNBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 6624000.0,
+   "flottant_pct": 32.51,
+   "capitalisation_mfcfa": 12420.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 44428.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1598.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 241.28,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 7.77,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 51384.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 15.66,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1809.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 13.2,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 273.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 6.87,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 150.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 45955.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -10.57,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 36.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -98.03,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 5.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 375.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 45312.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -1.4,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 7.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -79.45,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1.1,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 1704.55,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 2974.139,
+      "source": "complement_auto_probable"
+     },
+     "dettes_financieres": {
+      "valeur": 896547.706,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 0.24,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 301.45,
+      "source": "calcule"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 42454.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -6.31,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 22.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 205.18,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 3.37,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 556.38,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BOAB": {
+   "suffixe_sika": "bj",
+   "nombre_titres": 40561048.0,
+   "flottant_pct": 44.69,
+   "capitalisation_mfcfa": 352881.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 45259.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 16664.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 410.84,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.18,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 218.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 46413.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 2.55,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19143.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 14.88,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 471.96,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 18.43,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 273.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 47832.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 3.06,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21529.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 12.46,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 530.78,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.39,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 353.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 46527.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -2.73,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19647.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -8.74,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 484.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.98,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 468.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 51274.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 10.2,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 20107.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 2.34,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 495.73,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.55,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 585.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BOABF": {
+   "suffixe_sika": "bf",
+   "nombre_titres": 44000000.0,
+   "flottant_pct": 29.1,
+   "capitalisation_mfcfa": 316800.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 50828.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21245.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 482.83,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.91,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 185.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 56646.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.45,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 25477.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 19.92,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 579.02,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.43,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 224.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 60576.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 6.94,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 29063.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 14.08,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 660.52,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 10.9,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 352.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 57490.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.09,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 22419.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -22.86,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 510.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.12,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 428.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 57820.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 0.57,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19252.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -14.13,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 437.55,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.46,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 397.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BOAC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 40000000.0,
+   "flottant_pct": 27.48,
+   "capitalisation_mfcfa": 389800.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 41845.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 16638.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 415.95,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 23.43,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 187.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 47810.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.25,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 20069.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 20.62,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 501.73,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.42,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 270.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 60811.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 27.19,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 26075.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 29.93,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 670.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.54,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 342.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 72724.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 19.59,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 32044.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 22.89,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 801.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.17,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 459.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 73545.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 1.13,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 35540.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.91,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 888.5,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 10.97,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 594.5,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BOAM": {
+   "suffixe_sika": "ml",
+   "nombre_titres": 27450000.0,
+   "flottant_pct": 21.44,
+   "capitalisation_mfcfa": 157975.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 35408.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2095.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 76.33,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 75.4,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 35307.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -0.29,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2461.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 17.47,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 89.63,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 64.21,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 35519.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 0.6,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5778.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 134.78,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 210.5,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 27.34,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 96.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 36157.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 1.8,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9123.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 57.9,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 332.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.33,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 237.15,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 37997.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.09,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 11081.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 21.46,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 403.69,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.26,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 305.04,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BOAN": {
+   "suffixe_sika": "ne",
+   "nombre_titres": 20800000.0,
+   "flottant_pct": 40.52,
+   "capitalisation_mfcfa": 111280.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 24995.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9397.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 451.76,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.84,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 343.13,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 24624.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -1.48,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 10134.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 7.84,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 487.22,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 10.98,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 354.56,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 26976.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.55,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 10077.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -0.57,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 484.46,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.04,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 380.72,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 21380.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -20.74,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5002.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -50.36,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 240.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 22.29,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 209.25,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 21125.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -1.19,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 409.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -91.82,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 19.68,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 271.85,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "BOAS": {
+   "suffixe_sika": "sn",
+   "nombre_titres": 36000000.0,
+   "flottant_pct": 29.99,
+   "capitalisation_mfcfa": 277200.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 35727.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 11070.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 307.5,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 25.04,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 107.34,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 40503.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 13.37,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 15581.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 40.75,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 432.81,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.79,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 125.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 45426.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 12.15,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 17022.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 9.25,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 525.75,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.65,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 200.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 49666.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.33,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19984.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 17.4,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 555.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.87,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 350.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 51926.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 4.55,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21905.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 9.61,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 608.47,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.65,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 450.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "CABC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 5920000.0,
+   "flottant_pct": 48.7,
+   "capitalisation_mfcfa": 21608.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 19037.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 40.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 6.77,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 539.14,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 69.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 16481.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -13.43,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1075.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 2587.5,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 181.62,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 20.1,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 69.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 17753.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.72,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1430.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 33.01,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 242.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.08,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 79.58,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 19125.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.73,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1225.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -14.34,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 207.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.63,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 112.73,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 21263.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.18,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1704.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 39.16,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 287.91,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.68,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 152.02,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 758.352,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 417.601,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 224.7,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.55,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 28.49,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "CBIBF": {
+   "suffixe_sika": "bf",
+   "nombre_titres": 32000000.0,
+   "flottant_pct": 20.0,
+   "capitalisation_mfcfa": 911680.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 90298.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 46549.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1454.66,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.59,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 448.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 111106.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 23.04,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 56478.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 21.33,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1764.94,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.14,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 525.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 129203.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 16.29,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 64247.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 13.76,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2007.72,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.19,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 790.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 130987.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 1.38,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 47937.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -25.39,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1498.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.02,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 555.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 138986.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 6.11,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 65495.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 36.63,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2046.73,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.92,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 900.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "CFAC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 181371900.0,
+   "flottant_pct": 4.12,
+   "capitalisation_mfcfa": 290195.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 119731.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 6711.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 37.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 43.24,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 69.47,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 146375.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 22.25,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5534.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -17.54,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 30.51,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 52.44,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 28.67,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 180162.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 23.08,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 6399.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 15.63,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 35.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 45.71,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 15.88,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 158313.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -12.13,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4693.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -26.65,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 25.9,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 61.78,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 7.04,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 180545.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.04,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 8416.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 79.32,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 46.4,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 34.48,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 55.44,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "CIEC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 56000000.0,
+   "flottant_pct": 30.95,
+   "capitalisation_mfcfa": 290920.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 231783.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9757.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 174.23,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 29.82,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 153.16,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 238854.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 3.05,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9819.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 0.64,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 175.34,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 29.63,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 157.5,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 257218.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.69,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 10633.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 8.29,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 190.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 27.34,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 171.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 263294.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 2.36,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 10101.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -5.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 180.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 28.86,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 158.4,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 302320.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.82,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 13127.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 29.96,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 234.41,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 22.16,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 205.92,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "ECOC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 55050600.0,
+   "flottant_pct": 20.44,
+   "capitalisation_mfcfa": 880810.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 90545.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 34304.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 623.14,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 25.68,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 420.3,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 99155.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.51,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 44598.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 30.01,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 810.13,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.75,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 549.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 110189.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.13,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 48071.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 7.79,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 873.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 18.33,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 594.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 122316.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.01,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 57477.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 19.57,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1044.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.33,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 708.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 132725.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 8.51,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 63482.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.45,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1153.16,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.87,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 781.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "ETIT": {
+   "suffixe_sika": "tg",
+   "nombre_titres": 18084106722.0,
+   "flottant_pct": 33.48,
+   "capitalisation_mfcfa": 1229719.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 974058.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 198151.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 10.72,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 6.34,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 0.9,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 1161428.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 19.24,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 228750.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 15.44,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 12.65,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 5.38,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 0.6,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 1251677.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.77,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 246811.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 7.9,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 13.65,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 4.98,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 1268402.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 1.34,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 299706.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 21.43,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 16.57,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 4.1,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 1424261.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 12.29,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 345523.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 15.29,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 10.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 6.8,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 0.92,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "FTSC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 14103740.0,
+   "flottant_pct": 33.48,
+   "capitalisation_mfcfa": 28066.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 41474.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -1276.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 45464.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.62,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 154.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 10.88,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 182.9,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 38215.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -15.94,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3076.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 1897.4,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 218.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.13,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 130.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 30695.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -19.68,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 18595.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 504.53,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1318.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 1.51,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1726.55,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 32109.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 4.61,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 466.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -97.49,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 33.04,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 60.23,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "LNBB": {
+   "suffixe_sika": "bj",
+   "nombre_titres": 20000000.0,
+   "flottant_pct": 45.0,
+   "capitalisation_mfcfa": 86000.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 79934.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5071.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 254.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.93,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 107.1,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 74288.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -7.06,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 6746.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 33.03,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 337.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.76,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 107.1,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 93915.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 26.42,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3914.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -41.98,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 196.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.94,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 102544.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.19,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 7176.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 83.34,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 358.78,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.99,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 275.5,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 98598.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -3.85,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4622.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -35.59,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 231.11,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 18.61,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 164.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "NEIC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 12765825.0,
+   "flottant_pct": 17.99,
+   "capitalisation_mfcfa": 29298.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 8874.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 980.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 76.79,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 29.89,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 8988.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 1.28,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1212.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 23.67,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 94.96,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 24.17,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 35.25,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 8525.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.15,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1167.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -3.71,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 91.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 25.22,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 81.78,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 6744.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -20.89,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -759.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 5139.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -23.8,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2037.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 159.54,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.39,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 140.39,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "NSBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 24734572.0,
+   "flottant_pct": 20.0,
+   "capitalisation_mfcfa": 584973.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 76622.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 23713.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 958.7,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 24.67,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 80105.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 4.55,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 32382.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 36.56,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1309.18,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 18.06,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 363.86,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 132524.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 24.43,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 91002.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 13.6,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 34813.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 7.51,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1407.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.81,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 455.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 164905.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 21.11,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 97819.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.49,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 38112.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 9.48,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1541.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.35,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 671.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 189719.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 20.09,
+      "source": "calcule"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 112928.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 15.45,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 40712.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 6.82,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1646.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.37,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 675.98,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 211371.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 19.26,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 2.77,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "NTLC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 22070400.0,
+   "flottant_pct": 19.13,
+   "capitalisation_mfcfa": 348712.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 195188.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21268.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 963.65,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.4,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 856.8,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 206734.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.92,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 16627.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -21.82,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 753.36,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 20.97,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 728.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 203618.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -1.51,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 16557.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -0.42,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 750.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.07,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 675.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 220113.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 8.1,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 18150.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 9.62,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 822.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.22,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 722.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 233261.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.97,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 18427.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 1.53,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 834.91,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 18.92,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 369.6,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "ONTBF": {
+   "suffixe_sika": "bf",
+   "nombre_titres": 68000000.0,
+   "flottant_pct": 23.0,
+   "capitalisation_mfcfa": 181900.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 154881.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 32374.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 476.09,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 5.62,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 416.58,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 145625.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.98,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 22372.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -30.9,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 329.01,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.13,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 287.87,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 139154.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -4.44,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21129.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -5.56,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 311.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.6,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 266.44,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 141841.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 1.93,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21471.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 1.62,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 316.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.47,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 195.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 146177.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 3.06,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 15887.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -26.01,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 233.63,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.45,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 145.32,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "ORAC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 150655350.0,
+   "flottant_pct": 9.95,
+   "capitalisation_mfcfa": 2434590.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 965042.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 155837.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1034.38,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.62,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 717.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 965025.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -0.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 153485.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -1.51,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1018.78,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.86,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 752.76,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 1016532.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.34,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 154890.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 0.92,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1028.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.72,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 780.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 1084100.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 6.65,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 158200.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 2.14,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1050.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.39,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 660.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 1197100.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 10.42,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 167800.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 6.07,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1114.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.51,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 704.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "ORGT": {
+   "suffixe_sika": "tg",
+   "nombre_titres": 69415031.0,
+   "flottant_pct": 20.0,
+   "capitalisation_mfcfa": 186032.0,
+   "exercices": {
+    "2020": {
+     "ca": {
+      "valeur": 155395.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9440.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 135.99,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.71,
+      "source": "sikafinance"
+     }
+    },
+    "2021": {
+     "ca": {
+      "valeur": 187315.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 20.54,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19798.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 109.72,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 285.21,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.4,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 222431.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 18.75,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19199.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -3.03,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 277.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.68,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 215280.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -3.21,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -18186.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 6987.0,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": -260.28,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 195436.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -9.22,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -44363.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "PALC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 15459316.0,
+   "flottant_pct": 33.0,
+   "capitalisation_mfcfa": 134341.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 195659.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 42473.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2747.41,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 3.16,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1236.34,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 232713.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 18.94,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 41693.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -1.84,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2696.96,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 3.22,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1213.63,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 206244.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -11.37,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19352.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -53.58,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1252.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 6.94,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 563.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 172183.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -16.52,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 15862.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -18.04,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1026.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.47,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 451.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 135061.151,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 4047.029,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 11.74,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.03,
+      "source": "calcule"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 197630.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.78,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 15509.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -2.23,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1003.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.66,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 441.4,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 142638.984,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 796.559,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 10.87,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.01,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 0.94,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "PRSC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 10240000.0,
+   "flottant_pct": 14.06,
+   "capitalisation_mfcfa": 46080.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 65019.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3067.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 299.51,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.02,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 175.86,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 70092.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.8,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3644.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 18.81,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 355.88,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.64,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 224.1,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 77879.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.11,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2084.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -42.81,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 204.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 22.06,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 183.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 74676.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -4.11,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2347.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 12.61,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 229.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.65,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 182.16,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 81127.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 8.64,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2367.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 0.86,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 231.19,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.46,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 183.92,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SAFC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 8119750.0,
+   "flottant_pct": 29.43,
+   "capitalisation_mfcfa": 34874.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 3567.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -603.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 6195.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": -9.73,
+      "source": "calcule"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 3479.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -2.47,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -235.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 3693.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 6.15,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -579.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 3980.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.77,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -165.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 5735.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 44.1,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 701.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 86.33,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 49.75,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 5916.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 11.85,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 5.89,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "SCRC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 19600000.0,
+   "flottant_pct": 23.0,
+   "capitalisation_mfcfa": 72618.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 62497.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -6573.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 68635.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.82,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -8756.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 68135.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -0.73,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -10324.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 22310.492,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": -46.27,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 87219.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 28.01,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2591.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 132.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 28.07,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 80569.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -7.62,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -6132.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SDCC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 9000000.0,
+   "flottant_pct": 49.53,
+   "capitalisation_mfcfa": 101700.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 135514.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4352.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 483.57,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 23.37,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 432.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 160671.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 18.56,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4806.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.43,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 533.95,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.16,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 450.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 175458.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.2,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4904.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 2.04,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 545.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 20.73,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 482.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 172235.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -1.84,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3560.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -27.4,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 396.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 28.54,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 352.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 189430.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.98,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4663.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 30.96,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 518.08,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.81,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 462.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SDSC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 54435300.0,
+   "flottant_pct": 22.2,
+   "capitalisation_mfcfa": 148064.0,
+   "exercices": {
+    "2020": {
+     "ca": {
+      "valeur": 84241.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 13455.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 247.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.01,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 90.0,
+      "source": "sikafinance"
+     }
+    },
+    "2021": {
+     "ca": {
+      "valeur": 88721.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.32,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 13942.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 3.62,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 256.13,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 10.62,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 130.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 86997.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -1.94,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 10044.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -27.96,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 184.51,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.74,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 82.8,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 82623.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.03,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 17138.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 70.63,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 315.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.63,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 92.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 61034.257,
+      "source": "complement_auto_probable"
+     },
+     "dettes_financieres": {
+      "valeur": 10733.982,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 28.08,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.18,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 85643.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 3.66,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21069.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 22.94,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 387.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 7.03,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 92.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SEMC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 25189600.0,
+   "flottant_pct": 10.42,
+   "capitalisation_mfcfa": 37784.0,
+   "exercices": {
+    "2020": {
+     "ca": {
+      "valeur": 19630.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 737.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 29.24,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 51.3,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 14.4,
+      "source": "sikafinance"
+     }
+    },
+    "2021": {
+     "ca": {
+      "valeur": 23057.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 17.46,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2384.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 223.47,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 94.63,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.85,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 29603.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 28.39,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3858.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 61.83,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 153.15,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.79,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 27875.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.84,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1012.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -73.77,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 40.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 37.5,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 23200.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -16.77,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 45.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -95.56,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1.79,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 837.99,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SGBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 31111110.0,
+   "flottant_pct": 43.35,
+   "capitalisation_mfcfa": 1182067.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 189096.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 67438.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2167.65,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.53,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1004.93,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 215101.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 13.75,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 74612.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.64,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2398.23,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.84,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1107.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 253286.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 17.75,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 97230.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 30.31,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 3125.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.16,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1547.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 263207.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 3.92,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 101228.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 4.11,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 3254.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.68,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1639.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 276048.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 4.88,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 101352.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 0.12,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 3257.73,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.66,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 2293.28,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SHEC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 63000000.0,
+   "flottant_pct": 28.33,
+   "capitalisation_mfcfa": 137970.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 366163.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 2140.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 33.97,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 64.47,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 28.57,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 500376.822,
+      "source": "complement_auto_probable"
+     },
+     "dettes_financieres": {
+      "valeur": 781645.443,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 0.43,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 1.56,
+      "source": "calcule"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 488902.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 33.52,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3753.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 75.37,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 59.56,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 36.77,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 53.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 500376.822,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 0.75,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 550696.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 12.64,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4012.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 6.89,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 64.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 34.22,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 57.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 600708.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.08,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5354.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 33.46,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 84.98,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 25.77,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 75.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 604978.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 0.71,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 6028.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 12.59,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 95.68,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 22.89,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 85.07,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SIBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 100000000.0,
+   "flottant_pct": 20.0,
+   "capitalisation_mfcfa": 876000.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 76532.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 34031.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 340.31,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 25.74,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 202.5,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 83542.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.16,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 40090.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 17.8,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 400.9,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.85,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 247.5,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 95571.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.4,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 43513.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 8.54,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 435.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 20.14,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 247.5,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 102763.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.53,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 50234.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 15.45,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 502.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 17.45,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 330.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 108663.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.74,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 55623.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.73,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 556.23,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.75,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 374.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SICC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 600000.0,
+   "flottant_pct": 12.56,
+   "capitalisation_mfcfa": 3180.0,
+   "exercices": {
+    "2020": {
+     "ca": {
+      "valeur": 2360.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 110.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 183.06,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 28.95,
+      "source": "sikafinance"
+     }
+    },
+    "2021": {
+     "ca": {
+      "valeur": 1381.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -41.48,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 119.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 8.56,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 198.72,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 26.67,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 1138.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -17.6,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -40.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 701.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -38.39,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 19.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 32.08,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 165.24,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 547.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -22.01,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -129.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SIVC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 8734000.0,
+   "flottant_pct": 27.92,
+   "capitalisation_mfcfa": 20962.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 7647.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 727.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 83.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 28.92,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 8689.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 13.63,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 403.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -44.57,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 46.1,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 52.06,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 8512.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -2.04,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 895.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 122.08,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 102.6,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 23.39,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 9283.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.05,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 377.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -57.88,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 43.16,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 55.61,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 10075.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 8.53,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 179.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -52.44,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 20.53,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 116.9,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SLBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 16460840.0,
+   "flottant_pct": 18.6,
+   "capitalisation_mfcfa": 644524.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 299269.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 22020.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1337.72,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 29.27,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 405.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 281880.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.81,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1217.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -94.47,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 73.93,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 529.62,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 311395.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 10.47,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 15078.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 1138.95,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 915.99,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 42.75,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 270.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 309722.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -0.54,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 21472.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 42.41,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1304.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 30.03,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1074.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 378123.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 22.08,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 45781.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 113.21,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2781.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.08,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1871.76,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SMBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 7795200.0,
+   "flottant_pct": 16.5,
+   "capitalisation_mfcfa": 118448.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 139353.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 8623.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1106.19,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.74,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 720.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 276854.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 98.67,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9421.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 9.25,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1208.56,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.57,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 720.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 24932.0,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 37.79,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 247646.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -10.55,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 17255.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 83.15,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2214.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 6.86,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1080.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 35951.0,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 2367.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 48.0,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.07,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 229061.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -7.5,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 8698.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -49.59,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1116.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.62,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 616.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 35294.0,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 6485.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 24.64,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.18,
+      "source": "calcule"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 206740.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -9.74,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 13075.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 50.32,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 1677.31,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.06,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 704.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 42913.0,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 9204.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 30.47,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.21,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 2.76,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "SNTS": {
+   "suffixe_sika": "sn",
+   "nombre_titres": 100000000.0,
+   "flottant_pct": 22.47,
+   "capitalisation_mfcfa": 3200000.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 1334874.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 252459.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2524.59,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 12.68,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1400.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 1455049.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 278912.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.48,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2789.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.47,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1500.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 1620701.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.38,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 331748.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 18.94,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 3317.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.65,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1575.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 1776443.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 9.61,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 393662.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 18.66,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 3937.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 8.13,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1655.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 1923122.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 8.26,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 413588.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 5.06,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 4136.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 7.74,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1740.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SOGC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 21601840.0,
+   "flottant_pct": 26.84,
+   "capitalisation_mfcfa": 173031.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 83074.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 14728.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 681.81,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.75,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 558.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 93418.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 12.45,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 15653.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 6.28,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 724.61,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.05,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 554.33,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 13004.308,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 3631.602,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 120.37,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.28,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 73036.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -21.82,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 5270.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -66.33,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 244.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 32.83,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 207.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 13393.141,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 5202.352,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 39.35,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.39,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 89415.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 22.43,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 13111.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 148.78,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 607.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.2,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 528.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 496842.3,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 9.323,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 2.64,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.0,
+      "source": "calcule"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 98618.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 10.29,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 12493.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -4.71,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 578.31,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 13.85,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 501.6,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "SPHC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 25558005.0,
+   "flottant_pct": 23.54,
+   "capitalisation_mfcfa": 191685.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 208794.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 20750.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 811.9,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.24,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 365.4,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 224421.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 7.48,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 16700.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -19.52,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 653.44,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.48,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 294.3,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 8649304.155,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 19012367.97,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 0.19,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 2.2,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 206469.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -8.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 3635.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -78.23,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 142.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 52.82,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 65.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 101514.886,
+      "source": "complement_auto_probable"
+     },
+     "roe_pct": {
+      "valeur": 3.58,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 279438.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 35.34,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 18790.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 416.92,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 735.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 10.2,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 324.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 340831.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 21.97,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 24972.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 32.9,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 977.07,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 7.68,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 430.32,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "STAC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 13440000.0,
+   "flottant_pct": 20.83,
+   "capitalisation_mfcfa": 42806.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 10274.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1119.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 83.29,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 38.24,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 66.15,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 2977.605,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 512.965,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 37.58,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.17,
+      "source": "calcule"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 14654.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 42.63,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -70.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 9264.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -36.78,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -1118.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 1793.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -80.64,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -348.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 3878.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 116.26,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -97.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "STBC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 17955000.0,
+   "flottant_pct": 26.95,
+   "capitalisation_mfcfa": 429125.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 135602.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9499.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 529.06,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 45.17,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 445.0,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 151133.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 11.45,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 11503.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 21.1,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 641.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 37.29,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 540.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 169913.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 12.43,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 12461.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 8.33,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 694.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 34.44,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 675.0,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 214313.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 26.13,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 44174.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 254.5,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2491.25,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 9.59,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 2090.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 268537.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 25.3,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 36464.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -17.45,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 2030.83,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 11.77,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 1707.2,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "TTLC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 62961600.0,
+   "flottant_pct": 27.01,
+   "capitalisation_mfcfa": 182589.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 500871.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 11143.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 176.99,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 16.39,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 159.29,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 573130.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 14.43,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 12279.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 10.19,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 195.03,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 14.87,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 175.53,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 11143.0,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 246.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 110.19,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.02,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 589577.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 2.87,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 8709.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -29.07,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 138.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.01,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 200.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 12279.0,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 2384.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 70.93,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.19,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 621042.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 5.34,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9374.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 7.64,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 148.88,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 19.48,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 195.67,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 588709.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -5.21,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 9087.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -3.06,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 144.33,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 20.09,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 140.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 4033.0,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 225.32,
+      "source": "calcule"
+     },
+     "pbr": {
+      "valeur": 45.27,
+      "source": "calcule"
+     }
+    }
+   }
+  },
+  "TTLS": {
+   "suffixe_sika": "sn",
+   "nombre_titres": 32577700.0,
+   "flottant_pct": 30.86,
+   "capitalisation_mfcfa": 130148.0,
+   "exercices": {
+    "2020": {
+     "ca": {
+      "valeur": 384493.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 6064.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 186.14,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 21.46,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 223.6,
+      "source": "sikafinance"
+     }
+    },
+    "2021": {
+     "ca": {
+      "valeur": 395458.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 2.85,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4693.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -22.61,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 144.05,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 27.73,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 187.3,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 477813.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 20.83,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 8475.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 80.59,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 260.15,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 15.36,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 234.13,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 499194.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 4.47,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 4222.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": -50.18,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 130.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 30.73,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 207.58,
+      "source": "sikafinance"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 484945.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -2.85,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 7091.0,
+      "source": "sikafinance"
+     },
+     "croissance_rn": {
+      "valeur": 67.95,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 218.0,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 18.33,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 222.4,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "UNLC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 9183400.0,
+   "flottant_pct": 10.02,
+   "capitalisation_mfcfa": 500449.0,
+   "exercices": {
+    "2019": {
+     "ca": {
+      "valeur": 57680.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -13476.0,
+      "source": "sikafinance"
+     }
+    },
+    "2020": {
+     "ca": {
+      "valeur": 39693.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -31.18,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -2410.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": -2866.0,
+      "source": "sikafinance"
+     }
+    },
+    "2021": {
+     "ca": {
+      "valeur": 46059.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 16.04,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 0.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 663.24,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 82.16,
+      "source": "sikafinance"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 36175.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -21.46,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -6383.0,
+      "source": "sikafinance"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 34682.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -4.13,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 640.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 69.73,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 781.51,
+      "source": "sikafinance"
+     }
+    }
+   }
+  },
+  "UNXC": {
+   "suffixe_sika": "ci",
+   "nombre_titres": 20750000.0,
+   "flottant_pct": 27.71,
+   "capitalisation_mfcfa": 38284.0,
+   "exercices": {
+    "2021": {
+     "ca": {
+      "valeur": 38191.0,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": 1401.0,
+      "source": "sikafinance"
+     },
+     "bnpa": {
+      "valeur": 67.5,
+      "source": "sikafinance"
+     },
+     "per": {
+      "valeur": 27.33,
+      "source": "sikafinance"
+     },
+     "dividende": {
+      "valeur": 60.75,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 414479.35,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 1157557.654,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": 0.34,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 2.79,
+      "source": "calcule"
+     }
+    },
+    "2022": {
+     "ca": {
+      "valeur": 36373.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -4.76,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -1299.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 1400364.822,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 1202350.71,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": -0.09,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 0.86,
+      "source": "calcule"
+     }
+    },
+    "2023": {
+     "ca": {
+      "valeur": 29687.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -18.38,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -2035.0,
+      "source": "sikafinance"
+     },
+     "capitaux_propres": {
+      "valeur": 11704.916,
+      "source": "complement_auto_valide"
+     },
+     "dettes_financieres": {
+      "valeur": 1221476.629,
+      "source": "complement_auto_valide"
+     },
+     "roe_pct": {
+      "valeur": -17.39,
+      "source": "calcule"
+     },
+     "dette_sur_cp": {
+      "valeur": 104.36,
+      "source": "calcule"
+     }
+    },
+    "2024": {
+     "ca": {
+      "valeur": 27333.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": -7.93,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -2218.0,
+      "source": "sikafinance"
+     }
+    },
+    "2025": {
+     "ca": {
+      "valeur": 29032.0,
+      "source": "sikafinance"
+     },
+     "croissance_ca": {
+      "valeur": 6.21,
+      "source": "sikafinance"
+     },
+     "rn": {
+      "valeur": -624.0,
+      "source": "sikafinance"
+     }
+    }
+   }
+  }
+ }
+}

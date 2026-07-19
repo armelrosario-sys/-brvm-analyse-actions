@@ -1,0 +1,574 @@
+[
+ {
+  "fichier": "ABJC_092b94a967.json",
+  "ticker": "ABJC",
+  "exercice": "2023",
+  "motif": "implausible (cp=7.0, dettes=25.0)"
+ },
+ {
+  "fichier": "ABJC_6ad3a0ea3e.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ABJC_90f3becd82.json",
+  "ticker": "ABJC",
+  "exercice": "2024",
+  "motif": "implausible (cp=2024.0, dettes=13.0)"
+ },
+ {
+  "fichier": "ABJC_b462e7b0ec.json",
+  "ticker": "ABJC",
+  "exercice": "2025",
+  "motif": "implausible (cp=2025.0, dettes=13.0)"
+ },
+ {
+  "fichier": "ABJC_e23e292ddf.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ABJC_ef6464a4a3.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BICB_b5940f76a0.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BICC_51f3970236.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BICC_bff9b89dc7.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BNBC_1d3cf98897.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BNBC_66b5895aed.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BNBC_9de3fe2df8.json",
+  "ticker": "BNBC",
+  "exercice": "2022",
+  "motif": "implausible (cp=6.0, dettes=1477.0)"
+ },
+ {
+  "fichier": "BNBC_e5f0565170.json",
+  "ticker": "BNBC",
+  "exercice": "2023",
+  "motif": "implausible (cp=3.0, dettes=649.0)"
+ },
+ {
+  "fichier": "BNBC_e72bff00c1.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BOAB_4059fac30d.json",
+  "ticker": "BOAB",
+  "exercice": "2024",
+  "motif": "implausible (cp=1.1281760931311739e+20, dettes=None)"
+ },
+ {
+  "fichier": "BOAB_670da39f89.json",
+  "ticker": "BOAB",
+  "exercice": "2022",
+  "motif": "implausible (cp=1.0467400928311281e+20, dettes=None)"
+ },
+ {
+  "fichier": "BOAM_77f20998d8.json",
+  "ticker": "BOAM",
+  "exercice": "2022",
+  "motif": "implausible (cp=34541828.466, dettes=None)"
+ },
+ {
+  "fichier": "BOAM_dc403fad3b.json",
+  "ticker": "BOAM",
+  "exercice": "2024",
+  "motif": "implausible (cp=40197098.666, dettes=None)"
+ },
+ {
+  "fichier": "BOAN_27e4730845.json",
+  "ticker": "BOAN",
+  "exercice": "2023",
+  "motif": "implausible (cp=44172691.398, dettes=None)"
+ },
+ {
+  "fichier": "BOAS_977470de5d.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BOAS_bc583de24f.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CABC_07014163a2.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CABC_18f5d62457.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CABC_af9f08a95b.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CBIBF_36477a62b4.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CBIBF_eb6578b7ea.json",
+  "ticker": "CBIBF",
+  "exercice": "2025",
+  "motif": "implausible (cp=0.09, dettes=None)"
+ },
+ {
+  "fichier": "CFAC_6a1a0ed22f.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CIEC_15bd166c92.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CIEC_3f65befea7.json",
+  "ticker": "CIEC",
+  "exercice": "2024",
+  "motif": "implausible (cp=-10640.0, dettes=59052.0)"
+ },
+ {
+  "fichier": "CIEC_494d0fcab4.json",
+  "ticker": "CIEC",
+  "exercice": "2023",
+  "motif": "implausible (cp=33453907.54, dettes=0.015)"
+ },
+ {
+  "fichier": "CIEC_567587d32d.json",
+  "ticker": "CIEC",
+  "exercice": "2025",
+  "motif": "implausible (cp=-10080.0, dettes=64307.0)"
+ },
+ {
+  "fichier": "CIEC_794d76ecc4.json",
+  "ticker": "CIEC",
+  "exercice": "2023",
+  "motif": "implausible (cp=-9800.0, dettes=57666.0)"
+ },
+ {
+  "fichier": "CIEC_87d3cbdb8e.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "CIEC_d09512bcf0.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "FTSC_0e14057879.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "FTSC_1de181e57f.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "FTSC_abfeadecfe.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "FTSC_ac9b3cf054.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "FTSC_f382877678.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "LNBB_4c0ec63ae7.json",
+  "ticker": "LNBB",
+  "exercice": "2025",
+  "motif": "implausible (cp=21953860.132, dettes=563235.115)"
+ },
+ {
+  "fichier": "LNBB_9935c5639c.json",
+  "ticker": "LNBB",
+  "exercice": "2024",
+  "motif": "implausible (cp=23614741.046, dettes=None)"
+ },
+ {
+  "fichier": "NEIC_a752ce393e.json",
+  "ticker": "NEIC",
+  "exercice": "2023",
+  "motif": "implausible (cp=5.6376433644970504e+16, dettes=0.016)"
+ },
+ {
+  "fichier": "NEIC_a82d9206bd.json",
+  "ticker": "NEIC",
+  "exercice": "2025",
+  "motif": "implausible (cp=5.754898260371827e+16, dettes=0.016)"
+ },
+ {
+  "fichier": "NEIC_db790dcd03.json",
+  "ticker": "NEIC",
+  "exercice": "2024",
+  "motif": "implausible (cp=3.718272026563764e+16, dettes=0.016)"
+ },
+ {
+  "fichier": "NTLC_0cb14e0994.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "NTLC_ab15f15d6c.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "NTLC_b0b5e58e79.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "NTLC_ceb16039b3.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "NTLC_ebd94bc63f.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_2e5bb477d9.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_59bc68627a.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_5a310f401d.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_b0fdedaaa8.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_df6d8c17ff.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_e0476780cb.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ONTBF_f5dd2b4885.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "ORAC_18fcace22a.json",
+  "ticker": "ORAC",
+  "exercice": "2025",
+  "motif": "implausible (cp=6.167, dettes=None)"
+ },
+ {
+  "fichier": "ORAC_29b2f80340.json",
+  "ticker": "ORAC",
+  "exercice": "2025",
+  "motif": "implausible (cp=6.167, dettes=None)"
+ },
+ {
+  "fichier": "ORAC_5067b47de6.json",
+  "ticker": "ORAC",
+  "exercice": "2024",
+  "motif": "implausible (cp=6.163, dettes=None)"
+ },
+ {
+  "fichier": "PALC_1c081e5b56.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "PALC_e1f9b45ab8.json",
+  "ticker": "PALC",
+  "exercice": "2021",
+  "motif": "implausible (cp=1.0991355931169202e+17, dettes=1.7237902442217152e+18)"
+ },
+ {
+  "fichier": "PRSC_521a9634dc.json",
+  "ticker": "PRSC",
+  "exercice": "2024",
+  "motif": "implausible (cp=11283033.493, dettes=0.016)"
+ },
+ {
+  "fichier": "PRSC_53247bd580.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "PRSC_749d3c3802.json",
+  "ticker": "PRSC",
+  "exercice": "2022",
+  "motif": "implausible (cp=11480373.528, dettes=0.016)"
+ },
+ {
+  "fichier": "PRSC_7a35346586.json",
+  "ticker": "PRSC",
+  "exercice": "2025",
+  "motif": "implausible (cp=0.0, dettes=0.016)"
+ },
+ {
+  "fichier": "PRSC_8d39be3d4f.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "PRSC_a8166b7149.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "PRSC_c5175f838a.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "PRSC_c55474bd29.json",
+  "ticker": "PRSC",
+  "exercice": "2023",
+  "motif": "implausible (cp=11015041.886, dettes=0.016)"
+ },
+ {
+  "fichier": "PRSC_e654d6b0c5.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "PRSC_febc6bdcf3.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SCRC_006a0480ee.json",
+  "ticker": "SCRC",
+  "exercice": "2022",
+  "motif": "implausible (cp=2.768736648836443e+18, dettes=4.377784616232956e+18)"
+ },
+ {
+  "fichier": "SCRC_29538cde42.json",
+  "ticker": "SCRC",
+  "exercice": "2023",
+  "motif": "implausible (cp=17363224.113, dettes=35876628.027)"
+ },
+ {
+  "fichier": "SCRC_379617f6e5.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SCRC_58ec05c482.json",
+  "ticker": "SCRC",
+  "exercice": "2022",
+  "motif": "implausible (cp=2.022, dettes=43777846.162)"
+ },
+ {
+  "fichier": "SCRC_7205e9d88e.json",
+  "ticker": "SCRC",
+  "exercice": "2025",
+  "motif": "implausible (cp=13822035.189, dettes=69108844.43)"
+ },
+ {
+  "fichier": "SDCC_9b40ccacec.json",
+  "ticker": "SDCC",
+  "exercice": "2024",
+  "motif": "implausible (cp=3072525.0, dettes=65170225.0)"
+ },
+ {
+  "fichier": "SEMC_ab1831f59a.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SHEC_72c486c8cb.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SHEC_b88401ae19.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SICC_f94ae63414.json",
+  "ticker": "SICC",
+  "exercice": "2018",
+  "motif": "implausible (cp=-123154.139, dettes=151403.043)"
+ },
+ {
+  "fichier": "SIVC_f087cdd0ae.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SLBC_0c093ecf15.json",
+  "ticker": "SLBC",
+  "exercice": "2020",
+  "motif": "implausible (cp=0.0, dettes=None)"
+ },
+ {
+  "fichier": "SLBC_1ac35f5546.json",
+  "ticker": "SLBC",
+  "exercice": "2022",
+  "motif": "implausible (cp=0.0, dettes=45000.0)"
+ },
+ {
+  "fichier": "SLBC_3c9b076493.json",
+  "ticker": "SLBC",
+  "exercice": "2024",
+  "motif": "implausible (cp=0.0, dettes=0.0)"
+ },
+ {
+  "fichier": "SLBC_5fe202f907.json",
+  "ticker": "SLBC",
+  "exercice": "2023",
+  "motif": "implausible (cp=0.0, dettes=0.0)"
+ },
+ {
+  "fichier": "SLBC_8996711b83.json",
+  "ticker": "SLBC",
+  "exercice": "2018",
+  "motif": "implausible (cp=0.0, dettes=63422.0)"
+ },
+ {
+  "fichier": "SLBC_f264816485.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SNTS_105c175658.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SNTS_b687360df2.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SOGC_b5d5902b98.json",
+  "ticker": "SOGC",
+  "exercice": "2025",
+  "motif": "implausible (cp=-12898.314, dettes=9.323)"
+ },
+ {
+  "fichier": "SPHC_4b5b335b1a.json",
+  "ticker": "SPHC",
+  "exercice": "2025",
+  "motif": "implausible (cp=8649304.155, dettes=35598886.719)"
+ },
+ {
+  "fichier": "SPHC_83377f564f.json",
+  "ticker": "SPHC",
+  "exercice": "2023",
+  "motif": "implausible (cp=8649304.155, dettes=24355185.501)"
+ },
+ {
+  "fichier": "SPHC_b1ae9286e2.json",
+  "ticker": "SPHC",
+  "exercice": "2023",
+  "motif": "implausible (cp=8649304.155, dettes=24355185.501)"
+ },
+ {
+  "fichier": "SPHC_dcdee1d9ad.json",
+  "ticker": "SPHC",
+  "exercice": "2024",
+  "motif": "implausible (cp=8649304.155, dettes=30585044.004)"
+ },
+ {
+  "fichier": "STAC_3005ac1ca8.json",
+  "ticker": "STAC",
+  "exercice": "2022",
+  "motif": "implausible (cp=1919.221, dettes=420.023)"
+ },
+ {
+  "fichier": "STAC_b96b1af2c0.json",
+  "ticker": "STAC",
+  "exercice": "2025",
+  "motif": "implausible (cp=356.746, dettes=463.307)"
+ },
+ {
+  "fichier": "STAC_e4497e6d1d.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "STBC_80d20de3b0.json",
+  "ticker": "STBC",
+  "exercice": "2022",
+  "motif": "implausible (cp=-8618400.0, dettes=7950.0)"
+ },
+ {
+  "fichier": "STBC_8820e8e0d4.json",
+  "ticker": "STBC",
+  "exercice": "2023",
+  "motif": "implausible (cp=-10773000.0, dettes=7950.0)"
+ },
+ {
+  "fichier": "STBC_a1c6365ed9.json",
+  "ticker": "STBC",
+  "exercice": "2023",
+  "motif": "implausible (cp=-10773000.0, dettes=7950.0)"
+ },
+ {
+  "fichier": "STBC_a415dd20f5.json",
+  "ticker": "STBC",
+  "exercice": "2024",
+  "motif": "implausible (cp=-13466250.0, dettes=7950.0)"
+ },
+ {
+  "fichier": "STBC_da2897f733.json",
+  "ticker": "STBC",
+  "exercice": "2025",
+  "motif": "implausible (cp=-38088960.5, dettes=1400.0)"
+ },
+ {
+  "fichier": "STBC_f11289beab.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "STBC_ff80a5ce94.json",
+  "ticker": "STBC",
+  "exercice": "2022",
+  "motif": "implausible (cp=19491383.738, dettes=None)"
+ },
+ {
+  "fichier": "TTLC_40e6b3ff32.json",
+  "ticker": "TTLC",
+  "exercice": "2025",
+  "motif": "implausible (cp=-14000.0, dettes=None)"
+ },
+ {
+  "fichier": "TTLC_f8253e1321.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "TTLS_22cfbb09ab.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "TTLS_37ea478caa.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "TTLS_6e80be0f45.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "TTLS_7a421c6da5.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "UNLC_322eadbb5e.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "UNLC_36e6f516c8.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "UNLC_3ff3b60738.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "UNLC_a8870926ee.json",
+  "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "UNXC_38eb427a44.json",
+  "ticker": "UNXC",
+  "exercice": "2024",
+  "motif": "implausible (cp=15551475.518, dettes=0.016)"
+ }
+]
