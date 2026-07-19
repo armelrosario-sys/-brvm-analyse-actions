@@ -1,38 +1,34 @@
 ticker,exercice,capitaux_propres_mfcfa,dettes_financieres_mfcfa,statut,preuves,fichier_source
-BICC,2025,99783.0,,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,BICC_24a07bf1b1.json
-BNBC,2024,2974.139,896547.706,PROBABLE,plausible,BNBC_615494d21b.json
-CABC,2025,758.352,417.601,VALIDE,plausible|bilan_equilibre,CABC_a96ed5bf4b.json
+CABC,2025,758.352,417.601,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(1439.474 vs 1704.0),CABC_a96ed5bf4b.json
 NSBC,2020,108810.0,,VALIDE,plausible|bilan_equilibre,NSBC_14c9731723.json
-NSBC,2022,132524.0,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,NSBC_9e0cb93b9f.json
-NSBC,2023,164905.0,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,NSBC_933b9c4adb.json
-NSBC,2024,189719.0,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,NSBC_b52b131a97.json
-NSBC,2025,211371.0,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,NSBC_d2a84ff6e4.json
-ORGT,2023,6987.0,,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,ORGT_eaa3f88c46.json
-PALC,2024,135061.151,4047.029,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,PALC_25444c511c.json
-PALC,2025,142638.984,796.559,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,PALC_357373b0d1.json
-SAFC,2021,6195.0,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SAFC_69511eec06.json
-SAFC,2025,5916.0,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SAFC_241fbc6904.json
-SCRC,2023,22310.492,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SCRC_7f7aa9f5aa.json
-SDSC,2023,61034.257,10733.982,PROBABLE,plausible,SDSC_e59445b835.json
-SHEC,2021,500376.822,781645.443,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SHEC_55774bb974.json
-SHEC,2022,500376.822,,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SHEC_acdab75be2.json
+NSBC,2022,132524.0,,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(23713.0 vs 32382.0)|exercice_deduit_du_nom_de_fichier,NSBC_9e0cb93b9f.json
+NSBC,2023,164905.0,,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(32382.0 vs 34813.0)|exercice_deduit_du_nom_de_fichier,NSBC_933b9c4adb.json
+NSBC,2024,189719.0,,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(34813.0 vs 38112.0)|exercice_deduit_du_nom_de_fichier,NSBC_b52b131a97.json
+NSBC,2025,211371.0,,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(38112.0 vs 40712.0)|exercice_deduit_du_nom_de_fichier,NSBC_d2a84ff6e4.json
+ORGT,2023,6987.0,,VALIDE,plausible|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,ORGT_eaa3f88c46.json
+PALC,2024,135061.151,4047.029,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,PALC_25444c511c.json
+PALC,2025,142638.984,796.559,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,PALC_357373b0d1.json
+SAFC,2021,6195.0,,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(603.0 vs -603.0)|exercice_deduit_du_nom_de_fichier,SAFC_69511eec06.json
+SAFC,2025,5916.0,,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,SAFC_241fbc6904.json
+SCRC,2023,22310.492,,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(9010.129 vs -10324.0)|exercice_deduit_du_nom_de_fichier,SCRC_7f7aa9f5aa.json
+SDSC,2023,61034.257,10733.982,VALIDE,plausible|rn_concorde_sika,SDSC_e59445b835.json
 SICC,2019,2895608.308,0.016,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SICC_f83924273a.json
 SICC,2025,2975325.212,16896.226,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SICC_a729d42381.json
-SMBC,2022,24932.0,,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SMBC_aa2a7b8b0c.json
-SMBC,2023,35951.0,2367.0,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SMBC_ba24518c74.json
-SMBC,2024,35294.0,6485.0,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SMBC_fdb1c43fa6.json
-SMBC,2025,42913.0,9204.0,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SMBC_9c60affc9b.json
+SMBC,2022,24932.0,,VALIDE,plausible|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,SMBC_aa2a7b8b0c.json
+SMBC,2023,35951.0,2367.0,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,SMBC_ba24518c74.json
+SMBC,2024,35294.0,6485.0,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,SMBC_fdb1c43fa6.json
+SMBC,2025,42913.0,9204.0,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,SMBC_9c60affc9b.json
 SOGC,2020,6000.511,6116.745,PROBABLE,plausible,SOGC_ef45f0d575.json
-SOGC,2022,13004.308,3631.602,VALIDE,plausible|bilan_equilibre,SOGC_142283f917.json
-SOGC,2023,13393.141,5202.352,VALIDE,plausible|bilan_equilibre,SOGC_5c09cd994e.json
-SOGC,2024,496842.3,9.323,VALIDE,plausible|bilan_equilibre,SOGC_698a73fb4a.json
-SPHC,2022,8649304.155,19012367.97,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SPHC_f93b017bb7.json
+SOGC,2022,13004.308,3631.602,VALIDE,plausible|bilan_equilibre|rn_concorde_sika,SOGC_142283f917.json
+SOGC,2023,13393.141,5202.352,VALIDE,plausible|bilan_equilibre|rn_concorde_sika,SOGC_5c09cd994e.json
+SOGC,2024,496842.3,9.323,VALIDE,plausible|bilan_equilibre|rn_concorde_sika,SOGC_698a73fb4a.json
+SPHC,2022,8649304.155,19012367.97,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(16700611.131 vs 16700.0)|exercice_deduit_du_nom_de_fichier,SPHC_f93b017bb7.json
 SPHC,2023,101514.886,,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SPHC_a59d0746c5.json
 STAC,2020,2845.997,755.179,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,STAC_fb0f2835c4.json
-STAC,2021,2977.605,512.965,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,STAC_5281954428.json
-TTLC,2022,11143.0,246.0,VALIDE,plausible|bilan_equilibre,TTLC_0b8c08cef9.json
-TTLC,2023,12279.0,2384.0,VALIDE,plausible|bilan_equilibre,TTLC_e2c811b40f.json
-TTLC,2025,4033.0,,VALIDE,plausible|bilan_equilibre,TTLC_5c63eeb892.json
-UNXC,2021,414479.35,1157557.654,VALIDE,plausible|bilan_equilibre,UNXC_277561a25b.json
-UNXC,2022,1400364.822,1202350.71,VALIDE,plausible|bilan_equilibre,UNXC_222265faff.json
-UNXC,2023,11704.916,1221476.629,VALIDE,plausible|bilan_equilibre,UNXC_4a832d1aac.json
+STAC,2021,2977.605,512.965,VALIDE,plausible|bilan_equilibre|rn_concorde_sika|exercice_deduit_du_nom_de_fichier,STAC_5281954428.json
+TTLC,2022,11143.0,246.0,VALIDE,plausible|bilan_equilibre|rn_concorde_sika,TTLC_0b8c08cef9.json
+TTLC,2023,12279.0,2384.0,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(31.0 vs 8709.0),TTLC_e2c811b40f.json
+TTLC,2025,4033.0,,VALIDE,plausible|bilan_equilibre|rn_concorde_sika,TTLC_5c63eeb892.json
+UNXC,2021,414479.35,1157557.654,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(1400692.889 vs 1401.0),UNXC_277561a25b.json
+UNXC,2022,1400364.822,1202350.71,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(1298674.972 vs -1299.0),UNXC_222265faff.json
+UNXC,2023,11704.916,1221476.629,PROBABLE,plausible|bilan_equilibre|rn_divergent_sika(2035492.389 vs -2035.0),UNXC_4a832d1aac.json

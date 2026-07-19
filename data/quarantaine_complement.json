@@ -34,6 +34,12 @@
   "motif": "exercice ou capitaux propres absents"
  },
  {
+  "fichier": "BICC_24a07bf1b1.json",
+  "ticker": "BICC",
+  "exercice": "2025",
+  "motif": "plausible; rn_divergent_sika(26226.0 vs 36520.0); exercice_deduit_du_nom_de_fichier"
+ },
+ {
   "fichier": "BICC_51f3970236.json",
   "motif": "exercice ou capitaux propres absents"
  },
@@ -44,6 +50,12 @@
  {
   "fichier": "BNBC_1d3cf98897.json",
   "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "BNBC_615494d21b.json",
+  "ticker": "BNBC",
+  "exercice": "2024",
+  "motif": "plausible; rn_divergent_sika(7313.44 vs 7.0)"
  },
  {
   "fichier": "BNBC_66b5895aed.json",
@@ -378,12 +390,30 @@
   "motif": "exercice ou capitaux propres absents"
  },
  {
+  "fichier": "SHEC_55774bb974.json",
+  "ticker": "SHEC",
+  "exercice": "2021",
+  "motif": "plausible; rn_divergent_sika(2359622.661 vs 2140.0); exercice_deduit_du_nom_de_fichier"
+ },
+ {
   "fichier": "SHEC_72c486c8cb.json",
   "motif": "exercice ou capitaux propres absents"
  },
  {
+  "fichier": "SHEC_acdab75be2.json",
+  "ticker": "SHEC",
+  "exercice": "2022",
+  "motif": "plausible; rn_divergent_sika(3.753 vs 3753.0); exercice_deduit_du_nom_de_fichier"
+ },
+ {
   "fichier": "SHEC_b88401ae19.json",
   "motif": "exercice ou capitaux propres absents"
+ },
+ {
+  "fichier": "SHEC_f89382a6df.json",
+  "ticker": "SHEC",
+  "exercice": "2022",
+  "motif": "plausible; rn_divergent_sika(3548638.458 vs 3753.0); exercice_deduit_du_nom_de_fichier"
  },
  {
   "fichier": "SICC_f94ae63414.json",

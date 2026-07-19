@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-19T21:52:55+00:00",
+ "maj": "2026-07-19T22:01:50+00:00",
  "anomalies": [],
  "valeurs": {
   "ABJC": {
@@ -432,18 +432,6 @@
      "dividende": {
       "valeur": 1157.2,
       "source": "sikafinance"
-     },
-     "capitaux_propres": {
-      "valeur": 99783.0,
-      "source": "complement_auto_probable"
-     },
-     "roe_pct": {
-      "valeur": 36.6,
-      "source": "calcule"
-     },
-     "pbr": {
-      "valeur": 4.69,
-      "source": "calcule"
      }
     }
    }
@@ -552,22 +540,6 @@
      "per": {
       "valeur": 1704.55,
       "source": "sikafinance"
-     },
-     "capitaux_propres": {
-      "valeur": 2974.139,
-      "source": "complement_auto_probable"
-     },
-     "dettes_financieres": {
-      "valeur": 896547.706,
-      "source": "complement_auto_probable"
-     },
-     "roe_pct": {
-      "valeur": 0.24,
-      "source": "calcule"
-     },
-     "dette_sur_cp": {
-      "valeur": 301.45,
-      "source": "calcule"
      }
     },
     "2025": {
@@ -1635,11 +1607,11 @@
      },
      "capitaux_propres": {
       "valeur": 758.352,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "dettes_financieres": {
       "valeur": 417.601,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 224.7,
@@ -2851,7 +2823,7 @@
      },
      "capitaux_propres": {
       "valeur": 132524.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 24.43,
@@ -2889,7 +2861,7 @@
      },
      "capitaux_propres": {
       "valeur": 164905.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 21.11,
@@ -2927,7 +2899,7 @@
      },
      "capitaux_propres": {
       "valeur": 189719.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 20.09,
@@ -2965,7 +2937,7 @@
      },
      "capitaux_propres": {
       "valeur": 211371.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 19.26,
@@ -3519,7 +3491,7 @@
      },
      "capitaux_propres": {
       "valeur": 6987.0,
-      "source": "complement_auto_probable"
+      "source": "complement_auto_valide"
      },
      "roe_pct": {
       "valeur": -260.28,
@@ -3895,7 +3867,7 @@
      },
      "capitaux_propres": {
       "valeur": 6195.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": -9.73,
@@ -4025,7 +3997,7 @@
      },
      "capitaux_propres": {
       "valeur": 22310.492,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": -46.27,
@@ -4339,11 +4311,11 @@
      },
      "capitaux_propres": {
       "valeur": 61034.257,
-      "source": "complement_auto_probable"
+      "source": "complement_auto_valide"
      },
      "dettes_financieres": {
       "valeur": 10733.982,
-      "source": "complement_auto_probable"
+      "source": "complement_auto_valide"
      },
      "roe_pct": {
       "valeur": 28.08,
@@ -4696,22 +4668,6 @@
      "dividende": {
       "valeur": 28.57,
       "source": "sikafinance"
-     },
-     "capitaux_propres": {
-      "valeur": 500376.822,
-      "source": "complement_auto_probable"
-     },
-     "dettes_financieres": {
-      "valeur": 781645.443,
-      "source": "complement_auto_probable"
-     },
-     "roe_pct": {
-      "valeur": 0.43,
-      "source": "calcule"
-     },
-     "dette_sur_cp": {
-      "valeur": 1.56,
-      "source": "calcule"
      }
     },
     "2022": {
@@ -4742,14 +4698,6 @@
      "dividende": {
       "valeur": 53.0,
       "source": "sikafinance"
-     },
-     "capitaux_propres": {
-      "valeur": 500376.822,
-      "source": "complement_auto_probable"
-     },
-     "roe_pct": {
-      "valeur": 0.75,
-      "source": "calcule"
      }
     },
     "2023": {
@@ -5431,7 +5379,7 @@
      },
      "capitaux_propres": {
       "valeur": 24932.0,
-      "source": "complement_auto_probable"
+      "source": "complement_auto_valide"
      },
      "roe_pct": {
       "valeur": 37.79,
@@ -5989,11 +5937,11 @@
      },
      "capitaux_propres": {
       "valeur": 8649304.155,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "dettes_financieres": {
       "valeur": 19012367.97,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 0.19,
@@ -6461,11 +6409,11 @@
      },
      "capitaux_propres": {
       "valeur": 12279.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "dettes_financieres": {
       "valeur": 2384.0,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 70.93,
@@ -6823,11 +6771,11 @@
      },
      "capitaux_propres": {
       "valeur": 414479.35,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "dettes_financieres": {
       "valeur": 1157557.654,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": 0.34,
@@ -6853,11 +6801,11 @@
      },
      "capitaux_propres": {
       "valeur": 1400364.822,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "dettes_financieres": {
       "valeur": 1202350.71,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": -0.09,
@@ -6883,11 +6831,11 @@
      },
      "capitaux_propres": {
       "valeur": 11704.916,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "dettes_financieres": {
       "valeur": 1221476.629,
-      "source": "complement_auto_valide"
+      "source": "complement_auto_probable"
      },
      "roe_pct": {
       "valeur": -17.39,
