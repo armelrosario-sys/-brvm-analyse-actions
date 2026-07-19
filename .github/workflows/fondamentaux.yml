@@ -1,0 +1,38 @@
+name: Collecte des fondamentaux Sika
+
+on:
+  schedule:
+    - cron: '0 7 * * 6'   # chaque samedi 7h GMT
+  workflow_dispatch:
+
+concurrency:
+  group: collecte-brvm
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fondamentaux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Import auto capitaux propres / dettes (rapports annuels)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/importer_complement_rapports.py
+      - name: Collecter les fondamentaux Sika et fusionner
+        run: python scripts/collecte_fondamentaux.py
+      - name: Enregistrer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/data/
+          git diff --cached --quiet && echo "Rien de nouveau" && exit 0
+          git commit -m "Fondamentaux $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push
