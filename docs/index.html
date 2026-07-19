@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRVM Analyse Actions</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 20px;color:#1a1a2e}</style>
+</head>
+<body>
+<h1>BRVM Analyse Actions</h1>
+<p>Phase 1 : collecte des cours en place. Interface en construction.</p>
+<p id="etat">Chargement du dernier relevé…</p>
+<script>
+fetch('data/cours.json').then(r=>r.json()).then(d=>{
+  document.getElementById('etat').textContent =
+    'Dernier relevé : ' + d.maj + ' — ' + d.nb_valeurs + ' valeurs collectées.';
+}).catch(()=>{document.getElementById('etat').textContent='Aucune collecte disponible pour le moment.'});
+</script>
+</body>
+</html>
