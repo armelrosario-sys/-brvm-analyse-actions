@@ -1,0 +1,44 @@
+name: Collecte des cours BRVM
+
+on:
+  schedule:
+    # Toutes les heures en seance (9h30-15h GMT, lun-ven) — l'heure GMT = heure de Ouagadougou
+    - cron: '40 9,10,11,12,13,14 * * 1-5'
+    # Collecte de cloture
+    - cron: '30 15 * * 1-5'
+  workflow_dispatch:
+
+concurrency:
+  group: collecte-brvm
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer les dependances
+        run: pip install -r requirements.txt
+
+      - name: Lancer la collecte
+        run: python scripts/collecte_cours.py
+
+      - name: Enregistrer les resultats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/data/
+          git diff --cached --quiet && echo "Rien de nouveau" && exit 0
+          git commit -m "Collecte cours $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase origin main
+          git push
