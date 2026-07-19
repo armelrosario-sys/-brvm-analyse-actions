@@ -2,9 +2,7 @@ name: Collecte des cours BRVM
 
 on:
   schedule:
-    # Toutes les heures en seance (9h30-15h GMT, lun-ven) — l'heure GMT = heure de Ouagadougou
     - cron: '40 9,10,11,12,13,14 * * 1-5'
-    # Collecte de cloture
     - cron: '30 15 * * 1-5'
   workflow_dispatch:
 
@@ -33,12 +31,20 @@ jobs:
       - name: Lancer la collecte
         run: python scripts/collecte_cours.py
 
+      - name: Importer l'historique existant
+        if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
+        run: python scripts/importer_historique.py
+
+      - name: Calculs techniques et exports
+        if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
+        run: python scripts/calculs_techniques.py
+
       - name: Enregistrer les resultats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ docs/data/
           git diff --cached --quiet && echo "Rien de nouveau" && exit 0
-          git commit -m "Collecte cours $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git commit -m "Collecte $(date -u +'%Y-%m-%d %H:%M') UTC"
           git pull --rebase origin main
           git push
