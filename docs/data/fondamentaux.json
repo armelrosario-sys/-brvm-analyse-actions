@@ -1,9 +1,10 @@
 {
- "maj": "2026-07-19T22:32:06+00:00",
+ "maj": "2026-07-19T22:54:32+00:00",
  "anomalies": [],
  "valeurs": {
   "ABJC": {
    "suffixe_sika": "ci",
+   "description": "SERVAIR ABIDJAN anciennement Abidjan Catering, est une société créée en 1968 opérant sur l'avitaillement, la fourniture de repas et le nettoyage des compagnies aériennes qui desservent l'aéroport d'Abidjan. Depuis 2012, SERVAIR ABIDJAN développe aussi des activités Hors Aérienne. En effet, afin de développer son portefeuille clients  et tirer profit de la croissance économique du pays, la société a commencé à développer la restauration collective (scolaire, entreprise), son service traiteur événementiel (Grain de Sel) et propose ses services pour le catering  et l’avitaillement de Bases Vies (FOXTROT).",
    "nombre_titres": 10912000.0,
    "flottant_pct": 19.99,
    "capitalisation_mfcfa": 32627.0,
@@ -150,6 +151,7 @@
   },
   "BICB": {
    "suffixe_sika": "bj",
+   "description": "Issue de la fusion réussie, en 2020, entre la Banque Africaine de l’Industrie et du Commerce (BAIC) et la Banque Internationale du Bénin pour l’Économie (BIBE), la Banque Internationale pour l’Industrie et le Commerce (BIIC) s’est rapidement imposée comme l’un des acteurs majeurs du secteur bancaire au Bénin. Dotée d’un capital de 82,514 milliards de FCFA, la BIIC se distingue par sa solidité, son esprit d’innovation et sa volonté affirmée d’accompagner les ambitions de ses clients tout en contribuant activement au développement de l’économie nationale.",
    "nombre_titres": 57759800.0,
    "flottant_pct": 33.0,
    "capitalisation_mfcfa": 363887.0,
@@ -288,6 +290,7 @@
   },
   "BICC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 16666670.0,
    "flottant_pct": 32.51,
    "capitalisation_mfcfa": 468333.0,
@@ -446,6 +449,7 @@
   },
   "BNBC": {
    "suffixe_sika": "ci",
+   "description": "BERNABE CI a été créé en 1951 par Descours & Cabaud (Afrique). Avec 61 ans d'existence, BERNABE excelle dans la commercialisation et la distribution de produits de quincaillerie, de matériel industriel, de produits métallurgiques et de matériaux de construction. BERNABE CI offre des produits à travers un réseau de distribution de 3 agences en Côte-d'Ivoire.",
    "nombre_titres": 6624000.0,
    "flottant_pct": 32.51,
    "capitalisation_mfcfa": 12420.0,
@@ -580,6 +584,7 @@
   },
   "BOAB": {
    "suffixe_sika": "bj",
+   "description": "BANK OF AFRICA BENIN, est une filiale du groupe BOA, ouverte au public en janvier 1990. Elle est la seule banque et la seule entreprise béninoise cotée en bourse à la Bourse Régionale des Valeurs Mobilière (BRVM). Leader du secteur bancaire du Bénin en termes de total d'actif  suivie par Ecobank et Diamond Bank. Elle est profondément impliquée dans le financement de l'économie béninoise, en particulier les activités agricoles et portuaires. En fin 2024, la banque affichait un total bilan de 940 milliards FCFA, un total dépôt de la clientèle de 734 milliards FCFA.",
    "nombre_titres": 40561048.0,
    "flottant_pct": 44.69,
    "capitalisation_mfcfa": 352881.0,
@@ -730,6 +735,7 @@
   },
   "BOABF": {
    "suffixe_sika": "bf",
+   "description": null,
    "nombre_titres": 44000000.0,
    "flottant_pct": 29.1,
    "capitalisation_mfcfa": 316800.0,
@@ -880,6 +886,7 @@
   },
   "BOAC": {
    "suffixe_sika": "ci",
+   "description": "BOA CI est une filiale du groupe BOA. Elle a été ouverte en 1996 (après les filiales du Mali, du Bénin et du Niger). À la fin décembre 2024, la banque affichait un total bilan de  1 075 milliards FCFA et un total dépôt de la clientèle de 856 milliards FCFA.Comme les autres banques du Groupe BOA, BOA  COTE D'IVOIRE est une banque commerciale universelle intervenant sur les marchés Retail et Corporate.",
    "nombre_titres": 40000000.0,
    "flottant_pct": 27.48,
    "capitalisation_mfcfa": 389800.0,
@@ -1030,6 +1037,7 @@
   },
   "BOAM": {
    "suffixe_sika": "ml",
+   "description": null,
    "nombre_titres": 27450000.0,
    "flottant_pct": 21.44,
    "capitalisation_mfcfa": 157975.0,
@@ -1180,6 +1188,7 @@
   },
   "BOAN": {
    "suffixe_sika": "ne",
+   "description": null,
    "nombre_titres": 20800000.0,
    "flottant_pct": 40.52,
    "capitalisation_mfcfa": 111280.0,
@@ -1334,6 +1343,7 @@
   },
   "BOAS": {
    "suffixe_sika": "sn",
+   "description": null,
    "nombre_titres": 36000000.0,
    "flottant_pct": 29.99,
    "capitalisation_mfcfa": 277200.0,
@@ -1484,6 +1494,7 @@
   },
   "CABC": {
    "suffixe_sika": "ci",
+   "description": "Crée en 1976, la SICABLE est une entreprise ivoirienne, filiale du Groupe PRYSMIAN, elle est spécialisée dans la fabrication de câbles électriques. La société commercialise des câbles de basse, moyenne et haute tension pour l’utilisation dans l'industrie, la construction, l'infrastructure et les réseaux aériens. La SICABLE exporte vers les pays de la sous-région ouest africain.",
    "nombre_titres": 5920000.0,
    "flottant_pct": 48.7,
    "capitalisation_mfcfa": 21608.0,
@@ -1654,6 +1665,7 @@
   },
   "CBIBF": {
    "suffixe_sika": "bf",
+   "description": "Coris Bank International (CBI) est une banque commerciale fortement orientée vers le financement des activités agricoles et des petites et moyennes entreprises (PME). Fondé en 2008 sur une ancienne institution financière non bancaire « l’ex Financière du Burkina » (FIB-SA), Coris Bank International est le premier groupe bancaire burkinabé avec un total bilan de 2 683 milliards FCFA à fin 2024. Déjà présente en Côte d’Ivoire, au Benin, au Mali, au Sénégal et au Togo, la banque continue de poursuivre sa stratégie de croissance en Afrique de l’ouest.",
    "nombre_titres": 32000000.0,
    "flottant_pct": 20.0,
    "capitalisation_mfcfa": 911680.0,
@@ -1804,6 +1816,7 @@
   },
   "CFAC": {
    "suffixe_sika": "ci",
+   "description": "CFAO MOTORS est une filiale du groupe CFAO, détenue à plus de 97% par TTC Japan (Toyota). Le groupe est présent en Côte d'Ivoire depuis 1973 et est le distributeur exclusif de huit marques de renommée mondiale : Citroën, Peugeot, Toyota, Mitsubishi, Yamaha, Suzuki,  JCB et Bridgestone. La société est actuellement le leader du marché avec plus de 38% de part de marché au 1er trimestre 2018.",
    "nombre_titres": 181371900.0,
    "flottant_pct": 4.12,
    "capitalisation_mfcfa": 290195.0,
@@ -1954,6 +1967,7 @@
   },
   "CIEC": {
    "suffixe_sika": "ci",
+   "description": "Créé le 24 août 1990 par le groupe français BOUYGUES et la société d'électricité EDF, CIE est une société privée ivoirienne de monopole qui détient une concession de service public pour la production, le transport, l'exportation, l'importation, la distribution et la commercialisation d'électricité. Après deux périodes de quinze années chacune de collaboration (allant de 1990 à 2005 et de 2005 à 2020), l'état de Côte d'Ivoire et la CIE ont renouvelé leur partenariat pour une période 12 ans, soit de 2020 à 2032. La compagnie exporte de l'électricité vers le Bénin, le Burkina Faso, le Ghana, le Togo, le Mali et bientôt la Guinée.",
    "nombre_titres": 56000000.0,
    "flottant_pct": 30.95,
    "capitalisation_mfcfa": 290920.0,
@@ -2120,6 +2134,7 @@
   },
   "ECOC": {
    "suffixe_sika": "ci",
+   "description": "Créée en 1988, Ecobank Côte d’Ivoire constitue l’une des premières fliales du Groupe ECOBANK. Elle a démarré ses activités commerciales en 1989 avec un capital social de 2 milliards FCFA suite à l’acquisition de la Chase Manhattan Bank. Au fil des années, Ecobank Côte d’Ivoire a su se hisser parmi les banques leaders du marché ivoirien grâce à un réseau densifié et à une importante capacité de collecte et de distribution de crédits sur les segments des particuliers, PME et Institutionnels. Ecobank Côte d’Ivoire se positionne, au 31 décembre 2024 comme la cinquième (5eme) banque du marché ivoirien avec un total bilan de 2 050 milliards FCFA.",
    "nombre_titres": 55050600.0,
    "flottant_pct": 20.44,
    "capitalisation_mfcfa": 880810.0,
@@ -2270,6 +2285,7 @@
   },
   "ETIT": {
    "suffixe_sika": "tg",
+   "description": null,
    "nombre_titres": 18084106722.0,
    "flottant_pct": 33.48,
    "capitalisation_mfcfa": 1229719.0,
@@ -2412,6 +2428,7 @@
   },
   "FTSC": {
    "suffixe_sika": "ci",
+   "description": "Filtisac ou filature tissage sac, est une unité de fabrication de sacs en fibre naturelle de l'entreprise IPS (Industrial Promotion Services). Fondée en 1965, la société s’est aujourd’hui diversifiée avec la création d’une unité de fabrication d’emballages en fibres synthétiques pour des produits tels que: le coton, le riz, les engrais, le cacao, le café et l’anacarde ainsi que la production d'emballages rigides (préformes, bouteilles, boîtes). Leader en Afrique subsaharienne, FILTISAC possède de nombreuses filiales en Afrique de l'Ouest et du Centre.",
    "nombre_titres": 14103740.0,
    "flottant_pct": 33.48,
    "capitalisation_mfcfa": 28066.0,
@@ -2538,6 +2555,7 @@
   },
   "LNBB": {
    "suffixe_sika": "bj",
+   "description": "La Loterie Nationale du Bénin (LNB) est une institution publique béninoise chargée de l’organisation et de la régulation des jeux de hasard et de loterie. Créée pour générer des revenus pour l'État, elle propose divers produits, tels que des jeux de tirage, des tickets à gratter et des paris sportifs. La LNB joue également un rôle socio-économique en soutenant des initiatives sociales et en finançant des projets dans des domaines tels que l’éducation, la santé et le développement communautaire. Elle s'efforce de promouvoir le jeu responsable tout en contribuant au développement du pays.",
    "nombre_titres": 20000000.0,
    "flottant_pct": 45.0,
    "capitalisation_mfcfa": 86000.0,
@@ -2684,6 +2702,7 @@
   },
   "NEIC": {
    "suffixe_sika": "ci",
+   "description": "Les Nouvelles Editions Ivoirienne (NEI) est une maison d’édition fondée en 1992 en côte d’ivoire. En 2012, NEI réalisent une fusion absorption avec le Centre d’Edition et de Diffusion Africaine (CEDA) pour former NEI-CEDA. Cette nouvelle société est specialisée dans la distribution des titres de manuels de l’enseignement primaire et secondaire et propose des collections de littérature populaire.",
    "nombre_titres": 12765825.0,
    "flottant_pct": 17.99,
    "capitalisation_mfcfa": 29298.0,
@@ -2810,6 +2829,7 @@
   },
   "NSBC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 24734572.0,
    "flottant_pct": 20.0,
    "capitalisation_mfcfa": 584973.0,
@@ -2988,6 +3008,7 @@
   },
   "NTLC": {
    "suffixe_sika": "ci",
+   "description": "En Côte d'Ivoire, NESTLÉ est le leader dans la fabrication de produits de café, du thé, la production de soupes déshydratées, les assaisonnements et la distribution de produits laitiers pour enfants.  La société dispose de deux grandes usines et d'un centre de recherche & développement à Abidjan.",
    "nombre_titres": 22070400.0,
    "flottant_pct": 19.13,
    "capitalisation_mfcfa": 348712.0,
@@ -3138,6 +3159,7 @@
   },
   "ONTBF": {
    "suffixe_sika": "bf",
+   "description": "ONATEL offre des services de téléphonie mobile. Premier opérateur Burkinabé de télécommunication mobile, ONATEL possède le plus important réseau en termes de couverture, la plus importante part de marché en termes de chiffre d'affaires et le plus important réseau de distributeurs. ONATEL dispose ainsi en fin 2017 d’un parc mobile et fixe de 7 millions d’abonnés. Depuis le 29 décembre 2006, le groupe Maroc Telecom est le nouvel actionnaire majoritaire de Onatel.",
    "nombre_titres": 68000000.0,
    "flottant_pct": 23.0,
    "capitalisation_mfcfa": 181900.0,
@@ -3288,6 +3310,7 @@
   },
   "ORAC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 150655350.0,
    "flottant_pct": 9.95,
    "capitalisation_mfcfa": 2434590.0,
@@ -3438,6 +3461,7 @@
   },
   "ORGT": {
    "suffixe_sika": "tg",
+   "description": null,
    "nombre_titres": 69415031.0,
    "flottant_pct": 20.0,
    "capitalisation_mfcfa": 186032.0,
@@ -3552,6 +3576,7 @@
   },
   "PALC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 15459316.0,
    "flottant_pct": 33.0,
    "capitalisation_mfcfa": 134341.0,
@@ -3738,6 +3763,7 @@
   },
   "PRSC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 10240000.0,
    "flottant_pct": 14.06,
    "capitalisation_mfcfa": 46080.0,
@@ -3920,6 +3946,7 @@
   },
   "SAFC": {
    "suffixe_sika": "ci",
+   "description": "La Société africaine de crédit automobile (Safca), est établie en Côte d'ivoire depuis 1958. Elle est spécialisée dans le crédit-bail et assure le financement des biens mobiliers et immobiliers à travers divers produits financiers.",
    "nombre_titres": 8119750.0,
    "flottant_pct": 29.43,
    "capitalisation_mfcfa": 34874.0,
@@ -4014,6 +4041,7 @@
   },
   "SCRC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 19600000.0,
    "flottant_pct": 23.0,
    "capitalisation_mfcfa": 72618.0,
@@ -4112,6 +4140,7 @@
   },
   "SDCC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 9000000.0,
    "flottant_pct": 49.53,
    "capitalisation_mfcfa": 101700.0,
@@ -4262,6 +4291,7 @@
   },
   "SDSC": {
    "suffixe_sika": "ci",
+   "description": "MEDITERRANEAN SHIPPING COMPANY CI (MSC CI) est l'un des principaux acteurs du secteur du transport, de la manutention et de la logistique. La société est connue pour ses offres multisectorielles et multi-entreprises. Sa mission est de contrôler l'ensemble de la chaîne d'approvisionnement, ce qui permet à l'entreprise de fournir à ses clients un service complet: expédition de fret, manutention (levage et terrain), distribution (groupage et express) et logistique contractuelle.",
    "nombre_titres": 54435300.0,
    "flottant_pct": 22.2,
    "capitalisation_mfcfa": 148064.0,
@@ -4428,6 +4458,7 @@
   },
   "SEMC": {
    "suffixe_sika": "ci",
+   "description": "En Côte-d’Ivoire, CROWN SIEM est leader dans la conception et la fabrication des emballages métalliques. Elle est rattachée à une organisation qui regroupe des unités dans la fabrication de boites alimentaires et non alimentaires. Les produits sont destinés notamment au conditionnement de boissons (limonades, jus de fruits, boissons énergétiques), des produits alimentaires (poissons, fruits, salades, plats préparés, aliments pour bébés, condiments) et des produits divers (chimie, insecticide, peinture, colle, bouchon couronne).",
    "nombre_titres": 25189600.0,
    "flottant_pct": 10.42,
    "capitalisation_mfcfa": 37784.0,
@@ -4562,6 +4593,7 @@
   },
   "SGBC": {
    "suffixe_sika": "ci",
+   "description": "La Société Générale de Banques en Côte d’Ivoire (SGBCI) est une filiale de la Société Générale, l’un des plus grands groupes bancaires au monde. Présente depuis plus de 50 ans dans le pays, elle occupe une position dominante depuis de longue date en Côte dIvoire et joue un rôle prépondérant dans le financement de l’économie ivoirienne et ouest africaine. Première banque ivoirienne avec un produit net bancaire de 150 milliards FCFA et un total bilan de 2 152 milliards FCFA. La banque occupe également la 1ère place en termes de prêts à la clientèle et la 1ère place en termes de dépôts clients avec près 20% de part de marché. Malgré la concurrence intense sur le marché, la banque a toujours réussi à rester comme étant l'une des plus grandes banques du pays.",
    "nombre_titres": 31111110.0,
    "flottant_pct": 43.35,
    "capitalisation_mfcfa": 1182067.0,
@@ -4712,6 +4744,7 @@
   },
   "SHEC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 63000000.0,
    "flottant_pct": 28.33,
    "capitalisation_mfcfa": 137970.0,
@@ -4862,6 +4895,7 @@
   },
   "SIBC": {
    "suffixe_sika": "ci",
+   "description": "La Société Ivoirienne de Banque (SIB) est une Société anonyme de droit ivoirien créée en 1962. Elle fait partie des cinq principales banques de la Côte d'ivoire, quatrième banque de côte d’Ivoire en termes de dépôts à la clientèle et troisième en Prêts clientèle. La SIB est implantée dans 15 villes avec un réseau fort de 54 agences, et plus de 300 000 clients Particuliers, Professionnels et Entreprises de toute taille. En septembre 2015, le groupe Attijariwafa bank, à travers sa filiale Attijari Ivoire Holding Offshore SA, a procédé à l’acquisition de 39% du capital et des droits de vote de la Société Ivoirienne de Banque auprès de l’Etat de Côte d’Ivoire, modifiant ainsi la structure du capital et la composition du Conseil d’Administration. Ainsi, le groupe Attijariwafa bank qui détenait 51% du capital de la SIB depuis 2009 renforce sa position d’actionnaire de référence, disposant désormais de 75% après son introduction en bourse.",
    "nombre_titres": 100000000.0,
    "flottant_pct": 20.0,
    "capitalisation_mfcfa": 876000.0,
@@ -5012,6 +5046,7 @@
   },
   "SICC": {
    "suffixe_sika": "ci",
+   "description": "La Société Ivoirienne de Coco Râpé (SICOR) est une entreprise engagée dans le secteur de fabrication de produits alimentaires. Elle commercialise des noix de coco et des produits dérivés, notamment le coco desséché. SICOR est l’unique entreprise de transformation de noix de  coco en Afrique de l’ouest.",
    "nombre_titres": 600000.0,
    "flottant_pct": 12.56,
    "capitalisation_mfcfa": 3180.0,
@@ -5114,6 +5149,7 @@
   },
   "SIVC": {
    "suffixe_sika": "ci",
+   "description": "Air Liquide est présent en Côte d’Ivoire depuis bientôt 70 ans. La société est spécialisée dans la production et la distribution de gaz industriels et médicaux (azote gazeux, azote liquide, oxygène gazeux, oxygène liquide, acétylène, argon, propane, butane, protoxyde d'azote, monoxyde d'azote, etc.). La société opère dans différents secteurs d’activités : Gaz et pétrole, mines et carrières, Agro-alimentaires, fabrication métallique et construction, santé, industrie pharmaceutique, laboratoires et centres de recherche.",
    "nombre_titres": 8734000.0,
    "flottant_pct": 27.92,
    "capitalisation_mfcfa": 20962.0,
@@ -5244,6 +5280,7 @@
   },
   "SLBC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 16460840.0,
    "flottant_pct": 18.6,
    "capitalisation_mfcfa": 644524.0,
@@ -5390,6 +5427,7 @@
   },
   "SMBC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 7795200.0,
    "flottant_pct": 16.5,
    "capitalisation_mfcfa": 118448.0,
@@ -5600,6 +5638,7 @@
   },
   "SNTS": {
    "suffixe_sika": "sn",
+   "description": null,
    "nombre_titres": 100000000.0,
    "flottant_pct": 22.47,
    "capitalisation_mfcfa": 3200000.0,
@@ -5750,6 +5789,7 @@
   },
   "SOGC": {
    "suffixe_sika": "ci",
+   "description": "Créée en 1969 dans le but de désenclaver la région du sud-ouest, la SOGB dispose d’un centre agro-industriel qui couvre 34 712 hectares divisés en 16 840 ha pour le caoutchouc, 7 471 ha pour l'huile de palme et le reste pour les usines et les plantations villageoises. L'activité principale de SOGB est la culture du caoutchouc et la vente de produits en caoutchouc fabriqués ainsi que la transformation et la fabrication de l'huile de palme.",
    "nombre_titres": 21601840.0,
    "flottant_pct": 26.84,
    "capitalisation_mfcfa": 173031.0,
@@ -5964,6 +6004,7 @@
   },
   "SPHC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 25558005.0,
    "flottant_pct": 23.54,
    "capitalisation_mfcfa": 191685.0,
@@ -6182,6 +6223,7 @@
   },
   "STAC": {
    "suffixe_sika": "ci",
+   "description": "La SETAO est une filiale du groupe Bouygues dont les activités en Côte d'Ivoire ont débuté en 1950. La société est spécialisée dans les prestations de conseil et d'ingénierie dans le domaine du BTP. Plusieurs réalisations sont à son actif notamment: la construction du 3éme pont d’Abidjan, l’extension du centre commercial CAP SUD, la construction du complexe universitaire de Yamoussoukro (ex-INSET ou actuel INPHB).",
    "nombre_titres": 13440000.0,
    "flottant_pct": 20.83,
    "capitalisation_mfcfa": 42806.0,
@@ -6284,6 +6326,7 @@
   },
   "STBC": {
    "suffixe_sika": "ci",
+   "description": "La Société Ivoirienne des Tabacs (Sitab), filiale du britannique Imperial Brands est le leader du marché ivoirien et le seul fabricant de cigarettes en côte d’ivoire. La Sitab, contrôle environ 60 % du marché ivoirien des cigarettes. L'acquisition de la SITAB par Imperial Tobacco Group en avril 2011 a permis à la société de se positionner sur le marché du tabac en Afrique de l'Ouest avec l'ambition de servir les pays de la sous-région.",
    "nombre_titres": 17955000.0,
    "flottant_pct": 26.95,
    "capitalisation_mfcfa": 429125.0,
@@ -6442,6 +6485,7 @@
   },
   "TTLC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 62961600.0,
    "flottant_pct": 27.01,
    "capitalisation_mfcfa": 182589.0,
@@ -6636,6 +6680,7 @@
   },
   "TTLS": {
    "suffixe_sika": "sn",
+   "description": null,
    "nombre_titres": 32577700.0,
    "flottant_pct": 30.86,
    "capitalisation_mfcfa": 130148.0,
@@ -6786,6 +6831,7 @@
   },
   "UNLC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 9183400.0,
    "flottant_pct": 10.02,
    "capitalisation_mfcfa": 500449.0,
@@ -6880,6 +6926,7 @@
   },
   "UNXC": {
    "suffixe_sika": "ci",
+   "description": null,
    "nombre_titres": 20750000.0,
    "flottant_pct": 27.71,
    "capitalisation_mfcfa": 38284.0,
