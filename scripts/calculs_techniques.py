@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Phase 2A - Calculs techniques et exports par valeur.
+Phase 2A/3 - Calculs techniques et exports par valeur.
 Regle de transparence : un indicateur non calculable est exporte a null avec le
 nombre de seances manquantes - jamais une valeur approximative presentee comme exacte.
 Sorties :
-  - docs/data/historique/{TICKER}.json  (series mensuelle + quotidienne + dividendes)
+  - docs/data/historique/{TICKER}.json  (mensuel + quotidien + seance intraday + dividendes)
   - docs/data/technique.json            (indicateurs par valeur)
 """
 
@@ -55,16 +55,30 @@ def principal():
     # Cloture quotidienne = dernier releve de chaque date de seance
     quotidien = {}
     for r in con.execute("""
-        SELECT ticker, substr(horodatage,1,10) AS d,
-               MAX(horodatage) AS h
+        SELECT ticker, substr(horodatage,1,10) AS d, MAX(horodatage) AS h
         FROM releves WHERE cours IS NOT NULL
         GROUP BY ticker, d ORDER BY d
     """):
         ligne = con.execute(
-            "SELECT cours, volume, nom FROM releves WHERE ticker=? AND horodatage=?",
-            (r["ticker"], r["h"])).fetchone()
+            "SELECT cours, volume, nom, cours_veille, ouverture FROM releves "
+            "WHERE ticker=? AND horodatage=?", (r["ticker"], r["h"])).fetchone()
         quotidien.setdefault(r["ticker"], []).append(
-            {"date": r["d"], "cours": ligne["cours"], "volume": ligne["volume"], "nom": ligne["nom"]})
+            {"date": r["d"], "cours": ligne["cours"], "volume": ligne["volume"],
+             "nom": ligne["nom"], "veille": ligne["cours_veille"],
+             "ouverture": ligne["ouverture"]})
+
+    # Seance intraday : tous les releves de la DERNIERE date de seance
+    derniere_date = con.execute(
+        "SELECT MAX(substr(horodatage,1,10)) AS d FROM releves").fetchone()["d"]
+    seance = {}
+    if derniere_date:
+        for r in con.execute("""
+            SELECT ticker, horodatage, cours, volume FROM releves
+            WHERE substr(horodatage,1,10)=? AND cours IS NOT NULL
+            ORDER BY horodatage
+        """, (derniere_date,)):
+            seance.setdefault(r["ticker"], []).append(
+                {"h": r["horodatage"][11:16], "cours": r["cours"], "volume": r["volume"]})
 
     # Historique mensuel + dividendes
     mensuel, dividendes = {}, {}
@@ -76,7 +90,6 @@ def principal():
             cle = (r["dividende_montant"], r["dividende_date"])
             annee = r["date"][:4]
             dividendes.setdefault(t, {})
-            # dedoublonnage : un couple (montant, date de paiement) = un dividende
             deja = any(v["montant"] == cle[0] and v.get("date_paiement") == cle[1]
                        for v in dividendes[t].values())
             if not deja:
@@ -97,7 +110,6 @@ def principal():
                 return serie_m[-1 - mois]["cours"]
             return None
 
-        # Variation YTD : dernier cours de decembre precedent
         annee_courante = serie_m[-1]["date"][:4] if serie_m else None
         cours_fin_annee_prec = None
         for x in reversed(serie_m):
@@ -105,8 +117,20 @@ def principal():
                 cours_fin_annee_prec = x["cours"]
                 break
 
-        # Tendance provisoire sur mensuel (en attendant MM quotidiennes)
         moy12m = moyenne([x["cours"] for x in serie_m[-12:] if x["cours"]]) if serie_m else None
+
+        # 52 semaines : cloture (quotidien + mensuel) des 365 derniers jours
+        aujourd_hui = serie_q[-1]["date"] if serie_q else (serie_m[-1]["date"] if serie_m else None)
+        h52, b52 = None, None
+        if aujourd_hui:
+            an, mo, jo = int(aujourd_hui[:4]), aujourd_hui[5:7], aujourd_hui[8:10]
+            limite = f"{an - 1}-{mo}-{jo}"
+            fenetre = [x["cours"] for x in serie_m if x["date"] >= limite and x["cours"]] + \
+                      [x["cours"] for x in serie_q if x["date"] >= limite and x["cours"]]
+            if fenetre:
+                h52, b52 = max(fenetre), min(fenetre)
+
+        vol_moy20 = moyenne([x["volume"] for x in serie_q[-20:] if x["volume"] is not None])
 
         tech[t] = {
             "cours": cours_actuel,
@@ -115,6 +139,8 @@ def principal():
             "var_1a": variation(cours_actuel, cours_mensuel_il_y_a(12)),
             "mm20": mm(cloture, 20), "mm50": mm(cloture, 50), "mm200": mm(cloture, 200),
             "rsi14": rsi14(cloture),
+            "haut_52s": h52, "bas_52s": b52,
+            "volume_moyen_20": round(vol_moy20) if vol_moy20 is not None else None,
             "seances_disponibles": len(cloture),
             "seances_manquantes": {"mm20": max(0, 20 - len(cloture)),
                                     "mm50": max(0, 50 - len(cloture)),
@@ -129,6 +155,9 @@ def principal():
             "nom": serie_q[-1]["nom"] if serie_q else None,
             "mensuel": serie_m,
             "quotidien": [{k: x[k] for k in ("date", "cours", "volume")} for x in serie_q],
+            "seance": {"date": derniere_date, "points": seance.get(t, []),
+                       "veille": serie_q[-1]["veille"] if serie_q else None,
+                       "ouverture": serie_q[-1]["ouverture"] if serie_q else None},
             "dividendes": sorted(dividendes.get(t, {}).values(), key=lambda v: v["exercice"]),
         }, open(DOSSIER_HISTO / f"{t}.json", "w", encoding="utf-8"),
             ensure_ascii=False, indent=1)
@@ -140,7 +169,7 @@ def principal():
         "valeurs": tech,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     con.close()
-    print(f"Exports OK : {len(tickers)} valeurs.")
+    print(f"Exports OK : {len(tickers)} valeurs. Seance intraday : {derniere_date}")
 
 
 if __name__ == "__main__":
