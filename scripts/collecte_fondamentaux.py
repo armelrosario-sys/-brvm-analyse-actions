@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 RACINE = Path(__file__).resolve().parent.parent
 CHEMIN_DB = RACINE / "data" / "marche.db"
 CHEMIN_SUFFIXES = RACINE / "data" / "sika_suffixes.json"
-CHEMIN_COMPLEMENT = RACINE / "data" / "fondamentaux_complement.csv"
+CHEMIN_COMPLEMENT_AUTO = RACINE / "data" / "fondamentaux_complement_auto.csv"
 CHEMIN_SORTIE = RACINE / "docs" / "data" / "fondamentaux.json"
 CHEMIN_COURS = RACINE / "docs" / "data" / "cours.json"
 
@@ -115,18 +115,30 @@ def extraire(html, ticker, anomalies):
 
 
 def charger_complement():
-    """CSV : ticker,exercice,capitaux_propres_mfcfa,dettes_financieres_mfcfa"""
+    """Fusion : import automatique valide (statut VALIDE/PROBABLE) puis
+    corrections manuelles (le manuel ecrase toujours l'automatique)."""
     comp = {}
-    if not CHEMIN_COMPLEMENT.exists():
-        return comp
-    with open(CHEMIN_COMPLEMENT, encoding="utf-8") as f:
-        for r in csv.DictReader(f):
-            t, ex = (r.get("ticker") or "").strip(), (r.get("exercice") or "").strip()
-            if t and ex:
-                comp[(t, ex)] = {
-                    "capitaux_propres": nombre_fr(r.get("capitaux_propres_mfcfa")),
-                    "dettes_financieres": nombre_fr(r.get("dettes_financieres_mfcfa")),
-                }
+    if CHEMIN_COMPLEMENT_AUTO.exists():
+        with open(CHEMIN_COMPLEMENT_AUTO, encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                t, ex = (r.get("ticker") or "").strip(), (r.get("exercice") or "").strip()
+                statut = (r.get("statut") or "").strip()
+                if t and ex and statut in ("VALIDE", "PROBABLE"):
+                    comp[(t, ex)] = {
+                        "capitaux_propres": nombre_fr(r.get("capitaux_propres_mfcfa")),
+                        "dettes_financieres": nombre_fr(r.get("dettes_financieres_mfcfa")),
+                        "_source": "complement_auto_" + statut.lower(),
+                    }
+    if CHEMIN_COMPLEMENT.exists():
+        with open(CHEMIN_COMPLEMENT, encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                t, ex = (r.get("ticker") or "").strip(), (r.get("exercice") or "").strip()
+                if t and ex:
+                    comp[(t, ex)] = {
+                        "capitaux_propres": nombre_fr(r.get("capitaux_propres_mfcfa")),
+                        "dettes_financieres": nombre_fr(r.get("dettes_financieres_mfcfa")),
+                        "_source": "complement_manuel",
+                    }
     return comp
 
 
@@ -165,12 +177,15 @@ def principal():
                     ligne[champ] = {"valeur": serie[i], "source": "sikafinance"}
                     con.execute("INSERT OR REPLACE INTO fondamentaux VALUES (?,?,?,?,?)",
                                 (t, ex, champ, serie[i], "sikafinance"))
-            comp = complement.get((t, ex), {})
+           comp = complement.get((t, ex), {})
+            source_comp = comp.get("_source", "complement_manuel")
             for champ, v in comp.items():
+                if champ == "_source":
+                    continue
                 if v is not None:
-                    ligne[champ] = {"valeur": v, "source": "complement_manuel"}
+                    ligne[champ] = {"valeur": v, "source": "source_comp"}
                     con.execute("INSERT OR REPLACE INTO fondamentaux VALUES (?,?,?,?,?)",
-                                (t, ex, champ, v, "complement_manuel"))
+                                (t, ex, champ, v, "source_comp"))
             # Ratios calcules (uniquement si les deux composantes existent)
             rn = ligne.get("rn", {}).get("valeur")
             cp = ligne.get("capitaux_propres", {}).get("valeur")
