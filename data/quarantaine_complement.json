@@ -34,12 +34,6 @@
   "motif": "exercice ou capitaux propres absents"
  },
  {
-  "fichier": "BICC_24a07bf1b1.json",
-  "ticker": "BICC",
-  "exercice": "2025",
-  "motif": "plausible; rn_divergent_sika(26226.0 vs 36520.0); exercice_deduit_du_nom_de_fichier"
- },
- {
   "fichier": "BICC_51f3970236.json",
   "motif": "exercice ou capitaux propres absents"
  },
@@ -87,25 +81,13 @@
   "fichier": "BOAB_670da39f89.json",
   "ticker": "BOAB",
   "exercice": "2022",
-  "motif": "implausible (cp=1.0467400928311281e+20, dettes=None)"
- },
- {
-  "fichier": "BOAM_77f20998d8.json",
-  "ticker": "BOAM",
-  "exercice": "2022",
-  "motif": "implausible (cp=34541828.466, dettes=None)"
+  "motif": "implausible (cp=1.0467400928311282e+17, dettes=None)"
  },
  {
   "fichier": "BOAM_dc403fad3b.json",
   "ticker": "BOAM",
   "exercice": "2024",
   "motif": "implausible (cp=40197098.666, dettes=None)"
- },
- {
-  "fichier": "BOAN_27e4730845.json",
-  "ticker": "BOAN",
-  "exercice": "2023",
-  "motif": "implausible (cp=44172691.398, dettes=None)"
  },
  {
   "fichier": "BOAS_977470de5d.json",
@@ -150,12 +132,6 @@
   "ticker": "CIEC",
   "exercice": "2024",
   "motif": "implausible (cp=-10640.0, dettes=59052.0)"
- },
- {
-  "fichier": "CIEC_494d0fcab4.json",
-  "ticker": "CIEC",
-  "exercice": "2023",
-  "motif": "implausible (cp=33453907.54, dettes=0.015)"
  },
  {
   "fichier": "CIEC_567587d32d.json",
@@ -213,19 +189,19 @@
   "fichier": "NEIC_a752ce393e.json",
   "ticker": "NEIC",
   "exercice": "2023",
-  "motif": "implausible (cp=5.6376433644970504e+16, dettes=0.016)"
+  "motif": "implausible (cp=56376433644970.51, dettes=1.6e-05)"
  },
  {
   "fichier": "NEIC_a82d9206bd.json",
   "ticker": "NEIC",
   "exercice": "2025",
-  "motif": "implausible (cp=5.754898260371827e+16, dettes=0.016)"
+  "motif": "implausible (cp=57548982603718.27, dettes=1.6e-05)"
  },
  {
   "fichier": "NEIC_db790dcd03.json",
   "ticker": "NEIC",
   "exercice": "2024",
-  "motif": "implausible (cp=3.718272026563764e+16, dettes=0.016)"
+  "motif": "implausible (cp=37182720265637.64, dettes=1.6e-05)"
  },
  {
   "fichier": "NTLC_0cb14e0994.json",
@@ -301,13 +277,7 @@
   "fichier": "PALC_e1f9b45ab8.json",
   "ticker": "PALC",
   "exercice": "2021",
-  "motif": "implausible (cp=1.0991355931169202e+17, dettes=1.7237902442217152e+18)"
- },
- {
-  "fichier": "PRSC_521a9634dc.json",
-  "ticker": "PRSC",
-  "exercice": "2024",
-  "motif": "implausible (cp=11283033.493, dettes=0.016)"
+  "motif": "implausible (cp=109913559311692.02, dettes=1723790244221715.2)"
  },
  {
   "fichier": "PRSC_53247bd580.json",
@@ -338,12 +308,6 @@
   "motif": "exercice ou capitaux propres absents"
  },
  {
-  "fichier": "PRSC_c55474bd29.json",
-  "ticker": "PRSC",
-  "exercice": "2023",
-  "motif": "implausible (cp=11015041.886, dettes=0.016)"
- },
- {
   "fichier": "PRSC_e654d6b0c5.json",
   "motif": "exercice ou capitaux propres absents"
  },
@@ -352,16 +316,16 @@
   "motif": "exercice ou capitaux propres absents"
  },
  {
+  "fichier": "SAFC_69511eec06.json",
+  "ticker": "SAFC",
+  "exercice": "2021",
+  "motif": "signe_divergent(603.0 vs -603.0)"
+ },
+ {
   "fichier": "SCRC_006a0480ee.json",
   "ticker": "SCRC",
   "exercice": "2022",
-  "motif": "implausible (cp=2.768736648836443e+18, dettes=4.377784616232956e+18)"
- },
- {
-  "fichier": "SCRC_29538cde42.json",
-  "ticker": "SCRC",
-  "exercice": "2023",
-  "motif": "implausible (cp=17363224.113, dettes=35876628.027)"
+  "motif": "signe_divergent(8755.668861 vs -8756.0)"
  },
  {
   "fichier": "SCRC_379617f6e5.json",
@@ -371,13 +335,19 @@
   "fichier": "SCRC_58ec05c482.json",
   "ticker": "SCRC",
   "exercice": "2022",
-  "motif": "implausible (cp=2.022, dettes=43777846.162)"
+  "motif": "signe_divergent(8755.668861 vs -8756.0)"
  },
  {
   "fichier": "SCRC_7205e9d88e.json",
   "ticker": "SCRC",
   "exercice": "2025",
-  "motif": "implausible (cp=13822035.189, dettes=69108844.43)"
+  "motif": "signe_divergent(6131.800225999999 vs -6132.0)"
+ },
+ {
+  "fichier": "SCRC_7f7aa9f5aa.json",
+  "ticker": "SCRC",
+  "exercice": "2023",
+  "motif": "signe_divergent(9010.129 vs -8756.0)"
  },
  {
   "fichier": "SDCC_9b40ccacec.json",
@@ -474,30 +444,6 @@
   "motif": "implausible (cp=-12898.314, dettes=9.323)"
  },
  {
-  "fichier": "SPHC_4b5b335b1a.json",
-  "ticker": "SPHC",
-  "exercice": "2025",
-  "motif": "implausible (cp=8649304.155, dettes=35598886.719)"
- },
- {
-  "fichier": "SPHC_83377f564f.json",
-  "ticker": "SPHC",
-  "exercice": "2023",
-  "motif": "implausible (cp=8649304.155, dettes=24355185.501)"
- },
- {
-  "fichier": "SPHC_b1ae9286e2.json",
-  "ticker": "SPHC",
-  "exercice": "2023",
-  "motif": "implausible (cp=8649304.155, dettes=24355185.501)"
- },
- {
-  "fichier": "SPHC_dcdee1d9ad.json",
-  "ticker": "SPHC",
-  "exercice": "2024",
-  "motif": "implausible (cp=8649304.155, dettes=30585044.004)"
- },
- {
   "fichier": "STAC_3005ac1ca8.json",
   "ticker": "STAC",
   "exercice": "2022",
@@ -517,41 +463,35 @@
   "fichier": "STBC_80d20de3b0.json",
   "ticker": "STBC",
   "exercice": "2022",
-  "motif": "implausible (cp=-8618400.0, dettes=7950.0)"
+  "motif": "implausible (cp=-8618.4, dettes=7.95)"
  },
  {
   "fichier": "STBC_8820e8e0d4.json",
   "ticker": "STBC",
   "exercice": "2023",
-  "motif": "implausible (cp=-10773000.0, dettes=7950.0)"
+  "motif": "implausible (cp=-10773.0, dettes=7.95)"
  },
  {
   "fichier": "STBC_a1c6365ed9.json",
   "ticker": "STBC",
   "exercice": "2023",
-  "motif": "implausible (cp=-10773000.0, dettes=7950.0)"
+  "motif": "implausible (cp=-10773.0, dettes=7.95)"
  },
  {
   "fichier": "STBC_a415dd20f5.json",
   "ticker": "STBC",
   "exercice": "2024",
-  "motif": "implausible (cp=-13466250.0, dettes=7950.0)"
+  "motif": "implausible (cp=-13466.25, dettes=7.95)"
  },
  {
   "fichier": "STBC_da2897f733.json",
   "ticker": "STBC",
   "exercice": "2025",
-  "motif": "implausible (cp=-38088960.5, dettes=1400.0)"
+  "motif": "implausible (cp=-38088.9605, dettes=1.4)"
  },
  {
   "fichier": "STBC_f11289beab.json",
   "motif": "exercice ou capitaux propres absents"
- },
- {
-  "fichier": "STBC_ff80a5ce94.json",
-  "ticker": "STBC",
-  "exercice": "2022",
-  "motif": "implausible (cp=19491383.738, dettes=None)"
  },
  {
   "fichier": "TTLC_40e6b3ff32.json",
@@ -596,9 +536,39 @@
   "motif": "exercice ou capitaux propres absents"
  },
  {
+  "fichier": "UNXC_222265faff.json",
+  "ticker": "UNXC",
+  "exercice": "2022",
+  "motif": "signe_divergent(1298.674972 vs -1299.0)"
+ },
+ {
+  "fichier": "UNXC_277561a25b.json",
+  "ticker": "UNXC",
+  "exercice": "2021",
+  "motif": "implausible (cp=414.47934999999995, dettes=1157.5576540000002)"
+ },
+ {
   "fichier": "UNXC_38eb427a44.json",
   "ticker": "UNXC",
   "exercice": "2024",
   "motif": "implausible (cp=15551475.518, dettes=0.016)"
+ },
+ {
+  "fichier": "UNXC_4a832d1aac.json",
+  "ticker": "UNXC",
+  "exercice": "2023",
+  "motif": "signe_divergent(2035.492389 vs -2035.0)"
+ },
+ {
+  "fichier": "UNXC_7f2dd21467.json",
+  "ticker": "UNXC",
+  "exercice": "2022",
+  "motif": "signe_divergent(1298.674972 vs -1299.0)"
+ },
+ {
+  "fichier": "UNXC_f7adc8c32e.json",
+  "ticker": "UNXC",
+  "exercice": "2021",
+  "motif": "implausible (cp=414.47934999999995, dettes=1157.5576540000002)"
  }
 ]
