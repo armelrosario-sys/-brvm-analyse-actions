@@ -81,8 +81,14 @@ def extraire(html, ticker, anomalies):
     donnees = {}
 
     texte = soupe.get_text(" ", strip=True)
-    m = re.search(r"La société\s*:\s*(.+?)\s*(?:Téléphone|Fax|Adresse|Dirigeants)\s*:", texte)
-    if m:
+    m = re.search(r"La société\s*:\s*(.+?)\s*(?:Téléphone|Fax|Adresse|Dirigeants|Actionnaires|Secteur d'activité)\s*:", texte)
+    if not m:
+        m = re.search(r"La société\s*:\s*(.{80,1200})", texte)
+        if m:
+            brut = m.group(1)
+            fin = brut.rfind(". ")
+            donnees["description"] = (brut[:fin + 1] if fin > 80 else brut).strip()
+    if m and "description" not in donnees:
         donnees["description"] = m.group(1).strip()[:1200]
     for motif, cle in [
         (r"Nombre de titres\s*:\s*([\d\s\u202f\xa0]+)", "nombre_titres"),
