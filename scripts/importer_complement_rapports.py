@@ -6,6 +6,12 @@ depuis les extractions de rapports annuels de brvm-data-pipeline
   VALIDE   : RN concorde avec Sika (<3%) et/ou bilan equilibre (Actif=Passif a 1%)
   PROBABLE : montants plausibles, sans recoupement possible
   QUARANTAINE : incoherent ou implausible -> jamais exploite, mais liste.
+Corrections documentees (jamais silencieuses) :
+  - exercice_reaffecte_X->Y : l'annee du nom de fichier etait l'annee de
+    publication ; le RN concorde parfaitement avec l'exercice Y chez Sika.
+  - unite_corrigee_milliers : document en milliers de FCFA (RN concorde
+    apres division par 1000) ; cp et dettes divises par 1000 aussi.
+  - signe_divergent -> quarantaine (perte probable du signe negatif).
 Sortie : data/fondamentaux_complement_auto.csv + data/quarantaine_complement.json
 """
 
@@ -26,6 +32,7 @@ CHEMIN_FOND = RACINE / "docs" / "data" / "fondamentaux.json"
 ENTETES = {"User-Agent": "Mozilla/5.0"}
 if os.environ.get("GITHUB_TOKEN"):
     ENTETES["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+TOLERANCE = 0.03
 
 
 def lister_fichiers():
@@ -68,8 +75,11 @@ def plausible(cp, det):
     return True
 
 
+def proche(a, b):
+    return b not in (None, 0) and a is not None and abs(a - b) / abs(b) < TOLERANCE
+
+
 def rn_sika():
-    """{(ticker, exercice): rn} depuis la derniere collecte Sika, si disponible."""
     ref = {}
     if CHEMIN_FOND.exists():
         d = json.loads(CHEMIN_FOND.read_text(encoding="utf-8"))
@@ -79,6 +89,39 @@ def rn_sika():
                 if rn is not None:
                     ref[(t, ex)] = rn
     return ref
+
+
+def rapprocher_sika(ticker, exercice, rn, reference_rn):
+    """Cherche la concordance du RN avec Sika sur (exercice, N-1, N+1) x (x1, /1000).
+    Retourne (exercice_final, facteur, preuves, verdict) avec verdict dans
+    {'concorde', 'signe_divergent', 'divergent', 'sans_reference'}."""
+    if rn is None or not reference_rn:
+        return exercice, 1, [], "sans_reference"
+    an = int(exercice)
+    candidats = [str(an), str(an - 1), str(an + 1)]
+    for ex_c in candidats:
+        ref = reference_rn.get((ticker, ex_c))
+        if ref in (None, 0):
+            continue
+        for facteur in (1, 1000):
+            if proche(rn / facteur, ref):
+                preuves = ["rn_concorde_sika"]
+                if ex_c != exercice:
+                    preuves.append(f"exercice_reaffecte_{exercice}->{ex_c}")
+                if facteur == 1000:
+                    preuves.append("unite_corrigee_milliers")
+                return ex_c, facteur, preuves, "concorde"
+    # Signe perdu ? (valeurs absolues concordantes, signes opposes)
+    for ex_c in candidats:
+        ref = reference_rn.get((ticker, ex_c))
+        if ref in (None, 0):
+            continue
+        for facteur in (1, 1000):
+            if proche(abs(rn / facteur), abs(ref)) and (rn / facteur) * ref < 0:
+                return ex_c, facteur, [f"signe_divergent({rn / facteur} vs {ref})"], "signe_divergent"
+    if reference_rn.get((ticker, exercice)) not in (None, 0):
+        return exercice, 1, [f"rn_divergent_sika({rn} vs {reference_rn[(ticker, exercice)]})"], "divergent"
+    return exercice, 1, [], "sans_reference"
 
 
 def principal():
@@ -107,36 +150,43 @@ def principal():
         if exercice is None or cp is None:
             quarantaine.append({"fichier": nom, "motif": "exercice ou capitaux propres absents"})
             continue
-        if not plausible(cp, det):
+
+        # Rapprochement Sika (peut reaffecter l'exercice et corriger l'unite)
+        exercice_final, facteur, preuves_sika, verdict = \
+            rapprocher_sika(ticker, exercice, rn, reference_rn)
+        cp_c = cp / facteur
+        det_c = det / facteur if det is not None else None
+
+        if verdict == "signe_divergent":
             quarantaine.append({"fichier": nom, "ticker": ticker, "exercice": exercice,
-                                "motif": f"implausible (cp={cp}, dettes={det})"})
+                                "motif": "; ".join(preuves_sika)})
+            continue
+        if not plausible(cp_c, det_c):
+            quarantaine.append({"fichier": nom, "ticker": ticker, "exercice": exercice,
+                                "motif": f"implausible (cp={cp_c}, dettes={det_c})"})
             continue
 
-        score, preuves = 1, ["plausible"]
+        score, preuves = 1, ["plausible"] + preuves_sika
         if actif and passif and abs(actif - passif) / max(actif, passif) < 0.01:
             score += 2
             preuves.append("bilan_equilibre")
-        rn_ref = reference_rn.get((ticker, exercice))
-        if rn is not None and rn_ref not in (None, 0):
-            if abs(rn - rn_ref) / abs(rn_ref) < 0.03:
-                score += 4
-                preuves.append("rn_concorde_sika")
-            else:
-                score -= 2
-                preuves.append(f"rn_divergent_sika({rn} vs {rn_ref})")
+        if verdict == "concorde":
+            score += 4
+        elif verdict == "divergent":
+            score -= 2
         if origine_ex == "nom_de_fichier":
             preuves.append("exercice_deduit_du_nom_de_fichier")
 
         statut = "VALIDE" if score >= 3 else ("PROBABLE" if score >= 1 else "QUARANTAINE")
         if statut == "QUARANTAINE":
-            quarantaine.append({"fichier": nom, "ticker": ticker, "exercice": exercice,
+            quarantaine.append({"fichier": nom, "ticker": ticker, "exercice": exercice_final,
                                 "motif": "; ".join(preuves)})
             continue
 
-        cle = (ticker, exercice)
+        cle = (ticker, exercice_final)
         meilleur = candidats.get(cle)
         if meilleur is None or score > meilleur["score"]:
-            candidats[cle] = {"score": score, "statut": statut, "cp": cp, "det": det,
+            candidats[cle] = {"score": score, "statut": statut, "cp": cp_c, "det": det_c,
                               "fichier": nom, "preuves": preuves}
 
     CHEMIN_AUTO.parent.mkdir(parents=True, exist_ok=True)
@@ -151,9 +201,13 @@ def principal():
     CHEMIN_QUAR.write_text(json.dumps(quarantaine, ensure_ascii=False, indent=1),
                            encoding="utf-8")
     nb_v = sum(1 for c in candidats.values() if c["statut"] == "VALIDE")
-    print(f"OK : {len(candidats)} couples (ticker, exercice) retenus "
-          f"({nb_v} VALIDE, {len(candidats) - nb_v} PROBABLE), "
-          f"{len(quarantaine)} en quarantaine.")
+    reaf = sum(1 for c in candidats.values()
+               if any("reaffecte" in p for p in c["preuves"]))
+    unit = sum(1 for c in candidats.values()
+               if "unite_corrigee_milliers" in c["preuves"])
+    print(f"OK : {len(candidats)} couples retenus ({nb_v} VALIDE, "
+          f"{len(candidats) - nb_v} PROBABLE), {len(quarantaine)} en quarantaine, "
+          f"{reaf} exercices reaffectes, {unit} unites corrigees.")
 
 
 if __name__ == "__main__":
