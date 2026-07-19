@@ -1,0 +1,299 @@
+{
+ "ticker": "ORAC",
+ "nom": "ORANGE COTE D'IVOIRE",
+ "mensuel": [
+  {
+   "date": "2022-12-30",
+   "cours": 10210.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-01-31",
+   "cours": 10150.0,
+   "per": 9.81,
+   "rendement": null
+  },
+  {
+   "date": "2023-02-28",
+   "cours": 10100.0,
+   "per": 9.91,
+   "rendement": null
+  },
+  {
+   "date": "2023-03-31",
+   "cours": 9500.0,
+   "per": 9.32,
+   "rendement": null
+  },
+  {
+   "date": "2023-04-28",
+   "cours": 9275.0,
+   "per": 9.1,
+   "rendement": null
+  },
+  {
+   "date": "2023-05-31",
+   "cours": 9575.0,
+   "per": 9.4,
+   "rendement": null
+  },
+  {
+   "date": "2023-06-30",
+   "cours": 9510.0,
+   "per": 9.33,
+   "rendement": 7.92
+  },
+  {
+   "date": "2023-07-31",
+   "cours": 9990.0,
+   "per": 9.81,
+   "rendement": 7.54
+  },
+  {
+   "date": "2023-08-31",
+   "cours": 10750.0,
+   "per": 10.55,
+   "rendement": 7.0
+  },
+  {
+   "date": "2023-09-29",
+   "cours": 10600.0,
+   "per": 10.4,
+   "rendement": 7.1
+  },
+  {
+   "date": "2023-10-31",
+   "cours": 10350.0,
+   "per": 10.16,
+   "rendement": 7.27
+  },
+  {
+   "date": "2023-11-30",
+   "cours": 11450.0,
+   "per": 11.24,
+   "rendement": 6.57
+  },
+  {
+   "date": "2023-12-29",
+   "cours": 10900.0,
+   "per": 10.7,
+   "rendement": 6.91
+  },
+  {
+   "date": "2024-01-31",
+   "cours": 10655.0,
+   "per": 10.46,
+   "rendement": 7.06
+  },
+  {
+   "date": "2024-02-29",
+   "cours": 10950.0,
+   "per": 10.65,
+   "rendement": 6.87
+  },
+  {
+   "date": "2024-03-29",
+   "cours": 10845.0,
+   "per": 10.55,
+   "rendement": 6.94
+  },
+  {
+   "date": "2024-04-30",
+   "cours": 10955.0,
+   "per": 10.66,
+   "rendement": 6.87
+  },
+  {
+   "date": "2024-05-31",
+   "cours": 11495.0,
+   "per": 11.18,
+   "rendement": 6.79
+  },
+  {
+   "date": "2024-06-28",
+   "cours": 11800.0,
+   "per": 11.48,
+   "rendement": 6.61
+  },
+  {
+   "date": "2024-07-31",
+   "cours": 12655.0,
+   "per": 12.31,
+   "rendement": 6.16
+  },
+  {
+   "date": "2024-08-30",
+   "cours": 14600.0,
+   "per": 14.2,
+   "rendement": 5.34
+  },
+  {
+   "date": "2024-09-30",
+   "cours": 15750.0,
+   "per": 15.32,
+   "rendement": 4.95
+  },
+  {
+   "date": "2024-10-31",
+   "cours": 15800.0,
+   "per": 15.37,
+   "rendement": 4.94
+  },
+  {
+   "date": "2024-11-29",
+   "cours": 17350.0,
+   "per": 16.88,
+   "rendement": 4.5
+  },
+  {
+   "date": "2024-12-31",
+   "cours": 17500.0,
+   "per": 17.02,
+   "rendement": 4.46
+  },
+  {
+   "date": "2025-01-31",
+   "cours": 17700.0,
+   "per": 17.22,
+   "rendement": 4.41
+  },
+  {
+   "date": "2025-02-28",
+   "cours": 17600.0,
+   "per": 16.76,
+   "rendement": 4.43
+  },
+  {
+   "date": "2025-03-28",
+   "cours": 14500.0,
+   "per": 13.81,
+   "rendement": 5.38
+  },
+  {
+   "date": "2025-04-30",
+   "cours": 14695.0,
+   "per": 13.99,
+   "rendement": 5.31
+  },
+  {
+   "date": "2025-05-30",
+   "cours": 15790.0,
+   "per": 15.04,
+   "rendement": 4.94
+  },
+  {
+   "date": "2025-06-30",
+   "cours": 15350.0,
+   "per": 14.62,
+   "rendement": 4.3
+  },
+  {
+   "date": "2025-07-31",
+   "cours": 14050.0,
+   "per": 13.38,
+   "rendement": 4.7
+  },
+  {
+   "date": "2025-08-29",
+   "cours": 15000.0,
+   "per": 14.28,
+   "rendement": 4.4
+  },
+  {
+   "date": "2025-09-30",
+   "cours": 14650.0,
+   "per": 13.95,
+   "rendement": 4.51
+  },
+  {
+   "date": "2025-10-31",
+   "cours": 14480.0,
+   "per": 13.79,
+   "rendement": 4.56
+  },
+  {
+   "date": "2025-11-28",
+   "cours": 14650.0,
+   "per": 13.95,
+   "rendement": 4.51
+  },
+  {
+   "date": "2025-12-31",
+   "cours": 14250.0,
+   "per": 13.57,
+   "rendement": 4.63
+  },
+  {
+   "date": "2026-01-30",
+   "cours": 14490.0,
+   "per": 13.8,
+   "rendement": 4.55
+  },
+  {
+   "date": "2026-02-27",
+   "cours": 15555.0,
+   "per": 13.97,
+   "rendement": 4.24
+  },
+  {
+   "date": "2026-03-31",
+   "cours": 15200.0,
+   "per": 13.65,
+   "rendement": 4.34
+  },
+  {
+   "date": "2026-04-30",
+   "cours": 15200.0,
+   "per": 13.65,
+   "rendement": 4.34
+  },
+  {
+   "date": "2026-05-29",
+   "cours": 16000.0,
+   "per": 14.37,
+   "rendement": 4.13
+  },
+  {
+   "date": "2026-06-30",
+   "cours": 16750.0,
+   "per": 15.04,
+   "rendement": 4.2
+  },
+  {
+   "date": "2026-07-07",
+   "cours": 16000.0,
+   "per": 14.37,
+   "rendement": 4.4
+  }
+ ],
+ "quotidien": [
+  {
+   "date": "2026-07-19",
+   "cours": 16160.0,
+   "volume": 1103.0
+  }
+ ],
+ "dividendes": [
+  {
+   "exercice": "2023",
+   "montant": 752.76,
+   "date_paiement": "15-juin-23"
+  },
+  {
+   "exercice": "2024",
+   "montant": 780.0,
+   "date_paiement": "3-juin-24"
+  },
+  {
+   "exercice": "2025",
+   "montant": 660.0,
+   "date_paiement": "4-juin-25"
+  },
+  {
+   "exercice": "2026",
+   "montant": 704.0,
+   "date_paiement": "8-juin-26"
+  }
+ ]
+}

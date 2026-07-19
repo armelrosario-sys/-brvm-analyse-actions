@@ -1,0 +1,631 @@
+{
+ "ticker": "SAFC",
+ "nom": "SAFCA COTE D'IVOIRE",
+ "mensuel": [
+  {
+   "date": "2018-01-31",
+   "cours": 10000.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-02-28",
+   "cours": 9700.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-03-30",
+   "cours": 7400.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-04-30",
+   "cours": 7250.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-05-31",
+   "cours": 6020.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-06-29",
+   "cours": 6000.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-07-31",
+   "cours": 5740.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-08-31",
+   "cours": 5500.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-09-28",
+   "cours": 5500.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-10-31",
+   "cours": 5000.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-11-30",
+   "cours": 5700.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2018-12-31",
+   "cours": 5300.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-01-31",
+   "cours": 200.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-02-28",
+   "cours": 215.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-03-29",
+   "cours": 205.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-04-30",
+   "cours": 235.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-05-31",
+   "cours": 275.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-06-28",
+   "cours": 300.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2019-07-31",
+   "cours": 540.0,
+   "per": 65.44,
+   "rendement": null
+  },
+  {
+   "date": "2019-08-30",
+   "cours": 500.0,
+   "per": 60.6,
+   "rendement": null
+  },
+  {
+   "date": "2019-09-30",
+   "cours": 440.0,
+   "per": 53.32,
+   "rendement": null
+  },
+  {
+   "date": "2019-10-31",
+   "cours": 385.0,
+   "per": 46.66,
+   "rendement": null
+  },
+  {
+   "date": "2019-11-29",
+   "cours": 360.0,
+   "per": 43.63,
+   "rendement": null
+  },
+  {
+   "date": "2019-12-31",
+   "cours": 335.0,
+   "per": 40.6,
+   "rendement": null
+  },
+  {
+   "date": "2020-01-31",
+   "cours": 345.0,
+   "per": 41.81,
+   "rendement": null
+  },
+  {
+   "date": "2020-02-28",
+   "cours": 340.0,
+   "per": 41.2,
+   "rendement": null
+  },
+  {
+   "date": "2020-03-31",
+   "cours": 340.0,
+   "per": 41.2,
+   "rendement": null
+  },
+  {
+   "date": "2020-04-30",
+   "cours": 340.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-05-29",
+   "cours": 330.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-06-30",
+   "cours": 330.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-07-30",
+   "cours": 300.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-08-31",
+   "cours": 300.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-09-30",
+   "cours": 295.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-10-30",
+   "cours": 275.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-11-30",
+   "cours": 275.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-12-31",
+   "cours": 280.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-01-29",
+   "cours": 320.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-02-26",
+   "cours": 255.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-03-31",
+   "cours": 185.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-04-30",
+   "cours": 205.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-06-25",
+   "cours": 340.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-07-30",
+   "cours": 760.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-09-28",
+   "cours": 630.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-10-22",
+   "cours": 615.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-11-30",
+   "cours": 515.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2021-12-31",
+   "cours": 850.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-01-31",
+   "cours": 800.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-02-28",
+   "cours": 1060.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-03-31",
+   "cours": 1080.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-04-29",
+   "cours": 1065.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-05-31",
+   "cours": 995.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-06-30",
+   "cours": 980.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-07-29",
+   "cours": 900.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-08-31",
+   "cours": 860.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-09-30",
+   "cours": 830.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-10-31",
+   "cours": 800.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-11-30",
+   "cours": 890.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2022-12-30",
+   "cours": 880.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-01-31",
+   "cours": 780.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-02-28",
+   "cours": 900.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-03-31",
+   "cours": 955.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-04-28",
+   "cours": 935.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-05-31",
+   "cours": 830.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-06-30",
+   "cours": 790.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-07-31",
+   "cours": 700.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-08-31",
+   "cours": 605.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-09-29",
+   "cours": 645.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-10-31",
+   "cours": 915.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-11-30",
+   "cours": 1190.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2023-12-29",
+   "cours": 1295.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-01-31",
+   "cours": 1145.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-02-29",
+   "cours": 1120.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-03-29",
+   "cours": 1150.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-04-30",
+   "cours": 1190.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-05-31",
+   "cours": 980.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-06-28",
+   "cours": 975.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-07-31",
+   "cours": 860.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-08-30",
+   "cours": 965.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-09-30",
+   "cours": 870.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-10-31",
+   "cours": 785.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-11-29",
+   "cours": 685.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2024-12-31",
+   "cours": 720.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-01-31",
+   "cours": 825.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-02-28",
+   "cours": 795.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-03-28",
+   "cours": 790.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-04-30",
+   "cours": 660.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-05-30",
+   "cours": 695.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-06-30",
+   "cours": 680.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-07-31",
+   "cours": 800.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-08-29",
+   "cours": 1300.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-09-30",
+   "cours": 1425.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-10-31",
+   "cours": 3330.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-11-28",
+   "cours": 3150.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2025-12-31",
+   "cours": 3305.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2026-01-30",
+   "cours": 3940.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2026-02-27",
+   "cours": 6000.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2026-03-31",
+   "cours": 7030.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2026-04-30",
+   "cours": 3610.0,
+   "per": 41.81,
+   "rendement": null
+  },
+  {
+   "date": "2026-05-29",
+   "cours": 3595.0,
+   "per": 41.64,
+   "rendement": null
+  },
+  {
+   "date": "2026-06-30",
+   "cours": 4700.0,
+   "per": 54.44,
+   "rendement": null
+  },
+  {
+   "date": "2026-07-07",
+   "cours": 4500.0,
+   "per": 52.12,
+   "rendement": null
+  }
+ ],
+ "quotidien": [
+  {
+   "date": "2026-07-19",
+   "cours": 4295.0,
+   "volume": 1293.0
+  }
+ ],
+ "dividendes": [
+  {
+   "exercice": "2018",
+   "montant": 576.0,
+   "date_paiement": "29-juil.-11"
+  },
+  {
+   "exercice": "2018",
+   "montant": 23.04,
+   "date_paiement": "29-juil.-11"
+  }
+ ]
+}

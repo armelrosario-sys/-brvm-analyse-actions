@@ -1,0 +1,805 @@
+{
+ "maj": "2026-07-19T20:32:35+00:00",
+ "note": "MM et RSI calcules uniquement sur cours quotidiens reellement collectes ; null tant que l'historique quotidien est insuffisant.",
+ "valeurs": {
+  "ABJC": {
+   "cours": 2990.0,
+   "var_1m": -8.84,
+   "var_ytd": 3.1,
+   "var_1a": 77.98,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BICB": {
+   "cours": 6300.0,
+   "var_1m": 7.42,
+   "var_ytd": 26.63,
+   "var_1a": 18.87,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BICC": {
+   "cours": 28100.0,
+   "var_1m": -3.1,
+   "var_ytd": 44.51,
+   "var_1a": 64.81,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BNBC": {
+   "cours": 1875.0,
+   "var_1m": -5.54,
+   "var_ytd": 32.98,
+   "var_1a": 44.23,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BOAB": {
+   "cours": 8700.0,
+   "var_1m": -3.6,
+   "var_ytd": 48.72,
+   "var_1a": 101.39,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BOABF": {
+   "cours": 7200.0,
+   "var_1m": 23.08,
+   "var_ytd": 92.0,
+   "var_1a": 100.56,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BOAC": {
+   "cours": 9745.0,
+   "var_1m": 3.12,
+   "var_ytd": 35.72,
+   "var_1a": 62.55,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BOAM": {
+   "cours": 5755.0,
+   "var_1m": 15.56,
+   "var_ytd": 43.88,
+   "var_1a": 70.52,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BOAN": {
+   "cours": 5350.0,
+   "var_1m": 27.53,
+   "var_ytd": 104.98,
+   "var_1a": 113.15,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "BOAS": {
+   "cours": 7700.0,
+   "var_1m": 3.49,
+   "var_ytd": 46.95,
+   "var_1a": 75.0,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "CABC": {
+   "cours": 3650.0,
+   "var_1m": -18.89,
+   "var_ytd": 54.66,
+   "var_1a": 204.17,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "CBIBF": {
+   "cours": 28490.0,
+   "var_1m": 21.23,
+   "var_ytd": 164.29,
+   "var_1a": 193.71,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "CFAC": {
+   "cours": 1600.0,
+   "var_1m": -9.09,
+   "var_ytd": 11.89,
+   "var_1a": 142.42,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "CIEC": {
+   "cours": 5195.0,
+   "var_1m": -2.26,
+   "var_ytd": 120.13,
+   "var_1a": 125.87,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "ECOC": {
+   "cours": 16000.0,
+   "var_1m": -3.61,
+   "var_ytd": 0.0,
+   "var_1a": 37.93,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "ETIT": {
+   "cours": 68.0,
+   "var_1m": 70.0,
+   "var_ytd": 195.65,
+   "var_1a": 325.0,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "FTSC": {
+   "cours": 1990.0,
+   "var_1m": -0.5,
+   "var_ytd": -10.36,
+   "var_1a": -60.12,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "baissiere"
+  },
+  "LNBB": {
+   "cours": 4300.0,
+   "var_1m": -3.15,
+   "var_ytd": 0.12,
+   "var_1a": -6.52,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "NEIC": {
+   "cours": 2295.0,
+   "var_1m": -1.5,
+   "var_ytd": 91.25,
+   "var_1a": 285.71,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "NSBC": {
+   "cours": 23650.0,
+   "var_1m": 20.36,
+   "var_ytd": 106.64,
+   "var_1a": 146.35,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "NTLC": {
+   "cours": 15800.0,
+   "var_1m": 1.97,
+   "var_ytd": 48.36,
+   "var_1a": 31.61,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "ONTBF": {
+   "cours": 2675.0,
+   "var_1m": -4.46,
+   "var_ytd": 7.65,
+   "var_1a": 11.46,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "ORAC": {
+   "cours": 16160.0,
+   "var_1m": -3.52,
+   "var_ytd": 13.4,
+   "var_1a": 15.02,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "ORGT": {
+   "cours": 2680.0,
+   "var_1m": -0.37,
+   "var_ytd": 11.67,
+   "var_1a": 62.42,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "baissiere"
+  },
+  "PALC": {
+   "cours": 8690.0,
+   "var_1m": -0.11,
+   "var_ytd": 7.28,
+   "var_1a": 2.84,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "PRSC": {
+   "cours": 4500.0,
+   "var_1m": -4.26,
+   "var_ytd": 16.13,
+   "var_1a": 67.91,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SAFC": {
+   "cours": 4295.0,
+   "var_1m": -8.62,
+   "var_ytd": 29.95,
+   "var_1a": 436.88,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SCRC": {
+   "cours": 3705.0,
+   "var_1m": 12.61,
+   "var_ytd": 249.53,
+   "var_1a": 270.5,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SDCC": {
+   "cours": 11300.0,
+   "var_1m": -5.83,
+   "var_ytd": 94.83,
+   "var_1a": 91.53,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SDSC": {
+   "cours": 2720.0,
+   "var_1m": 11.25,
+   "var_ytd": 79.54,
+   "var_1a": 88.89,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SEMC": {
+   "cours": 1500.0,
+   "var_1m": -2.28,
+   "var_ytd": 114.29,
+   "var_1a": 114.29,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SGBC": {
+   "cours": 37995.0,
+   "var_1m": -2.49,
+   "var_ytd": 27.09,
+   "var_1a": 62.68,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SHEC": {
+   "cours": 2190.0,
+   "var_1m": 1.15,
+   "var_ytd": 51.56,
+   "var_1a": 111.59,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SIBC": {
+   "cours": 8760.0,
+   "var_1m": -1.46,
+   "var_ytd": 52.35,
+   "var_1a": 82.5,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SICC": {
+   "cours": 5300.0,
+   "var_1m": 15.22,
+   "var_ytd": 60.61,
+   "var_1a": 65.11,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SIVC": {
+   "cours": 2400.0,
+   "var_1m": -4.0,
+   "var_ytd": 51.9,
+   "var_1a": 370.59,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SLBC": {
+   "cours": 39155.0,
+   "var_1m": 0.53,
+   "var_ytd": 35.48,
+   "var_1a": 110.51,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SMBC": {
+   "cours": 15195.0,
+   "var_1m": -14.32,
+   "var_ytd": 59.95,
+   "var_1a": 68.83,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SNTS": {
+   "cours": 32000.0,
+   "var_1m": 12.28,
+   "var_ytd": 22.51,
+   "var_1a": 28.0,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SOGC": {
+   "cours": 8010.0,
+   "var_1m": -4.59,
+   "var_ytd": 1.39,
+   "var_1a": 5.39,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "SPHC": {
+   "cours": 7500.0,
+   "var_1m": -2.28,
+   "var_ytd": -5.06,
+   "var_1a": 15.38,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "baissiere"
+  },
+  "STAC": {
+   "cours": 3185.0,
+   "var_1m": -10.28,
+   "var_ytd": 140.38,
+   "var_1a": 453.91,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "STBC": {
+   "cours": 23900.0,
+   "var_1m": -4.4,
+   "var_ytd": 20.83,
+   "var_1a": 21.38,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "TTLC": {
+   "cours": 2900.0,
+   "var_1m": 1.05,
+   "var_ytd": 24.2,
+   "var_1a": 14.85,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "TTLS": {
+   "cours": 3995.0,
+   "var_1m": 2.57,
+   "var_ytd": 59.8,
+   "var_1a": 59.8,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "UNLC": {
+   "cours": 54495.0,
+   "var_1m": -1.99,
+   "var_ytd": 59.23,
+   "var_1a": 11.28,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  },
+  "UNXC": {
+   "cours": 1845.0,
+   "var_1m": 1.1,
+   "var_ytd": 31.79,
+   "var_1a": 226.55,
+   "mm20": null,
+   "mm50": null,
+   "mm200": null,
+   "rsi14": null,
+   "seances_disponibles": 1,
+   "seances_manquantes": {
+    "mm20": 19,
+    "mm50": 49,
+    "mm200": 199
+   },
+   "tendance_provisoire_mensuelle": "haussiere"
+  }
+ }
+}

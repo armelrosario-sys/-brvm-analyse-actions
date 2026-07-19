@@ -1,0 +1,140 @@
+{
+ "ticker": "LNBB",
+ "nom": "LOTERIE NATIONALE DU BENIN",
+ "mensuel": [
+  {
+   "date": "2024-12-31",
+   "cours": 4730.0,
+   "per": 24.17,
+   "rendement": null
+  },
+  {
+   "date": "2025-01-31",
+   "cours": 5000.0,
+   "per": 25.55,
+   "rendement": null
+  },
+  {
+   "date": "2025-02-28",
+   "cours": 5000.0,
+   "per": 25.55,
+   "rendement": null
+  },
+  {
+   "date": "2025-03-28",
+   "cours": 4950.0,
+   "per": 25.29,
+   "rendement": null
+  },
+  {
+   "date": "2025-04-30",
+   "cours": 4800.0,
+   "per": 24.53,
+   "rendement": null
+  },
+  {
+   "date": "2025-05-30",
+   "cours": 4800.0,
+   "per": 24.53,
+   "rendement": null
+  },
+  {
+   "date": "2025-06-30",
+   "cours": 4780.0,
+   "per": 13.32,
+   "rendement": null
+  },
+  {
+   "date": "2025-07-31",
+   "cours": 4600.0,
+   "per": 12.82,
+   "rendement": 5.99
+  },
+  {
+   "date": "2025-08-29",
+   "cours": 4435.0,
+   "per": 12.36,
+   "rendement": 6.21
+  },
+  {
+   "date": "2025-09-30",
+   "cours": 3725.0,
+   "per": 10.38,
+   "rendement": 7.4
+  },
+  {
+   "date": "2025-10-31",
+   "cours": 3850.0,
+   "per": 10.73,
+   "rendement": 7.16
+  },
+  {
+   "date": "2025-11-28",
+   "cours": 3800.0,
+   "per": 10.59,
+   "rendement": 7.25
+  },
+  {
+   "date": "2025-12-31",
+   "cours": 4295.0,
+   "per": 11.97,
+   "rendement": 6.41
+  },
+  {
+   "date": "2026-01-30",
+   "cours": 3940.0,
+   "per": 10.98,
+   "rendement": 6.99
+  },
+  {
+   "date": "2026-02-27",
+   "cours": 3895.0,
+   "per": 10.86,
+   "rendement": 7.07
+  },
+  {
+   "date": "2026-03-31",
+   "cours": 3900.0,
+   "per": 10.87,
+   "rendement": 7.06
+  },
+  {
+   "date": "2026-04-30",
+   "cours": 3850.0,
+   "per": 16.66,
+   "rendement": 7.16
+  },
+  {
+   "date": "2026-05-29",
+   "cours": 3845.0,
+   "per": 16.64,
+   "rendement": 7.17
+  },
+  {
+   "date": "2026-06-30",
+   "cours": 4440.0,
+   "per": 19.21,
+   "rendement": 6.2
+  },
+  {
+   "date": "2026-07-07",
+   "cours": 4340.0,
+   "per": 18.78,
+   "rendement": 6.35
+  }
+ ],
+ "quotidien": [
+  {
+   "date": "2026-07-19",
+   "cours": 4300.0,
+   "volume": 487.0
+  }
+ ],
+ "dividendes": [
+  {
+   "exercice": "2025",
+   "montant": 275.5,
+   "date_paiement": "31-juil.-25"
+  }
+ ]
+}

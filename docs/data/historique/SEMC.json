@@ -1,0 +1,646 @@
+{
+ "ticker": "SEMC",
+ "nom": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+ "mensuel": [
+  {
+   "date": "2018-01-31",
+   "cours": 14000.0,
+   "per": 18.6,
+   "rendement": 4.83
+  },
+  {
+   "date": "2018-02-28",
+   "cours": 13500.0,
+   "per": 17.93,
+   "rendement": 5.01
+  },
+  {
+   "date": "2018-03-30",
+   "cours": 13930.0,
+   "per": 18.5,
+   "rendement": 4.86
+  },
+  {
+   "date": "2018-04-30",
+   "cours": 14500.0,
+   "per": 19.26,
+   "rendement": 4.67
+  },
+  {
+   "date": "2018-05-31",
+   "cours": 13750.0,
+   "per": 18.26,
+   "rendement": 4.92
+  },
+  {
+   "date": "2018-06-29",
+   "cours": 12050.0,
+   "per": 50.73,
+   "rendement": 5.62
+  },
+  {
+   "date": "2018-07-31",
+   "cours": 13590.0,
+   "per": 57.22,
+   "rendement": 4.98
+  },
+  {
+   "date": "2018-08-31",
+   "cours": 13600.0,
+   "per": 57.26,
+   "rendement": 4.98
+  },
+  {
+   "date": "2018-09-28",
+   "cours": 13400.0,
+   "per": 56.42,
+   "rendement": 5.05
+  },
+  {
+   "date": "2018-10-31",
+   "cours": 13000.0,
+   "per": 54.73,
+   "rendement": 5.21
+  },
+  {
+   "date": "2018-11-30",
+   "cours": 12740.0,
+   "per": 53.64,
+   "rendement": 5.31
+  },
+  {
+   "date": "2018-12-31",
+   "cours": 300.0,
+   "per": 50.52,
+   "rendement": 5.64
+  },
+  {
+   "date": "2019-01-31",
+   "cours": 290.0,
+   "per": 48.84,
+   "rendement": 5.83
+  },
+  {
+   "date": "2019-02-28",
+   "cours": 290.0,
+   "per": 48.84,
+   "rendement": 5.83
+  },
+  {
+   "date": "2019-03-29",
+   "cours": 300.0,
+   "per": 50.52,
+   "rendement": 5.64
+  },
+  {
+   "date": "2019-04-30",
+   "cours": 300.0,
+   "per": 50.52,
+   "rendement": 5.64
+  },
+  {
+   "date": "2019-05-31",
+   "cours": 300.0,
+   "per": 50.52,
+   "rendement": 5.64
+  },
+  {
+   "date": "2019-06-28",
+   "cours": 215.0,
+   "per": null,
+   "rendement": 7.87
+  },
+  {
+   "date": "2019-07-31",
+   "cours": 210.0,
+   "per": null,
+   "rendement": 8.06
+  },
+  {
+   "date": "2019-08-30",
+   "cours": 175.0,
+   "per": null,
+   "rendement": 9.67
+  },
+  {
+   "date": "2019-09-30",
+   "cours": 170.0,
+   "per": null,
+   "rendement": 9.95
+  },
+  {
+   "date": "2019-10-31",
+   "cours": 140.0,
+   "per": null,
+   "rendement": 12.09
+  },
+  {
+   "date": "2019-11-29",
+   "cours": 130.0,
+   "per": null,
+   "rendement": 13.02
+  },
+  {
+   "date": "2019-12-31",
+   "cours": 130.0,
+   "per": null,
+   "rendement": 13.02
+  },
+  {
+   "date": "2020-01-31",
+   "cours": 125.0,
+   "per": null,
+   "rendement": 13.54
+  },
+  {
+   "date": "2020-02-28",
+   "cours": 120.0,
+   "per": null,
+   "rendement": 14.1
+  },
+  {
+   "date": "2020-03-31",
+   "cours": 115.0,
+   "per": null,
+   "rendement": 14.71
+  },
+  {
+   "date": "2020-04-30",
+   "cours": 125.0,
+   "per": null,
+   "rendement": 13.54
+  },
+  {
+   "date": "2020-05-29",
+   "cours": 110.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-06-30",
+   "cours": 125.0,
+   "per": null,
+   "rendement": null
+  },
+  {
+   "date": "2020-07-30",
+   "cours": 160.0,
+   "per": 5.84,
+   "rendement": null
+  },
+  {
+   "date": "2020-08-31",
+   "cours": 135.0,
+   "per": 4.93,
+   "rendement": null
+  },
+  {
+   "date": "2020-09-30",
+   "cours": 135.0,
+   "per": 4.93,
+   "rendement": null
+  },
+  {
+   "date": "2020-10-30",
+   "cours": 135.0,
+   "per": 4.93,
+   "rendement": null
+  },
+  {
+   "date": "2020-11-30",
+   "cours": 140.0,
+   "per": 5.11,
+   "rendement": null
+  },
+  {
+   "date": "2020-12-31",
+   "cours": 200.0,
+   "per": 7.3,
+   "rendement": null
+  },
+  {
+   "date": "2021-01-29",
+   "cours": 245.0,
+   "per": 8.94,
+   "rendement": null
+  },
+  {
+   "date": "2021-02-26",
+   "cours": 235.0,
+   "per": 8.57,
+   "rendement": null
+  },
+  {
+   "date": "2021-03-31",
+   "cours": 200.0,
+   "per": 7.3,
+   "rendement": null
+  },
+  {
+   "date": "2021-04-30",
+   "cours": 275.0,
+   "per": 10.03,
+   "rendement": null
+  },
+  {
+   "date": "2021-06-25",
+   "cours": 445.0,
+   "per": 16.24,
+   "rendement": null
+  },
+  {
+   "date": "2021-07-30",
+   "cours": 485.0,
+   "per": 17.7,
+   "rendement": null
+  },
+  {
+   "date": "2021-09-28",
+   "cours": 750.0,
+   "per": 25.65,
+   "rendement": null
+  },
+  {
+   "date": "2021-10-22",
+   "cours": 680.0,
+   "per": 23.26,
+   "rendement": null
+  },
+  {
+   "date": "2021-11-30",
+   "cours": 680.0,
+   "per": 23.26,
+   "rendement": null
+  },
+  {
+   "date": "2021-12-31",
+   "cours": 765.0,
+   "per": 26.16,
+   "rendement": 1.88
+  },
+  {
+   "date": "2022-01-31",
+   "cours": 700.0,
+   "per": 23.94,
+   "rendement": 2.06
+  },
+  {
+   "date": "2022-02-28",
+   "cours": 690.0,
+   "per": 23.6,
+   "rendement": 2.09
+  },
+  {
+   "date": "2022-03-31",
+   "cours": 680.0,
+   "per": 23.26,
+   "rendement": 2.12
+  },
+  {
+   "date": "2022-04-29",
+   "cours": 715.0,
+   "per": 24.45,
+   "rendement": 2.01
+  },
+  {
+   "date": "2022-05-31",
+   "cours": 755.0,
+   "per": 7.98,
+   "rendement": 1.91
+  },
+  {
+   "date": "2022-06-30",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2022-07-29",
+   "cours": 750.0,
+   "per": 7.93,
+   "rendement": 1.92
+  },
+  {
+   "date": "2022-08-31",
+   "cours": 740.0,
+   "per": 7.82,
+   "rendement": 1.95
+  },
+  {
+   "date": "2022-09-30",
+   "cours": 730.0,
+   "per": 7.71,
+   "rendement": 1.97
+  },
+  {
+   "date": "2022-10-31",
+   "cours": 705.0,
+   "per": 7.45,
+   "rendement": 2.04
+  },
+  {
+   "date": "2022-11-30",
+   "cours": 645.0,
+   "per": 6.82,
+   "rendement": 2.23
+  },
+  {
+   "date": "2022-12-30",
+   "cours": 680.0,
+   "per": 7.19,
+   "rendement": 2.12
+  },
+  {
+   "date": "2023-01-31",
+   "cours": 630.0,
+   "per": 6.66,
+   "rendement": 2.29
+  },
+  {
+   "date": "2023-02-28",
+   "cours": 685.0,
+   "per": 7.24,
+   "rendement": 2.1
+  },
+  {
+   "date": "2023-03-31",
+   "cours": 650.0,
+   "per": 6.87,
+   "rendement": 2.22
+  },
+  {
+   "date": "2023-04-28",
+   "cours": 650.0,
+   "per": 6.87,
+   "rendement": 2.22
+  },
+  {
+   "date": "2023-05-31",
+   "cours": 720.0,
+   "per": 7.61,
+   "rendement": 2.0
+  },
+  {
+   "date": "2023-06-30",
+   "cours": 710.0,
+   "per": 7.5,
+   "rendement": 2.03
+  },
+  {
+   "date": "2023-07-31",
+   "cours": 680.0,
+   "per": 7.19,
+   "rendement": 2.12
+  },
+  {
+   "date": "2023-08-31",
+   "cours": 615.0,
+   "per": 6.5,
+   "rendement": 2.34
+  },
+  {
+   "date": "2023-09-29",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2023-10-31",
+   "cours": 600.0,
+   "per": 6.34,
+   "rendement": 2.4
+  },
+  {
+   "date": "2023-11-30",
+   "cours": 770.0,
+   "per": 8.14,
+   "rendement": 1.87
+  },
+  {
+   "date": "2023-12-29",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2024-01-31",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2024-02-29",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2024-03-29",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2024-04-30",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.06
+  },
+  {
+   "date": "2024-05-31",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-06-28",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-07-31",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-08-30",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-09-30",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-10-31",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-11-29",
+   "cours": 700.0,
+   "per": 7.4,
+   "rendement": 2.0
+  },
+  {
+   "date": "2024-12-31",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-01-31",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-02-28",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-03-28",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-04-30",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-05-30",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-06-30",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-07-31",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-08-29",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-09-30",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-10-31",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-11-28",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2025-12-31",
+   "cours": 700.0,
+   "per": 17.42,
+   "rendement": 2.0
+  },
+  {
+   "date": "2026-01-30",
+   "cours": 1590.0,
+   "per": 39.57,
+   "rendement": 0.88
+  },
+  {
+   "date": "2026-02-27",
+   "cours": 2325.0,
+   "per": 57.87,
+   "rendement": 0.6
+  },
+  {
+   "date": "2026-03-31",
+   "cours": 2000.0,
+   "per": 49.78,
+   "rendement": 0.7
+  },
+  {
+   "date": "2026-04-30",
+   "cours": 1600.0,
+   "per": 39.82,
+   "rendement": 0.88
+  },
+  {
+   "date": "2026-05-29",
+   "cours": 1440.0,
+   "per": 35.84,
+   "rendement": 0.97
+  },
+  {
+   "date": "2026-06-30",
+   "cours": 1535.0,
+   "per": 38.21,
+   "rendement": 0.91
+  },
+  {
+   "date": "2026-07-07",
+   "cours": 1445.0,
+   "per": 35.97,
+   "rendement": 0.97
+  }
+ ],
+ "quotidien": [
+  {
+   "date": "2026-07-19",
+   "cours": 1500.0,
+   "volume": 2888.0
+  }
+ ],
+ "dividendes": [
+  {
+   "exercice": "2018",
+   "montant": 677.0,
+   "date_paiement": "29-sept.-17"
+  },
+  {
+   "exercice": "2018",
+   "montant": 676.8,
+   "date_paiement": "29-sept.-17"
+  },
+  {
+   "exercice": "2018",
+   "montant": 16.92,
+   "date_paiement": "29-sept.-17"
+  },
+  {
+   "exercice": "2021",
+   "montant": 14.4,
+   "date_paiement": "28-déc.-21"
+  },
+  {
+   "exercice": "2024",
+   "montant": 14.0,
+   "date_paiement": "28-déc.-21"
+  }
+ ]
+}
