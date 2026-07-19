@@ -81,7 +81,10 @@ def extraire(html, ticker, anomalies):
     donnees = {}
 
     texte = soupe.get_text(" ", strip=True)
-    for motif, cle in [
+    m = re.search(r"La société\s*:\s*(.+?)\s*(?:Téléphone|Fax|Adresse|Dirigeants)\s*:", texte)
+    if m:
+        donnees["description"] = m.group(1).strip()[:1200]
+      for motif, cle in [
         (r"Nombre de titres\s*:\s*([\d\s\u202f\xa0]+)", "nombre_titres"),
         (r"Flottant\s*:\s*([\d\s,\.]+)%", "flottant_pct"),
         (r"Valorisation de la société\s*:\s*([\d\s\u202f\xa0]+)\s*MFCFA", "capitalisation_mfcfa"),
@@ -168,6 +171,7 @@ def principal():
         suffixes[t] = suf
         d = extraire(html, t, anomalies)
         fiche = {"suffixe_sika": suf,
+                 "description": d.get("description"),
                  "nombre_titres": d.get("nombre_titres"),
                  "flottant_pct": d.get("flottant_pct"),
                  "capitalisation_mfcfa": d.get("capitalisation_mfcfa"),
