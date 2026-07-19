@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-19T20:32:35+00:00",
+ "maj": "2026-07-19T23:51:30+00:00",
  "note": "MM et RSI calcules uniquement sur cours quotidiens reellement collectes ; null tant que l'historique quotidien est insuffisant.",
  "valeurs": {
   "ABJC": {
@@ -11,6 +11,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 3705.0,
+   "bas_52s": 1680.0,
+   "volume_moyen_20": 3023,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -28,6 +31,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 6300.0,
+   "bas_52s": 4900.0,
+   "volume_moyen_20": 7797,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -45,6 +51,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 29000.0,
+   "bas_52s": 15515.0,
+   "volume_moyen_20": 1162,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -62,6 +71,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 1985.0,
+   "bas_52s": 1300.0,
+   "volume_moyen_20": 4512,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -79,6 +91,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 9050.0,
+   "bas_52s": 4320.0,
+   "volume_moyen_20": 2874,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -96,6 +111,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 7200.0,
+   "bas_52s": 3500.0,
+   "volume_moyen_20": 3467,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -113,6 +131,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 9745.0,
+   "bas_52s": 5995.0,
+   "volume_moyen_20": 1647,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -130,6 +151,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 5755.0,
+   "bas_52s": 3375.0,
+   "volume_moyen_20": 4932,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -147,6 +171,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 5350.0,
+   "bas_52s": 2495.0,
+   "volume_moyen_20": 6615,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -164,6 +191,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 7700.0,
+   "bas_52s": 4400.0,
+   "volume_moyen_20": 4057,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -181,6 +211,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 4500.0,
+   "bas_52s": 1200.0,
+   "volume_moyen_20": 2482,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -198,6 +231,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 28490.0,
+   "bas_52s": 9700.0,
+   "volume_moyen_20": 744,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -215,6 +251,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2310.0,
+   "bas_52s": 660.0,
+   "volume_moyen_20": 4335,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -232,6 +271,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 5485.0,
+   "bas_52s": 2235.0,
+   "volume_moyen_20": 2614,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -249,6 +291,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 17005.0,
+   "bas_52s": 11600.0,
+   "volume_moyen_20": 1404,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -266,6 +311,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 68.0,
+   "bas_52s": 16.0,
+   "volume_moyen_20": 1662045,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -283,6 +331,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 4990.0,
+   "bas_52s": 1985.0,
+   "volume_moyen_20": 7223,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -300,6 +351,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 4600.0,
+   "bas_52s": 3725.0,
+   "volume_moyen_20": 487,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -317,6 +371,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2330.0,
+   "bas_52s": 595.0,
+   "volume_moyen_20": 2011,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -334,6 +391,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 23650.0,
+   "bas_52s": 9600.0,
+   "volume_moyen_20": 1303,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -351,6 +411,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 16380.0,
+   "bas_52s": 10650.0,
+   "volume_moyen_20": 494,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -368,6 +431,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2950.0,
+   "bas_52s": 2335.0,
+   "volume_moyen_20": 2113,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -385,6 +451,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 16750.0,
+   "bas_52s": 14050.0,
+   "volume_moyen_20": 1103,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -402,6 +471,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 3655.0,
+   "bas_52s": 1650.0,
+   "volume_moyen_20": 3994,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -419,6 +491,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 9150.0,
+   "bas_52s": 7310.0,
+   "volume_moyen_20": 587,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -436,6 +511,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 4875.0,
+   "bas_52s": 2345.0,
+   "volume_moyen_20": 664,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -453,6 +531,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 7030.0,
+   "bas_52s": 800.0,
+   "volume_moyen_20": 1293,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -470,6 +551,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 3705.0,
+   "bas_52s": 990.0,
+   "volume_moyen_20": 5978,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -487,6 +571,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 12040.0,
+   "bas_52s": 5800.0,
+   "volume_moyen_20": 744,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -504,6 +591,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2720.0,
+   "bas_52s": 1400.0,
+   "volume_moyen_20": 25288,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -521,6 +611,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2325.0,
+   "bas_52s": 700.0,
+   "volume_moyen_20": 2888,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -538,6 +631,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 39000.0,
+   "bas_52s": 23355.0,
+   "volume_moyen_20": 2139,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -555,6 +651,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2265.0,
+   "bas_52s": 1035.0,
+   "volume_moyen_20": 5734,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -572,6 +671,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 9000.0,
+   "bas_52s": 4800.0,
+   "volume_moyen_20": 23204,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -589,6 +691,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 5300.0,
+   "bas_52s": 3210.0,
+   "volume_moyen_20": 200,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -606,6 +711,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 3000.0,
+   "bas_52s": 510.0,
+   "volume_moyen_20": 16842,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -623,6 +731,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 44075.0,
+   "bas_52s": 18000.0,
+   "volume_moyen_20": 148,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -640,6 +751,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 17735.0,
+   "bas_52s": 9000.0,
+   "volume_moyen_20": 3584,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -657,6 +771,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 32000.0,
+   "bas_52s": 25000.0,
+   "volume_moyen_20": 1944,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -674,6 +791,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 8725.0,
+   "bas_52s": 7100.0,
+   "volume_moyen_20": 870,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -691,6 +811,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 8400.0,
+   "bas_52s": 6500.0,
+   "volume_moyen_20": 309,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -708,6 +831,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 3550.0,
+   "bas_52s": 575.0,
+   "volume_moyen_20": 5823,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -725,6 +851,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 25000.0,
+   "bas_52s": 18900.0,
+   "volume_moyen_20": 3211,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -742,6 +871,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2940.0,
+   "bas_52s": 2335.0,
+   "volume_moyen_20": 4252,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -759,6 +891,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 4500.0,
+   "bas_52s": 2490.0,
+   "volume_moyen_20": 3571,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -776,6 +911,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 74300.0,
+   "bas_52s": 18500.0,
+   "volume_moyen_20": 4,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,
@@ -793,6 +931,9 @@
    "mm50": null,
    "mm200": null,
    "rsi14": null,
+   "haut_52s": 2355.0,
+   "bas_52s": 565.0,
+   "volume_moyen_20": 40295,
    "seances_disponibles": 1,
    "seances_manquantes": {
     "mm20": 19,

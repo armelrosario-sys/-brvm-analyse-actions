@@ -616,6 +616,28 @@
    "volume": 3023.0
   }
  ],
+ "seance": {
+  "date": "2026-07-19",
+  "points": [
+   {
+    "h": "18:44",
+    "cours": 2990.0,
+    "volume": 3023.0
+   },
+   {
+    "h": "20:32",
+    "cours": 2990.0,
+    "volume": 3023.0
+   },
+   {
+    "h": "23:51",
+    "cours": 2990.0,
+    "volume": 3023.0
+   }
+  ],
+  "veille": 2950.0,
+  "ouverture": 3000.0
+ },
  "dividendes": [
   {
    "exercice": "2018",
