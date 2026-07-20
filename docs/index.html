@@ -28,7 +28,7 @@ font-weight:600;border-radius:8px;padding:6px 11px;cursor:pointer}
 box-shadow:0 1px 3px rgba(0,0,0,.08);color:var(--bleu)}
 .periodes button:disabled{color:#c3c7cf;cursor:not-allowed}
 #zoneGraph{height:230px;position:relative}
-#msgGraph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+#msgGraph{position:absolute;inset:0;align-items:center;justify-content:center;
 color:var(--gris);font-size:13px;display:none}
 .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 14px;border-top:1px solid var(--ligne);
 border-bottom:1px solid var(--ligne);padding:10px 0;margin:14px 0;font-size:13.5px}
@@ -92,9 +92,15 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 const fmt = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(n);
 const fmtEntier = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:0}).format(n);
 const fmtMds = m => m==null ? "—" : (m>=1e6 ? fmt(m/1e6)+" Bds" : fmt(m/1e3)+" Mds");
-let cours={}, tech={}, fonda={}, histo=null, graph=null, graphDiv=null, periode="1M";
+const fmtK = n => n==null ? "—" : (n>=1e6 ? fmt(n/1e6)+" M" :
+  n>=1000 ? new Intl.NumberFormat('fr-FR',{maximumFractionDigits:1}).format(n/1000)+" K" : fmtEntier(n));
+const LIB_SECTEURS = {FIN:"Finances", CB:"Consommation de base", CD:"Consommation discrétionnaire",
+  IND:"Industriels", ENE:"Énergie", TEL:"Télécommunications", SPU:"Services publics"};
+const LIB_PERIODE = {"1S":"1 semaine","1M":"1 mois","3M":"3 mois","6M":"6 mois",
+  "YTD":"depuis le 1er janv.","1A":"1 an","Max":"Max"};
+let cours={}, tech={}, fonda={}, secteurs={}, histo=null, valCourante=null,
+    graph=null, graphDiv=null, periode="1M";
 
-// Chargement de Chart.js avec source de secours
 function chargerChartJs(){
   return new Promise(res=>{
     if(window.Chart) return res(true);
@@ -111,14 +117,15 @@ function chargerChartJs(){
 
 async function chargerBase(){
   const chartOk = await chargerChartJs();
-  if(!chartOk) document.getElementById('msgGraph').textContent =
-    "Graphique indisponible (bibliothèque non chargée)";
-  const [c,t,f] = await Promise.all([
+  if(!chartOk){ const m=document.getElementById('msgGraph');
+    m.style.display='flex'; m.textContent="Graphique indisponible (bibliothèque non chargée)"; }
+  const [c,t,f,s] = await Promise.all([
     fetch('data/cours.json').then(r=>r.json()),
     fetch('data/technique.json').then(r=>r.json()).catch(()=>({valeurs:{}})),
     fetch('data/fondamentaux.json').then(r=>r.json()).catch(()=>({valeurs:{}})),
+    fetch('data/secteurs.json').then(r=>r.json()).catch(()=>({})),
   ]);
-  cours=c; tech=t.valeurs||{}; fonda=f.valeurs||{};
+  cours=c; tech=t.valeurs||{}; fonda=f.valeurs||{}; secteurs=s||{};
   const sel=document.getElementById('choixValeur');
   c.valeurs.sort((a,b)=>a.nom.localeCompare(b.nom)).forEach(v=>{
     const o=document.createElement('option');
@@ -132,20 +139,12 @@ async function chargerBase(){
 async function afficher(t){
   histo = await fetch('data/historique/'+t+'.json').then(r=>r.json()).catch(()=>null);
   const v = cours.valeurs.find(x=>x.ticker===t)||{};
+  valCourante = v;
   const te = tech[t]||{}, fo = fonda[t]||{};
 
-  document.getElementById('chipSecteur').textContent = t;
+  document.getElementById('chipSecteur').textContent =
+    LIB_SECTEURS[secteurs[t]] || secteurs[t] || t;
   document.getElementById('cours').textContent = fmtEntier(v.cours);
-  const va = v.variation_pct;
-  const el = document.getElementById('variation');
-  // Delta en FCFA deduit du % officiel (colonne veille BRVM non fiable)
-  const delta = (v.cours!=null && va!=null) ? v.cours - v.cours/(1+va/100) : null;
-  el.className = va>0?'hausse':va<0?'baisse':'neutre';
-  el.textContent = (delta!=null?((delta>=0?'+':'')+fmtEntier(delta)+' FCFA  '):'') +
-                   (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
-  const d = cours.maj ? new Date(cours.maj) : null;
-  document.getElementById('dateCours').textContent = d ? '· ' +
-    d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'}) : '';
 
   const pts = (histo&&histo.seance&&histo.seance.points)||[];
   const cSeance = pts.map(p=>p.cours);
@@ -158,7 +157,7 @@ async function afficher(t){
     ["Haut", fmtEntier(haut)], ["Cap.", fmtMds(fo.capitalisation_mfcfa)],
     ["52s B", fmtEntier(te.bas_52s)],
     ["Bas", fmtEntier(bas)], ["PER", dernierEx.per!=null?fmt(dernierEx.per)+"x":"—"],
-    ["Vol. moy(20)", fmtEntier(te.volume_moyen_20)],
+    ["Vol. moy(20)", fmtK(te.volume_moyen_20)],
   ];
   document.getElementById('stats').innerHTML =
     stats.map(s=>`<div><span class="lib">${s[0]}</span><span>${s[1]}</span></div>`).join('');
@@ -209,11 +208,11 @@ async function afficher(t){
     "Sources : BRVM (cours), Sika Finance et rapports annuels (fondamentaux). " +
     "Dernière mise à jour : " + (cours.maj||"—").replace("T"," ").slice(0,16) + " UTC.";
 
-  // Graphique principal d'abord, dividendes ensuite, chacun protege
   majPeriodes();
+  majVariation();
   try{ dessinerGraphique(); }catch(e){ console.error("Graphique cours:",e);
-    document.getElementById('msgGraph').style.display='flex';
-    document.getElementById('msgGraph').textContent="Graphique indisponible"; }
+    const m=document.getElementById('msgGraph');
+    m.style.display='flex'; m.textContent="Graphique indisponible"; }
   try{ dessinerDividendes(divs); }catch(e){ console.error("Graphique dividendes:",e); }
 }
 
@@ -241,7 +240,8 @@ function seriePourPeriode(){
   const dern = combine.length?combine[combine.length-1].d:null;
   const coupe = js => combine.filter(x=>x.d>=js);
   const an=dern?+dern.slice(0,4):0;
-  function serie(s){return {labels:s.map(x=>x.d),data:s.map(x=>x.c),ref:null};}
+  function serie(s){return {labels:s.map(x=>x.d),data:s.map(x=>x.c),
+    ref:s.length?s[0].c:null};}
   function rec(d,ans,mois){
     let a=+d.slice(0,4), mo=+d.slice(5,7)-mois; a-=ans;
     while(mo<1){mo+=12;a--;}
@@ -254,13 +254,41 @@ function seriePourPeriode(){
       return {labels:pts.map(p=>p.h), data:pts.map(p=>p.cours),
               ref:histo.seance?histo.seance.veille:null};
     }
-    case "1S": { const s=q.slice(-5); return {labels:s.map(x=>x.date.slice(5)),data:s.map(x=>x.cours),ref:null}; }
+    case "1S": { const s=q.slice(-5);
+      return {labels:s.map(x=>x.date.slice(5)),data:s.map(x=>x.cours),
+              ref:s.length?s[0].cours:null}; }
     case "1M": return serie(coupe(rec(dern,0,1)));
     case "3M": return serie(coupe(rec(dern,0,3)));
     case "6M": return serie(coupe(rec(dern,0,6)));
     case "YTD": return serie(coupe(an+"-01-01"));
     case "1A": return serie(coupe(rec(dern,1,0)));
     default:   return serie(combine);
+  }
+}
+
+function majVariation(){
+  const v = valCourante||{};
+  const el = document.getElementById('variation');
+  const dateEl = document.getElementById('dateCours');
+  if(periode==="1J"){
+    const va = v.variation_pct;
+    const delta = (v.cours!=null && va!=null) ? v.cours - v.cours/(1+va/100) : null;
+    el.className = va>0?'hausse':va<0?'baisse':'neutre';
+    el.textContent = (delta!=null?((delta>=0?'+':'')+fmtEntier(delta)+' FCFA  '):'') +
+                     (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
+    const d = cours.maj ? new Date(cours.maj) : null;
+    dateEl.textContent = d ? '· ' +
+      d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'}) : '';
+  } else {
+    const s = seriePourPeriode();
+    if(s.data.length>1){
+      const debut=s.data[0], fin=s.data[s.data.length-1];
+      const delta=fin-debut, va=debut?((fin/debut-1)*100):null;
+      el.className = delta>0?'hausse':delta<0?'baisse':'neutre';
+      el.textContent = (delta>=0?'+':'')+fmtEntier(delta)+' FCFA  ' +
+                       (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
+    } else { el.className='neutre'; el.textContent='—'; }
+    dateEl.textContent = '· ' + (LIB_PERIODE[periode]||periode);
   }
 }
 
@@ -278,19 +306,26 @@ function majPeriodes(){
 function dessinerGraphique(){
   if(!window.Chart) return;
   const s=seriePourPeriode();
-  document.getElementById('msgGraph').style.display = s.data.length?'none':'flex';
-  if(!s.data.length){ document.getElementById('msgGraph').textContent="Pas encore de données pour cette période"; }
+  const m=document.getElementById('msgGraph');
+  m.style.display = s.data.length?'none':'flex';
+  if(!s.data.length){ m.textContent="Pas encore de données pour cette période"; }
   const monte = s.data.length>1 ? s.data[s.data.length-1]>=s.data[0] : true;
   const coul = monte?'#16a34a':'#dc2626';
   if(graph) graph.destroy();
-  graph = new Chart(document.getElementById('graphique'),{
-    type:'line',
-    data:{labels:s.labels,datasets:[{data:s.data,borderColor:coul,borderWidth:2,
+  const datasets=[{data:s.data,borderColor:coul,borderWidth:2,
       pointRadius:0,fill:true,tension:0,stepped:periode==="1J",
       backgroundColor:c=>{const g=c.chart.ctx.createLinearGradient(0,0,0,230);
-        g.addColorStop(0,coul+"33");g.addColorStop(1,coul+"00");return g;}}]},
+        g.addColorStop(0,coul+"33");g.addColorStop(1,coul+"00");return g;}}];
+  if(s.ref!=null && s.data.length>1){
+    datasets.push({data:s.data.map(()=>s.ref),borderColor:'#9ca3af',
+      borderWidth:1,borderDash:[4,4],pointRadius:0,fill:false});
+  }
+  graph = new Chart(document.getElementById('graphique'),{
+    type:'line',
+    data:{labels:s.labels,datasets},
     options:{maintainAspectRatio:false,animation:false,
-      plugins:{legend:{display:false},tooltip:{intersect:false,mode:'index'}},
+      plugins:{legend:{display:false},tooltip:{intersect:false,mode:'index',
+        filter:i=>i.datasetIndex===0}},
       scales:{x:{ticks:{maxTicksLimit:5,color:'#9ca3af',font:{size:11}},grid:{display:false}},
               y:{position:'right',ticks:{maxTicksLimit:5,color:'#9ca3af',font:{size:11},
                  callback:v=>fmtEntier(v)},grid:{color:'#f3f4f6'}}}}
@@ -314,7 +349,8 @@ function dessinerDividendes(divs){
 }
 
 document.getElementById('periodes').addEventListener('click',e=>{
-  if(e.target.dataset.p && !e.target.disabled){ periode=e.target.dataset.p; majPeriodes(); dessinerGraphique(); }
+  if(e.target.dataset.p && !e.target.disabled){
+    periode=e.target.dataset.p; majPeriodes(); majVariation(); dessinerGraphique(); }
 });
 chargerBase();
 </script>
