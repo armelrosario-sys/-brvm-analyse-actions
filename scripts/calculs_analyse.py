@@ -194,14 +194,20 @@ def recommander(scores, m, ms):
     # a defaut la mediane sectorielle. Garde-fou : si la juste valeur s'ecarte de
     # plus de 60 % du cours, la fourchette est jugee non fiable et omise.
     fourchette, note = None, None
-    per_ref = m.get("per_histo_med") or ms.get("per")
-    if m["bnpa"] and per_ref:
-        jv = m["bnpa"] * per_ref
-        if m["cours"] and not (0.4 <= jv / m["cours"] <= 1.6):
-            note = ("Fourchette d'entrée non calculable de façon fiable "
-                    "(juste valeur théorique trop éloignée du cours de marché).")
-        else:
-            fourchette = [round(jv * 0.87), round(jv * 0.99)]
+    per_actuel = (m["cours"] / m["bnpa"]) if (m["cours"] and m["bnpa"] and m["bnpa"] > 0) else None
+    if per_actuel is not None and per_actuel > 40:
+        note = ("Fourchette d'entrée non calculée : bénéfices trop faibles ou "
+                "déprimés pour une valorisation fiable par les multiples.")
+    else:
+        base = [x for x in (m.get("per_histo_med"), per_actuel) if x]
+        per_ref = sum(base) / len(base) if base else ms.get("per")
+        if m["bnpa"] and per_ref:
+            jv = m["bnpa"] * per_ref
+            if m["cours"] and not (0.4 <= jv / m["cours"] <= 1.6):
+                note = ("Fourchette d'entrée non calculable de façon fiable "
+                        "(juste valeur théorique trop éloignée du cours de marché).")
+            else:
+                fourchette = [round(jv * 0.87), round(jv * 0.99)]
     return reco, fourchette, note
 
 
