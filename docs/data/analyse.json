@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T16:55:10+00:00",
+ "maj": "2026-07-20T18:46:14+00:00",
  "date_analyse": "20/07/2026",
  "valeurs": {
   "ABJC": {
@@ -42,7 +42,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.29 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 6.29 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -115,7 +115,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.55 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.55 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -152,7 +152,7 @@
    "scores": {
     "performances": 100,
     "perspectives": 83,
-    "remuneration": 100,
+    "remuneration": 83,
     "valorisation": 50
    },
    "libelles": {
@@ -188,8 +188,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.72 % (médiane du marché : 3.70 %).",
-      "coul": "vert"
+      "txt": "Rendement net d'IRVM de 3.72 % (médiane du marché : 3.91 %).",
+      "coul": "orange"
      },
      {
       "txt": "Dividende versé sur 6 des 5 derniers exercices.",
@@ -225,13 +225,13 @@
    "scores": {
     "performances": 0,
     "perspectives": 50,
-    "remuneration": 33,
+    "remuneration": 0,
     "valorisation": 0
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Bon",
-    "remuneration": "Mitigé",
+    "remuneration": "Mauvais",
     "valorisation": "Mauvais"
    },
    "pastilles": {
@@ -261,15 +261,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.78 % (médiane du marché : 3.70 %).",
-      "coul": "vert"
-     },
-     {
       "txt": "Dividende versé sur 1 des 5 derniers exercices.",
-      "coul": "rouge"
-     },
-     {
-      "txt": "Taux de distribution de 4451 % du bénéfice.",
       "coul": "rouge"
      }
     ],
@@ -331,7 +323,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.12 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 6.12 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -404,7 +396,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.14 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.14 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -477,7 +469,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.49 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.49 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -550,7 +542,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.82 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.82 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -623,7 +615,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.50 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.50 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -693,7 +685,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.36 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.36 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -730,7 +722,7 @@
    "scores": {
     "performances": 100,
     "perspectives": 83,
-    "remuneration": 100,
+    "remuneration": 83,
     "valorisation": 50
    },
    "libelles": {
@@ -766,8 +758,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.70 % (médiane du marché : 3.70 %).",
-      "coul": "vert"
+      "txt": "Rendement net d'IRVM de 3.70 % (médiane du marché : 3.91 %).",
+      "coul": "orange"
      },
      {
       "txt": "Dividende versé sur 6 des 5 derniers exercices.",
@@ -839,7 +831,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.95 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.95 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -912,7 +904,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 0.37 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 0.37 % (médiane du marché : 3.91 %).",
       "coul": "rouge"
      },
      {
@@ -985,7 +977,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.75 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.75 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -1058,7 +1050,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.48 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.48 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1131,7 +1123,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 1.31 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 1.31 % (médiane du marché : 3.91 %).",
       "coul": "rouge"
      },
      {
@@ -1200,7 +1192,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 78.28 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 78.28 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1270,7 +1262,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.05 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 6.05 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1343,7 +1335,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.36 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.36 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -1416,7 +1408,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.67 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.67 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -1489,7 +1481,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.06 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.06 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1562,7 +1554,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.89 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.89 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1635,7 +1627,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.92 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.92 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1672,13 +1664,13 @@
    "scores": {
     "performances": 0,
     "perspectives": 50,
-    "remuneration": 50,
+    "remuneration": 0,
     "valorisation": 75
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Bon",
-    "remuneration": "Bon",
+    "remuneration": "Mauvais",
     "valorisation": "Excellent"
    },
    "pastilles": {
@@ -1704,12 +1696,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 1.99 % (médiane du marché : 3.70 %).",
+      "txt": "Aucun dividende récent identifié.",
       "coul": "rouge"
-     },
-     {
-      "txt": "Taux de distribution de 22 % du bénéfice.",
-      "coul": "vert"
      }
     ],
     "valorisation": [
@@ -1723,13 +1711,13 @@
      }
     ]
    },
-   "reco": "Conserver",
+   "reco": "Vendre",
    "fourchette": [
     2419,
     2753
    ],
    "conclusion": [
-    "Nous recommandons de conserver ORAGROUP TOGO. En revanche, des performances dégradées appellent à la vigilance.",
+    "Nous recommandons de vendre ORAGROUP TOGO. En revanche, des performances dégradées appellent à la vigilance.",
     "Au cours actuel de 2 690 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (2 419 à 2 753 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ]
   },
@@ -1773,7 +1761,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.57 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.57 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -1846,7 +1834,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.56 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.56 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -1883,13 +1871,13 @@
    "scores": {
     "performances": 0,
     "perspectives": 100,
-    "remuneration": 50,
+    "remuneration": 0,
     "valorisation": 25
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Excellent",
-    "remuneration": "Bon",
+    "remuneration": "Mauvais",
     "valorisation": "Mitigé"
    },
    "pastilles": {
@@ -1915,12 +1903,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 0.49 % (médiane du marché : 3.70 %).",
+      "txt": "Aucun dividende récent identifié.",
       "coul": "rouge"
-     },
-     {
-      "txt": "Taux de distribution de 27 % du bénéfice.",
-      "coul": "vert"
      }
     ],
     "valorisation": [
@@ -1934,24 +1918,24 @@
      }
     ]
    },
-   "reco": "Conserver",
+   "reco": "Vendre",
    "fourchette": null,
    "conclusion": [
     "Fourchette d'entrée non calculée : bénéfices trop faibles ou déprimés pour une valorisation fiable par les multiples.",
-    "Nous recommandons de conserver SAFCA COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
+    "Nous recommandons de vendre SAFCA COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SCRC": {
    "scores": {
     "performances": 0,
     "perspectives": 100,
-    "remuneration": 33,
+    "remuneration": 0,
     "valorisation": 0
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Excellent",
-    "remuneration": "Mitigé",
+    "remuneration": "Mauvais",
     "valorisation": "Mauvais"
    },
    "pastilles": {
@@ -1977,16 +1961,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 0.98 % (médiane du marché : 3.70 %).",
-      "coul": "rouge"
-     },
-     {
       "txt": "Dividende versé sur 1 des 5 derniers exercices.",
       "coul": "rouge"
-     },
-     {
-      "txt": "Taux de distribution de 31 % du bénéfice.",
-      "coul": "vert"
      }
     ],
     "valorisation": [
@@ -2050,7 +2026,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.66 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.66 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -2123,7 +2099,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.94 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.94 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -2196,7 +2172,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 0.89 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 0.89 % (médiane du marché : 3.91 %).",
       "coul": "rouge"
      },
      {
@@ -2230,7 +2206,7 @@
    "scores": {
     "performances": 75,
     "perspectives": 83,
-    "remuneration": 100,
+    "remuneration": 83,
     "valorisation": 50
    },
    "libelles": {
@@ -2266,8 +2242,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.90 % (médiane du marché : 3.70 %).",
-      "coul": "vert"
+      "txt": "Rendement net d'IRVM de 3.90 % (médiane du marché : 3.91 %).",
+      "coul": "orange"
      },
      {
       "txt": "Dividende versé sur 5 des 5 derniers exercices.",
@@ -2339,7 +2315,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.22 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.22 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -2412,7 +2388,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.37 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.37 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -2449,13 +2425,13 @@
    "scores": {
     "performances": 0,
     "perspectives": 67,
-    "remuneration": 50,
+    "remuneration": 0,
     "valorisation": 0
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Bon",
-    "remuneration": "Bon",
+    "remuneration": "Mauvais",
     "valorisation": "Mauvais"
    },
    "pastilles": {
@@ -2481,11 +2457,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 30.84 % (médiane du marché : 3.70 %).",
-      "coul": "vert"
-     },
-     {
-      "txt": "Taux de distribution de 5982 % du bénéfice.",
+      "txt": "Aucun dividende récent identifié.",
       "coul": "rouge"
      }
     ],
@@ -2511,13 +2483,13 @@
    "scores": {
     "performances": 50,
     "perspectives": 100,
-    "remuneration": 25,
+    "remuneration": 0,
     "valorisation": 0
    },
    "libelles": {
     "performances": "Bon",
     "perspectives": "Excellent",
-    "remuneration": "Mitigé",
+    "remuneration": "Mauvais",
     "valorisation": "Mauvais"
    },
    "pastilles": {
@@ -2547,11 +2519,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.47 % (médiane du marché : 3.70 %).",
-      "coul": "orange"
-     },
-     {
-      "txt": "Taux de distribution de 307 % du bénéfice.",
+      "txt": "Aucun dividende récent identifié.",
       "coul": "rouge"
      }
     ],
@@ -2566,11 +2534,11 @@
      }
     ]
    },
-   "reco": "Conserver",
+   "reco": "Vendre",
    "fourchette": null,
    "conclusion": [
     "Fourchette d'entrée non calculée : bénéfices trop faibles ou déprimés pour une valorisation fiable par les multiples.",
-    "Nous recommandons de conserver ERIUM COTE D’IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance."
+    "Nous recommandons de vendre ERIUM COTE D’IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SLBC": {
@@ -2613,7 +2581,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.48 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.48 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -2686,7 +2654,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.53 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.53 % (médiane du marché : 3.91 %).",
       "coul": "orange"
      },
      {
@@ -2759,7 +2727,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.89 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.89 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -2832,7 +2800,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.94 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.94 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -2905,7 +2873,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.99 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.99 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -2974,16 +2942,8 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 1.86 % (médiane du marché : 3.70 %).",
-      "coul": "rouge"
-     },
-     {
       "txt": "Dividende versé sur 2 des 5 derniers exercices.",
       "coul": "orange"
-     },
-     {
-      "txt": "Taux de distribution de 79 % du bénéfice.",
-      "coul": "vert"
      }
     ],
     "valorisation": [
@@ -3047,7 +3007,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 8.03 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 8.03 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -3120,7 +3080,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.13 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 6.13 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -3193,7 +3153,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.27 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.27 % (médiane du marché : 3.91 %).",
       "coul": "vert"
      },
      {
@@ -3230,13 +3190,13 @@
    "scores": {
     "performances": 0,
     "perspectives": 50,
-    "remuneration": 25,
+    "remuneration": 0,
     "valorisation": 0
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Bon",
-    "remuneration": "Mitigé",
+    "remuneration": "Mauvais",
     "valorisation": "Mauvais"
    },
    "pastilles": {
@@ -3262,11 +3222,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.13 % (médiane du marché : 3.70 %).",
-      "coul": "orange"
-     },
-     {
-      "txt": "Taux de distribution de 1768 % du bénéfice.",
+      "txt": "Aucun dividende récent identifié.",
       "coul": "rouge"
      }
     ],
@@ -3324,15 +3280,7 @@
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.92 % (médiane du marché : 3.70 %).",
-      "coul": "orange"
-     },
-     {
       "txt": "Dividende versé sur 2 des 5 derniers exercices.",
-      "coul": "orange"
-     },
-     {
-      "txt": "Taux de distribution de 90 % du bénéfice.",
       "coul": "orange"
      }
     ],
