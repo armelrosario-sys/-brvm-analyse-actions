@@ -41,8 +41,13 @@ def charger():
     for r in con.execute("SELECT * FROM fondamentaux"):
         fonda.setdefault(r["ticker"], {}).setdefault(r["exercice"], {})[r["champ"]] = r["valeur"]
     per_histo = {}
-    for r in con.execute("SELECT ticker, per FROM historique_mensuel WHERE per IS NOT NULL"):
+    for r in con.execute(
+            "SELECT ticker, per FROM historique_mensuel WHERE per IS NOT NULL "
+            "ORDER BY date"):
         per_histo.setdefault(r["ticker"], []).append(r["per"])
+    # Ancrage sur les 36 derniers mois (pratique de marche : integre la
+    # revalorisation recente plutot que tout l'historique depuis 2018)
+    per_histo = {t: v[-36:] for t, v in per_histo.items()}
     con.close()
     cours = {v["ticker"]: v for v in json.loads((D / "cours.json").read_text(encoding="utf-8"))["valeurs"]}
     tech = json.loads((D / "technique.json").read_text(encoding="utf-8"))["valeurs"]
