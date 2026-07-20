@@ -495,13 +495,14 @@ function rendreFiltres(){
       cCA:cagrJS(serie("ca")), cRN:cagrJS(serie("rn")), cBPA:cagrJS(serie("bnpa")),
       tend:te.tendance_provisoire_mensuelle, var1m:te.var_1m,
       mm20:te.mm20, mm50:te.mm50, mm200:te.mm200,
-      pbr:dern("pbr"),
+      pbr:dern("pbr"), bnpa:dern("bnpa"),
       div:(()=>{for(let i=exs.length-1;i>=Math.max(0,exs.length-2);i--){
         const x=fo.exercices[exs[i]].dividende;
         if(x&&x.valeur!=null) return x.valeur;} return null;})(),
       reco:((analyse&&analyse.valeurs[tk])||{}).reco, sect:secteurs[tk]};
     o.dyNet=(o.div&&v.cours)?o.div*0.9/v.cours*100:null;
     o.dyBrut=(o.div&&v.cours)?o.div/v.cours*100:null;
+    o.exc=(o.div&&o.bnpa&&o.bnpa>0)?(o.div/o.bnpa*100>150):false;
     V.push(o);
   }
   const tbl=(lignes,cols)=>lignes.length?
@@ -524,9 +525,12 @@ function rendreFiltres(){
     <p class="regle">Tri par rendement du dividende net d'IRVM (10 %) au cours actuel.</p>`;
   const rd=V.filter(x=>x.dyNet!=null).sort((a,b)=>b.dyNet-a.dyNet).slice(0,12);
   html+=tbl(rd,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
-    ["DY net %",x=>fmt(x.dyNet)],["DY brut %",x=>fmt(x.dyBrut)],
+    ["DY net %",x=>fmt(x.dyNet)+(x.exc?" ⚠":"")],["DY brut %",x=>fmt(x.dyBrut)],
     ["Avis",x=>badge(x.reco)]]);
 
+  if(rd.some(x=>x.exc)) html+=`<p class="regle">⚠ Dividende exceptionnel
+    (supérieur à 150 % du bénéfice) — rendement vraisemblablement non récurrent ;
+    voir l'onglet Analyse de la valeur pour le détail.</p>`;
   const mmDispo=V.some(x=>x.mm20!=null&&x.mm50!=null);
   html+=`<h2>Momentum — décotées en début de cycle haussier</h2>
     <p class="regle">${mmDispo
