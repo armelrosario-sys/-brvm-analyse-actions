@@ -231,6 +231,12 @@ async function afficher(t){
     const m=document.getElementById('msgGraph');
     m.style.display='flex'; m.textContent="Graphique indisponible"; }
   try{ dessinerDividendes(divs); }catch(e){ console.error("Graphique dividendes:",e); }
+
+  // Resynchronise l'onglet actuellement affiche avec la valeur selectionnee
+  const ongletActif=document.querySelector('#onglets button.actif');
+  const oAct=ongletActif?ongletActif.dataset.o:'apercu';
+  if(oAct==='analyse') rendreAnalyse(t);
+  if(oAct==='carnet') rendreCarnet(t);
 }
 
 function derniersFondamentaux(fo){
@@ -489,7 +495,10 @@ function rendreFiltres(){
       cCA:cagrJS(serie("ca")), cRN:cagrJS(serie("rn")), cBPA:cagrJS(serie("bnpa")),
       tend:te.tendance_provisoire_mensuelle, var1m:te.var_1m,
       mm20:te.mm20, mm50:te.mm50, mm200:te.mm200,
-      pbr:dern("pbr"), div:dern("dividende"),
+      pbr:dern("pbr"),
+      div:(()=>{for(let i=exs.length-1;i>=Math.max(0,exs.length-2);i--){
+        const x=fo.exercices[exs[i]].dividende;
+        if(x&&x.valeur!=null) return x.valeur;} return null;})(),
       reco:((analyse&&analyse.valeurs[tk])||{}).reco, sect:secteurs[tk]};
     o.dyNet=(o.div&&v.cours)?o.div*0.9/v.cours*100:null;
     o.dyBrut=(o.div&&v.cours)?o.div/v.cours*100:null;
