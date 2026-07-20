@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T14:47:08+00:00",
+ "maj": "2026-07-20T15:13:10+00:00",
  "note": "MM et RSI calcules uniquement sur cours quotidiens reellement collectes ; null tant que l'historique quotidien est insuffisant.",
  "valeurs": {
   "ABJC": {
@@ -233,7 +233,7 @@
    "rsi14": null,
    "haut_52s": 28490.0,
    "bas_52s": 9700.0,
-   "volume_moyen_20": 670,
+   "volume_moyen_20": 671,
    "seances_disponibles": 2,
    "seances_manquantes": {
     "mm20": 18,
@@ -613,7 +613,7 @@
    "rsi14": null,
    "haut_52s": 2325.0,
    "bas_52s": 700.0,
-   "volume_moyen_20": 2990,
+   "volume_moyen_20": 3596,
    "seances_disponibles": 2,
    "seances_manquantes": {
     "mm20": 18,

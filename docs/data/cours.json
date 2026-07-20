@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T14:52:29+00:00",
+ "maj": "2026-07-20T15:13:09+00:00",
  "nb_valeurs": 47,
  "valeurs": [
   {
@@ -115,7 +115,7 @@
   {
    "ticker": "CBIBF",
    "nom": "CORIS BANK INTERNATIONAL BURKINA FASO",
-   "volume": 597.0,
+   "volume": 598.0,
    "cours_veille": 27500.0,
    "ouverture": 28200.0,
    "cours": 27500.0,
@@ -305,7 +305,7 @@
   {
    "ticker": "SEMC",
    "nom": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
-   "volume": 3093.0,
+   "volume": 4303.0,
    "cours_veille": 1415.0,
    "ouverture": 1400.0,
    "cours": 1410.0,
