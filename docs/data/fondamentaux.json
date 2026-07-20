@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-19T23:50:47+00:00",
+ "maj": "2026-07-20T00:02:04+00:00",
  "anomalies": [],
  "valeurs": {
   "ABJC": {
@@ -290,7 +290,7 @@
   },
   "BICC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "La Banque internationale pour le commerce et l'industrie de la Côte d'Ivoire, abrégée en BICICI.",
    "nombre_titres": 16666670.0,
    "flottant_pct": 32.51,
    "capitalisation_mfcfa": 468333.0,
@@ -735,7 +735,7 @@
   },
   "BOABF": {
    "suffixe_sika": "bf",
-   "description": null,
+   "description": "BOA BURKINA est une filiale du groupe BOA. Elle a été mis en place en 1998 (après les filiales du Mali, du Bénin, du Niger et de la Côte d'Ivoire).",
    "nombre_titres": 44000000.0,
    "flottant_pct": 29.1,
    "capitalisation_mfcfa": 316800.0,
@@ -1037,7 +1037,7 @@
   },
   "BOAM": {
    "suffixe_sika": "ml",
-   "description": null,
+   "description": "BANK OF AFRICA - MALI (BOA-MALI), ouverte au public en janvier 1982, détient actuellement un capital de 27,45 milliards FCFA.",
    "nombre_titres": 27450000.0,
    "flottant_pct": 21.44,
    "capitalisation_mfcfa": 157975.0,
@@ -1188,7 +1188,7 @@
   },
   "BOAN": {
    "suffixe_sika": "ne",
-   "description": null,
+   "description": "BANK OF AFRICA - NIGER (BOA-NIGER) est issue d’une reprise des activités de la NIGERIA INTERNATIONAL BANK (NIB, banque affiliée à la CITIBANK) par le Groupe BANK OF AFRICA.",
    "nombre_titres": 20800000.0,
    "flottant_pct": 40.52,
    "capitalisation_mfcfa": 111280.0,
@@ -1343,7 +1343,7 @@
   },
   "BOAS": {
    "suffixe_sika": "sn",
-   "description": null,
+   "description": "BOAS , ouverte au public en 2001, détient actuellement un capital de 24 milliards FCFA.",
    "nombre_titres": 36000000.0,
    "flottant_pct": 29.99,
    "capitalisation_mfcfa": 277200.0,
@@ -2285,7 +2285,7 @@
   },
   "ETIT": {
    "suffixe_sika": "tg",
-   "description": null,
+   "description": "Ecobank Transnational Incorporated (ETI) est une banque fondée au Togo en 1985 et présente dans 36 pays du continent.",
    "nombre_titres": 18084106722.0,
    "flottant_pct": 33.48,
    "capitalisation_mfcfa": 1229719.0,
@@ -2829,7 +2829,7 @@
   },
   "NSBC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "Le capital social de NSIA BANQUE CÔTE D'IVOIRE était de 20 milliards FCFA. Les actionnaires majoritaires sont pour la plupart des personnes morales. Ses activités s'articulent autour de deux pôles d'activités stratégiques: la banque de détail et la banque de financement et d'investissement.",
    "nombre_titres": 24734572.0,
    "flottant_pct": 20.0,
    "capitalisation_mfcfa": 584973.0,
@@ -3310,7 +3310,7 @@
   },
   "ORAC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "Le Groupe Orange Côte d’Ivoire (Groupe OCI) est une entreprise intégrée de télécommunications qui offre des solutions dans les domaines du fixe, du mobile, de l’Internet, des services de paiement mobile et des données au service des particuliers et des entreprises.",
    "nombre_titres": 150655350.0,
    "flottant_pct": 9.95,
    "capitalisation_mfcfa": 2434590.0,
@@ -3461,7 +3461,7 @@
   },
   "ORGT": {
    "suffixe_sika": "tg",
-   "description": null,
+   "description": "ORAGROUP SA est une holding au capital social de 63,3 milliards de FCFA basée au Togo. C’est la société mère du groupe bancaire ORABANK.",
    "nombre_titres": 69415031.0,
    "flottant_pct": 20.0,
    "capitalisation_mfcfa": 186032.0,
@@ -3576,7 +3576,7 @@
   },
   "PALC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "PALMCI est une filiale du groupe agro-industriel ivoirien SIFCA. Elle est le principal producteur d’huile de palme brute de la région.",
    "nombre_titres": 15459316.0,
    "flottant_pct": 33.0,
    "capitalisation_mfcfa": 134341.0,
@@ -3763,7 +3763,7 @@
   },
   "PRSC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "TRACTAFRIC Motors CI est une filiale du groupe TRACTAFRIC Motors Corporation, elle-même filiale de la Compagnie OPTORG.",
    "nombre_titres": 10240000.0,
    "flottant_pct": 14.06,
    "capitalisation_mfcfa": 46080.0,
@@ -4041,7 +4041,7 @@
   },
   "SCRC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "SUCRIVOIRE, filiale du groupe agro-industriel SIFCA, a été introduite le 29 décembre 2016, à la Bourse Régionale des Valeurs Mobilières (BRVM).",
    "nombre_titres": 19600000.0,
    "flottant_pct": 23.0,
    "capitalisation_mfcfa": 72618.0,
@@ -4140,7 +4140,7 @@
   },
   "SDCC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "La Société de Distribution d’Eau de Côte d’Ivoire « SODECI » a été créée en 1959 en tant que successeur et filiale de la société française « Saur ».",
    "nombre_titres": 9000000.0,
    "flottant_pct": 49.53,
    "capitalisation_mfcfa": 101700.0,
@@ -4744,7 +4744,7 @@
   },
   "SHEC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "VIVO ENERGY Côte d'Ivoire est l'un des principaux acteurs du marché des carburants différenciés et des lubrifiants.",
    "nombre_titres": 63000000.0,
    "flottant_pct": 28.33,
    "capitalisation_mfcfa": 137970.0,
@@ -5280,7 +5280,7 @@
   },
   "SLBC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "SOLIBRA (Societé de Limonaderie et Brasserie d'Afrique) produit et distribue de la bière, d'autres boissons alcooliques et non alcoolisées en côte d’ivoire.",
    "nombre_titres": 16460840.0,
    "flottant_pct": 18.6,
    "capitalisation_mfcfa": 644524.0,
@@ -5427,7 +5427,7 @@
   },
   "SMBC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "SMB, la Compagnie Multinationale de Bitumes, a été créée en 1976, avec pour mission le désenclavement des régions éloignées des pôles de développement.",
    "nombre_titres": 7795200.0,
    "flottant_pct": 16.5,
    "capitalisation_mfcfa": 118448.0,
@@ -5638,7 +5638,7 @@
   },
   "SNTS": {
    "suffixe_sika": "sn",
-   "description": null,
+   "description": "La Société Nationale des Télécommunications du Sénégal (SONATEL), premier opérateur téléphonique au Sénégal, a été créée en 1985 suite à la fusion du «Bureau des postes et télécommunications» et de «TV Senegal».",
    "nombre_titres": 100000000.0,
    "flottant_pct": 22.47,
    "capitalisation_mfcfa": 3200000.0,
@@ -6004,7 +6004,7 @@
   },
   "SPHC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "Filiale de SIFCA depuis 1999, la Société Africaine de Plantations d’Hévéas (SAPH) est le 1er producteur de caoutchouc naturel d’Afrique de l’Ouest, avec plus de 163 000 tonnes usinées par an. Forte de 5 400 employés et d’un réseau de 5 Unités Agricoles Intégrées, SAPH exploite 24 400 hectares de plantations indus-trielles, et assure l’encadrement de quelques 29 000 planteurs d’hévéa. La société est cotée à la Bourse Régionale des Valeurs Mobilières (BRVM - Abidjan) depuis 1996.",
    "nombre_titres": 25558005.0,
    "flottant_pct": 23.54,
    "capitalisation_mfcfa": 191685.0,
@@ -6485,7 +6485,7 @@
   },
   "TTLC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "TOTAL CI fait partie du Total Group, qui est la quatrième plus grande société internationale de pétrole et de gaz intégrée en bourse dans le monde avec une présence dans plus de 100 pays. La société existe en Côte d'Ivoire depuis 1947.",
    "nombre_titres": 62961600.0,
    "flottant_pct": 27.01,
    "capitalisation_mfcfa": 182589.0,
@@ -6680,7 +6680,7 @@
   },
   "TTLS": {
    "suffixe_sika": "sn",
-   "description": null,
+   "description": "Présent au Sénégal depuis 1954, TOTAL est le leader du marketing des produits pétroliers dans le pays. La société est cotée à la bourse régionale (BRVM) depuis le 20 février 2015.",
    "nombre_titres": 32577700.0,
    "flottant_pct": 30.86,
    "capitalisation_mfcfa": 130148.0,
@@ -6926,7 +6926,7 @@
   },
   "UNXC": {
    "suffixe_sika": "ci",
-   "description": null,
+   "description": "UNIWAX, leader de l'industrie textile en Côte d'Ivoire conçoit, produit et commercialise des tissus uniques et colorés. Ces textiles expressifs de haute qualité sont distribués dans les pays africains.",
    "nombre_titres": 20750000.0,
    "flottant_pct": 27.71,
    "capitalisation_mfcfa": 38284.0,
