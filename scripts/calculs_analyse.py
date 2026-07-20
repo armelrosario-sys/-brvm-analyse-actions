@@ -237,7 +237,16 @@ def texte_conclusion(t, nom, reco, fourchette, scores, m):
     if forces:
         ph1 += " L'entreprise affiche " + " et ".join(forces) + "."
     if faibl:
-        ph1 += " En revanche, " + " et ".join(faibl) + " appellent à la vigilance."
+        if reco == "Vendre":
+            ph1 += (" Cette recommandation s'appuie sur " + " et ".join(faibl) + ".")
+        else:
+            ph1 += " En revanche, " + " et ".join(faibl) + " appellent à la vigilance."
+    ph_alerte = ""
+    if m.get("payout") is not None and m["payout"] > 150 and m.get("div_dernier"):
+        ph_alerte = (f"Attention : le dernier dividende ({nb_fr(m['div_dernier'])} FCFA par action) "
+                     f"représente {m['payout']:.0f} % du bénéfice — un versement exceptionnel, "
+                     f"vraisemblablement non reconductible, qui ne doit pas être interprété "
+                     f"comme un rendement récurrent.")
     ph2 = ""
     if fourchette and m["cours"]:
         bas, haut = fourchette
@@ -252,7 +261,7 @@ def texte_conclusion(t, nom, reco, fourchette, scores, m):
             ph2 = (f"Au cours actuel de {nb_fr(m['cours'])} FCFA, le titre se situe dans ou sous "
                    f"la fourchette d'entrée calculée ({nb_fr(bas)} à {nb_fr(haut)} FCFA), un niveau "
                    f"d'achat jugé raisonnable au regard des fondamentaux.")
-    return ph1, ph2
+    return ph1, " ".join(x for x in (ph_alerte, ph2) if x)
 
 
 def principal():
