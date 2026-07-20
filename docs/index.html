@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BRVM Analyse Actions</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.3/chart.umd.min.js"></script>
 <style>
 :root{--bleu:#2f5cf6;--vert:#16a34a;--rouge:#dc2626;--txt:#111827;--gris:#6b7280;
 --fond:#ffffff;--ligne:#e5e7eb;--pastel:#f3f4f6}
@@ -29,6 +28,8 @@ font-weight:600;border-radius:8px;padding:6px 11px;cursor:pointer}
 box-shadow:0 1px 3px rgba(0,0,0,.08);color:var(--bleu)}
 .periodes button:disabled{color:#c3c7cf;cursor:not-allowed}
 #zoneGraph{height:230px;position:relative}
+#msgGraph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+color:var(--gris);font-size:13px;display:none}
 .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 14px;border-top:1px solid var(--ligne);
 border-bottom:1px solid var(--ligne);padding:10px 0;margin:14px 0;font-size:13.5px}
 .stats div{display:flex;justify-content:space-between;padding:3px 0}
@@ -66,7 +67,7 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
   <button data-p="6M">6M</button><button data-p="YTD">YTD</button>
   <button data-p="1A">1A</button><button data-p="Max">Max</button>
 </div>
-<div id="zoneGraph"><canvas id="graphique"></canvas></div>
+<div id="zoneGraph"><canvas id="graphique"></canvas><div id="msgGraph"></div></div>
 
 <div class="stats" id="stats"></div>
 
@@ -93,7 +94,25 @@ const fmtEntier = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumF
 const fmtMds = m => m==null ? "—" : (m>=1e6 ? fmt(m/1e6)+" Bds" : fmt(m/1e3)+" Mds");
 let cours={}, tech={}, fonda={}, histo=null, graph=null, graphDiv=null, periode="1M";
 
+// Chargement de Chart.js avec source de secours
+function chargerChartJs(){
+  return new Promise(res=>{
+    if(window.Chart) return res(true);
+    const urls=[
+      "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.3/chart.umd.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"];
+    let i=0;
+    const essai=()=>{ if(i>=urls.length) return res(false);
+      const s=document.createElement('script'); s.src=urls[i++];
+      s.onload=()=>res(true); s.onerror=essai; document.head.appendChild(s); };
+    essai();
+  });
+}
+
 async function chargerBase(){
+  const chartOk = await chargerChartJs();
+  if(!chartOk) document.getElementById('msgGraph').textContent =
+    "Graphique indisponible (bibliothèque non chargée)";
   const [c,t,f] = await Promise.all([
     fetch('data/cours.json').then(r=>r.json()),
     fetch('data/technique.json').then(r=>r.json()).catch(()=>({valeurs:{}})),
@@ -119,7 +138,8 @@ async function afficher(t){
   document.getElementById('cours').textContent = fmtEntier(v.cours);
   const va = v.variation_pct;
   const el = document.getElementById('variation');
-  const delta = (v.cours!=null && v.cours_veille!=null) ? v.cours - v.cours_veille : null;
+  // Delta en FCFA deduit du % officiel (colonne veille BRVM non fiable)
+  const delta = (v.cours!=null && va!=null) ? v.cours - v.cours/(1+va/100) : null;
   el.className = va>0?'hausse':va<0?'baisse':'neutre';
   el.textContent = (delta!=null?((delta>=0?'+':'')+fmtEntier(delta)+' FCFA  '):'') +
                    (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
@@ -127,7 +147,6 @@ async function afficher(t){
   document.getElementById('dateCours').textContent = d ? '· ' +
     d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'}) : '';
 
-  // Tableau de stats (3 colonnes, style Famaya)
   const pts = (histo&&histo.seance&&histo.seance.points)||[];
   const cSeance = pts.map(p=>p.cours);
   const haut = cSeance.length?Math.max(...cSeance):null;
@@ -144,7 +163,6 @@ async function afficher(t){
   document.getElementById('stats').innerHTML =
     stats.map(s=>`<div><span class="lib">${s[0]}</span><span>${s[1]}</span></div>`).join('');
 
-  // Description
   const dt=document.getElementById('descTexte'), lp=document.getElementById('lirePlus');
   const desc = fo.description||null;
   if(desc){
@@ -155,7 +173,6 @@ async function afficher(t){
     else lp.classList.add('masque');
   } else { dt.textContent="—"; lp.classList.add('masque'); }
 
-  // Indicateurs cles
   const vc = (dernierEx.capitaux_propres!=null && fo.nombre_titres) ?
              dernierEx.capitaux_propres*1e6/fo.nombre_titres : null;
   const lignes = [
@@ -177,7 +194,6 @@ async function afficher(t){
     `<div><span class="lib">${l[0]}</span><span class="val ${l[1]==null?'indispo':''}">${l[1]??'—'}</span></div>`
   ).join('');
 
-  // Dividendes
   const divs = (histo&&histo.dividendes)||[];
   const dernier = divs.length?divs[divs.length-1]:null;
   const bloc = [
@@ -188,18 +204,20 @@ async function afficher(t){
   document.getElementById('blocDividendes').innerHTML = bloc.map(l=>
     `<div><span class="lib">${l[0]}</span><span class="val ${l[1]==null?'indispo':''}">${l[1]??'—'}</span></div>`
   ).join('');
-  dessinerDividendes(divs);
 
   document.getElementById('noteSources').textContent =
     "Sources : BRVM (cours), Sika Finance et rapports annuels (fondamentaux). " +
     "Dernière mise à jour : " + (cours.maj||"—").replace("T"," ").slice(0,16) + " UTC.";
 
+  // Graphique principal d'abord, dividendes ensuite, chacun protege
   majPeriodes();
-  dessinerGraphique();
+  try{ dessinerGraphique(); }catch(e){ console.error("Graphique cours:",e);
+    document.getElementById('msgGraph').style.display='flex';
+    document.getElementById('msgGraph').textContent="Graphique indisponible"; }
+  try{ dessinerDividendes(divs); }catch(e){ console.error("Graphique dividendes:",e); }
 }
 
 function derniersFondamentaux(fo){
-  // Pour chaque champ, prend la valeur du dernier exercice qui la possede.
   const res={};
   const exs = Object.keys(fo.exercices||{}).sort();
   for(const champ of ["per","bnpa","pbr","roe_pct","dette_sur_cp","capitaux_propres"]){
@@ -223,6 +241,13 @@ function seriePourPeriode(){
   const dern = combine.length?combine[combine.length-1].d:null;
   const coupe = js => combine.filter(x=>x.d>=js);
   const an=dern?+dern.slice(0,4):0;
+  function serie(s){return {labels:s.map(x=>x.d),data:s.map(x=>x.c),ref:null};}
+  function rec(d,ans,mois){
+    let a=+d.slice(0,4), mo=+d.slice(5,7)-mois; a-=ans;
+    while(mo<1){mo+=12;a--;}
+    return a+"-"+String(mo).padStart(2,"0")+d.slice(7,10);
+  }
+  if(!dern) return {labels:[],data:[],ref:null};
   switch(periode){
     case "1J": {
       const pts=(histo.seance&&histo.seance.points)||[];
@@ -230,18 +255,12 @@ function seriePourPeriode(){
               ref:histo.seance?histo.seance.veille:null};
     }
     case "1S": { const s=q.slice(-5); return {labels:s.map(x=>x.date.slice(5)),data:s.map(x=>x.cours),ref:null}; }
-    case "1M": { const s=coupe(rec(dern,0,1)); return serie(s); }
-    case "3M": { const s=coupe(rec(dern,0,3)); return serie(s); }
-    case "6M": { const s=coupe(rec(dern,0,6)); return serie(s); }
-    case "YTD":{ const s=coupe(an+"-01-01"); return serie(s); }
-    case "1A": { const s=coupe(rec(dern,1,0)); return serie(s); }
-    default:   { return serie(combine); }
-  }
-  function serie(s){return {labels:s.map(x=>x.d),data:s.map(x=>x.c),ref:null};}
-  function rec(d,ans,mois){ // date - ans/mois
-    let a=+d.slice(0,4), mo=+d.slice(5,7)-mois; a-=ans;
-    while(mo<1){mo+=12;a--;}
-    return a+"-"+String(mo).padStart(2,"0")+d.slice(7,10);
+    case "1M": return serie(coupe(rec(dern,0,1)));
+    case "3M": return serie(coupe(rec(dern,0,3)));
+    case "6M": return serie(coupe(rec(dern,0,6)));
+    case "YTD": return serie(coupe(an+"-01-01"));
+    case "1A": return serie(coupe(rec(dern,1,0)));
+    default:   return serie(combine);
   }
 }
 
@@ -257,7 +276,10 @@ function majPeriodes(){
 }
 
 function dessinerGraphique(){
+  if(!window.Chart) return;
   const s=seriePourPeriode();
+  document.getElementById('msgGraph').style.display = s.data.length?'none':'flex';
+  if(!s.data.length){ document.getElementById('msgGraph').textContent="Pas encore de données pour cette période"; }
   const monte = s.data.length>1 ? s.data[s.data.length-1]>=s.data[0] : true;
   const coul = monte?'#16a34a':'#dc2626';
   if(graph) graph.destroy();
@@ -276,6 +298,7 @@ function dessinerGraphique(){
 }
 
 function dessinerDividendes(divs){
+  if(!window.Chart) return;
   if(graphDiv) graphDiv.destroy();
   if(!divs.length){document.getElementById('graphDiv').style.display='none';return;}
   document.getElementById('graphDiv').style.display='block';
