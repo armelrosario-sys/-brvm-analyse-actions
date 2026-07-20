@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T14:35:15+00:00",
+ "maj": "2026-07-20T14:47:08+00:00",
  "date_analyse": "20/07/2026",
  "valeurs": {
   "ABJC": {
@@ -36,7 +36,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +75.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +75.6 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -109,7 +109,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +21.7 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +21.7 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -182,7 +182,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +64.2 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +64.2 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -255,7 +255,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +53.1 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +53.1 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -325,7 +325,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +99.1 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +99.1 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -398,7 +398,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +93.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +93.6 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -471,7 +471,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +63.3 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +63.3 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -544,7 +544,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +68.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +68.9 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -617,7 +617,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +114.5 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +114.5 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -687,7 +687,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +71.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +71.6 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -760,7 +760,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +207.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +207.9 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -833,7 +833,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +183.5 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +183.5 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -906,7 +906,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +157.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +157.6 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -979,7 +979,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +125.7 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +125.7 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -1052,7 +1052,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +35.5 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +35.5 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -1125,7 +1125,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +293.8 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +293.8 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -1194,7 +1194,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Performance sur 1 an de -60.2 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de -60.2 % (médiane du marché : +74.4 %).",
       "coul": "rouge"
      }
     ],
@@ -1264,7 +1264,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de -10.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de -10.9 % (médiane du marché : +74.4 %).",
       "coul": "rouge"
      }
     ],
@@ -1337,7 +1337,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +268.1 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +268.1 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -1410,13 +1410,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +149.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +135.0 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.51 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.67 % (médiane du marché : 3.70 %).",
       "coul": "orange"
      },
      {
@@ -1441,12 +1441,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    14319,
-    16294
+    13694,
+    15583
    ],
    "conclusion": [
     "Nous recommandons de conserver NSIA BANQUE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 23 995 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 14 319 et 16 294 FCFA, soit environ 32 % à 40 % sous le cours actuel."
+    "Au cours actuel de 22 560 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 13 694 et 15 583 FCFA, soit environ 31 % à 39 % sous le cours actuel."
    ]
   },
   "NTLC": {
@@ -1483,7 +1483,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +33.1 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +33.1 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -1556,7 +1556,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +11.5 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +11.5 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -1629,7 +1629,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +14.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +14.9 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -1698,7 +1698,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Performance sur 1 an de +63.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +63.0 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -1767,13 +1767,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +0.7 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +2.7 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.67 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.57 % (médiane du marché : 3.70 %).",
       "coul": "vert"
      },
      {
@@ -1798,18 +1798,18 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    5851,
-    6658
+    5927,
+    6744
    ],
    "conclusion": [
     "Nous recommandons de conserver PALM COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 8 505 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 851 et 6 658 FCFA, soit environ 22 % à 31 % sous le cours actuel."
+    "Au cours actuel de 8 680 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 927 et 6 744 FCFA, soit environ 22 % à 32 % sous le cours actuel."
    ]
   },
   "PRSC": {
    "scores": {
     "performances": 0,
-    "perspectives": 100,
+    "perspectives": 83,
     "remuneration": 83,
     "valorisation": 50
    },
@@ -1840,8 +1840,8 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +71.6 % (médiane du marché : +71.6 %).",
-      "coul": "vert"
+      "txt": "Performance sur 1 an de +71.6 % (médiane du marché : +74.4 %).",
+      "coul": "orange"
      }
     ],
     "remuneration": [
@@ -1909,7 +1909,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +425.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +425.0 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -1971,7 +1971,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +272.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +272.0 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -2044,13 +2044,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +92.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +101.7 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.79 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.66 % (médiane du marché : 3.70 %).",
       "coul": "orange"
      },
      {
@@ -2075,12 +2075,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    7055,
-    8029
+    7288,
+    8293
    ],
    "conclusion": [
     "Nous recommandons de conserver SODE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 11 365 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 7 055 et 8 029 FCFA, soit environ 29 % à 38 % sous le cours actuel."
+    "Au cours actuel de 11 900 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 7 288 et 8 293 FCFA, soit environ 30 % à 39 % sous le cours actuel."
    ]
   },
   "SDSC": {
@@ -2117,7 +2117,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +95.8 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +95.8 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -2190,7 +2190,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +101.4 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +101.4 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -2260,7 +2260,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +62.7 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +62.7 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -2333,7 +2333,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +103.4 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +103.4 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -2406,7 +2406,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +83.4 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +83.4 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -2448,7 +2448,7 @@
   "SICC": {
    "scores": {
     "performances": 0,
-    "perspectives": 50,
+    "perspectives": 67,
     "remuneration": 50,
     "valorisation": 0
    },
@@ -2475,13 +2475,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +65.1 % (médiane du marché : +71.6 %).",
-      "coul": "orange"
+      "txt": "Performance sur 1 an de +74.5 % (médiane du marché : +74.4 %).",
+      "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 32.59 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 30.84 % (médiane du marché : 3.70 %).",
       "coul": "vert"
      },
      {
@@ -2504,7 +2504,7 @@
    "fourchette": null,
    "conclusion": [
     "Fourchette d'entrée non calculée : bénéfices trop faibles ou déprimés pour une valorisation fiable par les multiples.",
-    "Nous recommandons de vendre SICOR COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
+    "Nous recommandons de vendre SICOR COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SIVC": {
@@ -2541,7 +2541,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +351.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +351.0 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -2607,13 +2607,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +119.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +109.7 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.36 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.48 % (médiane du marché : 3.70 %).",
       "coul": "orange"
      },
      {
@@ -2638,12 +2638,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    37208,
-    42340
+    36383,
+    41402
    ],
    "conclusion": [
     "Nous recommandons d'acheter SOLIBRA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 40 900 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (37 208 à 42 340 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 39 005 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (36 383 à 41 402 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ]
   },
   "SMBC": {
@@ -2680,13 +2680,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +80.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +74.4 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.41 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.53 % (médiane du marché : 3.70 %).",
       "coul": "orange"
      },
      {
@@ -2711,12 +2711,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    12961,
-    14748
+    12721,
+    14476
    ],
    "conclusion": [
     "Nous recommandons d'acheter SMB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 16 250 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 12 961 et 14 748 FCFA, soit environ 9 % à 20 % sous le cours actuel."
+    "Au cours actuel de 15 700 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 12 721 et 14 476 FCFA, soit environ 8 % à 19 % sous le cours actuel."
    ]
   },
   "SNTS": {
@@ -2753,7 +2753,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +28.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +28.0 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -2826,7 +2826,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +5.3 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +5.3 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -2899,7 +2899,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Performance sur 1 an de +12.3 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +12.3 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -2968,7 +2968,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +455.6 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +455.6 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],
@@ -3041,13 +3041,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +16.8 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +19.3 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 8.20 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 8.03 % (médiane du marché : 3.70 %).",
       "coul": "vert"
      },
      {
@@ -3072,12 +3072,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    18598,
-    21164
+    18811,
+    21406
    ],
    "conclusion": [
     "Nous recommandons d'acheter SITAB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 23 005 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 18 598 et 21 164 FCFA, soit environ 8 % à 19 % sous le cours actuel."
+    "Au cours actuel de 23 495 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 18 811 et 21 406 FCFA, soit environ 9 % à 20 % sous le cours actuel."
    ]
   },
   "TTLC": {
@@ -3114,7 +3114,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +13.9 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +13.9 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -3187,7 +3187,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +52.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +52.0 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -3256,7 +3256,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +6.2 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +6.2 % (médiane du marché : +74.4 %).",
       "coul": "orange"
      }
     ],
@@ -3318,7 +3318,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +231.0 % (médiane du marché : +71.6 %).",
+      "txt": "Performance sur 1 an de +231.0 % (médiane du marché : +74.4 %).",
       "coul": "vert"
      }
     ],

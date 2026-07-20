@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T14:35:14+00:00",
+ "maj": "2026-07-20T14:47:07+00:00",
  "nb_valeurs": 47,
  "valeurs": [
   {
@@ -45,7 +45,7 @@
   {
    "ticker": "BOAB",
    "nom": "BANK OF AFRICA BENIN",
-   "volume": 2597.0,
+   "volume": 3817.0,
    "cours_veille": 8700.0,
    "ouverture": 8700.0,
    "cours": 8600.0,
@@ -125,7 +125,7 @@
   {
    "ticker": "CFAC",
    "nom": "CFAO MOTORS COTE D'IVOIRE",
-   "volume": 10031.0,
+   "volume": 10079.0,
    "cours_veille": 1710.0,
    "ouverture": 1605.0,
    "cours": 1700.0,
@@ -165,7 +165,7 @@
   {
    "ticker": "FTSC",
    "nom": "FILTISAC COTE D'IVOIRE",
-   "volume": 3765.0,
+   "volume": 3810.0,
    "cours_veille": 1990.0,
    "ouverture": 1990.0,
    "cours": 1985.0,
@@ -195,11 +195,11 @@
   {
    "ticker": "NSBC",
    "nom": "NSIA BANQUE COTE D'IVOIRE",
-   "volume": 1085.0,
-   "cours_veille": 23995.0,
+   "volume": 1203.0,
+   "cours_veille": 22560.0,
    "ouverture": 23650.0,
-   "cours": 23995.0,
-   "variation_pct": 1.46,
+   "cours": 22560.0,
+   "variation_pct": -4.61,
    "source": "brvm.org"
   },
   {
@@ -245,11 +245,11 @@
   {
    "ticker": "PALC",
    "nom": "PALM COTE D'IVOIRE",
-   "volume": 1909.0,
-   "cours_veille": 8500.0,
+   "volume": 1914.0,
+   "cours_veille": 8680.0,
    "ouverture": 8600.0,
-   "cours": 8505.0,
-   "variation_pct": -2.13,
+   "cours": 8680.0,
+   "variation_pct": -0.12,
    "source": "brvm.org"
   },
   {
@@ -285,11 +285,11 @@
   {
    "ticker": "SDCC",
    "nom": "SODE COTE D'IVOIRE",
-   "volume": 1669.0,
-   "cours_veille": 11350.0,
+   "volume": 1672.0,
+   "cours_veille": 11900.0,
    "ouverture": 11300.0,
-   "cours": 11365.0,
-   "variation_pct": 0.58,
+   "cours": 11900.0,
+   "variation_pct": 5.31,
    "source": "brvm.org"
   },
   {
@@ -345,11 +345,11 @@
   {
    "ticker": "SICC",
    "nom": "SICOR COTE D'IVOIRE",
-   "volume": 75.0,
-   "cours_veille": 5300.0,
+   "volume": 85.0,
+   "cours_veille": 5600.0,
    "ouverture": 5300.0,
-   "cours": 5300.0,
-   "variation_pct": 0.0,
+   "cours": 5600.0,
+   "variation_pct": 5.66,
    "source": "brvm.org"
   },
   {
@@ -365,21 +365,21 @@
   {
    "ticker": "SLBC",
    "nom": "SOLIBRA COTE D'IVOIRE",
-   "volume": 183.0,
-   "cours_veille": 40500.0,
+   "volume": 343.0,
+   "cours_veille": 39005.0,
    "ouverture": 40900.0,
-   "cours": 40900.0,
-   "variation_pct": 4.46,
+   "cours": 39005.0,
+   "variation_pct": -0.38,
    "source": "brvm.org"
   },
   {
    "ticker": "SMBC",
    "nom": "SMB COTE D'IVOIRE",
-   "volume": 252.0,
-   "cours_veille": 16300.0,
+   "volume": 352.0,
+   "cours_veille": 15700.0,
    "ouverture": 15200.0,
-   "cours": 16250.0,
-   "variation_pct": 6.94,
+   "cours": 15700.0,
+   "variation_pct": 3.32,
    "source": "brvm.org"
   },
   {
@@ -425,11 +425,11 @@
   {
    "ticker": "STBC",
    "nom": "SITAB COTE D'IVOIRE",
-   "volume": 409.0,
-   "cours_veille": 23005.0,
+   "volume": 424.0,
+   "cours_veille": 23495.0,
    "ouverture": 23900.0,
-   "cours": 23005.0,
-   "variation_pct": -3.74,
+   "cours": 23495.0,
+   "variation_pct": -1.69,
    "source": "brvm.org"
   },
   {
