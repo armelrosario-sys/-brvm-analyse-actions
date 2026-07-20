@@ -185,11 +185,23 @@ def recommander(scores, m, ms):
         reco = "Vendre"
     else:
         reco = "Conserver"
-    fourchette = None
-    if m["bnpa"] and ms.get("per"):
-        jv = m["bnpa"] * ms["per"]
-        fourchette = [round(jv * 0.87), round(jv * 0.99)]
-    return reco, fourchette, None
+    # Fourchette : ancrage prioritaire sur le PER historique PROPRE de la valeur,
+    # a defaut la mediane sectorielle. Garde-fou : si la juste valeur s'ecarte de
+    # plus de 60 % du cours, la fourchette est jugee non fiable et omise.
+    fourchette, note = None, None
+    per_ref = m.get("per_histo_med") or ms.get("per")
+    if m["bnpa"] and per_ref:
+        jv = m["bnpa"] * per_ref
+        if m["cours"] and not (0.4 <= jv / m["cours"] <= 1.6):
+            note = ("Fourchette d'entrée non calculable de façon fiable "
+                    "(juste valeur théorique trop éloignée du cours de marché).")
+        else:
+            fourchette = [round(jv * 0.87), round(jv * 0.99)]
+    return reco, fourchette, note
+
+
+def nb_fr(x):
+    return f"{x:,.0f}".replace(",", " ")
 
 
 def texte_conclusion(t, nom, reco, fourchette, scores, m):
@@ -211,23 +223,21 @@ def texte_conclusion(t, nom, reco, fourchette, scores, m):
     if forces:
         ph1 += " L'entreprise affiche " + " et ".join(forces) + "."
     if faibl:
-        ph1 += " En revanche, " + " et ".join(faibl) + \
-               " appellent à la vigilance."
+        ph1 += " En revanche, " + " et ".join(faibl) + " appellent à la vigilance."
     ph2 = ""
     if fourchette and m["cours"]:
         bas, haut = fourchette
         ecart_b = (1 - haut / m["cours"]) * 100
         ecart_h = (1 - bas / m["cours"]) * 100
         if m["cours"] > haut:
-            ph2 = (f"Au cours actuel de {m['cours']:,.0f} FCFA, le titre se traite au-dessus "
+            ph2 = (f"Au cours actuel de {nb_fr(m['cours'])} FCFA, le titre se traite au-dessus "
                    f"de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix "
-                   f"conseillé se situe entre {bas:,.0f} et {haut:,.0f} FCFA, soit environ "
-                   f"{max(ecart_b,0):.0f} % à {ecart_h:.0f} % sous le cours actuel.")
+                   f"conseillé se situe entre {nb_fr(bas)} et {nb_fr(haut)} FCFA, soit environ "
+                   f"{max(ecart_b, 0):.0f} % à {ecart_h:.0f} % sous le cours actuel.")
         else:
-            ph2 = (f"Au cours actuel de {m['cours']:,.0f} FCFA, le titre se situe dans ou sous "
-                   f"la fourchette d'entrée calculée ({bas:,.0f} à {haut:,.0f} FCFA), un niveau "
+            ph2 = (f"Au cours actuel de {nb_fr(m['cours'])} FCFA, le titre se situe dans ou sous "
+                   f"la fourchette d'entrée calculée ({nb_fr(bas)} à {nb_fr(haut)} FCFA), un niveau "
                    f"d'achat jugé raisonnable au regard des fondamentaux.")
-        ph2 = ph2.replace(",", " ")
     return ph1, ph2
 
 
