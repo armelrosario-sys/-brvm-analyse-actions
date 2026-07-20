@@ -89,7 +89,9 @@ def metriques(t, fonda, cours, tech, fjson, histo_div, per_histo):
     m["var_1a"] = tech.get(t, {}).get("var_1a")
     m["tendance"] = tech.get(t, {}).get("tendance_provisoire_mensuelle")
     divs = histo_div.get(t, [])
-    m["div_dernier"] = divs[-1]["montant"] if divs else None
+    m["div_dernier"] = (divs[-1]["montant"] if divs and
+                        int(divs[-1]["exercice"]) >= datetime.now(timezone.utc).year - 2
+                        else None)
     annees = {d["exercice"] for d in divs}
     m["div_regularite"] = len([a for a in annees if int(a) >= 2021])  # sur 5 derniers exercices
     m["dy_net"] = round(m["div_dernier"] * 0.9 / m["cours"] * 100, 2) \
