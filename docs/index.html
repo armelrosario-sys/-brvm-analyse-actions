@@ -49,6 +49,17 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 .indispo{color:#c3c7cf}
 #graphDiv{height:180px;position:relative;margin-top:10px}
 .notebas{color:var(--gris);font-size:12px;margin-top:10px}
+.onglets button{font-size:13.5px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:var(--gris);font-weight:600;text-align:right;padding:7px 3px;border-bottom:1px solid var(--ligne)}
+th:first-child,td:first-child{text-align:left}
+td{padding:8px 3px;border-bottom:1px solid var(--pastel);text-align:right}
+td .tick{color:var(--bleu);font-weight:700;cursor:pointer}
+.badge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 6px}
+.bA{background:#dcfce7;color:#166534}.bC{background:#fef9c3;color:#854d0e}
+.bV{background:#fee2e2;color:#991b1b}
+.regle{color:var(--gris);font-size:12.5px;margin-bottom:8px}
+.vide{color:#9ca3af;font-size:13.5px;padding:10px 0}
 .masque{display:none}
 </style>
 </head>
@@ -75,6 +86,7 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
   <button class="actif" data-o="apercu">Aperçu</button>
   <button data-o="analyse">Analyse</button>
   <button data-o="carnet">Carnet d'ordres</button>
+  <button data-o="filtres">Filtres</button>
 </div>
 
 <div id="contenuApercu">
@@ -91,6 +103,7 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 </div>
 <div id="contenuAnalyse" class="masque"></div>
 <div id="contenuCarnet" class="masque"></div>
+<div id="contenuFiltres" class="masque"></div>
 
 <script>
 const fmt = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(n);
@@ -430,15 +443,104 @@ function rendreAnalyse(t){
 document.getElementById('onglets').addEventListener('click',e=>{
   const o=e.target.dataset.o;
   if(!o) return;
+  activerOnglet(o);
+});
+
+function activerOnglet(o){
   document.querySelectorAll('#onglets button').forEach(b=>
     b.classList.toggle('actif',b.dataset.o===o));
-  document.getElementById('contenuApercu').classList.toggle('masque',o!=='apercu');
-  document.getElementById('contenuAnalyse').classList.toggle('masque',o!=='analyse');
-  document.getElementById('contenuCarnet').classList.toggle('masque',o!=='carnet');
+  for(const [id,cle] of [["contenuApercu","apercu"],["contenuAnalyse","analyse"],
+      ["contenuCarnet","carnet"],["contenuFiltres","filtres"]])
+    document.getElementById(id).classList.toggle('masque',o!==cle);
   const t=document.getElementById('choixValeur').value;
   if(o==='analyse') rendreAnalyse(t);
   if(o==='carnet') rendreCarnet(t);
-});
+  if(o==='filtres') rendreFiltres();
+}
+
+function ouvrirFiche(tk){
+  const sel=document.getElementById('choixValeur');
+  sel.value=tk;
+  activerOnglet('apercu');
+  afficher(tk);
+  window.scrollTo({top:0});
+}
+
+function cagrJS(vals){
+  const v=vals.filter(x=>x!=null);
+  if(v.length<3||v[0]<=0||v[v.length-1]<=0) return null;
+  return (Math.pow(v[v.length-1]/v[0],1/(v.length-1))-1)*100;
+}
+function medianeJS(l){const s=l.filter(x=>x!=null).sort((a,b)=>a-b);
+  if(!s.length)return null;const n=s.length;
+  return n%2?s[(n-1)/2]:(s[n/2-1]+s[n/2])/2;}
+
+function rendreFiltres(){
+  const zone=document.getElementById('contenuFiltres');
+  const badge=r=>r?`<span class="badge b${r[0]}">${r}</span>`:"";
+  const V=[];
+  for(const v of (cours.valeurs||[])){
+    const tk=v.ticker, te=tech[tk]||{}, fo=fonda[tk]||{};
+    const exs=Object.keys(fo.exercices||{}).sort();
+    const serie=ch=>exs.map(e=>fo.exercices[e][ch]?fo.exercices[e][ch].valeur:null);
+    const dern=ch=>{for(let i=exs.length-1;i>=0;i--){
+      const x=fo.exercices[exs[i]][ch]; if(x&&x.valeur!=null) return x.valeur;} return null;};
+    const o={tk, nom:v.nom, cours:v.cours,
+      cCA:cagrJS(serie("ca")), cRN:cagrJS(serie("rn")), cBPA:cagrJS(serie("bnpa")),
+      tend:te.tendance_provisoire_mensuelle, var1m:te.var_1m,
+      mm20:te.mm20, mm50:te.mm50, mm200:te.mm200,
+      pbr:dern("pbr"), div:dern("dividende"),
+      reco:((analyse&&analyse.valeurs[tk])||{}).reco, sect:secteurs[tk]};
+    o.dyNet=(o.div&&v.cours)?o.div*0.9/v.cours*100:null;
+    o.dyBrut=(o.div&&v.cours)?o.div/v.cours*100:null;
+    V.push(o);
+  }
+  const tbl=(lignes,cols)=>lignes.length?
+    `<table><tr>${cols.map(c=>`<th>${c[0]}</th>`).join("")}</tr>`+
+    lignes.map(x=>`<tr>${cols.map(c=>`<td>${c[1](x)}</td>`).join("")}</tr>`).join("")+
+    `</table>`:`<p class="vide">Aucune valeur ne satisfait actuellement tous les critères.</p>`;
+  const lien=x=>`<span class="tick" onclick="ouvrirFiche('${x.tk}')">${x.tk}</span>
+    <span style="color:#6b7280;font-size:11px">${(x.nom||"").slice(0,20)}</span>`;
+
+  let html=`<h2>Segment Croissance (cible : 80 % du portefeuille)</h2>
+    <p class="regle">CA, résultat net et BPA en croissance sur les exercices disponibles,
+    et tendance de cours haussière.</p>`;
+  const cr=V.filter(x=>x.cCA>0&&x.cRN>0&&x.cBPA>0&&x.tend==="haussiere")
+    .sort((a,b)=>b.cRN-a.cRN);
+  html+=tbl(cr,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
+    ["CA %/an",x=>fmt(x.cCA)],["RN %/an",x=>fmt(x.cRN)],["BPA %/an",x=>fmt(x.cBPA)],
+    ["Avis",x=>badge(x.reco)]]);
+
+  html+=`<h2>Segment Rendement (cible : 20 % du portefeuille)</h2>
+    <p class="regle">Tri par rendement du dividende net d'IRVM (10 %) au cours actuel.</p>`;
+  const rd=V.filter(x=>x.dyNet!=null).sort((a,b)=>b.dyNet-a.dyNet).slice(0,12);
+  html+=tbl(rd,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
+    ["DY net %",x=>fmt(x.dyNet)],["DY brut %",x=>fmt(x.dyBrut)],
+    ["Avis",x=>badge(x.reco)]]);
+
+  const mmDispo=V.some(x=>x.mm20!=null&&x.mm50!=null);
+  html+=`<h2>Momentum — décotées en début de cycle haussier</h2>
+    <p class="regle">${mmDispo
+      ? "MM20 &gt; MM50, cours &gt; MM200, et PBR sous la médiane de son secteur."
+      : "Règle provisoire (historique quotidien en cours d'accumulation) : tendance 12 mois "
+        + "haussière, variation 1 mois positive, et PBR sous la médiane de son secteur. "
+        + "Le croisement MM20/MM50 prendra le relais automatiquement."}</p>`;
+  const medPbrSect={};
+  for(const s of new Set(V.map(x=>x.sect).filter(Boolean)))
+    medPbrSect[s]=medianeJS(V.filter(x=>x.sect===s).map(x=>x.pbr));
+  const decote=x=>x.pbr!=null&&medPbrSect[x.sect]!=null&&x.pbr<=medPbrSect[x.sect];
+  const mo=V.filter(x=> decote(x) && (mmDispo
+      ? (x.mm20!=null&&x.mm50!=null&&x.mm20>x.mm50&&(x.mm200==null||x.cours>x.mm200))
+      : (x.tend==="haussiere"&&x.var1m>0)))
+    .sort((a,b)=>(b.var1m||0)-(a.var1m||0));
+  html+=tbl(mo,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
+    ["Var. 1 mois %",x=>fmt(x.var1m)],["PBR",x=>fmt(x.pbr)],
+    ["PBR méd. sect.",x=>fmt(medPbrSect[x.sect])],["Avis",x=>badge(x.reco)]]);
+
+  html+=`<p class="notebas">Sélections générées automatiquement par règles — ne constituent
+    pas un conseil en investissement. Une valeur peut appartenir à plusieurs segments.</p>`;
+  zone.innerHTML=html;
+}
 
 function rendreCarnet(t){
   const zone=document.getElementById('contenuCarnet');
