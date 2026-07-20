@@ -71,12 +71,13 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 
 <div class="stats" id="stats"></div>
 
-<div class="onglets">
-  <button class="actif">Aperçu</button>
-  <button disabled title="Phase 4">Analyse</button>
+<div class="onglets" id="onglets">
+  <button class="actif" data-o="apercu">Aperçu</button>
+  <button data-o="analyse">Analyse</button>
   <button disabled title="Phase 5">Carnet d'ordres</button>
 </div>
 
+<div id="contenuApercu">
 <h2>Description</h2>
 <p class="desc"><span id="descTexte">—</span> <span class="lirePlus masque" id="lirePlus">Lire plus</span></p>
 
@@ -87,6 +88,8 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 <div class="liste" id="blocDividendes"></div>
 <div id="graphDiv"><canvas id="graphDividendes"></canvas></div>
 <p class="notebas" id="noteSources"></p>
+</div>
+<div id="contenuAnalyse" class="masque"></div>
 
 <script>
 const fmt = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(n);
@@ -364,6 +367,76 @@ document.getElementById('periodes').addEventListener('click',e=>{
   if(e.target.dataset.p && !e.target.disabled){
     periode=e.target.dataset.p; majPeriodes(); majVariation(); dessinerGraphique(); }
 });
+// ---------- Onglet Analyse (Phase 4) ----------
+let analyse=null;
+const COUL={vert:"#16a34a",orange:"#f59e0b",rouge:"#dc2626"};
+const TITRES={performances:"Performances",perspectives:"Perspectives",
+  remuneration:"Rémunération",valorisation:"Valorisation"};
+
+function jaugeSVG(score){
+  const s = score==null?null:Math.max(0,Math.min(100,score));
+  const ang = s==null?null:(-90 + s*1.8);
+  const arc=(a1,a2,coul)=>{
+    const r=70,cx=90,cy=85;
+    const p=a=>[cx+r*Math.cos((a-90)*Math.PI/180), cy+r*Math.sin((a-90)*Math.PI/180)];
+    const [x1,y1]=p(a1),[x2,y2]=p(a2);
+    return `<path d="M${x1.toFixed(1)},${y1.toFixed(1)} A70,70 0 0 1 ${x2.toFixed(1)},${y2.toFixed(1)}"
+      stroke="${coul}" stroke-width="14" fill="none" stroke-linecap="round"/>`;
+  };
+  const aiguille = ang==null?"":`
+    <line x1="90" y1="85" x2="${(90+52*Math.cos((ang-90)*Math.PI/180)).toFixed(1)}"
+      y2="${(85+52*Math.sin((ang-90)*Math.PI/180)).toFixed(1)}"
+      stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="90" cy="85" r="5" fill="#111827"/>`;
+  return `<svg viewBox="0 0 180 100" style="width:220px;max-width:60%;display:block;margin:0 auto">
+    ${arc(-90,-46,"#e11d48")}${arc(-44,-2,"#eab308")}${arc(0,42,"#4ade80")}${arc(44,88,"#16a34a")}
+    <text x="22" y="98" font-size="9" fill="#6b7280">Mauvais</text>
+    <text x="42" y="18" font-size="9" fill="#6b7280">Mitigé</text>
+    <text x="118" y="18" font-size="9" fill="#6b7280">Bon</text>
+    <text x="132" y="98" font-size="9" fill="#6b7280">Excellent</text>
+    ${aiguille}</svg>`;
+}
+
+function rendreAnalyse(t){
+  const zone=document.getElementById('contenuAnalyse');
+  const a=analyse&&analyse.valeurs&&analyse.valeurs[t];
+  if(!a){ zone.innerHTML="<p class='desc'>Analyse non disponible pour cette valeur.</p>"; return; }
+  let html="";
+  for(const dim of ["performances","perspectives","remuneration","valorisation"]){
+    const sc=a.scores[dim], lib=a.libelles[dim];
+    const coulLib = sc==null?"#9ca3af":sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
+    html+=`<h2>${TITRES[dim]}</h2>${jaugeSVG(sc)}
+      <p style="text-align:center;font-weight:800;color:${coulLib};margin:2px 0 10px">${lib}</p>`;
+    const past=a.pastilles[dim]||[];
+    if(past.length){
+      html+="<div class='liste'>"+past.map(p=>
+        `<div style="justify-content:flex-start;gap:10px">
+          <span style="min-width:9px;height:9px;border-radius:50%;background:${COUL[p.coul]};
+            display:inline-block;margin-top:5px"></span>
+          <span class="lib" style="flex:1">${p.txt}</span></div>`).join("")+"</div>";
+    } else {
+      html+="<p class='desc' style='color:#9ca3af'>Données insuffisantes pour cette dimension.</p>";
+    }
+  }
+  html+=`<h2 style="text-align:center;text-decoration:underline;font-style:italic;
+    font-weight:600;font-size:15px">Analyse du ${analyse.date_analyse}</h2>`;
+  html+=a.conclusion.map(p=>`<p class="desc" style="margin-bottom:12px">${p}</p>`).join("");
+  html+=`<p class="notebas">Analyse générée automatiquement par règles à partir des données
+    collectées — ne constitue pas un conseil en investissement.</p>`;
+  zone.innerHTML=html;
+}
+
+document.getElementById('onglets').addEventListener('click',e=>{
+  const o=e.target.dataset.o;
+  if(!o) return;
+  document.querySelectorAll('#onglets button').forEach(b=>
+    b.classList.toggle('actif',b.dataset.o===o));
+  document.getElementById('contenuApercu').classList.toggle('masque',o!=='apercu');
+  document.getElementById('contenuAnalyse').classList.toggle('masque',o!=='analyse');
+  if(o==='analyse') rendreAnalyse(document.getElementById('choixValeur').value);
+});
+
+(async()=>{ analyse = await fetch('data/analyse.json').then(r=>r.json()).catch(()=>null); })();
 chargerBase();
 </script>
 </body>
