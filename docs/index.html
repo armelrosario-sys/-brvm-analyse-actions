@@ -233,36 +233,37 @@ function derniersFondamentaux(fo){
 }
 
 function seriePourPeriode(){
-  if(!histo) return {labels:[],data:[],ref:null};
+  if(!histo) return {labels:[],data:[],ref:null,coupure:null};
   const q=histo.quotidien||[], m=histo.mensuel||[];
   const combine=[...m.map(x=>({d:x.date,c:x.cours})),
                  ...q.filter(x=>!m.length||x.date>m[m.length-1].date).map(x=>({d:x.date,c:x.cours}))];
   const dern = combine.length?combine[combine.length-1].d:null;
   const coupe = js => combine.filter(x=>x.d>=js);
   const an=dern?+dern.slice(0,4):0;
-  function serie(s){return {labels:s.map(x=>x.d),data:s.map(x=>x.c),
-    ref:s.length?s[0].c:null};}
+  function serie(s,cut){return {labels:s.map(x=>x.d),data:s.map(x=>x.c),
+    ref:s.length?s[0].c:null,coupure:cut||null};}
   function rec(d,ans,mois){
     let a=+d.slice(0,4), mo=+d.slice(5,7)-mois; a-=ans;
     while(mo<1){mo+=12;a--;}
     return a+"-"+String(mo).padStart(2,"0")+d.slice(7,10);
   }
-  if(!dern) return {labels:[],data:[],ref:null};
+  if(!dern) return {labels:[],data:[],ref:null,coupure:null};
+  let cut;
   switch(periode){
     case "1J": {
       const pts=(histo.seance&&histo.seance.points)||[];
       return {labels:pts.map(p=>p.h), data:pts.map(p=>p.cours),
-              ref:histo.seance?histo.seance.veille:null};
+              ref:histo.seance?histo.seance.veille:null, coupure:null};
     }
     case "1S": { const s=q.slice(-5);
-      return {labels:s.map(x=>x.date.slice(5)),data:s.map(x=>x.cours),
-              ref:s.length?s[0].cours:null}; }
-    case "1M": return serie(coupe(rec(dern,0,1)));
-    case "3M": return serie(coupe(rec(dern,0,3)));
-    case "6M": return serie(coupe(rec(dern,0,6)));
-    case "YTD": return serie(coupe(an+"-01-01"));
-    case "1A": return serie(coupe(rec(dern,1,0)));
-    default:   return serie(combine);
+      return {labels:s.map(x=>x.date),data:s.map(x=>x.cours),
+              ref:s.length?s[0].cours:null, coupure:null}; }
+    case "1M": cut=rec(dern,0,1); return serie(coupe(cut),cut);
+    case "3M": cut=rec(dern,0,3); return serie(coupe(cut),cut);
+    case "6M": cut=rec(dern,0,6); return serie(coupe(cut),cut);
+    case "YTD": cut=an+"-01-01"; return serie(coupe(cut),cut);
+    case "1A": cut=rec(dern,1,0); return serie(coupe(cut),cut);
+    default:   return serie(combine,null);
   }
 }
 
@@ -288,7 +289,18 @@ function majVariation(){
       el.textContent = (delta>=0?'+':'')+fmtEntier(delta)+' FCFA  ' +
                        (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
     } else { el.className='neutre'; el.textContent='—'; }
-    dateEl.textContent = '· ' + (LIB_PERIODE[periode]||periode);
+    // Libelle honnete : si le 1er point disponible est posterieur au debut
+    // theorique de la periode (>3 jours), on affiche la date reelle de depart.
+    let libelle = LIB_PERIODE[periode]||periode;
+    const premier = s.labels.length ? String(s.labels[0]) : null;
+    if(s.coupure && premier && premier.length===10){
+      const ecartJours = (new Date(premier) - new Date(s.coupure)) / 86400000;
+      if(ecartJours > 3){
+        libelle = "depuis le " + new Date(premier)
+          .toLocaleDateString('fr-FR',{day:'numeric',month:'short'});
+      }
+    }
+    dateEl.textContent = '· ' + libelle;
   }
 }
 
