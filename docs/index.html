@@ -74,7 +74,7 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 <div class="onglets" id="onglets">
   <button class="actif" data-o="apercu">Aperçu</button>
   <button data-o="analyse">Analyse</button>
-  <button disabled title="Phase 5">Carnet d'ordres</button>
+  <button data-o="carnet">Carnet d'ordres</button>
 </div>
 
 <div id="contenuApercu">
@@ -90,6 +90,7 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 <p class="notebas" id="noteSources"></p>
 </div>
 <div id="contenuAnalyse" class="masque"></div>
+<div id="contenuCarnet" class="masque"></div>
 
 <script>
 const fmt = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(n);
@@ -433,8 +434,56 @@ document.getElementById('onglets').addEventListener('click',e=>{
     b.classList.toggle('actif',b.dataset.o===o));
   document.getElementById('contenuApercu').classList.toggle('masque',o!=='apercu');
   document.getElementById('contenuAnalyse').classList.toggle('masque',o!=='analyse');
-  if(o==='analyse') rendreAnalyse(document.getElementById('choixValeur').value);
+  document.getElementById('contenuCarnet').classList.toggle('masque',o!=='carnet');
+  const t=document.getElementById('choixValeur').value;
+  if(o==='analyse') rendreAnalyse(t);
+  if(o==='carnet') rendreCarnet(t);
 });
+
+function rendreCarnet(t){
+  const zone=document.getElementById('contenuCarnet');
+  const v=(cours.valeurs||[]).find(x=>x.ticker===t)||{};
+  const se=(histo&&histo.seance)||{};
+  const pts=se.points||[];
+  let html="";
+
+  // Echanges de la seance, heure par heure (volume incremental entre releves)
+  html+=`<h2>Échanges de la séance${se.date?` — ${se.date}`:""}</h2>`;
+  if(pts.length){
+    let prec=0;
+    const lignes=pts.map(p=>{
+      const dv=Math.max(0,(p.volume||0)-prec); prec=p.volume||0;
+      return `<div><span class="lib">${p.h}</span>
+        <span>${fmtEntier(p.cours)} FCFA</span>
+        <span class="val">${fmtEntier(dv)} titres</span></div>`;
+    }).join("");
+    html+=`<div class="liste">${lignes}</div>`;
+  } else {
+    html+=`<p class="desc" style="color:#9ca3af">Aucun relevé pour la dernière séance.</p>`;
+  }
+
+  // Liquidite
+  const te=tech[t]||{};
+  const valJour=(v.cours!=null&&v.volume!=null)?v.cours*v.volume:null;
+  const valMoy=(v.cours!=null&&te.volume_moyen_20!=null)?v.cours*te.volume_moyen_20:null;
+  // Rang de liquidite sur le marche (valeur moyenne echangee)
+  const classement=Object.entries(tech)
+    .map(([tk,x])=>{const cv=(cours.valeurs||[]).find(y=>y.ticker===tk);
+      return [tk,(cv&&cv.cours!=null&&x.volume_moyen_20!=null)?cv.cours*x.volume_moyen_20:null];})
+    .filter(x=>x[1]!=null).sort((a,b)=>b[1]-a[1]);
+  const rang=classement.findIndex(x=>x[0]===t);
+  html+=`<h2>Liquidité</h2><div class="liste">
+    <div><span class="lib">Volume de la séance</span><span class="val">${fmtEntier(v.volume)} titres</span></div>
+    <div><span class="lib">Valeur échangée (séance)</span><span class="val">${valJour!=null?fmtMds(valJour/1e6):"—"}</span></div>
+    <div><span class="lib">Valeur moyenne échangée (20 séances)</span><span class="val">${valMoy!=null?fmtMds(valMoy/1e6):"—"}</span></div>
+    <div><span class="lib">Rang de liquidité sur le marché</span><span class="val">${rang>=0?(rang+1)+" / "+classement.length:"—"}</span></div>
+  </div>`;
+
+  html+=`<p class="notebas">Le carnet d'ordres multi-niveaux (bid/ask) n'est pas diffusé
+    gratuitement par la BRVM ; cet onglet présente les échanges réels de la séance et des
+    indicateurs de liquidité calculés à partir des données officielles.</p>`;
+  zone.innerHTML=html;
+}
 
 (async()=>{ analyse = await fetch('data/analyse.json').then(r=>r.json()).catch(()=>null); })();
 chargerBase();
