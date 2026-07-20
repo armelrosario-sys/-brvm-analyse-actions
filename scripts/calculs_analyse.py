@@ -219,7 +219,8 @@ def texte_conclusion(t, nom, reco, fourchette, scores, m):
         faibl.append("une valorisation exigeante")
     if scores.get("perspectives") is not None and scores["perspectives"] < 38:
         faibl.append("un momentum défavorable")
-    ph1 = f"Nous recommandons de {reco.lower()} {nom}."
+    verbe = "d'acheter" if reco == "Acheter" else "de " + reco.lower()
+    ph1 = f"Nous recommandons {verbe} {nom}."
     if forces:
         ph1 += " L'entreprise affiche " + " et ".join(forces) + "."
     if faibl:
