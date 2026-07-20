@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T08:48:14+00:00",
+ "maj": "2026-07-20T08:57:35+00:00",
  "date_analyse": "20/07/2026",
  "valeurs": {
   "ABJC": {
@@ -67,12 +67,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    2602,
-    2961
+    1362,
+    1550
    ],
    "conclusion": [
     "Nous recommandons de conserver SERVAIR ABIDJAN  COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 2 990 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 2 602 et 2 961 FCFA  soit environ 1 % à 13 % sous le cours actuel."
+    "Au cours actuel de 2 990 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 362 et 1 550 FCFA, soit environ 48 % à 54 % sous le cours actuel."
    ]
   },
   "BICB": {
@@ -140,12 +140,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    5132,
-    5840
+    3637,
+    4139
    ],
    "conclusion": [
     "Nous recommandons de conserver BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN. L'entreprise affiche une rentabilité solide et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 6 300 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 5 132 et 5 840 FCFA  soit environ 7 % à 19 % sous le cours actuel."
+    "Au cours actuel de 6 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 637 et 4 139 FCFA, soit environ 34 % à 42 % sous le cours actuel."
    ]
   },
   "BICC": {
@@ -213,12 +213,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    26858,
-    30562
+    20529,
+    23361
    ],
    "conclusion": [
     "Nous recommandons de acheter BICI COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 28 100 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (26 858 à 30 562 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 28 100 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 20 529 et 23 361 FCFA, soit environ 17 % à 27 % sous le cours actuel."
    ]
   },
   "BNBC": {
@@ -285,13 +285,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    71,
-    81
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre BERNABE COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 1 875 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 71 et 81 FCFA  soit environ 96 % à 96 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre BERNABE COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "BOAB": {
@@ -358,13 +355,10 @@
     ]
    },
    "reco": "Conserver",
-   "fourchette": [
-    6077,
-    6915
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de conserver BANK OF AFRICA BENIN. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 8 700 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 6 077 et 6 915 FCFA  soit environ 21 % à 30 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de conserver BANK OF AFRICA BENIN. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance."
    ]
   },
   "BOABF": {
@@ -431,13 +425,10 @@
     ]
    },
    "reco": "Conserver",
-   "fourchette": [
-    5364,
-    6103
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de conserver BANK OF AFRICA BURKINA FASO. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 7 200 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 5 364 et 6 103 FCFA  soit environ 15 % à 26 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de conserver BANK OF AFRICA BURKINA FASO. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "BOAC": {
@@ -505,12 +496,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    10891,
-    12394
+    4785,
+    5445
    ],
    "conclusion": [
     "Nous recommandons de acheter BANK OF AFRICA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 9 745 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (10 891 à 12 394 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 9 745 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 785 et 5 445 FCFA, soit environ 44 % à 51 % sous le cours actuel."
    ]
   },
   "BOAM": {
@@ -578,12 +569,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    4949,
-    5631
+    3396,
+    3865
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA MALI. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 5 755 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 4 949 et 5 631 FCFA  soit environ 2 % à 14 % sous le cours actuel."
+    "Au cours actuel de 5 755 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 396 et 3 865 FCFA, soit environ 33 % à 41 % sous le cours actuel."
    ]
   },
   "BOAN": {
@@ -650,13 +641,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    241,
-    275
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre BANK OF AFRICA NIGER. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 5 350 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 241 et 275 FCFA  soit environ 95 % à 95 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre BANK OF AFRICA NIGER. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "BOAS": {
@@ -724,12 +712,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    7459,
-    8488
+    2774,
+    3156
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA SENEGAL. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 7 700 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (7 459 à 8 488 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 7 700 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 774 et 3 156 FCFA, soit environ 59 % à 64 % sous le cours actuel."
    ]
   },
   "CABC": {
@@ -797,12 +785,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    12332,
-    14033
+    1671,
+    1901
    ],
    "conclusion": [
     "Nous recommandons de acheter SICABLE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 3 650 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (12 332 à 14 033 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 3 650 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 671 et 1 901 FCFA, soit environ 48 % à 54 % sous le cours actuel."
    ]
   },
   "CBIBF": {
@@ -870,12 +858,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    25089,
-    28550
+    14138,
+    16089
    ],
    "conclusion": [
     "Nous recommandons de conserver CORIS BANK INTERNATIONAL BURKINA FASO. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 28 490 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (25 089 à 28 550 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 28 490 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 14 138 et 16 089 FCFA, soit environ 44 % à 50 % sous le cours actuel."
    ]
   },
   "CFAC": {
@@ -943,12 +931,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    975,
-    1110
+    972,
+    1106
    ],
    "conclusion": [
     "Nous recommandons de conserver CFAO MOTORS COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 1 600 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 975 et 1 110 FCFA  soit environ 31 % à 39 % sous le cours actuel."
+    "Au cours actuel de 1 600 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 972 et 1 106 FCFA, soit environ 31 % à 39 % sous le cours actuel."
    ]
   },
   "CIEC": {
@@ -1016,12 +1004,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    4484,
-    5102
+    2529,
+    2878
    ],
    "conclusion": [
     "Nous recommandons de conserver CIE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 5 195 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 4 484 et 5 102 FCFA  soit environ 2 % à 14 % sous le cours actuel."
+    "Au cours actuel de 5 195 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 529 et 2 878 FCFA, soit environ 45 % à 51 % sous le cours actuel."
    ]
   },
   "ECOC": {
@@ -1089,12 +1077,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    14136,
-    16086
+    8217,
+    9350
    ],
    "conclusion": [
     "Nous recommandons de conserver ECOBANK COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 16 000 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (14 136 à 16 086 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 16 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 8 217 et 9 350 FCFA, soit environ 42 % à 49 % sous le cours actuel."
    ]
   },
   "ETIT": {
@@ -1161,13 +1149,10 @@
     ]
    },
    "reco": "Acheter",
-   "fourchette": [
-    123,
-    139
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de acheter Ecobank Transnational Incorporated TOGO. L'entreprise affiche une dynamique favorable.",
-    "Au cours actuel de 68 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (123 à 139 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de acheter Ecobank Transnational Incorporated TOGO. L'entreprise affiche une dynamique favorable."
    ]
   },
   "FTSC": {
@@ -1230,13 +1215,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    1415,
-    1610
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre FILTISAC COTE D'IVOIRE. En revanche, une valorisation exigeante et un momentum défavorable appellent à la vigilance.",
-    "Au cours actuel de 1 990 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 1 415 et 1 610 FCFA  soit environ 19 % à 29 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre FILTISAC COTE D'IVOIRE. En revanche, une valorisation exigeante et un momentum défavorable appellent à la vigilance."
    ]
   },
   "LNBB": {
@@ -1304,12 +1286,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    4858,
-    5528
+    3012,
+    3427
    ],
    "conclusion": [
     "Nous recommandons de conserver LOTERIE NATIONALE DU BENIN. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 4 300 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (4 858 à 5 528 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 4 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 012 et 3 427 FCFA, soit environ 20 % à 30 % sous le cours actuel."
    ]
   },
   "NEIC": {
@@ -1377,12 +1359,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    3353,
-    3816
+    994,
+    1131
    ],
    "conclusion": [
     "Nous recommandons de acheter NEI-CEDA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 2 295 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (3 353 à 3 816 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 2 295 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 994 et 1 131 FCFA, soit environ 51 % à 57 % sous le cours actuel."
    ]
   },
   "NSBC": {
@@ -1450,12 +1432,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    20177,
-    22960
+    8921,
+    10152
    ],
    "conclusion": [
     "Nous recommandons de conserver NSIA BANQUE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 23 650 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 20 177 et 22 960 FCFA  soit environ 3 % à 15 % sous le cours actuel."
+    "Au cours actuel de 23 650 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 8 921 et 10 152 FCFA, soit environ 57 % à 62 % sous le cours actuel."
    ]
   },
   "NTLC": {
@@ -1523,12 +1505,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    10227,
-    11638
+    7434,
+    8460
    ],
    "conclusion": [
     "Nous recommandons de conserver NESTLE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 15 800 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 10 227 et 11 638 FCFA  soit environ 26 % à 35 % sous le cours actuel."
+    "Au cours actuel de 15 800 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 7 434 et 8 460 FCFA, soit environ 46 % à 53 % sous le cours actuel."
    ]
   },
   "ONTBF": {
@@ -1596,12 +1578,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    2327,
-    2648
+    1663,
+    1892
    ],
    "conclusion": [
     "Nous recommandons de conserver ONATEL BURKINA FASO. L'entreprise affiche un dividende bien assis. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 2 675 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 2 327 et 2 648 FCFA  soit environ 1 % à 13 % sous le cours actuel."
+    "Au cours actuel de 2 675 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 663 et 1 892 FCFA, soit environ 29 % à 38 % sous le cours actuel."
    ]
   },
   "ORAC": {
@@ -1669,12 +1651,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    11097,
-    12628
+    13229,
+    15054
    ],
    "conclusion": [
     "Nous recommandons de conserver ORANGE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 16 160 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 11 097 et 12 628 FCFA  soit environ 22 % à 31 % sous le cours actuel."
+    "Au cours actuel de 16 160 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 13 229 et 15 054 FCFA, soit environ 7 % à 18 % sous le cours actuel."
    ]
   },
   "ORGT": {
@@ -1734,12 +1716,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    3396,
-    3864
+    2498,
+    2842
    ],
    "conclusion": [
     "Nous recommandons de conserver ORAGROUP TOGO. L'entreprise affiche un dividende bien assis. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 2 680 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (3 396 à 3 864 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 2 680 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (2 498 à 2 842 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ]
   },
   "PALC": {
@@ -1807,12 +1789,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    12286,
-    13981
+    4066,
+    4627
    ],
    "conclusion": [
     "Nous recommandons de conserver PALM COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 8 690 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (12 286 à 13 981 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 8 690 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 066 et 4 627 FCFA, soit environ 47 % à 53 % sous le cours actuel."
    ]
   },
   "PRSC": {
@@ -1880,12 +1862,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    4859,
-    5530
+    2484,
+    2827
    ],
    "conclusion": [
     "Nous recommandons de conserver TRACTAFRIC MOTORS COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 4 500 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (4 859 à 5 530 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 4 500 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 484 et 2 827 FCFA, soit environ 37 % à 45 % sous le cours actuel."
    ]
   },
   "SAFC": {
@@ -1945,12 +1927,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    1058,
-    1204
+    3277,
+    3729
    ],
    "conclusion": [
     "Nous recommandons de conserver SAFCA COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 4 295 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 1 058 et 1 204 FCFA  soit environ 72 % à 75 % sous le cours actuel."
+    "Au cours actuel de 4 295 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 277 et 3 729 FCFA, soit environ 13 % à 24 % sous le cours actuel."
    ]
   },
   "SCRC": {
@@ -2013,13 +1995,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    1617,
-    1840
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre SUCRIVOIRE COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 3 705 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 1 617 et 1 840 FCFA  soit environ 50 % à 56 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre SUCRIVOIRE COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SDCC": {
@@ -2087,12 +2066,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    9909,
-    11276
+    4336,
+    4934
    ],
    "conclusion": [
     "Nous recommandons de conserver SODE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 11 300 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 9 909 et 11 276 FCFA  soit environ 0 % à 12 % sous le cours actuel."
+    "Au cours actuel de 11 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 336 et 4 934 FCFA, soit environ 56 % à 62 % sous le cours actuel."
    ]
   },
   "SDSC": {
@@ -2160,12 +2139,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    16577,
-    18863
+    2481,
+    2824
    ],
    "conclusion": [
     "Nous recommandons de acheter AFRICA GLOBAL LOGISTICS COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 2 720 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (16 577 à 18 863 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 2 720 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (2 481 à 2 824 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ]
   },
   "SEMC": {
@@ -2232,13 +2211,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    77,
-    87
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre EVIOSYS PACKAGING SIEM COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 1 500 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 77 et 87 FCFA  soit environ 94 % à 95 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre EVIOSYS PACKAGING SIEM COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SGBC": {
@@ -2306,12 +2282,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    39934,
-    45442
+    18394,
+    20931
    ],
    "conclusion": [
     "Nous recommandons de acheter SOCIETE GENERALE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 37 995 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (39 934 à 45 442 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 37 995 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 18 394 et 20 931 FCFA, soit environ 45 % à 52 % sous le cours actuel."
    ]
   },
   "SHEC": {
@@ -2379,12 +2355,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    1599,
-    1820
+    1095,
+    1247
    ],
    "conclusion": [
     "Nous recommandons de conserver VIVO ENERGY COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 2 190 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 1 599 et 1 820 FCFA  soit environ 17 % à 27 % sous le cours actuel."
+    "Au cours actuel de 2 190 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 095 et 1 247 FCFA, soit environ 43 % à 50 % sous le cours actuel."
    ]
   },
   "SIBC": {
@@ -2452,12 +2428,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    6818,
-    7759
+    3194,
+    3634
    ],
    "conclusion": [
     "Nous recommandons de conserver SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 8 760 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 6 818 et 7 759 FCFA  soit environ 11 % à 22 % sous le cours actuel."
+    "Au cours actuel de 8 760 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 194 et 3 634 FCFA, soit environ 59 % à 64 % sous le cours actuel."
    ]
   },
   "SICC": {
@@ -2516,13 +2492,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    393,
-    447
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre SICOR COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 5 300 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 393 et 447 FCFA  soit environ 92 % à 93 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre SICOR COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SIVC": {
@@ -2585,13 +2558,10 @@
     ]
    },
    "reco": "Conserver",
-   "fourchette": [
-    879,
-    1001
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de conserver ERIUM COTE D’IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 2 400 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 879 et 1 001 FCFA  soit environ 58 % à 63 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de conserver ERIUM COTE D’IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance."
    ]
   },
   "SLBC": {
@@ -2659,12 +2629,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    34066,
-    38765
+    51946,
+    59111
    ],
    "conclusion": [
     "Nous recommandons de acheter SOLIBRA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 39 155 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 34 066 et 38 765 FCFA  soit environ 1 % à 13 % sous le cours actuel."
+    "Au cours actuel de 39 155 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (51 946 à 59 111 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ]
   },
   "SMBC": {
@@ -2732,12 +2702,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    28032,
-    31899
+    8595,
+    9781
    ],
    "conclusion": [
     "Nous recommandons de acheter SMB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 15 195 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (28 032 à 31 899 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 15 195 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 8 595 et 9 781 FCFA, soit environ 36 % à 43 % sous le cours actuel."
    ]
   },
   "SNTS": {
@@ -2805,12 +2775,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    41201,
-    46884
+    23893,
+    27188
    ],
    "conclusion": [
     "Nous recommandons de acheter SONATEL SENEGAL. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 32 000 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (41 201 à 46 884 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 32 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 23 893 et 27 188 FCFA, soit environ 15 % à 25 % sous le cours actuel."
    ]
   },
   "SOGC": {
@@ -2878,12 +2848,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    7084,
-    8061
+    5967,
+    6790
    ],
    "conclusion": [
     "Nous recommandons de acheter SOGB COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 8 010 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (7 084 à 8 061 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 8 010 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 967 et 6 790 FCFA, soit environ 15 % à 26 % sous le cours actuel."
    ]
   },
   "SPHC": {
@@ -2951,12 +2921,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    11969,
-    13620
+    7166,
+    8154
    ],
    "conclusion": [
     "Nous recommandons de acheter SAPH COTE D'IVOIRE. L'entreprise affiche un dividende bien assis.",
-    "Au cours actuel de 7 500 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (11 969 à 13 620 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 7 500 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (7 166 à 8 154 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ]
   },
   "STAC": {
@@ -3019,13 +2989,10 @@
     ]
    },
    "reco": "Conserver",
-   "fourchette": [
-    3568,
-    4060
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de conserver SETAO COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 3 185 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (3 568 à 4 060 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de conserver SETAO COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance."
    ]
   },
   "STBC": {
@@ -3093,12 +3060,12 @@
    },
    "reco": "Acheter",
    "fourchette": [
-    24877,
-    28308
+    17509,
+    19924
    ],
    "conclusion": [
     "Nous recommandons de acheter SITAB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 23 900 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (24 877 à 28 308 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 23 900 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 17 509 et 19 924 FCFA, soit environ 17 % à 27 % sous le cours actuel."
    ]
   },
   "TTLC": {
@@ -3166,12 +3133,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    2412,
-    2745
+    1513,
+    1722
    ],
    "conclusion": [
     "Nous recommandons de conserver TOTALENERGIES MARKETING COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 2 900 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 2 412 et 2 745 FCFA  soit environ 5 % à 17 % sous le cours actuel."
+    "Au cours actuel de 2 900 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 513 et 1 722 FCFA, soit environ 41 % à 48 % sous le cours actuel."
    ]
   },
   "TTLS": {
@@ -3239,12 +3206,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    3643,
-    4146
+    2139,
+    2434
    ],
    "conclusion": [
     "Nous recommandons de conserver TOTALENERGIES MARKETING SENEGAL. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 3 995 FCFA  le titre se situe dans ou sous la fourchette d'entrée calculée (3 643 à 4 146 FCFA)  un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 3 995 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 139 et 2 434 FCFA, soit environ 39 % à 46 % sous le cours actuel."
    ]
   },
   "UNLC": {
@@ -3303,13 +3270,10 @@
     ]
    },
    "reco": "Vendre",
-   "fourchette": [
-    854,
-    972
-   ],
+   "fourchette": null,
    "conclusion": [
-    "Nous recommandons de vendre UNILEVER COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 54 495 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 854 et 972 FCFA  soit environ 98 % à 98 % sous le cours actuel."
+    "Fourchette d'entrée non calculable de façon fiable (juste valeur théorique trop éloignée du cours de marché).",
+    "Nous recommandons de vendre UNILEVER COTE D'IVOIRE. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance."
    ]
   },
   "UNXC": {
@@ -3373,12 +3337,12 @@
    },
    "reco": "Vendre",
    "fourchette": [
-    1419,
-    1614
+    674,
+    767
    ],
    "conclusion": [
     "Nous recommandons de vendre UNIWAX COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 1 845 FCFA  le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer  le prix conseillé se situe entre 1 419 et 1 614 FCFA  soit environ 13 % à 23 % sous le cours actuel."
+    "Au cours actuel de 1 845 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 674 et 767 FCFA, soit environ 58 % à 63 % sous le cours actuel."
    ]
   }
  }
