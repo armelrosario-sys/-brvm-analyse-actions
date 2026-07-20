@@ -38,6 +38,10 @@ jobs:
       - name: Calculs techniques et exports
         if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
         run: python scripts/calculs_techniques.py
+        
+      - name: Calculs d'analyse et notation
+        if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
+        run: python scripts/calculs_analyse.py
 
       - name: Enregistrer les resultats
         run: |
