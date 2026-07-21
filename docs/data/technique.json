@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-20T19:17:34+00:00",
+ "maj": "2026-07-21T07:54:48+00:00",
  "note": "MM et RSI calcules uniquement sur cours quotidiens reellement collectes ; null tant que l'historique quotidien est insuffisant.",
  "valeurs": {
   "ABJC": {
@@ -13,12 +13,12 @@
    "rsi14": null,
    "haut_52s": 3705.0,
    "bas_52s": 1680.0,
-   "volume_moyen_20": 2952,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2928,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -33,12 +33,12 @@
    "rsi14": null,
    "haut_52s": 6450.0,
    "bas_52s": 4900.0,
-   "volume_moyen_20": 4489,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 3386,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -53,12 +53,12 @@
    "rsi14": null,
    "haut_52s": 29000.0,
    "bas_52s": 15515.0,
-   "volume_moyen_20": 936,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 860,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -73,12 +73,12 @@
    "rsi14": null,
    "haut_52s": 1990.0,
    "bas_52s": 1300.0,
-   "volume_moyen_20": 3314,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2915,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -93,12 +93,12 @@
    "rsi14": null,
    "haut_52s": 9050.0,
    "bas_52s": 4320.0,
-   "volume_moyen_20": 3346,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 3503,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -113,12 +113,12 @@
    "rsi14": null,
    "haut_52s": 7200.0,
    "bas_52s": 3500.0,
-   "volume_moyen_20": 2729,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2483,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -133,12 +133,12 @@
    "rsi14": null,
    "haut_52s": 9790.0,
    "bas_52s": 5995.0,
-   "volume_moyen_20": 2522,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2814,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -153,12 +153,12 @@
    "rsi14": null,
    "haut_52s": 5755.0,
    "bas_52s": 3375.0,
-   "volume_moyen_20": 5215,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 5309,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -173,12 +173,12 @@
    "rsi14": null,
    "haut_52s": 5385.0,
    "bas_52s": 2495.0,
-   "volume_moyen_20": 6542,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 6517,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -193,12 +193,12 @@
    "rsi14": null,
    "haut_52s": 7700.0,
    "bas_52s": 4400.0,
-   "volume_moyen_20": 4036,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 4030,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -213,12 +213,12 @@
    "rsi14": null,
    "haut_52s": 4500.0,
    "bas_52s": 1200.0,
-   "volume_moyen_20": 1815,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1593,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -233,12 +233,12 @@
    "rsi14": null,
    "haut_52s": 28490.0,
    "bas_52s": 9700.0,
-   "volume_moyen_20": 671,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 647,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -253,12 +253,12 @@
    "rsi14": null,
    "haut_52s": 2310.0,
    "bas_52s": 660.0,
-   "volume_moyen_20": 7207,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 8164,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -273,12 +273,12 @@
    "rsi14": null,
    "haut_52s": 5485.0,
    "bas_52s": 2235.0,
-   "volume_moyen_20": 2790,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2849,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -293,12 +293,12 @@
    "rsi14": null,
    "haut_52s": 17005.0,
    "bas_52s": 11600.0,
-   "volume_moyen_20": 3004,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 3537,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -313,12 +313,12 @@
    "rsi14": null,
    "haut_52s": 68.0,
    "bas_52s": 16.0,
-   "volume_moyen_20": 1866112,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1934134,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -333,12 +333,12 @@
    "rsi14": null,
    "haut_52s": 4990.0,
    "bas_52s": 1985.0,
-   "volume_moyen_20": 5516,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 4948,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "baissiere"
   },
@@ -353,12 +353,12 @@
    "rsi14": null,
    "haut_52s": 4600.0,
    "bas_52s": 3725.0,
-   "volume_moyen_20": 1911,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2386,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -373,12 +373,12 @@
    "rsi14": null,
    "haut_52s": 2330.0,
    "bas_52s": 595.0,
-   "volume_moyen_20": 1381,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1171,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -393,12 +393,12 @@
    "rsi14": null,
    "haut_52s": 23650.0,
    "bas_52s": 9600.0,
-   "volume_moyen_20": 1253,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1236,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -413,12 +413,12 @@
    "rsi14": null,
    "haut_52s": 16380.0,
    "bas_52s": 10650.0,
-   "volume_moyen_20": 362,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 317,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -433,12 +433,12 @@
    "rsi14": null,
    "haut_52s": 2950.0,
    "bas_52s": 2335.0,
-   "volume_moyen_20": 2017,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1985,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -453,12 +453,12 @@
    "rsi14": null,
    "haut_52s": 16750.0,
    "bas_52s": 14050.0,
-   "volume_moyen_20": 763,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 650,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -473,12 +473,12 @@
    "rsi14": null,
    "haut_52s": 3655.0,
    "bas_52s": 1650.0,
-   "volume_moyen_20": 2860,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2481,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "baissiere"
   },
@@ -493,12 +493,12 @@
    "rsi14": null,
    "haut_52s": 9150.0,
    "bas_52s": 7310.0,
-   "volume_moyen_20": 1250,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1472,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -513,12 +513,12 @@
    "rsi14": null,
    "haut_52s": 4875.0,
    "bas_52s": 2345.0,
-   "volume_moyen_20": 898,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 976,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -533,12 +533,12 @@
    "rsi14": null,
    "haut_52s": 7030.0,
    "bas_52s": 800.0,
-   "volume_moyen_20": 1308,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1312,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -553,12 +553,12 @@
    "rsi14": null,
    "haut_52s": 3720.0,
    "bas_52s": 990.0,
-   "volume_moyen_20": 8096,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 8803,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -573,12 +573,12 @@
    "rsi14": null,
    "haut_52s": 12040.0,
    "bas_52s": 5800.0,
-   "volume_moyen_20": 1208,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1363,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -593,12 +593,12 @@
    "rsi14": null,
    "haut_52s": 2820.0,
    "bas_52s": 1400.0,
-   "volume_moyen_20": 19246,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 17233,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -613,12 +613,12 @@
    "rsi14": null,
    "haut_52s": 2325.0,
    "bas_52s": 700.0,
-   "volume_moyen_20": 3596,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 3831,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -633,12 +633,12 @@
    "rsi14": null,
    "haut_52s": 39000.0,
    "bas_52s": 23355.0,
-   "volume_moyen_20": 2424,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2520,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -653,12 +653,12 @@
    "rsi14": null,
    "haut_52s": 2265.0,
    "bas_52s": 1035.0,
-   "volume_moyen_20": 5012,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 4772,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -673,12 +673,12 @@
    "rsi14": null,
    "haut_52s": 9000.0,
    "bas_52s": 4800.0,
-   "volume_moyen_20": 15050,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 12332,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -693,12 +693,12 @@
    "rsi14": null,
    "haut_52s": 5600.0,
    "bas_52s": 3210.0,
-   "volume_moyen_20": 142,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 123,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -713,12 +713,12 @@
    "rsi14": null,
    "haut_52s": 3000.0,
    "bas_52s": 510.0,
-   "volume_moyen_20": 9892,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 7576,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -733,12 +733,12 @@
    "rsi14": null,
    "haut_52s": 44075.0,
    "bas_52s": 18000.0,
-   "volume_moyen_20": 246,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 278,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -753,12 +753,12 @@
    "rsi14": null,
    "haut_52s": 17735.0,
    "bas_52s": 9000.0,
-   "volume_moyen_20": 1968,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1429,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -773,12 +773,12 @@
    "rsi14": null,
    "haut_52s": 32000.0,
    "bas_52s": 25000.0,
-   "volume_moyen_20": 2844,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 3145,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -793,12 +793,12 @@
    "rsi14": null,
    "haut_52s": 8725.0,
    "bas_52s": 7100.0,
-   "volume_moyen_20": 3494,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 4368,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -813,12 +813,12 @@
    "rsi14": null,
    "haut_52s": 8400.0,
    "bas_52s": 6500.0,
-   "volume_moyen_20": 838,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1014,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "baissiere"
   },
@@ -833,12 +833,12 @@
    "rsi14": null,
    "haut_52s": 3550.0,
    "bas_52s": 575.0,
-   "volume_moyen_20": 5758,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 5736,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -853,12 +853,12 @@
    "rsi14": null,
    "haut_52s": 25000.0,
    "bas_52s": 18900.0,
-   "volume_moyen_20": 1818,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 1353,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -873,12 +873,12 @@
    "rsi14": null,
    "haut_52s": 2940.0,
    "bas_52s": 2335.0,
-   "volume_moyen_20": 2746,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 2243,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -893,12 +893,12 @@
    "rsi14": null,
    "haut_52s": 4500.0,
    "bas_52s": 2490.0,
-   "volume_moyen_20": 4598,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 4940,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -913,12 +913,12 @@
    "rsi14": null,
    "haut_52s": 74300.0,
    "bas_52s": 18500.0,
-   "volume_moyen_20": 8,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 9,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -933,12 +933,12 @@
    "rsi14": null,
    "haut_52s": 2355.0,
    "bas_52s": 565.0,
-   "volume_moyen_20": 28974,
-   "seances_disponibles": 2,
+   "volume_moyen_20": 25201,
+   "seances_disponibles": 3,
    "seances_manquantes": {
-    "mm20": 18,
-    "mm50": 48,
-    "mm200": 198
+    "mm20": 17,
+    "mm50": 47,
+    "mm200": 197
    },
    "tendance_provisoire_mensuelle": "haussiere"
   }
