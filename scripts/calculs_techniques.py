@@ -52,11 +52,16 @@ def principal():
     con.row_factory = sqlite3.Row
     DOSSIER_HISTO.mkdir(parents=True, exist_ok=True)
 
-    # Cloture quotidienne = dernier releve de chaque date de seance
+    # Cloture quotidienne = dernier releve de chaque date de seance.
+    # Filtre horaire 09:25-15:40 UTC : exclut les collectes hors seance
+    # (ex. lancement manuel avant l'ouverture, qui ne fait que recopier la
+    # cloture de la veille sous une date erronee) - auto-guerison des donnees
+    # deja stockees, sans avoir a purger la base.
+    FENETRE = "substr(horodatage,12,5) BETWEEN '09:25' AND '15:40'"
     quotidien = {}
-    for r in con.execute("""
+    for r in con.execute(f"""
         SELECT ticker, substr(horodatage,1,10) AS d, MAX(horodatage) AS h
-        FROM releves WHERE cours IS NOT NULL
+        FROM releves WHERE cours IS NOT NULL AND {FENETRE}
         GROUP BY ticker, d ORDER BY d
     """):
         ligne = con.execute(
@@ -67,14 +72,16 @@ def principal():
              "nom": ligne["nom"], "veille": ligne["cours_veille"],
              "ouverture": ligne["ouverture"]})
 
-    # Seance intraday : tous les releves de la DERNIERE date de seance
+    # Seance intraday : tous les releves de la DERNIERE date de seance reelle
+    # (meme filtre horaire que ci-dessus)
     derniere_date = con.execute(
-        "SELECT MAX(substr(horodatage,1,10)) AS d FROM releves").fetchone()["d"]
+        f"SELECT MAX(substr(horodatage,1,10)) AS d FROM releves WHERE {FENETRE}"
+    ).fetchone()["d"]
     seance = {}
     if derniere_date:
-        for r in con.execute("""
+        for r in con.execute(f"""
             SELECT ticker, horodatage, cours, volume FROM releves
-            WHERE substr(horodatage,1,10)=? AND cours IS NOT NULL
+            WHERE substr(horodatage,1,10)=? AND cours IS NOT NULL AND {FENETRE}
             ORDER BY horodatage
         """, (derniere_date,)):
             seance.setdefault(r["ticker"], []).append(
