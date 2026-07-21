@@ -611,32 +611,37 @@
  ],
  "quotidien": [
   {
-   "date": "2026-07-19",
-   "cours": 68.0,
-   "volume": 1662045.0
-  },
-  {
    "date": "2026-07-20",
    "cours": 63.0,
    "volume": 2070178.0
   },
   {
    "date": "2026-07-21",
-   "cours": 63.0,
-   "volume": 2070178.0
+   "cours": 66.0,
+   "volume": 7577297.0
   }
  ],
  "seance": {
   "date": "2026-07-21",
   "points": [
    {
-    "h": "07:54",
-    "cours": 63.0,
-    "volume": 2070178.0
+    "h": "11:26",
+    "cours": 66.0,
+    "volume": 5949880.0
+   },
+   {
+    "h": "13:02",
+    "cours": 66.0,
+    "volume": 6641098.0
+   },
+   {
+    "h": "15:24",
+    "cours": 66.0,
+    "volume": 7577297.0
    }
   ],
-  "veille": 63.0,
-  "ouverture": 63.0
+  "veille": 65.0,
+  "ouverture": 59.0
  },
  "dividendes": [
   {
