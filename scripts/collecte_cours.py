@@ -163,7 +163,22 @@ def enregistrer(valeurs, anomalies):
     CHEMIN_JOURNAL.write_text(json.dumps(journal[-200:], ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def marche_ouvert(maintenant=None):
+    """Fenetre de seance BRVM (9h30-15h00 UTC=GMT, lun-ven), marge 5 min avant/apres
+    pour absorber la latence GitHub Actions. En dehors : brvm.org ne publie que la
+    derniere cloture connue, jamais un nouveau prix - collecter ne fait que polluer
+    la base avec une fausse "seance" recopiee de la veille."""
+    maintenant = maintenant or datetime.now(timezone.utc)
+    if maintenant.weekday() >= 5:
+        return False
+    minutes = maintenant.hour * 60 + maintenant.minute
+    return 9 * 60 + 25 <= minutes <= 15 * 60 + 40
+
+
 if __name__ == "__main__":
+    if not marche_ouvert():
+        print("Hors seance (marche ferme ou weekend) : aucune collecte effectuee.")
+        raise SystemExit(0)
     valeurs, anomalies = collecter()
     if not valeurs:
         enregistrer([], anomalies)
