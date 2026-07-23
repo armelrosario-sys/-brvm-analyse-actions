@@ -115,6 +115,8 @@ const LIB_SECTEURS = {FIN:"Finances", CB:"Consommation de base", CD:"Consommatio
   IND:"Industriels", ENE:"Énergie", TEL:"Télécommunications", SPU:"Services publics"};
 const LIB_PERIODE = {"1S":"1 semaine","1M":"1 mois","3M":"3 mois","6M":"6 mois",
   "YTD":"depuis le 1er janv.","1A":"1 an","Max":"Max"};
+const cacheHisto=new Map();
+let jetonAffichage=0;
 let cours={}, tech={}, fonda={}, secteurs={}, histo=null, valCourante=null,
     graph=null, graphDiv=null, periode="1M";
 
@@ -154,7 +156,20 @@ async function chargerBase(){
 }
 
 async function afficher(t){
-  histo = await fetch('data/historique/'+t+'.json').then(r=>r.json()).catch(()=>null);
+  const jeton = ++jetonAffichage;
+  const sel = document.getElementById('choixValeur');
+  sel.disabled = true;
+  let h = cacheHisto.get(t);
+  if(h === undefined){
+    h = await fetch('data/historique/'+t+'.json').then(r=>r.json()).catch(()=>null);
+    cacheHisto.set(t, h);
+  }
+  // Si l'utilisateur a change de valeur pendant ce chargement, on abandonne
+  // ce rendu perime plutot que d'ecraser l'affichage plus recent avec des
+  // donnees plus anciennes arrivees en retard (reseau lent notamment).
+  if(jeton !== jetonAffichage){ return; }
+  histo = h;
+  sel.disabled = false;
   const v = cours.valeurs.find(x=>x.ticker===t)||{};
   valCourante = v;
   const te = tech[t]||{}, fo = fonda[t]||{};
@@ -393,8 +408,9 @@ const COUL={vert:"#16a34a",orange:"#f59e0b",rouge:"#dc2626"};
 const TITRES={performances:"Performances",perspectives:"Perspectives",
   remuneration:"Rémunération",valorisation:"Valorisation"};
 
-function jaugeSVG(score){
+function jaugeSVG(score, libelleTexte){
   const s = score==null?null:Math.max(0,Math.min(100,score));
+  const description = (libelleTexte||"indisponible") + (score!=null?` (${score}/100)`:"");
   const ang = s==null?null:(-90 + s*1.8);
   const arc=(a1,a2,coul)=>{
     const r=70,cx=90,cy=85;
@@ -408,7 +424,9 @@ function jaugeSVG(score){
       y2="${(85+52*Math.sin((ang-90)*Math.PI/180)).toFixed(1)}"
       stroke="#111827" stroke-width="3" stroke-linecap="round"/>
     <circle cx="90" cy="85" r="5" fill="#111827"/>`;
-  return `<svg viewBox="0 0 180 100" style="width:220px;max-width:60%;display:block;margin:0 auto">
+  return `<svg viewBox="0 0 180 100" role="img" aria-label="${description}"
+    style="width:220px;max-width:60%;display:block;margin:0 auto">
+    <title>${description}</title>
     ${arc(-90,-46,"#e11d48")}${arc(-44,-2,"#eab308")}${arc(0,42,"#4ade80")}${arc(44,88,"#16a34a")}
     <text x="22" y="98" font-size="9" fill="#6b7280">Mauvais</text>
     <text x="42" y="18" font-size="9" fill="#6b7280">Mitigé</text>
@@ -431,7 +449,7 @@ function rendreAnalyse(t){
   for(const dim of ["performances","perspectives","remuneration","valorisation"]){
     const sc=a.scores[dim], lib=a.libelles[dim];
     const coulLib = sc==null?"#9ca3af":sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
-    html+=`<h2>${TITRES[dim]}</h2>${jaugeSVG(sc)}
+    html+=`<h2>${TITRES[dim]}</h2>${jaugeSVG(sc, lib)}
       <p style="text-align:center;font-weight:800;color:${coulLib};margin:2px 0 10px">${lib}</p>`;
     const past=a.pastilles[dim]||[];
     if(past.length){
