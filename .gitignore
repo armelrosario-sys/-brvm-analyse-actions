@@ -1,0 +1,4 @@
+# marche.db est desormais persistee via GitHub Actions Cache (voir les workflows),
+# et non plus versionnee dans Git : un fichier binaire SQLite ne peut pas etre fusionne
+# proprement par git en cas de commits concurrents.
+data/marche.db
