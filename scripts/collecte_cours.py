@@ -175,6 +175,10 @@ def marche_ouvert(maintenant=None):
     return 9 * 60 + 25 <= minutes <= 15 * 60 + 40
 
 
+SEUIL_MINIMUM_VALEURS = 40  # sous ce seuil, la collecte est jugee incomplete/suspecte
+                            # (marche BRVM = 47 valeurs habituellement ; une marge est
+                            # laissee pour d'eventuelles suspensions/radiations ponctuelles)
+
 if __name__ == "__main__":
     if not marche_ouvert():
         print("Hors seance (marche ferme ou weekend) : aucune collecte effectuee.")
@@ -185,4 +189,9 @@ if __name__ == "__main__":
         print("ECHEC : aucune valeur collectee. Anomalies :", anomalies)
         sys.exit(1)
     enregistrer(valeurs, anomalies)
+    if len(valeurs) < SEUIL_MINIMUM_VALEURS:
+        print(f"ECHEC : seulement {len(valeurs)} valeurs collectees "
+              f"(seuil minimum {SEUIL_MINIMUM_VALEURS}) - collecte jugee incomplete. "
+              f"Anomalies : {anomalies or 'aucune'}")
+        sys.exit(1)
     print(f"OK : {len(valeurs)} valeurs collectees. Anomalies : {anomalies or 'aucune'}")
