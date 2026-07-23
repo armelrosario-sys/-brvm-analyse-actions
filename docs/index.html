@@ -61,6 +61,51 @@ td .tick{color:var(--bleu);font-weight:700;cursor:pointer}
 .regle{color:var(--gris);font-size:12.5px;margin-bottom:8px}
 .vide{color:#9ca3af;font-size:13.5px;padding:10px 0}
 .masque{display:none}
+
+/* --- Revue ergonomie/qualite visuelle : etats d'interaction, accessibilite --- */
+:root{--focus:#2f5cf6;--survol:#f8fafc;--transition:150ms ease}
+
+/* Focus clavier visible partout (aucune regle n'existait avant) */
+a:focus-visible, button:focus-visible, select:focus-visible, span[tabindex]:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+
+/* Etats de survol - boutons de periode */
+.periodes button:not(:disabled):hover{background:#e5e9fb;color:var(--bleu)}
+.periodes button{transition:background var(--transition),color var(--transition)}
+
+/* Etats de survol - onglets */
+.onglets button:not(.actif):hover{color:var(--txt)}
+.onglets button{transition:color var(--transition),border-color var(--transition)}
+
+/* Etats de survol - lignes de tableau et de liste (meilleur balayage visuel) */
+table tr:hover td{background:var(--survol)}
+table tr{transition:background var(--transition)}
+.liste div{transition:background var(--transition)}
+.liste div:hover{background:var(--survol);border-radius:6px}
+
+/* Tickers cliquables (onglet Filtres) : affordance de lien plus claire */
+td .tick{transition:color var(--transition)}
+td .tick:hover{text-decoration:underline}
+
+/* Etat de chargement visible (le sel.disabled existait deja, le rendu non) */
+select:disabled{opacity:.6;cursor:progress}
+body.chargement #contenuApercu,body.chargement #contenuAnalyse,
+body.chargement #contenuCarnet,body.chargement #contenuFiltres{opacity:.45;
+  transition:opacity var(--transition)}
+
+/* Transition douce a l'affichage d'un onglet (contenu deja charge, juste reaffiche) */
+.masque{display:none}
+.contenu-onglet{animation:apparition 180ms ease}
+@keyframes apparition{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:none}}
+
+/* Score chiffre sous le libellé qualitatif de chaque jauge (nouveau, valide) */
+.score-jauge{display:block;text-align:center;font-size:12px;color:var(--gris);
+  font-variant-numeric:tabular-nums;margin-top:-4px;margin-bottom:6px}
+
+/* Respect du confort visuel : neutralise toutes les transitions/animations */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{transition:none !important;animation:none !important}
+}
 </style>
 </head>
 <body>
@@ -89,7 +134,7 @@ td .tick{color:var(--bleu);font-weight:700;cursor:pointer}
   <button data-o="filtres">Filtres</button>
 </div>
 
-<div id="contenuApercu">
+<div id="contenuApercu" class="contenu-onglet">
 <h2>Description</h2>
 <p class="desc"><span id="descTexte">—</span> <span class="lirePlus masque" id="lirePlus">Lire plus</span></p>
 
@@ -101,9 +146,9 @@ td .tick{color:var(--bleu);font-weight:700;cursor:pointer}
 <div id="graphDiv"><canvas id="graphDividendes"></canvas></div>
 <p class="notebas" id="noteSources"></p>
 </div>
-<div id="contenuAnalyse" class="masque"></div>
-<div id="contenuCarnet" class="masque"></div>
-<div id="contenuFiltres" class="masque"></div>
+<div id="contenuAnalyse" class="masque contenu-onglet"></div>
+<div id="contenuCarnet" class="masque contenu-onglet"></div>
+<div id="contenuFiltres" class="masque contenu-onglet"></div>
 
 <script>
 const fmt = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(n);
@@ -159,6 +204,8 @@ async function afficher(t){
   const jeton = ++jetonAffichage;
   const sel = document.getElementById('choixValeur');
   sel.disabled = true;
+  const dejaEnCache = cacheHisto.has(t);
+  if(!dejaEnCache) document.body.classList.add('chargement');
   let h = cacheHisto.get(t);
   if(h === undefined){
     h = await fetch('data/historique/'+t+'.json').then(r=>r.json()).catch(()=>null);
@@ -170,6 +217,7 @@ async function afficher(t){
   if(jeton !== jetonAffichage){ return; }
   histo = h;
   sel.disabled = false;
+  document.body.classList.remove('chargement');
   const v = cours.valeurs.find(x=>x.ticker===t)||{};
   valCourante = v;
   const te = tech[t]||{}, fo = fonda[t]||{};
@@ -450,7 +498,8 @@ function rendreAnalyse(t){
     const sc=a.scores[dim], lib=a.libelles[dim];
     const coulLib = sc==null?"#9ca3af":sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
     html+=`<h2>${TITRES[dim]}</h2>${jaugeSVG(sc, lib)}
-      <p style="text-align:center;font-weight:800;color:${coulLib};margin:2px 0 10px">${lib}</p>`;
+      <p style="text-align:center;font-weight:800;color:${coulLib};margin:2px 0 2px">${lib}</p>
+      <span class="score-jauge">${sc!=null?sc+"/100":"Donnée indisponible"}</span>`;
     const past=a.pastilles[dim]||[];
     if(past.length){
       html+="<div class='liste'>"+past.map(p=>
