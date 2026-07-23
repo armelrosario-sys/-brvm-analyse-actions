@@ -422,6 +422,12 @@ function rendreAnalyse(t){
   const a=analyse&&analyse.valeurs&&analyse.valeurs[t];
   if(!a){ zone.innerHTML="<p class='desc'>Analyse non disponible pour cette valeur.</p>"; return; }
   let html="";
+  if(a.secteur_repli_marche){
+    html+=`<p class="notebas" style="background:#f3f4f6;border-radius:8px;padding:8px 10px;
+      margin-bottom:14px">ℹ️ Le secteur de cette valeur ne compte que ${a.secteur_taille}
+      société(s) — trop peu pour une médiane sectorielle fiable. Les comparaisons ci-dessous
+      utilisent la médiane de l'ensemble du marché à la place.</p>`;
+  }
   for(const dim of ["performances","perspectives","remuneration","valorisation"]){
     const sc=a.scores[dim], lib=a.libelles[dim];
     const coulLib = sc==null?"#9ca3af":sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
@@ -441,6 +447,12 @@ function rendreAnalyse(t){
   html+=`<h2 style="text-align:center;text-decoration:underline;font-style:italic;
     font-weight:600;font-size:15px">Analyse du ${analyse.date_analyse}</h2>`;
   html+=a.conclusion.map(p=>`<p class="desc" style="margin-bottom:12px">${p}</p>`).join("");
+  if(a.proche_seuil){
+    html+=`<p class="desc" style="color:#b45309;font-weight:600;margin-bottom:12px">⚠️ Ce verdict
+      est proche du seuil de catégorie suivante (à ${fmt(a.marge_categorie)} points sur 100) —
+      un score qui pourrait basculer vers une autre recommandation lors d'une prochaine mise à
+      jour des données.</p>`;
+  }
   html+=`<p class="notebas">Analyse générée automatiquement par règles à partir des données
     collectées — ne constitue pas un conseil en investissement.</p>`;
   zone.innerHTML=html;
