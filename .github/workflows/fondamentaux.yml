@@ -21,6 +21,17 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
+
+      # marche.db n'est plus versionne dans Git : restauration/sauvegarde via cache,
+      # meme mecanisme que dans collecte.yml (cle unique par run, prefixe partage).
+      - name: Restaurer/sauvegarder marche.db (cache)
+        uses: actions/cache@v4
+        with:
+          path: data/marche.db
+          key: marche-db-${{ github.run_id }}
+          restore-keys: |
+            marche-db-
+
       - name: Import auto capitaux propres / dettes (rapports annuels)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -31,9 +42,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git rm --cached data/marche.db --ignore-unmatch
           git add data/ docs/data/
           git diff --cached --quiet && echo "Rien de nouveau" && exit 0
           git commit -m "Fondamentaux $(date -u +'%Y-%m-%d')"
-          git fetch origin main
-          git merge -X ours --no-edit origin/main
+          git pull --rebase origin main
           git push
