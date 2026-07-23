@@ -328,6 +328,40 @@ def principal():
         "date_analyse": datetime.now(timezone.utc).strftime("%d/%m/%Y"),
         "valeurs": sortie,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # Historique des recommandations : une ligne par (ticker, date), jamais ecrasee
+    # d'un jour sur l'autre - permet une future retrospective (recommandation vs
+    # performance reellement observee), et d'afficher les changements de verdict.
+    aujourd_hui = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    con = sqlite3.connect(CHEMIN_DB)
+    con.execute("""
+        CREATE TABLE IF NOT EXISTS historique_recommandations (
+            ticker TEXT NOT NULL, date TEXT NOT NULL,
+            reco TEXT, score_moyen REAL,
+            PRIMARY KEY (ticker, date)
+        )
+    """)
+    for t, v in sortie.items():
+        disp = [s for s in v["scores"].values() if s is not None]
+        score_moyen = round(sum(disp) / len(disp), 1) if disp else None
+        con.execute("INSERT OR REPLACE INTO historique_recommandations VALUES (?,?,?,?)",
+                    (t, aujourd_hui, v["reco"], score_moyen))
+    con.commit()
+
+    historique_export = {}
+    for t in tickers:
+        lignes = con.execute(
+            "SELECT date, reco, score_moyen FROM historique_recommandations "
+            "WHERE ticker=? ORDER BY date DESC LIMIT 60", (t,)).fetchall()
+        historique_export[t] = [
+            {"date": d, "reco": r, "score_moyen": s} for d, r, s in reversed(lignes)
+        ]
+    con.close()
+    (D / "historique_recos.json").write_text(json.dumps({
+        "maj": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "valeurs": historique_export,
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+
     nb = {"Acheter": 0, "Conserver": 0, "Vendre": 0}
     for v in sortie.values():
         nb[v["reco"]] += 1
