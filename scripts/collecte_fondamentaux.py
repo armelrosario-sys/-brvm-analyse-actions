@@ -24,6 +24,7 @@ CHEMIN_DB = RACINE / "data" / "marche.db"
 CHEMIN_SUFFIXES = RACINE / "data" / "sika_suffixes.json"
 CHEMIN_COMPLEMENT = RACINE / "data" / "fondamentaux_complement.csv"
 CHEMIN_COMPLEMENT_AUTO = RACINE / "data" / "fondamentaux_complement_auto.csv"
+CHEMIN_DIV_COMPLEMENT = RACINE / "data" / "dividendes_complement.csv"
 CHEMIN_SORTIE = RACINE / "docs" / "data" / "fondamentaux.json"
 CHEMIN_COURS = RACINE / "docs" / "data" / "cours.json"
 
@@ -153,10 +154,28 @@ def charger_complement():
     return comp
 
 
+def charger_div_complement():
+    """Correction manuelle ponctuelle du dividende officiel (ex. resolution
+    d'assemblee generale), quand elle est plus recente/fiable que la fiche
+    Sika. Ecrase la valeur Sika pour le couple (ticker, exercice) concerne.
+    Colonnes attendues : ticker,exercice,dividende_brut_fcfa,note
+    """
+    div = {}
+    if CHEMIN_DIV_COMPLEMENT.exists():
+        with open(CHEMIN_DIV_COMPLEMENT, encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                t, ex = (r.get("ticker") or "").strip(), (r.get("exercice") or "").strip()
+                v = nombre_fr(r.get("dividende_brut_fcfa"))
+                if t and ex and v is not None:
+                    div[(t, ex)] = {"valeur": v, "note": (r.get("note") or "").strip()}
+    return div
+
+
 def principal():
     anomalies = []
     suffixes = charger_suffixes()
     complement = charger_complement()
+    div_complement = charger_div_complement()
     tickers = sorted({v["ticker"] for v in
                       json.loads(CHEMIN_COURS.read_text(encoding="utf-8"))["valeurs"]})
 
@@ -208,6 +227,15 @@ def principal():
             cap = fiche["capitalisation_mfcfa"]
             if cap and cp not in (None, 0) and ex == (d.get("exercices") or [None])[-1]:
                 ligne["pbr"] = {"valeur": round(cap / cp, 2), "source": "calcule"}
+            override = div_complement.get((t, ex))
+            if override is not None:
+                ligne["dividende"] = {"valeur": override["valeur"],
+                                      "source": "complement_manuel_officiel"}
+                if override["note"]:
+                    ligne["dividende"]["note"] = override["note"]
+                con.execute("INSERT OR REPLACE INTO fondamentaux VALUES (?,?,?,?,?)",
+                            (t, ex, "dividende", override["valeur"],
+                             "complement_manuel_officiel"))
             fiche["exercices"][ex] = ligne
         sortie[t] = fiche
         time.sleep(2.0)
