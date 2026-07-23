@@ -106,16 +106,99 @@ body.chargement #contenuCarnet,body.chargement #contenuFiltres{opacity:.45;
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{transition:none !important;animation:none !important}
 }
+
+/* --- Lien d'evitement (accessibilite clavier) --- */
+.lien-evitement{position:absolute;left:-9999px;top:0;background:var(--bleu);color:#fff;
+  padding:10px 16px;border-radius:0 0 8px 0;z-index:100;font-size:14px;font-weight:600}
+.lien-evitement:focus{left:0}
+
+/* --- Barre d'outils (theme, export) --- */
+.entete-outils{display:flex;justify-content:flex-end;gap:6px;margin-bottom:8px}
+.btn-icone{border:1px solid var(--ligne);background:var(--fond);border-radius:8px;
+  width:34px;height:34px;font-size:16px;cursor:pointer;line-height:1}
+.btn-icone:hover{background:var(--survol)}
+.btn-icone.actif{border-color:var(--bleu);color:var(--bleu)}
+
+/* --- Recherche + favori --- */
+.recherche-valeur{display:flex;gap:6px;margin-bottom:6px}
+.recherche-valeur input{flex:1;font-size:14px;border:1px solid var(--ligne);
+  border-radius:10px;padding:8px 10px;background:var(--fond);color:var(--txt)}
+
+/* --- Alerte de prix --- */
+.bloc-alerte{margin:8px 0;font-size:13px}
+.bloc-alerte .ligne-config{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.bloc-alerte input[type=number]{width:90px;border:1px solid var(--ligne);border-radius:8px;
+  padding:6px 8px;font-size:13px}
+.bloc-alerte select{width:auto;font-size:13px;font-weight:500;padding:6px 8px}
+.bloc-alerte button{border:1px solid var(--bleu);background:var(--fond);color:var(--bleu);
+  border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer}
+.bandeau-alerte{background:#fef3c7;color:#92400e;border-radius:8px;padding:8px 10px;
+  margin-top:6px;font-weight:600;font-size:13px}
+.note-limite{color:var(--gris);font-size:11.5px;margin-top:4px}
+
+/* --- Tableaux triables (Filtres) --- */
+th.triable{cursor:pointer;user-select:none}
+th.triable:hover{color:var(--bleu)}
+th.triable .fleche{font-size:10px;margin-left:2px;opacity:.6}
+.barre-outils-table{display:flex;justify-content:flex-end;margin:4px 0 10px}
+.bouton-csv{border:1px solid var(--ligne);background:var(--fond);color:var(--txt);
+  border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer}
+.bouton-csv:hover{background:var(--survol)}
+
+/* --- Sparkline --- */
+.spark{vertical-align:middle;margin-left:4px}
+
+/* --- Comparateur --- */
+.comparateur select{height:110px}
+.comparateur table{margin-top:10px}
+
+/* --- Semantique liste (dl/dt/dd et ul/li) sans casser le rendu visuel --- */
+dl.liste{margin:0}
+dl.liste > div{display:flex;justify-content:space-between;padding:9px 0;
+  border-bottom:1px solid var(--pastel);font-size:14.5px}
+dl.liste dt{color:#374151;font-weight:400}
+dl.liste dd{font-weight:600;margin:0}
+ul.liste-pastilles{list-style:none}
+
+/* --- Mode sombre : override manuel (prioritaire sur la preference systeme) --- */
+html[data-theme="sombre"]{--fond:#0f172a;--txt:#e5e7eb;--gris:#9ca3af;
+  --ligne:#243044;--pastel:#1a2436;--survol:#16213a}
+@media (prefers-color-scheme: dark){
+  html:not([data-theme="clair"]){--fond:#0f172a;--txt:#e5e7eb;--gris:#9ca3af;
+    --ligne:#243044;--pastel:#1a2436;--survol:#16213a}
+}
+
+/* --- Impression / export PDF : ne garder que le contenu utile --- */
+@media print{
+  .lien-evitement,.entete-outils,.recherche-valeur,#btnFavori,.periodes,.onglets,
+  .bandeau-alerte,.bloc-alerte,.bouton-csv,.barre-outils-table{display:none !important}
+  body{max-width:100%}
+}
 </style>
 </head>
 <body>
+<a href="#contenuPrincipal" class="lien-evitement">Aller au contenu</a>
 <header>
-  <select id="choixValeur"></select>
+  <div class="entete-outils">
+    <button id="btnTheme" class="btn-icone" type="button" title="Changer de thème"
+      aria-label="Basculer entre thème clair et sombre">🌙</button>
+    <button id="btnExport" class="btn-icone" type="button" title="Exporter en PDF"
+      aria-label="Exporter cette fiche en PDF">🖶</button>
+  </div>
+  <div class="recherche-valeur">
+    <input type="search" id="rechercheValeur" placeholder="Rechercher une valeur ou un ticker…"
+      aria-label="Rechercher une valeur">
+    <button id="btnFavori" class="btn-icone" type="button" title="Ajouter aux favoris"
+      aria-label="Ajouter ou retirer des favoris" aria-pressed="false">☆</button>
+  </div>
+  <select id="choixValeur" aria-label="Choisir une valeur"></select>
   <span class="chip" id="chipSecteur"></span>
 </header>
 
+<main id="contenuPrincipal">
 <div class="prix"><span id="cours">…</span> <small>FCFA</small></div>
 <div class="varia"><span id="variation"></span> <span class="date" id="dateCours"></span></div>
+<div id="blocAlerte" class="bloc-alerte"></div>
 
 <div class="periodes" id="periodes">
   <button data-p="1J">1J</button><button data-p="1S">1S</button>
@@ -149,6 +232,7 @@ body.chargement #contenuCarnet,body.chargement #contenuFiltres{opacity:.45;
 <div id="contenuAnalyse" class="masque contenu-onglet"></div>
 <div id="contenuCarnet" class="masque contenu-onglet"></div>
 <div id="contenuFiltres" class="masque contenu-onglet"></div>
+</main>
 
 <script>
 const fmt = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(n);
@@ -164,6 +248,38 @@ const cacheHisto=new Map();
 let jetonAffichage=0;
 let cours={}, tech={}, fonda={}, secteurs={}, histo=null, valCourante=null,
     graph=null, graphDiv=null, periode="1M";
+let optionsToutes=[], historiqueRecos={};
+
+// --- Favoris (localStorage, aucun serveur) ---
+function chargerFavoris(){
+  try{ return JSON.parse(localStorage.getItem('brvm_favoris')||'[]'); }catch(e){ return []; }
+}
+function sauverFavoris(liste){
+  try{ localStorage.setItem('brvm_favoris', JSON.stringify(liste)); }catch(e){}
+}
+function estFavori(t){ return chargerFavoris().includes(t); }
+
+// --- Theme clair/sombre (bascule manuelle, sinon suit le systeme) ---
+function appliquerTheme(){
+  const t = localStorage.getItem('brvm_theme');
+  if(t==='clair'||t==='sombre') document.documentElement.setAttribute('data-theme', t);
+  else document.documentElement.removeAttribute('data-theme');
+  const btn=document.getElementById('btnTheme');
+  if(btn) btn.textContent = (document.documentElement.getAttribute('data-theme')==='sombre'||
+    (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) ? '☀' : '🌙';
+}
+function basculerTheme(){
+  const actuel = document.documentElement.getAttribute('data-theme') ||
+    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'sombre' : 'clair');
+  const suivant = actuel==='sombre' ? 'clair' : 'sombre';
+  localStorage.setItem('brvm_theme', suivant);
+  appliquerTheme();
+  try{ dessinerGraphique(); dessinerDividendes((histo&&histo.dividendes)||[]); }catch(e){}
+}
+// Couleur lue depuis la variable CSS active (s'adapte automatiquement au theme)
+function couleurCss(nom){
+  return getComputedStyle(document.documentElement).getPropertyValue(nom).trim() || '#9ca3af';
+}
 
 function chargerChartJs(){
   return new Promise(res=>{
@@ -179,25 +295,149 @@ function chargerChartJs(){
   });
 }
 
+function repeupler(filtreTexte){
+  const sel=document.getElementById('choixValeur');
+  const valeurActuelle = sel.value;
+  const favoris = chargerFavoris();
+  const texte = (filtreTexte||'').trim().toLowerCase();
+  const correspond = v => !texte || v.nom.toLowerCase().includes(texte) ||
+    v.ticker.toLowerCase().includes(texte);
+  const filtrees = optionsToutes.filter(correspond);
+  const favs = filtrees.filter(v=>favoris.includes(v.ticker));
+  const autres = filtrees.filter(v=>!favoris.includes(v.ticker));
+  sel.innerHTML='';
+  if(favs.length){
+    const grp=document.createElement('optgroup'); grp.label='★ Favoris';
+    favs.forEach(v=>grp.appendChild(creerOption(v))); sel.appendChild(grp);
+  }
+  if(autres.length){
+    const grp=document.createElement('optgroup'); grp.label=favs.length?'Toutes les valeurs':'';
+    autres.forEach(v=>grp.appendChild(creerOption(v))); sel.appendChild(grp);
+  }
+  if(!filtrees.length){
+    const o=document.createElement('option'); o.textContent='Aucune valeur trouvée'; o.disabled=true;
+    sel.appendChild(o);
+  } else if(filtrees.some(v=>v.ticker===valeurActuelle)){
+    sel.value = valeurActuelle;
+  }
+}
+function creerOption(v){
+  const o=document.createElement('option');
+  o.value=v.ticker; o.textContent=v.nom+" ("+v.ticker+")";
+  return o;
+}
+
+function majFavoriUI(t){
+  const btn=document.getElementById('btnFavori');
+  const actif = estFavori(t);
+  btn.textContent = actif ? '★' : '☆';
+  btn.classList.toggle('actif', actif);
+  btn.setAttribute('aria-pressed', String(actif));
+}
+
 async function chargerBase(){
+  appliquerTheme();
+  if(window.matchMedia){
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ()=>{
+      if(!localStorage.getItem('brvm_theme')) appliquerTheme();
+    });
+  }
   const chartOk = await chargerChartJs();
   if(!chartOk){ const m=document.getElementById('msgGraph');
     m.style.display='flex'; m.textContent="Graphique indisponible (bibliothèque non chargée)"; }
-  const [c,t,f,s] = await Promise.all([
+  const [c,t,f,s,hr] = await Promise.all([
     fetch('data/cours.json').then(r=>r.json()),
     fetch('data/technique.json').then(r=>r.json()).catch(()=>({valeurs:{}})),
     fetch('data/fondamentaux.json').then(r=>r.json()).catch(()=>({valeurs:{}})),
     fetch('data/secteurs.json').then(r=>r.json()).catch(()=>({})),
+    fetch('data/historique_recos.json').then(r=>r.json()).catch(()=>({valeurs:{}})),
   ]);
   cours=c; tech=t.valeurs||{}; fonda=f.valeurs||{}; secteurs=s||{};
+  historiqueRecos = hr.valeurs||{};
+  optionsToutes = c.valeurs.slice().sort((a,b)=>a.nom.localeCompare(b.nom))
+    .map(v=>({ticker:v.ticker, nom:v.nom}));
+
   const sel=document.getElementById('choixValeur');
-  c.valeurs.sort((a,b)=>a.nom.localeCompare(b.nom)).forEach(v=>{
-    const o=document.createElement('option');
-    o.value=v.ticker; o.textContent=v.nom+" ("+v.ticker+")";
-    sel.appendChild(o);
+  repeupler('');
+  sel.onchange=()=>{ afficher(sel.value); };
+
+  document.getElementById('rechercheValeur').addEventListener('input', e=>{
+    repeupler(e.target.value);
   });
-  sel.onchange=()=>afficher(sel.value);
-  afficher(sel.value);
+  document.getElementById('btnFavori').addEventListener('click', ()=>{
+    const t = sel.value; if(!t) return;
+    let favs = chargerFavoris();
+    favs = favs.includes(t) ? favs.filter(x=>x!==t) : [...favs, t];
+    sauverFavoris(favs);
+    majFavoriUI(t);
+    repeupler(document.getElementById('rechercheValeur').value);
+    sel.value = t;
+  });
+  document.getElementById('btnTheme').addEventListener('click', basculerTheme);
+  document.getElementById('btnExport').addEventListener('click', ()=>window.print());
+
+  // Valeur de depart : lien direct (?valeur=TICK) > derniere consultee > premiere alphabetique
+  const params = new URLSearchParams(location.search);
+  const depuisUrl = (params.get('valeur')||'').toUpperCase();
+  const derniere = localStorage.getItem('brvm_derniere');
+  let depart = optionsToutes[0] ? optionsToutes[0].ticker : null;
+  if(depuisUrl && optionsToutes.some(v=>v.ticker===depuisUrl)) depart = depuisUrl;
+  else if(derniere && optionsToutes.some(v=>v.ticker===derniere)) depart = derniere;
+  if(depart){ sel.value = depart; afficher(depart); }
+}
+
+// --- Alerte de prix (locale au navigateur : active uniquement page ouverte) ---
+function chargerAlertes(){
+  try{ return JSON.parse(localStorage.getItem('brvm_alertes')||'{}'); }catch(e){ return {}; }
+}
+function sauverAlertes(a){ try{ localStorage.setItem('brvm_alertes', JSON.stringify(a)); }catch(e){} }
+
+function rendreAlerte(t, coursActuel){
+  const zone = document.getElementById('blocAlerte');
+  const alertes = chargerAlertes();
+  const a = alertes[t];
+  let banniere = '';
+  if(a && coursActuel!=null){
+    const declenchee = a.sens==='dessus' ? coursActuel >= a.seuil : coursActuel <= a.seuil;
+    if(declenchee){
+      banniere = `<div class="bandeau-alerte">🔔 Alerte : le cours (${fmtEntier(coursActuel)} FCFA) est
+        ${a.sens==='dessus'?'passé au-dessus de':'passé en dessous de'} votre seuil de ${fmtEntier(a.seuil)} FCFA.</div>`;
+      if(!a.notifie && window.Notification && Notification.permission==='granted'){
+        try{ new Notification('BRVM Analyse Actions', {body:`${t} : cours ${fmtEntier(coursActuel)} FCFA`}); }catch(e){}
+        a.notifie = true; alertes[t]=a; sauverAlertes(alertes);
+      }
+    }
+  }
+  zone.innerHTML = `${banniere}
+    <div class="ligne-config">
+      <label for="alerteSeuil" style="color:var(--gris)">Alerte prix</label>
+      <select id="alerteSens">
+        <option value="dessus" ${a&&a.sens==='dessus'?'selected':''}>au-dessus de</option>
+        <option value="dessous" ${a&&a.sens==='dessous'?'selected':''}>en dessous de</option>
+      </select>
+      <input type="number" id="alerteSeuil" placeholder="Seuil FCFA" value="${a?a.seuil:''}">
+      <button type="button" id="btnAlerteValider">${a?'Mettre à jour':'Activer'}</button>
+      ${a?'<button type="button" id="btnAlerteSupprimer">Supprimer</button>':''}
+    </div>
+    <p class="note-limite">Fonctionne uniquement lorsque cette page est ouverte dans votre
+      navigateur — pas de notification en votre absence (aucun serveur derrière cet outil).</p>`;
+  document.getElementById('btnAlerteValider').onclick = ()=>{
+    const seuil = parseFloat(document.getElementById('alerteSeuil').value);
+    const sens = document.getElementById('alerteSens').value;
+    if(!seuil || seuil<=0) return;
+    if(window.Notification && Notification.permission==='default'){
+      Notification.requestPermission();
+    }
+    const al = chargerAlertes();
+    al[t] = {seuil, sens, notifie:false};
+    sauverAlertes(al);
+    rendreAlerte(t, coursActuel);
+  };
+  const btnSup = document.getElementById('btnAlerteSupprimer');
+  if(btnSup) btnSup.onclick = ()=>{
+    const al = chargerAlertes(); delete al[t]; sauverAlertes(al);
+    rendreAlerte(t, coursActuel);
+  };
 }
 
 async function afficher(t){
@@ -221,6 +461,16 @@ async function afficher(t){
   const v = cours.valeurs.find(x=>x.ticker===t)||{};
   valCourante = v;
   const te = tech[t]||{}, fo = fonda[t]||{};
+
+  // Lien direct partageable + memorisation de la derniere valeur consultee
+  try{
+    const params = new URLSearchParams(location.search);
+    params.set('valeur', t);
+    history.replaceState(null, '', '?' + params.toString());
+    localStorage.setItem('brvm_derniere', t);
+  }catch(e){}
+  majFavoriUI(t);
+  rendreAlerte(t, v.cours);
 
   document.getElementById('chipSecteur').textContent =
     LIB_SECTEURS[secteurs[t]] || secteurs[t] || t;
@@ -269,9 +519,9 @@ async function afficher(t){
     ["Moy. mobile (50)", te.mm50!=null?fmtEntier(te.mm50):null],
     ["Moy. mobile (200)", te.mm200!=null?fmtEntier(te.mm200):null],
   ];
-  document.getElementById('indicateurs').innerHTML = lignes.map(l=>
-    `<div><span class="lib">${l[0]}</span><span class="val ${l[1]==null?'indispo':''}">${l[1]??'—'}</span></div>`
-  ).join('');
+  document.getElementById('indicateurs').innerHTML = "<dl class='liste'>" + lignes.map(l=>
+    `<div><dt>${l[0]}</dt><dd class="${l[1]==null?'indispo':''}">${l[1]??'—'}</dd></div>`
+  ).join('') + "</dl>";
 
   const divs = (histo&&histo.dividendes)||[];
   const dernier = divs.length?divs[divs.length-1]:null;
@@ -280,9 +530,9 @@ async function afficher(t){
     ["Dividende / action (brut)", dernier?fmt(dernier.montant)+" FCFA":null],
     ["Dividende net / action (IRVM 10 %)", dernier?fmt(dernier.montant*0.9)+" FCFA":null],
   ];
-  document.getElementById('blocDividendes').innerHTML = bloc.map(l=>
-    `<div><span class="lib">${l[0]}</span><span class="val ${l[1]==null?'indispo':''}">${l[1]??'—'}</span></div>`
-  ).join('');
+  document.getElementById('blocDividendes').innerHTML = "<dl class='liste'>" + bloc.map(l=>
+    `<div><dt>${l[0]}</dt><dd class="${l[1]==null?'indispo':''}">${l[1]??'—'}</dd></div>`
+  ).join('') + "</dl>";
 
   document.getElementById('noteSources').textContent =
     "Sources : BRVM (cours), Sika Finance et rapports annuels (fondamentaux). " +
@@ -424,9 +674,9 @@ function dessinerGraphique(){
     options:{maintainAspectRatio:false,animation:false,
       plugins:{legend:{display:false},tooltip:{intersect:false,mode:'index',
         filter:i=>i.datasetIndex===0}},
-      scales:{x:{ticks:{maxTicksLimit:5,color:'#9ca3af',font:{size:11}},grid:{display:false}},
-              y:{position:'right',ticks:{maxTicksLimit:5,color:'#9ca3af',font:{size:11},
-                 callback:v=>fmtEntier(v)},grid:{color:'#f3f4f6'}}}}
+      scales:{x:{ticks:{maxTicksLimit:5,color:couleurCss('--gris'),font:{size:11}},grid:{display:false}},
+              y:{position:'right',ticks:{maxTicksLimit:5,color:couleurCss('--gris'),font:{size:11},
+                 callback:v=>fmtEntier(v)},grid:{color:couleurCss('--pastel')}}}}
   });
 }
 
@@ -438,11 +688,12 @@ function dessinerDividendes(divs){
   graphDiv = new Chart(document.getElementById('graphDividendes'),{
     type:'bar',
     data:{labels:divs.map(d=>d.exercice),
-      datasets:[{data:divs.map(d=>d.montant),backgroundColor:'#2f5cf6',borderRadius:4}]},
+      datasets:[{data:divs.map(d=>d.montant),backgroundColor:couleurCss('--bleu'),borderRadius:4}]},
     options:{maintainAspectRatio:false,animation:false,
       plugins:{legend:{display:false}},
-      scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{size:11}}},
-              y:{ticks:{maxTicksLimit:4,color:'#9ca3af',font:{size:11}},grid:{color:'#f3f4f6'}}}}
+      scales:{x:{grid:{display:false},ticks:{color:couleurCss('--gris'),font:{size:11}}},
+              y:{ticks:{maxTicksLimit:4,color:couleurCss('--gris'),font:{size:11}},
+                 grid:{color:couleurCss('--pastel')}}}}
   });
 }
 
@@ -502,17 +753,27 @@ function rendreAnalyse(t){
       <span class="score-jauge">${sc!=null?sc+"/100":"Donnée indisponible"}</span>`;
     const past=a.pastilles[dim]||[];
     if(past.length){
-      html+="<div class='liste'>"+past.map(p=>
-        `<div style="justify-content:flex-start;gap:10px">
-          <span style="min-width:9px;height:9px;border-radius:50%;background:${COUL[p.coul]};
-            display:inline-block;margin-top:5px"></span>
-          <span class="lib" style="flex:1">${p.txt}</span></div>`).join("")+"</div>";
+      html+="<ul class='liste liste-pastilles'>"+past.map(p=>
+        `<li style="display:flex;justify-content:flex-start;gap:10px;padding:9px 0;
+          border-bottom:1px solid var(--pastel);font-size:14.5px">
+          <span aria-hidden="true" style="min-width:9px;height:9px;border-radius:50%;
+            background:${COUL[p.coul]};display:inline-block;margin-top:5px;flex-shrink:0"></span>
+          <span style="flex:1">${p.txt}</span></li>`).join("")+"</ul>";
     } else {
-      html+="<p class='desc' style='color:#9ca3af'>Données insuffisantes pour cette dimension.</p>";
+      html+="<p class='desc' style='color:var(--gris)'>Données insuffisantes pour cette dimension.</p>";
     }
   }
   html+=`<h2 style="text-align:center;text-decoration:underline;font-style:italic;
     font-weight:600;font-size:15px">Analyse du ${analyse.date_analyse}</h2>`;
+  const hist = historiqueRecos[t]||[];
+  if(hist.length>=2){
+    const avantDernier = hist[hist.length-2], dernier = hist[hist.length-1];
+    if(avantDernier.reco !== dernier.reco){
+      html+=`<p class="desc" style="background:var(--pastel);border-radius:8px;padding:8px 10px;
+        margin-bottom:10px">↔ Recommandation modifiée depuis le ${avantDernier.date} :
+        <strong>${avantDernier.reco} → ${dernier.reco}</strong>.</p>`;
+    }
+  }
   html+=a.conclusion.map(p=>`<p class="desc" style="margin-bottom:12px">${p}</p>`).join("");
   if(a.proche_seuil){
     html+=`<p class="desc" style="color:#b45309;font-weight:600;margin-bottom:12px">⚠️ Ce verdict
@@ -560,8 +821,94 @@ function medianeJS(l){const s=l.filter(x=>x!=null).sort((a,b)=>a-b);
   if(!s.length)return null;const n=s.length;
   return n%2?s[(n-1)/2]:(s[n/2-1]+s[n/2])/2;}
 
-function rendreFiltres(){
+// --- Tableaux triables + export CSV (etat partage entre rendus) ---
+let specsFiltres={};
+let ecouteurFiltresInstalle=false;
+
+function sparklineSVG(tk){
+  const hst=cacheHisto.get(tk);
+  if(!hst) return '';
+  const m=(hst.mensuel||[]).slice(-12).map(x=>x.cours).filter(v=>v!=null);
+  if(m.length<2) return '';
+  const w=54,ht=20;
+  const min=Math.min(...m), max=Math.max(...m);
+  const norm=v=> max===min ? ht/2 : ht-((v-min)/(max-min))*ht;
+  const step=w/(m.length-1);
+  const pts=m.map((v,i)=>`${(i*step).toFixed(1)},${norm(v).toFixed(1)}`).join(' ');
+  const coul = m[m.length-1]>=m[0] ? couleurCss('--vert') : couleurCss('--rouge');
+  return `<svg class="spark" width="${w}" height="${ht}" viewBox="0 0 ${w} ${ht}"
+    aria-hidden="true" focusable="false"><polyline points="${pts}" fill="none"
+    stroke="${coul}" stroke-width="1.6"/></svg>`;
+}
+
+function rendreTableDepuisSpec(id){
+  const spec=specsFiltres[id];
+  if(!spec.donnees.length) return '<p class="vide">Aucune valeur ne satisfait actuellement tous les critères.</p>';
+  const entetes=spec.colonnes.map((c,i)=>{
+    const triable=!!c[2];
+    const fleche= spec.triCol===i ? (spec.triAsc?'▲':'▼') : '';
+    return `<th ${triable?`class="triable" data-table="${id}" data-col="${i}" tabindex="0" role="button" aria-label="Trier par ${c[0]}"`:''}>${c[0]}${triable?`<span class="fleche">${fleche}</span>`:''}</th>`;
+  }).join('');
+  const lignes=spec.donnees.map(x=>`<tr>${spec.colonnes.map(c=>`<td>${c[1](x)}</td>`).join('')}</tr>`).join('');
+  return `<div class="barre-outils-table">
+      <button type="button" class="bouton-csv" data-csv="${id}">⬇ Exporter en CSV</button>
+    </div>
+    <table><tr>${entetes}</tr>${lignes}</table>`;
+}
+
+function construireTableTriable(id, donnees, colonnes){
+  specsFiltres[id]={donnees, colonnes, triCol:null, triAsc:false};
+  return `<div id="conteneur-${id}">${rendreTableDepuisSpec(id)}</div>`;
+}
+
+function trierTable(id, col){
+  const spec=specsFiltres[id];
+  const accesseur=spec.colonnes[col][2];
+  if(!accesseur) return;
+  if(spec.triCol===col) spec.triAsc=!spec.triAsc; else { spec.triCol=col; spec.triAsc=false; }
+  spec.donnees.sort((a,b)=>{
+    const va=accesseur(a), vb=accesseur(b);
+    if(va==null && vb==null) return 0;
+    if(va==null) return 1; if(vb==null) return -1;
+    return spec.triAsc ? (va-vb) : (vb-va);
+  });
+  const conteneur=document.getElementById('conteneur-'+id);
+  if(conteneur) conteneur.innerHTML = rendreTableDepuisSpec(id);
+}
+
+function exporterCSV(id){
+  const spec=specsFiltres[id];
+  if(!spec || !spec.donnees.length) return;
+  const echapper=v=>`"${String(v).replace(/"/g,'""')}"`;
+  const lignes=[spec.colonnes.map(c=>echapper(c[0])).join(',')];
+  for(const x of spec.donnees){
+    lignes.push(spec.colonnes.map(c=>{
+      if(c[2]){ const v=c[2](x); return echapper(v==null?'':v); }
+      const tmp=document.createElement('div'); tmp.innerHTML=c[1](x);
+      return echapper((tmp.textContent||'').replace(/\s+/g,' ').trim());
+    }).join(','));
+  }
+  const blob=new Blob(['\ufeff'+lignes.join('\r\n')], {type:'text/csv;charset=utf-8;'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download=id+'_brvm.csv';
+  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+}
+
+const RANG_RECO={Acheter:2,Conserver:1,Vendre:0};
+
+async function rendreFiltres(){
   const zone=document.getElementById('contenuFiltres');
+  const tousTickers=(cours.valeurs||[]).map(v=>v.ticker);
+  const manquants=tousTickers.filter(tk=>!cacheHisto.has(tk));
+  if(manquants.length){
+    zone.innerHTML='<p class="desc" style="color:var(--gris)">Chargement des historiques '+
+      'pour les mini-graphiques…</p>';
+    await Promise.all(manquants.map(async tk=>{
+      const d=await fetch('data/historique/'+tk+'.json').then(r=>r.json()).catch(()=>null);
+      cacheHisto.set(tk, d);
+    }));
+  }
+
   const badge=r=>r?`<span class="badge b${r[0]}">${r}</span>`:"";
   const V=[];
   for(const v of (cours.valeurs||[])){
@@ -584,28 +931,30 @@ function rendreFiltres(){
     o.exc=(o.div&&o.bnpa&&o.bnpa>0)?(o.div/o.bnpa*100>150):false;
     V.push(o);
   }
-  const tbl=(lignes,cols)=>lignes.length?
-    `<table><tr>${cols.map(c=>`<th>${c[0]}</th>`).join("")}</tr>`+
-    lignes.map(x=>`<tr>${cols.map(c=>`<td>${c[1](x)}</td>`).join("")}</tr>`).join("")+
-    `</table>`:`<p class="vide">Aucune valeur ne satisfait actuellement tous les critères.</p>`;
-  const lien=x=>`<span class="tick" onclick="ouvrirFiche('${x.tk}')">${x.tk}</span>
-    <span style="color:#6b7280;font-size:11px">${(x.nom||"").slice(0,20)}</span>`;
+  const lien=x=>`<span class="tick" tabindex="0" role="button"
+    onclick="ouvrirFiche('${x.tk}')" onkeydown="if(event.key==='Enter')ouvrirFiche('${x.tk}')"
+    >${sparklineSVG(x.tk)} ${x.tk}</span>
+    <span style="color:var(--gris);font-size:11px">${(x.nom||"").slice(0,20)}</span>`;
 
   let html=`<h2>Segment Croissance (cible : 80 % du portefeuille)</h2>
     <p class="regle">CA, résultat net et BPA en croissance sur les exercices disponibles,
-    et tendance de cours haussière.</p>`;
+    et tendance de cours haussière. Cliquez un en-tête pour trier.</p>`;
   const cr=V.filter(x=>x.cCA>0&&x.cRN>0&&x.cBPA>0&&x.tend==="haussiere")
     .sort((a,b)=>b.cRN-a.cRN);
-  html+=tbl(cr,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
-    ["CA %/an",x=>fmt(x.cCA)],["RN %/an",x=>fmt(x.cRN)],["BPA %/an",x=>fmt(x.cBPA)],
-    ["Avis",x=>badge(x.reco)]]);
+  html+=construireTableTriable('croissance', cr, [
+    ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
+    ["CA %/an",x=>fmt(x.cCA),x=>x.cCA],["RN %/an",x=>fmt(x.cRN),x=>x.cRN],
+    ["BPA %/an",x=>fmt(x.cBPA),x=>x.cBPA],
+    ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
 
   html+=`<h2>Segment Rendement (cible : 20 % du portefeuille)</h2>
     <p class="regle">Tri par rendement du dividende net d'IRVM (10 %) au cours actuel.</p>`;
   const rd=V.filter(x=>x.dyNet!=null).sort((a,b)=>b.dyNet-a.dyNet).slice(0,12);
-  html+=tbl(rd,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
-    ["DY net %",x=>fmt(x.dyNet)+(x.exc?" ⚠":"")],["DY brut %",x=>fmt(x.dyBrut)],
-    ["Avis",x=>badge(x.reco)]]);
+  html+=construireTableTriable('rendement', rd, [
+    ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
+    ["DY net %",x=>fmt(x.dyNet)+(x.exc?" ⚠":""),x=>x.dyNet],
+    ["DY brut %",x=>fmt(x.dyBrut),x=>x.dyBrut],
+    ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
 
   if(rd.some(x=>x.exc)) html+=`<p class="regle">⚠ Dividende exceptionnel
     (supérieur à 150 % du bénéfice) — rendement vraisemblablement non récurrent ;
@@ -625,13 +974,69 @@ function rendreFiltres(){
       ? (x.mm20!=null&&x.mm50!=null&&x.mm20>x.mm50&&(x.mm200==null||x.cours>x.mm200))
       : (x.tend==="haussiere"&&x.var1m>0)))
     .sort((a,b)=>(b.var1m||0)-(a.var1m||0));
-  html+=tbl(mo,[["Valeur",lien],["Cours",x=>fmtEntier(x.cours)],
-    ["Var. 1 mois %",x=>fmt(x.var1m)],["PBR",x=>fmt(x.pbr)],
-    ["PBR méd. sect.",x=>fmt(medPbrSect[x.sect])],["Avis",x=>badge(x.reco)]]);
+  html+=construireTableTriable('momentum', mo, [
+    ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
+    ["Var. 1 mois %",x=>fmt(x.var1m),x=>x.var1m],["PBR",x=>fmt(x.pbr),x=>x.pbr],
+    ["PBR méd. sect.",x=>fmt(medPbrSect[x.sect]),null],
+    ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
 
   html+=`<p class="notebas">Sélections générées automatiquement par règles — ne constituent
     pas un conseil en investissement. Une valeur peut appartenir à plusieurs segments.</p>`;
+
+  html+=`<h2>Comparateur</h2>
+    <p class="regle">Sélectionnez 2 ou 3 valeurs (Ctrl/Cmd + clic pour une sélection multiple),
+    puis comparez leurs indicateurs clés côte à côte.</p>
+    <div class="comparateur">
+      <select id="comparateurSelect" multiple aria-label="Choisir les valeurs à comparer">
+        ${V.slice().sort((a,b)=>a.nom.localeCompare(b.nom))
+          .map(x=>`<option value="${x.tk}">${x.nom} (${x.tk})</option>`).join('')}
+      </select>
+      <div class="barre-outils-table" style="justify-content:flex-start;margin-top:8px">
+        <button type="button" class="bouton-csv" id="btnComparer">Comparer</button>
+      </div>
+      <div id="resultatComparateur"></div>
+    </div>`;
+
   zone.innerHTML=html;
+
+  document.getElementById('btnComparer').onclick=()=>{
+    const sel=document.getElementById('comparateurSelect');
+    const choisis=Array.from(sel.selectedOptions).map(o=>o.value).slice(0,3);
+    const zoneRes=document.getElementById('resultatComparateur');
+    if(choisis.length<2){
+      zoneRes.innerHTML='<p class="desc" style="color:var(--gris)">Choisissez au moins deux valeurs (3 maximum).</p>';
+      return;
+    }
+    const ligne=(lib,f)=>`<tr><td>${lib}</td>${choisis.map(tk=>`<td>${f(tk)}</td>`).join('')}</tr>`;
+    let t=`<table><tr><th></th>${choisis.map(tk=>`<th>${tk}</th>`).join('')}</tr>`;
+    t+=ligne('Cours', tk=>fmtEntier((V.find(x=>x.tk===tk)||{}).cours));
+    t+=ligne('Secteur', tk=>LIB_SECTEURS[secteurs[tk]]||secteurs[tk]||'—');
+    t+=ligne('PER', tk=>{const d=derniersFondamentaux(fonda[tk]||{}); return d.per!=null?fmt(d.per)+'x':'—';});
+    t+=ligne('ROE', tk=>{const d=derniersFondamentaux(fonda[tk]||{}); return d.roe_pct!=null?fmt(d.roe_pct)+' %':'—';});
+    t+=ligne('DY net %', tk=>{const o=V.find(x=>x.tk===tk); return o&&o.dyNet!=null?fmt(o.dyNet):'—';});
+    t+=ligne('Score moyen', tk=>{
+      const sc=Object.values(((analyse&&analyse.valeurs[tk])||{}).scores||{}).filter(v=>v!=null);
+      return sc.length?Math.round(sc.reduce((a,b)=>a+b,0)/sc.length)+'/100':'—';
+    });
+    t+=ligne('Avis', tk=>badge(((analyse&&analyse.valeurs[tk])||{}).reco));
+    t+='</table>';
+    zoneRes.innerHTML=t;
+  };
+
+  if(!ecouteurFiltresInstalle){
+    zone.addEventListener('click', e=>{
+      const th=e.target.closest('th.triable');
+      if(th){ trierTable(th.dataset.table, +th.dataset.col); return; }
+      const btn=e.target.closest('.bouton-csv[data-csv]');
+      if(btn){ exporterCSV(btn.dataset.csv); return; }
+    });
+    zone.addEventListener('keydown', e=>{
+      if(e.key!=='Enter') return;
+      const th=e.target.closest('th.triable');
+      if(th){ trierTable(th.dataset.table, +th.dataset.col); }
+    });
+    ecouteurFiltresInstalle=true;
+  }
 }
 
 function rendreCarnet(t){
@@ -647,11 +1052,10 @@ function rendreCarnet(t){
     let prec=0;
     const lignes=pts.map(p=>{
       const dv=Math.max(0,(p.volume||0)-prec); prec=p.volume||0;
-      return `<div><span class="lib">${p.h}</span>
-        <span>${fmtEntier(p.cours)} FCFA</span>
-        <span class="val">${fmtEntier(dv)} titres</span></div>`;
+      return `<div><dt>${p.h}</dt>
+        <dd>${fmtEntier(p.cours)} FCFA · ${fmtEntier(dv)} titres</dd></div>`;
     }).join("");
-    html+=`<div class="liste">${lignes}</div>`;
+    html+=`<dl class="liste">${lignes}</dl>`;
   } else {
     html+=`<p class="desc" style="color:#9ca3af">Aucun relevé pour la dernière séance.</p>`;
   }
@@ -666,12 +1070,12 @@ function rendreCarnet(t){
       return [tk,(cv&&cv.cours!=null&&x.volume_moyen_20!=null)?cv.cours*x.volume_moyen_20:null];})
     .filter(x=>x[1]!=null).sort((a,b)=>b[1]-a[1]);
   const rang=classement.findIndex(x=>x[0]===t);
-  html+=`<h2>Liquidité</h2><div class="liste">
-    <div><span class="lib">Volume de la séance</span><span class="val">${fmtEntier(v.volume)} titres</span></div>
-    <div><span class="lib">Valeur échangée (séance)</span><span class="val">${valJour!=null?fmtMds(valJour/1e6):"—"}</span></div>
-    <div><span class="lib">Valeur moyenne échangée (20 séances)</span><span class="val">${valMoy!=null?fmtMds(valMoy/1e6):"—"}</span></div>
-    <div><span class="lib">Rang de liquidité sur le marché</span><span class="val">${rang>=0?(rang+1)+" / "+classement.length:"—"}</span></div>
-  </div>`;
+  html+=`<h2>Liquidité</h2><dl class="liste">
+    <div><dt>Volume de la séance</dt><dd>${fmtEntier(v.volume)} titres</dd></div>
+    <div><dt>Valeur échangée (séance)</dt><dd>${valJour!=null?fmtMds(valJour/1e6):"—"}</dd></div>
+    <div><dt>Valeur moyenne échangée (20 séances)</dt><dd>${valMoy!=null?fmtMds(valMoy/1e6):"—"}</dd></div>
+    <div><dt>Rang de liquidité sur le marché</dt><dd>${rang>=0?(rang+1)+" / "+classement.length:"—"}</dd></div>
+  </dl>`;
 
   html+=`<p class="notebas">Le carnet d'ordres multi-niveaux (bid/ask) n'est pas diffusé
     gratuitement par la BRVM ; cet onglet présente les échanges réels de la séance et des
