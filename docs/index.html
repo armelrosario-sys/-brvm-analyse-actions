@@ -74,9 +74,15 @@ th{color:var(--gris);font-weight:600;text-align:right;padding:7px 3px;border-bot
 th:first-child,td:first-child{text-align:left}
 td{padding:8px 3px;border-bottom:1px solid var(--pastel);text-align:right}
 td .tick{color:var(--bleu);font-weight:700;cursor:pointer}
-.badge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 6px}
-.bA{background:var(--vert-clair);color:#046c4e}.bC{background:var(--ambre-clair);color:var(--ambre-texte)}
-.bV{background:var(--rouge-clair);color:#912018}
+/* Pastilles pleines (inspirees des badges VALUE/GARP/GROWTH) : fond sature,
+   texte blanc - lisible identiquement en theme clair ou sombre */
+.badge{font-size:11px;font-weight:700;border-radius:20px;padding:3px 10px;
+  letter-spacing:.02em;display:inline-block;color:#fff}
+/* Couleurs fixes (non theme-dependantes) : le fond ambre du mode sombre est trop
+   clair pour porter du texte blanc lisible - une pastille garde ses propres tons. */
+.bA{background:#0e9f6e}
+.bC{background:#c9760a}
+.bV{background:#d92d20}
 .regle{color:var(--gris);font-size:12.5px;margin-bottom:8px}
 .vide{color:var(--gris);font-size:13.5px;padding:10px 0}
 .masque{display:none}
@@ -159,6 +165,7 @@ body.chargement #contenuCarnet,body.chargement #contenuFiltres{opacity:.45;
 th.triable{cursor:pointer;user-select:none}
 th.triable:hover{color:var(--bleu)}
 th.triable .fleche{font-size:10px;margin-left:2px;opacity:.6}
+th.tri-actif{text-decoration:underline;text-underline-offset:3px;color:var(--txt)}
 .barre-outils-table{display:flex;justify-content:flex-end;margin:4px 0 10px}
 .bouton-csv{border:1px solid var(--ligne);background:var(--fond);color:var(--txt);
   border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer}
@@ -179,12 +186,25 @@ dl.liste dt{color:var(--txt-secondaire);font-weight:400}
 dl.liste dd{font-weight:600;margin:0}
 ul.liste-pastilles{list-style:none}
 
-/* --- Mode sombre : override manuel (prioritaire sur la preference systeme) --- */
-html[data-theme="sombre"]{--fond:#0f172a;--txt:#e5e7eb;--gris:#9ca3af;
-  --ligne:#243044;--pastel:#1a2436;--survol:#16213a}
+/* --- Mode sombre : palette marine inspiree d'un ecran de suivi quantitatif
+   (fond profond, surfaces legerement plus claires, tons vifs pour les scores) --- */
+html[data-theme="sombre"]{
+  --fond:#0a1120;--txt:#e7edf5;--txt-secondaire:#9aa8bd;--gris:#7b8aa3;
+  --gris-clair:#4c5a72;--ligne:#1c2942;--pastel:#111b30;--carte:#0f1a2e;--survol:#152238;
+  --bleu:#5b8def;--bleu-clair:#16213a;
+  --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
+  --rouge:#f2695c;--rouge-clair:#2a1418;
+  --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b
+}
 @media (prefers-color-scheme: dark){
-  html:not([data-theme="clair"]){--fond:#0f172a;--txt:#e5e7eb;--gris:#9ca3af;
-    --ligne:#243044;--pastel:#1a2436;--survol:#16213a}
+  html:not([data-theme="clair"]){
+    --fond:#0a1120;--txt:#e7edf5;--txt-secondaire:#9aa8bd;--gris:#7b8aa3;
+    --gris-clair:#4c5a72;--ligne:#1c2942;--pastel:#111b30;--carte:#0f1a2e;--survol:#152238;
+    --bleu:#5b8def;--bleu-clair:#16213a;
+    --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
+    --rouge:#f2695c;--rouge-clair:#2a1418;
+    --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b
+  }
 }
 
 /* --- Impression / export PDF : ne garder que le contenu utile --- */
@@ -631,8 +651,9 @@ function majVariation(){
     const va = v.variation_pct;
     const delta = (v.cours!=null && va!=null) ? v.cours - v.cours/(1+va/100) : null;
     el.className = va>0?'hausse':va<0?'baisse':'neutre';
+    const puce = va==null?'':va>0?'▲ ':va<0?'▼ ':'● ';
     el.textContent = (delta!=null?((delta>=0?'+':'')+fmtEntier(delta)+' FCFA  '):'') +
-                     (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
+                     (va!=null?(puce+(va>=0?'+':'')+fmt(va)+' %'):'');
     const d = cours.maj ? new Date(cours.maj) : null;
     dateEl.textContent = d ? '· ' +
       d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'}) : '';
@@ -642,8 +663,9 @@ function majVariation(){
       const debut=s.data[0], fin=s.data[s.data.length-1];
       const delta=fin-debut, va=debut?((fin/debut-1)*100):null;
       el.className = delta>0?'hausse':delta<0?'baisse':'neutre';
-      el.textContent = (delta>=0?'+':'')+fmtEntier(delta)+' FCFA  ' +
-                       (va!=null?((va>=0?'↗ +':'↘ ')+fmt(va)+' %'):'');
+      const puce = delta>0?'▲ ':delta<0?'▼ ':'● ';
+      el.textContent = puce+(delta>=0?'+':'')+fmtEntier(delta)+' FCFA  ' +
+                       (va!=null?((va>=0?'+':'')+fmt(va)+' %'):'');
     } else { el.className='neutre'; el.textContent='—'; }
     // Libelle honnete : si le 1er point disponible est posterieur au debut
     // theorique de la periode (>3 jours), on affiche la date reelle de depart.
@@ -756,11 +778,40 @@ function jaugeSVG(score, libelleTexte){
     ${aiguille}</svg>`;
 }
 
+function couleurScore(sc){
+  return sc==null?couleurCss('--gris-clair'):sc<25?couleurCss('--rouge'):
+    sc<50?couleurCss('--ambre'):sc<75?couleurCss('--vert-doux'):couleurCss('--vert');
+}
+
+function miniBarres(scores){
+  const dims=["performances","perspectives","remuneration","valorisation"];
+  const initiales={performances:"P",perspectives:"Pe",remuneration:"R",valorisation:"V"};
+  const barres=dims.map(d=>{
+    const sc=scores[d];
+    const h=sc!=null?Math.max(4,sc*0.34):3;
+    const coul=sc!=null?couleurScore(sc):couleurCss('--gris-clair');
+    return `<div style="display:flex;flex-direction:column;align-items:center;gap:3px">
+      <div style="width:14px;height:34px;display:flex;align-items:flex-end;
+        background:var(--pastel);border-radius:3px;overflow:hidden">
+        <div style="width:100%;height:${h}px;background:${coul}"></div>
+      </div>
+      <span style="font-size:9.5px;color:var(--gris)">${initiales[d]}</span>
+    </div>`;
+  }).join('');
+  return `<div style="display:flex;gap:10px;justify-content:center;padding:10px 0 2px">${barres}</div>`;
+}
+
 function rendreAnalyse(t){
   const zone=document.getElementById('contenuAnalyse');
   const a=analyse&&analyse.valeurs&&analyse.valeurs[t];
   if(!a){ zone.innerHTML="<p class='desc'>Analyse non disponible pour cette valeur.</p>"; return; }
   let html="";
+  html+=`<div class="carte" style="text-align:center">
+    <span style="font-size:11.5px;color:var(--gris);text-transform:uppercase;letter-spacing:.04em">
+      Vue d'ensemble</span>
+    ${miniBarres(a.scores)}
+    <span style="font-size:11px;color:var(--gris-clair)">Performances · Perspectives · Rémunération · Valorisation</span>
+  </div>`;
   if(a.secteur_repli_marche){
     html+=`<p class="notebas" style="background:var(--pastel);border-radius:8px;padding:8px 10px;
       margin-bottom:14px">ℹ️ Le secteur de cette valeur ne compte que ${a.secteur_taille}
@@ -869,8 +920,10 @@ function rendreTableDepuisSpec(id){
   if(!spec.donnees.length) return '<p class="vide">Aucune valeur ne satisfait actuellement tous les critères.</p>';
   const entetes=spec.colonnes.map((c,i)=>{
     const triable=!!c[2];
-    const fleche= spec.triCol===i ? (spec.triAsc?'▲':'▼') : '';
-    return `<th ${triable?`class="triable" data-table="${id}" data-col="${i}" tabindex="0" role="button" aria-label="Trier par ${c[0]}"`:''}>${c[0]}${triable?`<span class="fleche">${fleche}</span>`:''}</th>`;
+    const actif=spec.triCol===i;
+    const fleche= actif ? (spec.triAsc?'▲':'▼') : '';
+    const classes=[triable?'triable':'', actif?'tri-actif':''].filter(Boolean).join(' ');
+    return `<th ${triable?`class="${classes}" data-table="${id}" data-col="${i}" tabindex="0" role="button" aria-label="Trier par ${c[0]}"`:''}>${c[0]}${triable?`<span class="fleche">${fleche}</span>`:''}</th>`;
   }).join('');
   const lignes=spec.donnees.map(x=>`<tr>${spec.colonnes.map(c=>`<td>${c[1](x)}</td>`).join('')}</tr>`).join('');
   return `<div class="barre-outils-table">
@@ -879,6 +932,13 @@ function rendreTableDepuisSpec(id){
     <table><tr>${entetes}</tr>${lignes}</table>`;
 }
 
+function colCours(x){
+  const va=x.varJour;
+  if(va==null) return fmtEntier(x.cours);
+  const puce = va>0?'▲':va<0?'▼':'●';
+  const cl = va>0?'pos':va<0?'neg':'neutre-txt';
+  return `${fmtEntier(x.cours)} <span class="${cl}" style="font-size:11px">${puce} ${va>=0?'+':''}${fmt(va)}%</span>`;
+}
 function colVar(v){
   if(v==null) return '—';
   return `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':''}${fmt(v)} %</span>`;
@@ -944,7 +1004,7 @@ async function rendreFiltres(){
     const serie=ch=>exs.map(e=>fo.exercices[e][ch]?fo.exercices[e][ch].valeur:null);
     const dern=ch=>{for(let i=exs.length-1;i>=0;i--){
       const x=fo.exercices[exs[i]][ch]; if(x&&x.valeur!=null) return x.valeur;} return null;};
-    const o={tk, nom:v.nom, cours:v.cours,
+    const o={tk, nom:v.nom, cours:v.cours, varJour:v.variation_pct,
       cCA:cagrJS(serie("ca")), cRN:cagrJS(serie("rn")), cBPA:cagrJS(serie("bnpa")),
       tend:te.tendance_provisoire_mensuelle, var1m:te.var_1m,
       mm20:te.mm20, mm50:te.mm50, mm200:te.mm200,
@@ -970,7 +1030,7 @@ async function rendreFiltres(){
   const cr=V.filter(x=>x.cCA>0&&x.cRN>0&&x.cBPA>0&&x.tend==="haussiere")
     .sort((a,b)=>b.cRN-a.cRN);
   html+=construireTableTriable('croissance', cr, [
-    ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
+    ["Valeur",lien,null],["Cours",x=>colCours(x),x=>x.cours],
     ["CA %/an",x=>colVar(x.cCA),x=>x.cCA],["RN %/an",x=>colVar(x.cRN),x=>x.cRN],
     ["BPA %/an",x=>colVar(x.cBPA),x=>x.cBPA],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
@@ -981,7 +1041,7 @@ async function rendreFiltres(){
     <p class="regle">Tri par rendement du dividende net d'IRVM (10 %) au cours actuel.</p>`;
   const rd=V.filter(x=>x.dyNet!=null).sort((a,b)=>b.dyNet-a.dyNet).slice(0,12);
   html+=construireTableTriable('rendement', rd, [
-    ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
+    ["Valeur",lien,null],["Cours",x=>colCours(x),x=>x.cours],
     ["DY net %",x=>fmt(x.dyNet)+(x.exc?" ⚠":""),x=>x.dyNet],
     ["DY brut %",x=>fmt(x.dyBrut),x=>x.dyBrut],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
@@ -1007,7 +1067,7 @@ async function rendreFiltres(){
       : (x.tend==="haussiere"&&x.var1m>0)))
     .sort((a,b)=>(b.var1m||0)-(a.var1m||0));
   html+=construireTableTriable('momentum', mo, [
-    ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
+    ["Valeur",lien,null],["Cours",x=>colCours(x),x=>x.cours],
     ["Var. 1 mois %",x=>colVar(x.var1m),x=>x.var1m],["PBR",x=>fmt(x.pbr),x=>x.pbr],
     ["PBR méd. sect.",x=>fmt(medPbrSect[x.sect]),null],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
