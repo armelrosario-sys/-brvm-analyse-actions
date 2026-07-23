@@ -28,6 +28,18 @@ jobs:
       - name: Installer les dependances
         run: pip install -r requirements.txt
 
+      # marche.db n'est plus versionne dans Git (fichier binaire non fusionnable).
+      # Le cache restaure la derniere version connue (cle prefixe "marche-db-"),
+      # et sauvegarde automatiquement l'etat mis a jour a la fin du job, sous une
+      # cle unique (run_id) - garantissant qu'aucune sauvegarde n'est jamais perdue.
+      - name: Restaurer/sauvegarder marche.db (cache)
+        uses: actions/cache@v4
+        with:
+          path: data/marche.db
+          key: marche-db-${{ github.run_id }}
+          restore-keys: |
+            marche-db-
+
       - name: Lancer la collecte
         run: python scripts/collecte_cours.py
 
@@ -38,7 +50,7 @@ jobs:
       - name: Calculs techniques et exports
         if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
         run: python scripts/calculs_techniques.py
-        
+
       - name: Calculs d'analyse et notation
         if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
         run: python scripts/calculs_analyse.py
@@ -47,9 +59,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git rm --cached data/marche.db --ignore-unmatch
           git add data/ docs/data/
           git diff --cached --quiet && echo "Rien de nouveau" && exit 0
           git commit -m "Collecte $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git fetch origin main
-          git merge -X ours --no-edit origin/main
+          git pull --rebase origin main
           git push
