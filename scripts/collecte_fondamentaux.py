@@ -126,7 +126,31 @@ def extraire(html, ticker, anomalies):
     return donnees
 
 
-def charger_complement():
+JOURS_ALERTE_FRAICHEUR = 365  # au-dela, une correction manuelle est signalee
+                              # comme "a revalider" - jamais supprimee, juste rappelee
+
+
+def _controler_fraicheur(t, ex, r, libelle_source, avertissements):
+    """Ajoute un avertissement (liste 'anomalies', jamais bloquant) si la date
+    de verification d'une correction manuelle est absente ou perimee."""
+    brut = (r.get("date_verif") or "").strip()
+    if not brut:
+        avertissements.append(f"{t} {ex} ({libelle_source}) : date de vérification "
+                              f"non renseignée - à dater lors de la prochaine relecture.")
+        return
+    try:
+        d = datetime.strptime(brut, "%Y-%m-%d")
+    except ValueError:
+        avertissements.append(f"{t} {ex} ({libelle_source}) : date_verif illisible "
+                              f"({brut!r}) - format attendu AAAA-MM-JJ.")
+        return
+    age = (datetime.now(timezone.utc).replace(tzinfo=None) - d).days
+    if age > JOURS_ALERTE_FRAICHEUR:
+        avertissements.append(f"{t} {ex} ({libelle_source}) : dernière vérification "
+                              f"il y a {age} jours ({brut}) - à revalider.")
+
+
+def charger_complement(avertissements):
     """Fusion : import automatique valide (statut VALIDE/PROBABLE) puis
     corrections manuelles (le manuel ecrase toujours l'automatique)."""
     comp = {}
@@ -151,14 +175,15 @@ def charger_complement():
                         "dettes_financieres": nombre_fr(r.get("dettes_financieres_mfcfa")),
                         "_source": "complement_manuel",
                     }
+                    _controler_fraicheur(t, ex, r, "capitaux propres/dettes", avertissements)
     return comp
 
 
-def charger_div_complement():
+def charger_div_complement(avertissements):
     """Correction manuelle ponctuelle du dividende officiel (ex. resolution
     d'assemblee generale), quand elle est plus recente/fiable que la fiche
     Sika. Ecrase la valeur Sika pour le couple (ticker, exercice) concerne.
-    Colonnes attendues : ticker,exercice,dividende_brut_fcfa,note
+    Colonnes attendues : ticker,exercice,dividende_brut_fcfa,note,date_verif
     """
     div = {}
     if CHEMIN_DIV_COMPLEMENT.exists():
@@ -168,14 +193,15 @@ def charger_div_complement():
                 v = nombre_fr(r.get("dividende_brut_fcfa"))
                 if t and ex and v is not None:
                     div[(t, ex)] = {"valeur": v, "note": (r.get("note") or "").strip()}
+                    _controler_fraicheur(t, ex, r, "dividende officiel", avertissements)
     return div
 
 
 def principal():
     anomalies = []
     suffixes = charger_suffixes()
-    complement = charger_complement()
-    div_complement = charger_div_complement()
+    complement = charger_complement(anomalies)
+    div_complement = charger_div_complement(anomalies)
     tickers = sorted({v["ticker"] for v in
                       json.loads(CHEMIN_COURS.read_text(encoding="utf-8"))["valeurs"]})
 
