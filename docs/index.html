@@ -5,11 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BRVM Analyse Actions</title>
 <style>
-:root{--bleu:#2f5cf6;--vert:#16a34a;--rouge:#dc2626;--txt:#111827;--gris:#6b7280;
---fond:#ffffff;--ligne:#e5e7eb;--pastel:#f3f4f6}
+:root{
+  /* Palette affinee - tons plus riches, typiques d'un tableau de bord financier,
+     tout en restant proches des teintes Famaya deja validees */
+  --bleu:#2952e3;--bleu-clair:#eef1fd;
+  --vert:#0e9f6e;--vert-clair:#e7f7f1;
+  --rouge:#d92d20;--rouge-clair:#fdeeed;
+  --ambre:#d97706;--ambre-clair:#fef3c7;
+  --txt:#101828;--txt-secondaire:#475467;--gris:#667085;--gris-clair:#98a2b3;
+  --vert-doux:#3cc98a;--ambre-texte:#92400e;
+  --fond:#ffffff;--ligne:#e4e7ec;--pastel:#f7f8fa;--carte:#ffffff;
+  /* Alias semantiques (utilises pour les ajouts au-dela de la fiche Famaya) */
+  --positif:var(--vert);--negatif:var(--rouge);--attention:var(--ambre)
+}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--fond);
-color:var(--txt);max-width:560px;margin:0 auto;padding:0 16px 60px}
+color:var(--txt);max-width:560px;margin:0 auto;padding:0 16px 60px;
+font-variant-numeric:tabular-nums;line-height:1.5}
+h2{color:var(--txt)}
+.desc,.regle,.notebas{text-align:justify;text-justify:inter-word;hyphens:auto}
+.carte{background:var(--carte);border:1px solid var(--ligne);border-radius:14px;
+  padding:16px;margin-bottom:16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.carte h2{margin-top:0}
+.pos{color:var(--positif)}.neg{color:var(--negatif)}.neutre-txt{color:var(--gris)}
+table tbody tr:nth-child(even) td{background:var(--pastel)}
 header{position:sticky;top:0;background:var(--fond);padding:14px 0 8px;z-index:10;
 border-bottom:1px solid var(--ligne)}
 select{width:100%;font-size:17px;font-weight:700;border:1px solid var(--ligne);
@@ -26,7 +45,7 @@ border-radius:6px;padding:2px 8px;margin-top:6px}
 font-weight:600;border-radius:8px;padding:6px 11px;cursor:pointer}
 .periodes button.actif{background:var(--fond);border:1px solid var(--ligne);
 box-shadow:0 1px 3px rgba(0,0,0,.08);color:var(--bleu)}
-.periodes button:disabled{color:#c3c7cf;cursor:not-allowed}
+.periodes button:disabled{color:var(--gris-clair);cursor:not-allowed}
 #zoneGraph{height:230px;position:relative}
 #msgGraph{position:absolute;inset:0;align-items:center;justify-content:center;
 color:var(--gris);font-size:13px;display:none}
@@ -40,13 +59,13 @@ color:var(--gris);padding:11px 0;cursor:pointer;border-bottom:2.5px solid transp
 margin-bottom:-2px}
 .onglets button.actif{color:var(--txt);border-color:var(--bleu)}
 h2{font-size:17px;margin:22px 0 10px}
-.desc{font-size:14.5px;line-height:1.55;color:#374151}
+.desc{font-size:14.5px;line-height:1.55;color:var(--txt-secondaire)}
 .lirePlus{color:var(--bleu);font-size:14px;cursor:pointer;font-weight:600}
 .liste div{display:flex;justify-content:space-between;padding:9px 0;
 border-bottom:1px solid var(--pastel);font-size:14.5px}
-.liste .lib{color:#374151}
+.liste .lib{color:var(--txt-secondaire)}
 .liste .val{font-weight:600}
-.indispo{color:#c3c7cf}
+.indispo{color:var(--gris-clair)}
 #graphDiv{height:180px;position:relative;margin-top:10px}
 .notebas{color:var(--gris);font-size:12px;margin-top:10px}
 .onglets button{font-size:13.5px}
@@ -56,21 +75,21 @@ th:first-child,td:first-child{text-align:left}
 td{padding:8px 3px;border-bottom:1px solid var(--pastel);text-align:right}
 td .tick{color:var(--bleu);font-weight:700;cursor:pointer}
 .badge{font-size:11px;font-weight:700;border-radius:6px;padding:2px 6px}
-.bA{background:#dcfce7;color:#166534}.bC{background:#fef9c3;color:#854d0e}
-.bV{background:#fee2e2;color:#991b1b}
+.bA{background:var(--vert-clair);color:#046c4e}.bC{background:var(--ambre-clair);color:var(--ambre-texte)}
+.bV{background:var(--rouge-clair);color:#912018}
 .regle{color:var(--gris);font-size:12.5px;margin-bottom:8px}
-.vide{color:#9ca3af;font-size:13.5px;padding:10px 0}
+.vide{color:var(--gris);font-size:13.5px;padding:10px 0}
 .masque{display:none}
 
 /* --- Revue ergonomie/qualite visuelle : etats d'interaction, accessibilite --- */
-:root{--focus:#2f5cf6;--survol:#f8fafc;--transition:150ms ease}
+:root{--focus:var(--bleu);--survol:#f8fafc;--transition:150ms ease}
 
 /* Focus clavier visible partout (aucune regle n'existait avant) */
 a:focus-visible, button:focus-visible, select:focus-visible, span[tabindex]:focus-visible{
   outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
 
 /* Etats de survol - boutons de periode */
-.periodes button:not(:disabled):hover{background:#e5e9fb;color:var(--bleu)}
+.periodes button:not(:disabled):hover{background:var(--bleu-clair);color:var(--bleu)}
 .periodes button{transition:background var(--transition),color var(--transition)}
 
 /* Etats de survol - onglets */
@@ -156,7 +175,7 @@ th.triable .fleche{font-size:10px;margin-left:2px;opacity:.6}
 dl.liste{margin:0}
 dl.liste > div{display:flex;justify-content:space-between;padding:9px 0;
   border-bottom:1px solid var(--pastel);font-size:14.5px}
-dl.liste dt{color:#374151;font-weight:400}
+dl.liste dt{color:var(--txt-secondaire);font-weight:400}
 dl.liste dd{font-weight:600;margin:0}
 ul.liste-pastilles{list-style:none}
 
@@ -419,8 +438,9 @@ function rendreAlerte(t, coursActuel){
       <button type="button" id="btnAlerteValider">${a?'Mettre à jour':'Activer'}</button>
       ${a?'<button type="button" id="btnAlerteSupprimer">Supprimer</button>':''}
     </div>
-    <p class="note-limite">Fonctionne uniquement lorsque cette page est ouverte dans votre
-      navigateur — pas de notification en votre absence (aucun serveur derrière cet outil).</p>`;
+    <p class="note-limite">Actif seulement pendant que cette page reste ouverte dans votre
+      navigateur : aucune alerte ne peut être envoyée en votre absence, cet outil ne
+      dispose pas de serveur.</p>`;
   document.getElementById('btnAlerteValider').onclick = ()=>{
     const seuil = parseFloat(document.getElementById('alerteSeuil').value);
     const sens = document.getElementById('alerteSens').value;
@@ -658,14 +678,14 @@ function dessinerGraphique(){
   m.style.display = s.data.length?'none':'flex';
   if(!s.data.length){ m.textContent="Pas encore de données pour cette période"; }
   const monte = s.data.length>1 ? s.data[s.data.length-1]>=s.data[0] : true;
-  const coul = monte?'#16a34a':'#dc2626';
+  const coul = monte ? couleurCss('--vert') : couleurCss('--rouge');
   if(graph) graph.destroy();
   const datasets=[{data:s.data,borderColor:coul,borderWidth:2,
       pointRadius:0,fill:true,tension:0,stepped:periode==="1J",
       backgroundColor:c=>{const g=c.chart.ctx.createLinearGradient(0,0,0,230);
         g.addColorStop(0,coul+"33");g.addColorStop(1,coul+"00");return g;}}];
   if(s.ref!=null && s.data.length>1){
-    datasets.push({data:s.data.map(()=>s.ref),borderColor:'#9ca3af',
+    datasets.push({data:s.data.map(()=>s.ref),borderColor:couleurCss('--gris'),
       borderWidth:1,borderDash:[4,4],pointRadius:0,fill:false});
   }
   graph = new Chart(document.getElementById('graphique'),{
@@ -703,7 +723,7 @@ document.getElementById('periodes').addEventListener('click',e=>{
 });
 // ---------- Onglet Analyse (Phase 4) ----------
 let analyse=null;
-const COUL={vert:"#16a34a",orange:"#f59e0b",rouge:"#dc2626"};
+const COUL={vert:"#0e9f6e",orange:"#d97706",rouge:"#d92d20"};
 const TITRES={performances:"Performances",perspectives:"Perspectives",
   remuneration:"Rémunération",valorisation:"Valorisation"};
 
@@ -711,6 +731,7 @@ function jaugeSVG(score, libelleTexte){
   const s = score==null?null:Math.max(0,Math.min(100,score));
   const description = (libelleTexte||"indisponible") + (score!=null?` (${score}/100)`:"");
   const ang = s==null?null:(-90 + s*1.8);
+  const gGris=couleurCss('--gris'), gTxt=couleurCss('--txt');
   const arc=(a1,a2,coul)=>{
     const r=70,cx=90,cy=85;
     const p=a=>[cx+r*Math.cos((a-90)*Math.PI/180), cy+r*Math.sin((a-90)*Math.PI/180)];
@@ -721,16 +742,17 @@ function jaugeSVG(score, libelleTexte){
   const aiguille = ang==null?"":`
     <line x1="90" y1="85" x2="${(90+52*Math.cos((ang-90)*Math.PI/180)).toFixed(1)}"
       y2="${(85+52*Math.sin((ang-90)*Math.PI/180)).toFixed(1)}"
-      stroke="#111827" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="90" cy="85" r="5" fill="#111827"/>`;
+      stroke="${gTxt}" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="90" cy="85" r="5" fill="${gTxt}"/>`;
   return `<svg viewBox="0 0 180 100" role="img" aria-label="${description}"
     style="width:220px;max-width:60%;display:block;margin:0 auto">
     <title>${description}</title>
-    ${arc(-90,-46,"#e11d48")}${arc(-44,-2,"#eab308")}${arc(0,42,"#4ade80")}${arc(44,88,"#16a34a")}
-    <text x="22" y="98" font-size="9" fill="#6b7280">Mauvais</text>
-    <text x="42" y="18" font-size="9" fill="#6b7280">Mitigé</text>
-    <text x="118" y="18" font-size="9" fill="#6b7280">Bon</text>
-    <text x="132" y="98" font-size="9" fill="#6b7280">Excellent</text>
+    ${arc(-90,-46,couleurCss('--rouge'))}${arc(-44,-2,couleurCss('--ambre'))}
+    ${arc(0,42,couleurCss('--vert-doux'))}${arc(44,88,couleurCss('--vert'))}
+    <text x="22" y="98" font-size="9" fill="${gGris}">Mauvais</text>
+    <text x="42" y="18" font-size="9" fill="${gGris}">Mitigé</text>
+    <text x="118" y="18" font-size="9" fill="${gGris}">Bon</text>
+    <text x="132" y="98" font-size="9" fill="${gGris}">Excellent</text>
     ${aiguille}</svg>`;
 }
 
@@ -740,15 +762,15 @@ function rendreAnalyse(t){
   if(!a){ zone.innerHTML="<p class='desc'>Analyse non disponible pour cette valeur.</p>"; return; }
   let html="";
   if(a.secteur_repli_marche){
-    html+=`<p class="notebas" style="background:#f3f4f6;border-radius:8px;padding:8px 10px;
+    html+=`<p class="notebas" style="background:var(--pastel);border-radius:8px;padding:8px 10px;
       margin-bottom:14px">ℹ️ Le secteur de cette valeur ne compte que ${a.secteur_taille}
       société(s) — trop peu pour une médiane sectorielle fiable. Les comparaisons ci-dessous
       utilisent la médiane de l'ensemble du marché à la place.</p>`;
   }
   for(const dim of ["performances","perspectives","remuneration","valorisation"]){
     const sc=a.scores[dim], lib=a.libelles[dim];
-    const coulLib = sc==null?"#9ca3af":sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
-    html+=`<h2>${TITRES[dim]}</h2>${jaugeSVG(sc, lib)}
+    const coulLib = sc==null?couleurCss('--gris-clair'):sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
+    html+=`<div class="carte"><h2 style="margin-top:0">${TITRES[dim]}</h2>${jaugeSVG(sc, lib)}
       <p style="text-align:center;font-weight:800;color:${coulLib};margin:2px 0 2px">${lib}</p>
       <span class="score-jauge">${sc!=null?sc+"/100":"Donnée indisponible"}</span>`;
     const past=a.pastilles[dim]||[];
@@ -762,6 +784,7 @@ function rendreAnalyse(t){
     } else {
       html+="<p class='desc' style='color:var(--gris)'>Données insuffisantes pour cette dimension.</p>";
     }
+    html+="</div>";
   }
   html+=`<h2 style="text-align:center;text-decoration:underline;font-style:italic;
     font-weight:600;font-size:15px">Analyse du ${analyse.date_analyse}</h2>`;
@@ -776,7 +799,7 @@ function rendreAnalyse(t){
   }
   html+=a.conclusion.map(p=>`<p class="desc" style="margin-bottom:12px">${p}</p>`).join("");
   if(a.proche_seuil){
-    html+=`<p class="desc" style="color:#b45309;font-weight:600;margin-bottom:12px">⚠️ Ce verdict
+    html+=`<p class="desc" style="color:var(--ambre-texte);font-weight:600;margin-bottom:12px;text-align:left">⚠️ Ce verdict
       est proche du seuil de catégorie suivante (à ${fmt(a.marge_categorie)} points sur 100) —
       un score qui pourrait basculer vers une autre recommandation lors d'une prochaine mise à
       jour des données.</p>`;
@@ -856,6 +879,10 @@ function rendreTableDepuisSpec(id){
     <table><tr>${entetes}</tr>${lignes}</table>`;
 }
 
+function colVar(v){
+  if(v==null) return '—';
+  return `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':''}${fmt(v)} %</span>`;
+}
 function construireTableTriable(id, donnees, colonnes){
   specsFiltres[id]={donnees, colonnes, triCol:null, triAsc:false};
   return `<div id="conteneur-${id}">${rendreTableDepuisSpec(id)}</div>`;
@@ -936,18 +963,21 @@ async function rendreFiltres(){
     >${sparklineSVG(x.tk)} ${x.tk}</span>
     <span style="color:var(--gris);font-size:11px">${(x.nom||"").slice(0,20)}</span>`;
 
-  let html=`<h2>Segment Croissance (cible : 80 % du portefeuille)</h2>
+  let html=`<div class="carte"><h2 style="margin-top:0">Segment Croissance
+    (cible : 80 % du portefeuille)</h2>
     <p class="regle">CA, résultat net et BPA en croissance sur les exercices disponibles,
-    et tendance de cours haussière. Cliquez un en-tête pour trier.</p>`;
+    et tendance de cours haussière. Cliquez sur un en-tête pour trier.</p>`;
   const cr=V.filter(x=>x.cCA>0&&x.cRN>0&&x.cBPA>0&&x.tend==="haussiere")
     .sort((a,b)=>b.cRN-a.cRN);
   html+=construireTableTriable('croissance', cr, [
     ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
-    ["CA %/an",x=>fmt(x.cCA),x=>x.cCA],["RN %/an",x=>fmt(x.cRN),x=>x.cRN],
-    ["BPA %/an",x=>fmt(x.cBPA),x=>x.cBPA],
+    ["CA %/an",x=>colVar(x.cCA),x=>x.cCA],["RN %/an",x=>colVar(x.cRN),x=>x.cRN],
+    ["BPA %/an",x=>colVar(x.cBPA),x=>x.cBPA],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
+  html+="</div>";
 
-  html+=`<h2>Segment Rendement (cible : 20 % du portefeuille)</h2>
+  html+=`<div class="carte"><h2 style="margin-top:0">Segment Rendement
+    (cible : 20 % du portefeuille)</h2>
     <p class="regle">Tri par rendement du dividende net d'IRVM (10 %) au cours actuel.</p>`;
   const rd=V.filter(x=>x.dyNet!=null).sort((a,b)=>b.dyNet-a.dyNet).slice(0,12);
   html+=construireTableTriable('rendement', rd, [
@@ -955,17 +985,19 @@ async function rendreFiltres(){
     ["DY net %",x=>fmt(x.dyNet)+(x.exc?" ⚠":""),x=>x.dyNet],
     ["DY brut %",x=>fmt(x.dyBrut),x=>x.dyBrut],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
-
   if(rd.some(x=>x.exc)) html+=`<p class="regle">⚠ Dividende exceptionnel
-    (supérieur à 150 % du bénéfice) — rendement vraisemblablement non récurrent ;
-    voir l'onglet Analyse de la valeur pour le détail.</p>`;
+    (supérieur à 150 % du bénéfice) — rendement vraisemblablement non récurrent.
+    Voir l'onglet Analyse de la valeur pour le détail.</p>`;
+  html+="</div>";
+
   const mmDispo=V.some(x=>x.mm20!=null&&x.mm50!=null);
-  html+=`<h2>Momentum — décotées en début de cycle haussier</h2>
+  html+=`<div class="carte"><h2 style="margin-top:0">Momentum
+    — décotées en début de cycle haussier</h2>
     <p class="regle">${mmDispo
       ? "MM20 &gt; MM50, cours &gt; MM200, et PBR sous la médiane de son secteur."
       : "Règle provisoire (historique quotidien en cours d'accumulation) : tendance 12 mois "
         + "haussière, variation 1 mois positive, et PBR sous la médiane de son secteur. "
-        + "Le croisement MM20/MM50 prendra le relais automatiquement."}</p>`;
+        + "Le croisement MM20/MM50 prendra le relais automatiquement dès que possible."}</p>`;
   const medPbrSect={};
   for(const s of new Set(V.map(x=>x.sect).filter(Boolean)))
     medPbrSect[s]=medianeJS(V.filter(x=>x.sect===s).map(x=>x.pbr));
@@ -976,14 +1008,15 @@ async function rendreFiltres(){
     .sort((a,b)=>(b.var1m||0)-(a.var1m||0));
   html+=construireTableTriable('momentum', mo, [
     ["Valeur",lien,null],["Cours",x=>fmtEntier(x.cours),x=>x.cours],
-    ["Var. 1 mois %",x=>fmt(x.var1m),x=>x.var1m],["PBR",x=>fmt(x.pbr),x=>x.pbr],
+    ["Var. 1 mois %",x=>colVar(x.var1m),x=>x.var1m],["PBR",x=>fmt(x.pbr),x=>x.pbr],
     ["PBR méd. sect.",x=>fmt(medPbrSect[x.sect]),null],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
+  html+="</div>";
 
   html+=`<p class="notebas">Sélections générées automatiquement par règles — ne constituent
     pas un conseil en investissement. Une valeur peut appartenir à plusieurs segments.</p>`;
 
-  html+=`<h2>Comparateur</h2>
+  html+=`<div class="carte"><h2 style="margin-top:0">Comparateur</h2>
     <p class="regle">Sélectionnez 2 ou 3 valeurs (Ctrl/Cmd + clic pour une sélection multiple),
     puis comparez leurs indicateurs clés côte à côte.</p>
     <div class="comparateur">
@@ -995,7 +1028,7 @@ async function rendreFiltres(){
         <button type="button" class="bouton-csv" id="btnComparer">Comparer</button>
       </div>
       <div id="resultatComparateur"></div>
-    </div>`;
+    </div></div>`;
 
   zone.innerHTML=html;
 
@@ -1047,7 +1080,7 @@ function rendreCarnet(t){
   let html="";
 
   // Echanges de la seance, heure par heure (volume incremental entre releves)
-  html+=`<h2>Échanges de la séance${se.date?` — ${se.date}`:""}</h2>`;
+  html+=`<div class="carte"><h2 style="margin-top:0">Échanges de la séance${se.date?` — ${se.date}`:""}</h2>`;
   if(pts.length){
     let prec=0;
     const lignes=pts.map(p=>{
@@ -1057,8 +1090,9 @@ function rendreCarnet(t){
     }).join("");
     html+=`<dl class="liste">${lignes}</dl>`;
   } else {
-    html+=`<p class="desc" style="color:#9ca3af">Aucun relevé pour la dernière séance.</p>`;
+    html+=`<p class="desc" style="color:var(--gris)">Aucun relevé pour la dernière séance.</p>`;
   }
+  html+="</div>";
 
   // Liquidite
   const te=tech[t]||{};
@@ -1070,12 +1104,12 @@ function rendreCarnet(t){
       return [tk,(cv&&cv.cours!=null&&x.volume_moyen_20!=null)?cv.cours*x.volume_moyen_20:null];})
     .filter(x=>x[1]!=null).sort((a,b)=>b[1]-a[1]);
   const rang=classement.findIndex(x=>x[0]===t);
-  html+=`<h2>Liquidité</h2><dl class="liste">
+  html+=`<div class="carte"><h2 style="margin-top:0">Liquidité</h2><dl class="liste">
     <div><dt>Volume de la séance</dt><dd>${fmtEntier(v.volume)} titres</dd></div>
     <div><dt>Valeur échangée (séance)</dt><dd>${valJour!=null?fmtMds(valJour/1e6):"—"}</dd></div>
     <div><dt>Valeur moyenne échangée (20 séances)</dt><dd>${valMoy!=null?fmtMds(valMoy/1e6):"—"}</dd></div>
     <div><dt>Rang de liquidité sur le marché</dt><dd>${rang>=0?(rang+1)+" / "+classement.length:"—"}</dd></div>
-  </dl>`;
+  </dl></div>`;
 
   html+=`<p class="notebas">Le carnet d'ordres multi-niveaux (bid/ask) n'est pas diffusé
     gratuitement par la BRVM ; cet onglet présente les échanges réels de la séance et des
