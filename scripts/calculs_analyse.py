@@ -264,34 +264,63 @@ def texte_conclusion(t, nom, reco, fourchette, scores, m):
     return ph1, " ".join(x for x in (ph_alerte, ph2) if x)
 
 
+SEUIL_TAILLE_SECTEUR = 5  # en-dessous, la mediane sectorielle est jugee trop
+                          # fragile statistiquement -> repli sur la mediane de marche
+CHAMPS_SECTORIELS = ("per", "pbr", "roe", "marge_nette", "dy_net")
+
+
 def principal():
     fonda, per_histo, cours, tech, secteurs, fjson, histo_div = charger()
     tickers = sorted(cours)
     tous = {t: metriques(t, fonda, cours, tech, fjson, histo_div, per_histo) for t in tickers}
 
+    # Medianes de marche (utilisees pour var_1a/dy_net comme avant, et comme
+    # repli pour les secteurs trop petits pour une mediane fiable)
+    med_marche = {"var_1a": mediane([tous[t]["var_1a"] for t in tickers]),
+                  "dy_net": mediane([tous[t]["dy_net"] for t in tickers])}
+    med_marche_champs = {ch: mediane([tous[t][ch] for t in tickers]) for ch in CHAMPS_SECTORIELS}
+
+    # Medianes sectorielles, avec repli sur le marche si le groupe est trop petit
+    # (decision validee : SPU/TEL/ENE ont moins de 5 valeurs, mediane peu fiable)
+    taille_secteur = {}
     med_sect = {}
     for code in set(secteurs.values()):
         grp = [tous[t] for t in tickers if secteurs.get(t) == code]
-        med_sect[code] = {ch: mediane([g[ch] for g in grp])
-                          for ch in ("per", "pbr", "roe", "marge_nette", "dy_net")}
-    med_marche = {"var_1a": mediane([tous[t]["var_1a"] for t in tickers]),
-                  "dy_net": mediane([tous[t]["dy_net"] for t in tickers])}
+        taille_secteur[code] = len(grp)
+        if len(grp) < SEUIL_TAILLE_SECTEUR:
+            med_sect[code] = dict(med_marche_champs)
+        else:
+            med_sect[code] = {ch: mediane([g[ch] for g in grp]) for ch in CHAMPS_SECTORIELS}
 
     sortie = {}
     for t in tickers:
         m = tous[t]
-        ms = med_sect.get(secteurs.get(t), {})
+        code_sect = secteurs.get(t)
+        ms = med_sect.get(code_sect, {})
+        repli_marche = taille_secteur.get(code_sect, 0) < SEUIL_TAILLE_SECTEUR
         past = evaluer(t, m, ms, med_marche)
         scores = {dim: score_de(p) for dim, p in past.items()}
         reco, fourchette, note = recommander(scores, m, ms)
         nom = cours[t].get("nom", t)
         ph1, ph2 = texte_conclusion(t, nom, reco, fourchette, scores, m)
+
+        # Marge par rapport aux seuils de categorie (38=Vendre/Conserver,
+        # 62=Conserver/Acheter) : transparence sur la stabilite du verdict.
+        disp = [s for s in scores.values() if s is not None]
+        moy = sum(disp) / len(disp) if disp else None
+        marge_categorie = min(abs(moy - 38), abs(moy - 62)) if moy is not None else None
+        proche_seuil = marge_categorie is not None and marge_categorie < 5
+
         sortie[t] = {
             "scores": scores,
             "libelles": {d: libelle(s) for d, s in scores.items()},
             "pastilles": {d: [{"txt": x, "coul": c} for x, c in p] for d, p in past.items()},
             "reco": reco, "fourchette": fourchette,
             "conclusion": [x for x in (note, ph1, ph2) if x],
+            "marge_categorie": round(marge_categorie, 1) if marge_categorie is not None else None,
+            "proche_seuil": proche_seuil,
+            "secteur_taille": taille_secteur.get(code_sect),
+            "secteur_repli_marche": repli_marche,
         }
 
     (D / "analyse.json").write_text(json.dumps({
