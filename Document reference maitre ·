@@ -1,0 +1,252 @@
+# BRVM Analyse Actions — Document de référence maître
+
+Dépôt GitHub : `armelrosario-sys/-brvm-analyse-actions`
+Site public : `https://armelrosario-sys.github.io/-brvm-analyse-actions/`
+Dernière mise à jour de ce document : 23/07/2026
+
+---
+
+## 1. Objectif du projet
+
+Reproduire fidèlement, dans une interface web gratuite hébergée sur GitHub Pages,
+la fiche valeur de l'application **Famaya — Tracker Bourse BRVM**, complétée par
+une logique d'investissement propre (stratégie 80/20 Croissance/Rendement,
+détection Momentum). Toutes les briques sont 100 % gratuites et open-source :
+Python (scraping, calculs), SQLite (stockage), GitHub Actions (automatisation),
+GitHub Pages + HTML/JS/Chart.js (interface). Aucune exécution locale requise :
+tout se pilote depuis l'interface web GitHub.
+
+**Principe directeur validé dès le départ, et rappelé plusieurs fois en cours de
+route :** la fiche valeur reproduit la vidéo Famaya à l'identique dans son
+habillage (recommandation Acheter/Conserver/Vendre, jauges, fourchette de prix,
+carnet d'ordres) ; la machinerie de données invisible (scraping, validation,
+statuts de qualité) reste le minimum nécessaire pour l'alimenter, et **tout
+ajout non présent dans la vidéo doit être proposé et validé avant d'être
+implémenté** — règle explicitement posée par l'utilisateur et appliquée depuis
+(ex. refus des libellés de recommandation édulcorés, refus d'exclure les
+dividendes exceptionnels du filtre Rendement).
+
+---
+
+## 2. Architecture technique
+
+```
+-brvm-analyse-actions/
+├── .github/workflows/
+│   ├── collecte.yml          # cours + technique + analyse (horaire + clôture)
+│   └── fondamentaux.yml       # fondamentaux Sika + rapports annuels (hebdo)
+├── data/                       # zone de calcul, non servie au public
+│   ├── marche.db               # SQLite : releves, historique_mensuel,
+│   │                           #   liquidite_jour, fondamentaux
+│   ├── sika_suffixes.json      # correspondance ticker -> suffixe pays Sika
+│   ├── fondamentaux_complement_auto.csv   # import auto capitaux propres/dettes
+│   ├── quarantaine_complement.json        # extractions rejetees, motif inclus
+│   ├── fondamentaux_complement.csv        # correction manuelle CP/dettes (vide par defaut)
+│   └── dividendes_complement.csv          # correction manuelle du dividende officiel
+├── docs/                        # servi par GitHub Pages
+│   ├── index.html               # fiche valeur (4 onglets)
+│   └── data/
+│       ├── cours.json           # dernier releve des 47 valeurs
+│       ├── journal.json         # journal des collectes (anomalies incluses)
+│       ├── technique.json       # indicateurs techniques par valeur
+│       ├── fondamentaux.json    # fondamentaux fusionnes par valeur
+│       ├── analyse.json         # scores, pastilles, recommandation, fourchette
+│       ├── secteurs.json        # code secteur par ticker
+│       └── historique/{TICK}.json  # mensuel + quotidien + seance + dividendes
+└── scripts/
+    ├── collecte_cours.py             # cours BRVM/Sika, garde-fou horaire
+    ├── importer_historique.py        # reprise historique mensuel 2018-2026
+    ├── calculs_techniques.py         # MM/RSI/52s, exports historique
+    ├── importer_complement_rapports.py  # capitaux propres/dettes (auto, valide/quarantaine)
+    ├── collecte_fondamentaux.py      # fiches Sika + fusion complements + dividende officiel
+    └── calculs_analyse.py            # scores 4 dimensions, recommandation, fourchette
+```
+
+---
+
+## 3. Sources de données et priorités
+
+| Donnée | Source primaire | Secours / complément | Fréquence |
+|---|---|---|---|
+| Cours, volumes | brvm.org | Sika Finance | Horaire en séance (9h40-14h40 UTC) + clôture (15h30 UTC) |
+| Historique mensuel 2018-2026 | brvm-data-pipeline (`cours_extraits.csv`) | — | Import ponctuel (fait) |
+| Fondamentaux (CA, RN, BPA, PER, dividende) | Sika Finance (fiche société) | Correction manuelle officielle (AG) via `dividendes_complement.csv` | Hebdomadaire (samedi 7h UTC) |
+| Capitaux propres, dettes financières | Rapports annuels extraits (`propositions_extraction`), validés automatiquement | Correction manuelle via `fondamentaux_complement.csv` | Hebdomadaire, avant la collecte Sika |
+| Secteurs | brvm-data-pipeline (`secteurs_boc.json`) | — | Import ponctuel (fait) |
+| Liquidité quotidienne | brvm-data-pipeline (`historique_liquidite.json`) | — | Import ponctuel (fait) |
+
+**Toutes les requêtes respectent une pause de politesse (1-2 s) et un User-Agent
+identifiable.** Aucune donnée n'est jamais estimée : un indicateur non
+calculable affiche `null` (rendu "—" à l'écran), jamais une valeur approchée.
+
+---
+
+## 4. Statuts de qualité des données (héritage brvm-data-pipeline)
+
+Les capitaux propres et dettes financières extraits des rapports annuels PDF
+passent par une validation à trois niveaux avant tout usage :
+
+- **VALIDE** : résultat net concordant avec Sika (±3 %) et/ou bilan équilibré
+  (Actif = Passif à 1 % près).
+- **PROBABLE** : montants plausibles, sans recoupement possible.
+- **QUARANTAINE** : incohérent ou implausible → **jamais exploité**, seulement
+  consigné dans `quarantaine_complement.json` avec le motif exact.
+
+Corrections automatiques documentées (jamais silencieuses, tracées dans la
+colonne `preuves`) :
+- `exercice_reaffecte_X->Y` : l'année du nom de fichier était l'année de
+  publication, pas l'exercice comptable réel.
+- `unite_corrigee_milliers` : document exprimé en milliers de FCFA au lieu de
+  millions.
+- `signe_divergent` : perte probable du signe négatif → mis en quarantaine,
+  jamais corrigé automatiquement (risque trop élevé).
+
+---
+
+## 5. Calendrier des workflows
+
+| Workflow | Déclenchement | Contenu |
+|---|---|---|
+| `collecte.yml` | `40 9,10,11,12,13,14 * * 1-5` (intraday) + `30 15 * * 1-5` (clôture) + manuel | Cours ; à la clôture/manuel : historique + technique + analyse |
+| `fondamentaux.yml` | `0 7 * * 6` (samedi) + manuel | Import auto complément + fondamentaux Sika fusionnés |
+
+Les deux workflows partagent le même `concurrency.group: collecte-brvm` :
+impossible qu'ils s'exécutent en parallèle, ce qui élimine les conflits de push
+rencontrés sur le projet précédent (brvm-data-pipeline).
+
+**Garde-fou horaire (ajouté en cours de projet)** : `collecte_cours.py` refuse
+de collecter en dehors de 9h25-15h40 UTC en semaine — hors de cette fenêtre,
+brvm.org ne republie pas de nouveau prix, et une collecte forcée (ex. lancement
+manuel matinal) recopierait la clôture de la veille en la faisant passer pour
+un échange réel du jour. `calculs_techniques.py` applique le même filtre
+horaire en lecture, ce qui auto-corrige aussi les données déjà stockées avant
+l'ajout du garde-fou.
+
+---
+
+## 6. Règles de calcul
+
+### 6.1 Indicateurs techniques
+- MM20/MM50/MM200, RSI(14) : calculés uniquement sur cours de **clôture
+  quotidienne réellement collectés** — jamais sur le mensuel. Tant que
+  l'historique quotidien est insuffisant (<20/50/200 séances), la valeur est
+  `null` et le nombre de séances manquantes est exposé.
+- 52 semaines Haut/Bas, volume moyen 20 séances : calculés sur la fenêtre
+  disponible (mensuel + quotidien).
+- **Décision explicite (validée) :** pas de reconstitution rétroactive de
+  l'historique quotidien (« backfill » BRVM écarté) → **accumulation
+  naturelle**. MM20 pleinement fiable vers le 20/08/2026, MM50 vers
+  mi-septembre, MM200 vers mai 2027.
+
+### 6.2 Analyse — 4 dimensions (Performances, Perspectives, Rémunération, Valorisation)
+- Pastilles vert/orange/rouge comparées aux **médianes sectorielles** (décision
+  validée plutôt que des seuils fixes universels).
+- Score de chaque dimension = moyenne des pastilles (vert=100, orange=50,
+  rouge=0) ; libellé Mauvais/Mitigé/Bon/Excellent selon le score.
+- **Recommandation** : Acheter si score moyen ≥ 62 et valorisation ≥ 50 ;
+  Vendre si < 38 ; Conserver sinon. **Choix explicite** : recommandation
+  affichée telle quelle (Acheter/Conserver/Vendre), fidèle à Famaya, plutôt
+  que les libellés prudents envisagés puis écartés.
+- **Fourchette de prix d'entrée** : ancrage **hybride** = moyenne entre le PER
+  médian propre de la valeur sur 36 mois et son PER actuel (calculé après
+  plusieurs itérations — l'ancrage 100 % historique ou 100 % sectoriel
+  produisait des fourchettes aberrantes, documenté en détail dans le fil de
+  discussion). Fourchette = BPA × PER de référence, bornes −13 %/−1 %.
+  **Omise** (jamais affichée de force) si PER actuel > 40x (bénéfices trop
+  déprimés pour un multiple significatif) ou si l'écart juste valeur/cours
+  dépasse 60 % (garde-fou de cohérence).
+- **Dividende exceptionnel** (> 150 % du bénéfice par action) : **non exclu**
+  du calcul (décision explicite de l'utilisateur), mais signalé — pastille
+  rouge sur le taux de distribution, phrase d'alerte dédiée dans la
+  conclusion, et badge ⚠ dans le tableau du filtre Rendement.
+- Le texte de conclusion justifie explicitement une recommandation "Vendre"
+  par les faiblesses identifiées, plutôt que de les mentionner en "vigilance"
+  accessoire.
+
+### 6.3 Filtres 80/20 (onglet dédié, sur la même page)
+- **Croissance (cible 80 %)** : CA, RN et BPA en croissance sur les exercices
+  disponibles **et** tendance de cours haussière (combiné fondamental +
+  technique, décision validée).
+- **Rendement (cible 20 %)** : tri par rendement du dividende **net d'IRVM
+  10 %** (brut affiché à côté), dividende exceptionnel signalé par ⚠ plutôt
+  qu'exclu.
+- **Momentum** : règle cible = croisement MM20 > MM50, cours > MM200, PBR sous
+  la médiane sectorielle. **Règle provisoire actuelle** (historique quotidien
+  encore insuffisant) : tendance 12 mois haussière + variation 1 mois positive
+  + PBR sous médiane sectorielle — bascule automatique vers la règle cible dès
+  que l'historique le permet, sans intervention nécessaire.
+
+### 6.4 Carnet d'ordres (onglet dédié)
+Le carnet multi-niveaux (bid/ask) n'étant pas diffusé gratuitement par la BRVM
+(confirmé : fonctionnalité payante même chez Famaya), l'onglet affiche à la
+place les **échanges réels de la séance** (heure par heure, volumes
+incrémentaux) et des **indicateurs de liquidité calculés** (valeur échangée du
+jour, valeur moyenne 20 séances, rang de liquidité sur les 47 valeurs) —
+décision validée en tout début de projet.
+
+---
+
+## 7. Décisions structurantes validées au fil du projet (chronologie résumée)
+
+1. Exécution 100 % GitHub Actions + Pages (pas d'installation locale).
+2. Nouveau projet indépendant de `brvm-data-pipeline`, réutilisant ses données.
+3. Carnet d'ordres = meilleure limite + liquidité calculée (pas de vrai carnet gratuit).
+4. Sources : brvm.org primaire, Sika Finance secours ; fondamentaux Sika + rapports annuels.
+5. Fréquence : intraday + clôture.
+6. Stockage : SQLite (calcul) + export JSON (affichage).
+7. Jauges et conclusion : fidèles à Famaya à l'identique (recommandation explicite, fourchette de prix) — **priment sur toute autre préférence exprimée en cours de route**, sur demande explicite de l'utilisateur.
+8. Seuils des pastilles : médianes sectorielles.
+9. Segment Croissance : combiné fondamental + technique.
+10. Dividend Yield : net d'IRVM 10 %, brut affiché à côté.
+11. Thème visuel : clair, style Famaya.
+12. Repo public.
+13. Filtres 80/20 : onglet dédié sur la même page (et non une page séparée, ni un lien externe) — la sélection d'une valeur dans un filtre ouvre directement sa fiche.
+14. Ancrage de la fourchette de prix : hybride (36 mois × PER actuel), après trois itérations documentées.
+15. Dividende exceptionnel : jamais exclu, toujours signalé (transparence plutôt que filtrage).
+16. Accumulation naturelle de l'historique quotidien (pas de backfill BRVM).
+17. Toute machinerie invisible non présente dans la vidéo Famaya (statuts qualité, garde-fous) doit être proposée et validée avant implémentation.
+
+---
+
+## 8. Limitations connues (au 23/07/2026)
+
+- **MM20/MM50/MM200/RSI** : `null` sur les 47 valeurs, historique quotidien à
+  3 séances. Se résorbe seul avec le temps (voir §6.1).
+- **ROE/D-CP/PBR** : disponibles sur 18/47 valeurs seulement — limité par la
+  couverture des rapports annuels déjà extraits dans `brvm-data-pipeline`, pas
+  par la règle de validation elle-même.
+- **Fourchette de prix** : omise sur 8/47 valeurs (PER actuel > 40x ou garde-fou
+  de cohérence déclenché) — comportement voulu, pas un manque.
+- **Dividende SITAB (STBC) 2025** : corrigé manuellement à 1 940 FCFA via
+  `dividendes_complement.csv` (voir §3) suite à l'AG du 15/07/2026 ; à
+  surveiller si Sika publie une valeur différente par la suite.
+- **Haut/Bas du jour et 52 semaines** : calculés sur les relevés horaires
+  disponibles (jusqu'à 6-7 points/séance), pas sur un flux tick-by-tick — un
+  pic entre deux relevés peut échapper à la mesure.
+- **Descriptions de société** : 46/47 (une fiche Sika sans texte "La société :" exploitable).
+
+---
+
+## 9. Guide de maintenance rapide
+
+- **Relancer une collecte manuellement** : onglet Actions du repo → choisir le
+  workflow → *Run workflow*.
+- **Corriger un dividende officiel** (après une AG) : éditer
+  `data/dividendes_complement.csv`, ajouter une ligne
+  `TICKER,EXERCICE,MONTANT_BRUT,note`, committer, relancer *Collecte des
+  fondamentaux Sika*.
+- **Corriger des capitaux propres/dettes erronés** : éditer
+  `data/fondamentaux_complement.csv` (même logique, prioritaire sur
+  l'automatique).
+- **Vérifier la qualité d'une extraction rejetée** : consulter
+  `data/quarantaine_complement.json`, motif explicite par fichier.
+- **Ajouter une nouvelle valeur BRVM** (introduction en bourse) : aucune action
+  requise, `cours.json` et les scripts suivent automatiquement la liste
+  publiée par brvm.org.
+- **Une collecte échoue** : consulter `docs/data/journal.json` (jamais
+  d'anomalie masquée) puis le détail du run dans l'onglet Actions.
+
+---
+
+*Document généré par Claude en accompagnement du développement, à la demande
+de l'utilisateur, en clôture du développement fonctionnel du projet.*
