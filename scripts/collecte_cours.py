@@ -18,6 +18,7 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from pydantic import BaseModel, ValidationError, field_validator
 
 URL_BRVM = "https://www.brvm.org/fr/cours-actions/0"
 URL_SIKA = "https://www.sikafinance.com/marches/aaz"
@@ -31,6 +32,70 @@ CHEMIN_DB = RACINE / "data" / "marche.db"
 CHEMIN_JSON = RACINE / "docs" / "data" / "cours.json"
 CHEMIN_JOURNAL = RACINE / "docs" / "data" / "journal.json"
 MOTIF_TICKER = re.compile(r"^[A-Z]{3,5}$")
+
+
+class LigneCours(BaseModel):
+    """Schema attendu d'une ligne de cours extraite. Une ligne qui ne correspond
+    pas a ce schema (type incoherent, valeur hors bornes plausibles) revele le
+    plus souvent un changement de structure HTML sur la source - elle est
+    ecartee et consignee, jamais silencieusement acceptee telle quelle."""
+    ticker: str
+    nom: str
+    volume: float | None = None
+    cours_veille: float | None = None
+    ouverture: float | None = None
+    cours: float | None = None
+    variation_pct: float | None = None
+    source: str
+
+    @field_validator("ticker")
+    @classmethod
+    def _ticker_valide(cls, v):
+        if not MOTIF_TICKER.match(v):
+            raise ValueError(f"ticker hors format attendu : {v!r}")
+        return v
+
+    @field_validator("nom")
+    @classmethod
+    def _nom_non_vide(cls, v):
+        if not v or not v.strip():
+            raise ValueError("nom de societe vide")
+        return v
+
+    @field_validator("volume")
+    @classmethod
+    def _volume_positif(cls, v):
+        if v is not None and v < 0:
+            raise ValueError(f"volume negatif implausible : {v}")
+        return v
+
+    @field_validator("cours", "cours_veille", "ouverture")
+    @classmethod
+    def _cours_positif_plausible(cls, v):
+        if v is not None and not (0 < v < 5_000_000):
+            raise ValueError(f"cours hors bornes plausibles : {v}")
+        return v
+
+    @field_validator("variation_pct")
+    @classmethod
+    def _variation_plausible(cls, v):
+        if v is not None and not (-90 <= v <= 300):
+            raise ValueError(f"variation hors bornes plausibles : {v}%")
+        return v
+
+
+def valider_lignes(valeurs, nom_source, anomalies):
+    """Filtre les lignes via le schema Pydantic. Retourne les lignes valides ;
+    chaque rejet est motive et ajoute a la liste des anomalies (jamais masque)."""
+    valides = []
+    for ligne in valeurs:
+        try:
+            LigneCours.model_validate(ligne)
+            valides.append(ligne)
+        except ValidationError as exc:
+            motif = "; ".join(e["msg"] for e in exc.errors())
+            anomalies.append(f"{nom_source} : ligne rejetee pour {ligne.get('ticker','?')} - {motif}")
+    return valides
 
 
 def nombre_fr(texte):
@@ -111,10 +176,14 @@ def collecter():
         try:
             rep = requests.get(url, headers=ENTETES, timeout=45)
             rep.raise_for_status()
-            valeurs = extracteur(rep.text)
+            brutes = extracteur(rep.text)
+            valeurs = valider_lignes(brutes, nom_source, anomalies)
+            if len(brutes) != len(valeurs):
+                anomalies.append(f"{nom_source} : {len(brutes)-len(valeurs)} ligne(s) rejetee(s) "
+                                 f"par la validation de schema sur {len(brutes)} extraites.")
             if len(valeurs) >= 30:
                 break
-            anomalies.append(f"{nom_source} : seulement {len(valeurs)} valeurs extraites, bascule sur la source suivante.")
+            anomalies.append(f"{nom_source} : seulement {len(valeurs)} valeurs valides, bascule sur la source suivante.")
             valeurs = []
         except Exception as exc:
             anomalies.append(f"{nom_source} : echec ({type(exc).__name__}: {exc}).")
