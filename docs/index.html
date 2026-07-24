@@ -20,8 +20,25 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--fond);
-color:var(--txt);max-width:560px;margin:0 auto;padding:0 16px 60px;
+color:var(--txt);max-width:1400px;margin:0 auto;
+padding:0 clamp(16px,4vw,56px) 60px;
 font-variant-numeric:tabular-nums;line-height:1.5}
+
+/* Grilles multi-colonnes sur grand ecran (mobile : inchange, une colonne) */
+.grille-cartes{display:block}
+@media (min-width:860px){
+  .grille-cartes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start}
+  .grille-cartes .carte{margin-bottom:0}
+}
+@media (min-width:1200px){
+  .grille-cartes.grille-analyse{grid-template-columns:repeat(4,1fr)}
+}
+/* Apercu : sur grand ecran, la grille de stats et le graphique profitent de la largeur */
+@media (min-width:860px){
+  .stats{grid-template-columns:repeat(6,1fr)}
+  #zoneGraph{height:320px}
+  .prix{font-size:44px}
+}
 h2{color:var(--txt)}
 .desc,.regle,.notebas{text-align:justify;text-justify:inter-word;hyphens:auto}
 .carte{background:var(--carte);border:1px solid var(--ligne);border-radius:14px;
@@ -855,6 +872,7 @@ function rendreAnalyse(t){
       société(s) — trop peu pour une médiane sectorielle fiable. Les comparaisons ci-dessous
       utilisent la médiane de l'ensemble du marché à la place.</p>`;
   }
+  html+='<div class="grille-cartes grille-analyse">';
   for(const dim of ["performances","perspectives","remuneration","valorisation"]){
     const sc=a.scores[dim], lib=a.libelles[dim];
     const coulLib = sc==null?couleurCss('--gris-clair'):sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
@@ -874,6 +892,7 @@ function rendreAnalyse(t){
     }
     html+="</div>";
   }
+  html+='</div>';
   html+=`<h2 style="text-align:center;text-decoration:underline;font-style:italic;
     font-weight:600;font-size:15px">Analyse du ${analyse.date_analyse}</h2>`;
   const hist = historiqueRecos[t]||[];
@@ -1127,7 +1146,7 @@ async function rendreFiltres(){
       >${x.tk}</span>
     <span class="nom-tronque" title="${x.nom||''}">${x.nom||''}</span></div>`;
 
-  let html=rendreCarteScreener(V)+`<div class="carte"><h2 style="margin-top:0">Segment Croissance
+  let html='<div class="grille-cartes">'+rendreCarteScreener(V)+`<div class="carte"><h2 style="margin-top:0">Segment Croissance
     (cible : 80 % du portefeuille)</h2>
     <p class="regle">CA, résultat net et BPA en croissance sur les exercices disponibles,
     et tendance de cours haussière. Cliquez sur un en-tête pour trier.</p>`;
@@ -1179,6 +1198,7 @@ async function rendreFiltres(){
     ["PBR méd. sect.",x=>fmt(medPbrSect[x.sect]),null],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
   html+="</div>";
+  html+='</div>';
 
   html+=`<p class="notebas">Sélections générées automatiquement par règles — ne constituent
     pas un conseil en investissement. Une valeur peut appartenir à plusieurs segments.</p>`;
@@ -1245,7 +1265,7 @@ function rendreCarnet(t){
   const v=(cours.valeurs||[]).find(x=>x.ticker===t)||{};
   const se=(histo&&histo.seance)||{};
   const pts=se.points||[];
-  let html="";
+  let html='<div class="grille-cartes">';
 
   // Echanges de la seance, heure par heure (volume incremental entre releves)
   html+=`<div class="carte"><h2 style="margin-top:0">Échanges de la séance${se.date?` — ${se.date}`:""}</h2>`;
@@ -1279,6 +1299,7 @@ function rendreCarnet(t){
     <div><dt>Rang de liquidité sur le marché</dt><dd>${rang>=0?(rang+1)+" / "+classement.length:"—"}</dd></div>
   </dl></div>`;
 
+  html+='</div>';
   html+=`<p class="notebas">Le carnet d'ordres multi-niveaux (bid/ask) n'est pas diffusé
     gratuitement par la BRVM ; cet onglet présente les échanges réels de la séance et des
     indicateurs de liquidité calculés à partir des données officielles.</p>`;
