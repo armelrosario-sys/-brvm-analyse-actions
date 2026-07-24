@@ -88,6 +88,9 @@ def metriques(t, fonda, cours, tech, fjson, histo_div, per_histo):
     m["per_histo_med"] = mediane(per_histo.get(t, []))
     m["var_1a"] = tech.get(t, {}).get("var_1a")
     m["tendance"] = tech.get(t, {}).get("tendance_provisoire_mensuelle")
+    m["volume_moyen_20"] = tech.get(t, {}).get("volume_moyen_20")
+    m["valeur_echangee"] = (m["cours"] * m["volume_moyen_20"]
+                            if m["cours"] and m["volume_moyen_20"] else None)
     divs = histo_div.get(t, [])
     m["div_dernier"] = (divs[-1]["montant"] if divs and
                         int(divs[-1]["exercice"]) >= datetime.now(timezone.utc).year - 2
@@ -180,11 +183,18 @@ def libelle(score):
     return "Mauvais" if score < 25 else "Mitigé" if score < 50 else "Bon" if score < 75 else "Excellent"
 
 
-def recommander(scores, m, ms):
+PLAFOND_ILLIQUIDE = 55  # score maximal si la valeur est jugee trop peu echangee
+
+
+def recommander(scores, m, ms, illiquide=False):
     dispo = [s for s in scores.values() if s is not None]
     if not dispo:
-        return "Conserver", None, "Données insuffisantes pour une recommandation étayée."
+        return "Conserver", None, "Données insuffisantes pour une recommandation étayée.", None, False
     moy = sum(dispo) / len(dispo)
+    plafonne = False
+    if illiquide and moy > PLAFOND_ILLIQUIDE:
+        moy = PLAFOND_ILLIQUIDE
+        plafonne = True
     valo = scores.get("valorisation")
     if moy >= 62 and (valo is None or valo >= 50):
         reco = "Acheter"
@@ -210,7 +220,7 @@ def recommander(scores, m, ms):
                         "(juste valeur théorique trop éloignée du cours de marché).")
             else:
                 fourchette = [round(jv * 0.87), round(jv * 0.99)]
-    return reco, fourchette, note
+    return reco, fourchette, note, moy, plafonne
 
 
 def nb_fr(x):
@@ -269,6 +279,40 @@ SEUIL_TAILLE_SECTEUR = 5  # en-dessous, la mediane sectorielle est jugee trop
 CHAMPS_SECTORIELS = ("per", "pbr", "roe", "marge_nette", "dy_net")
 
 
+SEUIL_PERCENTILE_LIQUIDITE = 0.20  # 20e percentile le moins echange du marche
+
+
+def calculer_illiquides(tous, tickers):
+    """Rang plutot que seuil absolu : robuste meme avec peu de seances d'historique
+    (le volume_moyen_20 n'a que quelques jours de recul pour l'instant)."""
+    donnees = [(t, tous[t]["valeur_echangee"]) for t in tickers
+               if tous[t].get("valeur_echangee") is not None]
+    donnees.sort(key=lambda x: x[1])
+    nb = max(0, int(len(donnees) * SEUIL_PERCENTILE_LIQUIDITE))
+    return set(t for t, _ in donnees[:nb])
+
+
+def appliquer_hysteresis(con, t, reco_brut, aujourd_hui):
+    """Exige une confirmation sur 2 seances pour promouvoir vers une conviction plus
+    forte (Conserver->Acheter, ou Conserver->Vendre), mais reagit immediatement pour
+    revenir vers Conserver (prudence : lent a l'euphorie, rapide au repli). S'appuie
+    sur la recommandation de la veille, stockee dans historique_recommandations."""
+    ligne = con.execute(
+        "SELECT reco FROM historique_recommandations WHERE ticker=? AND date<? "
+        "ORDER BY date DESC LIMIT 1", (t, aujourd_hui)).fetchone()
+    reco_hier = ligne[0] if ligne else None
+    if reco_hier is None or reco_brut == reco_hier:
+        return reco_brut, None
+    if reco_brut in ("Acheter", "Vendre") and reco_hier == "Conserver":
+        # Tentative de renforcement de conviction : non confirmee un seul jour,
+        # on reste prudemment sur "Conserver" en attendant une seconde confirmation.
+        return "Conserver", (f"Signal du jour : {reco_brut}, non encore confirmé "
+                             f"(la recommandation ne change qu'après 2 séances consécutives "
+                             f"dans le même sens).")
+    # Repli vers "Conserver" (ou changement Acheter<->Vendre direct) : applique sans delai.
+    return reco_brut, None
+
+
 def principal():
     fonda, per_histo, cours, tech, secteurs, fjson, histo_div = charger()
     tickers = sorted(cours)
@@ -292,46 +336,8 @@ def principal():
         else:
             med_sect[code] = {ch: mediane([g[ch] for g in grp]) for ch in CHAMPS_SECTORIELS}
 
-    sortie = {}
-    for t in tickers:
-        m = tous[t]
-        code_sect = secteurs.get(t)
-        ms = med_sect.get(code_sect, {})
-        repli_marche = taille_secteur.get(code_sect, 0) < SEUIL_TAILLE_SECTEUR
-        past = evaluer(t, m, ms, med_marche)
-        scores = {dim: score_de(p) for dim, p in past.items()}
-        reco, fourchette, note = recommander(scores, m, ms)
-        nom = cours[t].get("nom", t)
-        ph1, ph2 = texte_conclusion(t, nom, reco, fourchette, scores, m)
+    illiquides = calculer_illiquides(tous, tickers)
 
-        # Marge par rapport aux seuils de categorie (38=Vendre/Conserver,
-        # 62=Conserver/Acheter) : transparence sur la stabilite du verdict.
-        disp = [s for s in scores.values() if s is not None]
-        moy = sum(disp) / len(disp) if disp else None
-        marge_categorie = min(abs(moy - 38), abs(moy - 62)) if moy is not None else None
-        proche_seuil = marge_categorie is not None and marge_categorie < 5
-
-        sortie[t] = {
-            "scores": scores,
-            "libelles": {d: libelle(s) for d, s in scores.items()},
-            "pastilles": {d: [{"txt": x, "coul": c} for x, c in p] for d, p in past.items()},
-            "reco": reco, "fourchette": fourchette,
-            "conclusion": [x for x in (note, ph1, ph2) if x],
-            "marge_categorie": round(marge_categorie, 1) if marge_categorie is not None else None,
-            "proche_seuil": proche_seuil,
-            "secteur_taille": taille_secteur.get(code_sect),
-            "secteur_repli_marche": repli_marche,
-        }
-
-    (D / "analyse.json").write_text(json.dumps({
-        "maj": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "date_analyse": datetime.now(timezone.utc).strftime("%d/%m/%Y"),
-        "valeurs": sortie,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
-
-    # Historique des recommandations : une ligne par (ticker, date), jamais ecrasee
-    # d'un jour sur l'autre - permet une future retrospective (recommandation vs
-    # performance reellement observee), et d'afficher les changements de verdict.
     aujourd_hui = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     con = sqlite3.connect(CHEMIN_DB)
     con.execute("""
@@ -341,12 +347,58 @@ def principal():
             PRIMARY KEY (ticker, date)
         )
     """)
-    for t, v in sortie.items():
-        disp = [s for s in v["scores"].values() if s is not None]
-        score_moyen = round(sum(disp) / len(disp), 1) if disp else None
+
+    sortie = {}
+    for t in tickers:
+        m = tous[t]
+        code_sect = secteurs.get(t)
+        ms = med_sect.get(code_sect, {})
+        repli_marche = taille_secteur.get(code_sect, 0) < SEUIL_TAILLE_SECTEUR
+        illiquide = t in illiquides
+        past = evaluer(t, m, ms, med_marche)
+        scores = {dim: score_de(p) for dim, p in past.items()}
+        reco_brut, fourchette, note, moy, plafonne = recommander(scores, m, ms, illiquide)
+        reco, note_hysteresis = appliquer_hysteresis(con, t, reco_brut, aujourd_hui)
+        nom = cours[t].get("nom", t)
+        ph1, ph2 = texte_conclusion(t, nom, reco, fourchette, scores, m)
+
+        note_liquidite = None
+        if plafonne:
+            note_liquidite = (
+                "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des "
+                f"{int(SEUIL_PERCENTILE_LIQUIDITE*100)} % les moins échangés du marché "
+                "(risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), "
+                "indépendamment de la qualité de ses fondamentaux.")
+
+        # Marge par rapport aux seuils de categorie (38=Vendre/Conserver,
+        # 62=Conserver/Acheter) : transparence sur la stabilite du verdict.
+        marge_categorie = min(abs(moy - 38), abs(moy - 62)) if moy is not None else None
+        proche_seuil = marge_categorie is not None and marge_categorie < 5
+
         con.execute("INSERT OR REPLACE INTO historique_recommandations VALUES (?,?,?,?)",
-                    (t, aujourd_hui, v["reco"], score_moyen))
+                    (t, aujourd_hui, reco, round(moy, 1) if moy is not None else None))
+
+        sortie[t] = {
+            "scores": scores,
+            "libelles": {d: libelle(s) for d, s in scores.items()},
+            "pastilles": {d: [{"txt": x, "coul": c} for x, c in p] for d, p in past.items()},
+            "reco": reco, "fourchette": fourchette,
+            "conclusion": [x for x in (note, note_liquidite, note_hysteresis, ph1, ph2) if x],
+            "marge_categorie": round(marge_categorie, 1) if marge_categorie is not None else None,
+            "proche_seuil": proche_seuil,
+            "secteur_taille": taille_secteur.get(code_sect),
+            "secteur_repli_marche": repli_marche,
+            "liquidite_insuffisante": illiquide,
+            "recommandation_en_attente_confirmation": note_hysteresis is not None,
+        }
+
     con.commit()
+
+    (D / "analyse.json").write_text(json.dumps({
+        "maj": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "date_analyse": datetime.now(timezone.utc).strftime("%d/%m/%Y"),
+        "valeurs": sortie,
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     historique_export = {}
     for t in tickers:
