@@ -384,6 +384,7 @@ def principal():
             "pastilles": {d: [{"txt": x, "coul": c} for x, c in p] for d, p in past.items()},
             "reco": reco, "fourchette": fourchette,
             "conclusion": [x for x in (note, note_liquidite, note_hysteresis, ph1, ph2) if x],
+            "score_global": round(moy, 1) if moy is not None else None,
             "marge_categorie": round(marge_categorie, 1) if marge_categorie is not None else None,
             "proche_seuil": proche_seuil,
             "secteur_taille": taille_secteur.get(code_sect),
