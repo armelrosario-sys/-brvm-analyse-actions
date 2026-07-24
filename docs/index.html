@@ -801,6 +801,42 @@ function miniBarres(scores){
   return `<div style="display:flex;gap:10px;justify-content:center;padding:10px 0 2px">${barres}</div>`;
 }
 
+function jaugeIncertitude(score){
+  if(score==null) return "";
+  const w=280,ht=34,marge=6;
+  const larg=w-2*marge;
+  const x=v=>marge+larg*Math.max(0,Math.min(100,v))/100;
+  const seuilProche = Math.abs(score-38)<Math.abs(score-62) ? 38 : 62;
+  const zoneDebut=x(Math.max(0,seuilProche-5)), zoneFin=x(Math.min(100,seuilProche+5));
+  const xVendre=x(38), xAcheter=x(62);
+  const idHachures="hachures"+Math.round(Math.random()*1e6);
+  return `<div style="margin:4px 0 14px">
+    <p style="font-size:11px;color:var(--gris);text-transform:uppercase;letter-spacing:.03em;
+      margin-bottom:6px">Position par rapport aux seuils de recommandation</p>
+    <svg viewBox="0 0 ${w} ${ht+16}" style="width:100%;max-width:320px;display:block">
+      <defs><pattern id="${idHachures}" width="5" height="5" patternTransform="rotate(45)"
+        patternUnits="userSpaceOnUse">
+        <rect width="5" height="5" fill="${couleurCss('--gris-clair')}" opacity=".35"/>
+        <line x1="0" y1="0" x2="0" y2="5" stroke="${couleurCss('--gris')}" stroke-width="2"/>
+      </pattern></defs>
+      <rect x="${marge}" y="4" width="${xVendre-marge}" height="${ht-8}" fill="${couleurCss('--rouge')}" opacity=".55" rx="4"/>
+      <rect x="${xVendre}" y="4" width="${xAcheter-xVendre}" height="${ht-8}" fill="${couleurCss('--ambre')}" opacity=".5"/>
+      <rect x="${xAcheter}" y="4" width="${w-marge-xAcheter}" height="${ht-8}" fill="${couleurCss('--vert')}" opacity=".55" rx="4"/>
+      <rect x="${zoneDebut}" y="4" width="${zoneFin-zoneDebut}" height="${ht-8}" fill="url(#${idHachures})"/>
+      <line x1="${x(score)}" y1="0" x2="${x(score)}" y2="${ht}" stroke="${couleurCss('--txt')}" stroke-width="2.5"/>
+      <circle cx="${x(score)}" cy="0" r="4" fill="${couleurCss('--txt')}"/>
+      <text x="${x(score)}" y="${ht+13}" font-size="10" font-weight="700" text-anchor="middle"
+        fill="${couleurCss('--txt')}">${score.toFixed(0)}</text>
+      <text x="${marge}" y="${ht+13}" font-size="9" fill="${couleurCss('--gris')}">Vendre</text>
+      <text x="${(xVendre+xAcheter)/2}" y="${ht+13}" font-size="9" text-anchor="middle"
+        fill="${couleurCss('--gris')}">Conserver</text>
+      <text x="${w-marge}" y="${ht+13}" font-size="9" text-anchor="end" fill="${couleurCss('--gris')}">Acheter</text>
+    </svg>
+    <p style="font-size:10.5px;color:var(--gris);margin-top:2px">Zone grisée : marge d'incertitude
+      autour du seuil le plus proche.</p>
+  </div>`;
+}
+
 function rendreAnalyse(t){
   const zone=document.getElementById('contenuAnalyse');
   const a=analyse&&analyse.valeurs&&analyse.valeurs[t];
@@ -850,6 +886,7 @@ function rendreAnalyse(t){
   }
   html+=a.conclusion.map(p=>`<p class="desc" style="margin-bottom:12px">${p}</p>`).join("");
   if(a.proche_seuil){
+    html+=jaugeIncertitude(a.score_global);
     html+=`<p class="desc" style="color:var(--ambre-texte);font-weight:600;margin-bottom:12px;text-align:left">⚠️ Ce verdict
       est proche du seuil de catégorie suivante (à ${fmt(a.marge_categorie)} points sur 100) —
       un score qui pourrait basculer vers une autre recommandation lors d'une prochaine mise à
@@ -983,6 +1020,97 @@ function exporterCSV(id){
 
 const RANG_RECO={Acheter:2,Conserver:1,Vendre:0};
 
+let etatScreener={secteur:"TOUS", reco:"TOUS", perMax:100, roeMin:0};
+
+function rendreCarteScreener(V){
+  const secteursUniques=[...new Set(V.map(x=>x.sect).filter(Boolean))].sort();
+  const optionsSecteur=['<option value="TOUS">Tous les secteurs</option>']
+    .concat(secteursUniques.map(s=>`<option value="${s}">${LIB_SECTEURS[s]||s}</option>`)).join('');
+  return `<div class="carte">
+    <h2 style="margin-top:0">Screener</h2>
+    <p class="regle">Filtrez les 47 valeurs en direct par secteur, recommandation, PER
+    maximum et ROE minimum.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+      <label style="font-size:12.5px;color:var(--gris)">Secteur
+        <select id="screenerSecteur" style="width:100%;margin-top:3px">${optionsSecteur}</select>
+      </label>
+      <label style="font-size:12.5px;color:var(--gris)">Recommandation
+        <select id="screenerReco" style="width:100%;margin-top:3px">
+          <option value="TOUS">Toutes</option>
+          <option value="Acheter">Acheter</option>
+          <option value="Conserver">Conserver</option>
+          <option value="Vendre">Vendre</option>
+        </select>
+      </label>
+    </div>
+    <label style="font-size:12.5px;color:var(--gris);display:block;margin-bottom:8px">
+      PER maximum : <span id="screenerPerVal" style="font-weight:700;color:var(--txt)">100</span>x
+      <input type="range" id="screenerPer" min="1" max="100" value="100" step="1"
+        style="width:100%">
+    </label>
+    <label style="font-size:12.5px;color:var(--gris);display:block;margin-bottom:10px">
+      ROE minimum : <span id="screenerRoeVal" style="font-weight:700;color:var(--txt)">0</span> %
+      <input type="range" id="screenerRoe" min="0" max="60" value="0" step="1"
+        style="width:100%">
+    </label>
+    <div id="screenerCompteur" class="notebas" style="margin-bottom:6px"></div>
+    <table id="screenerTable"><tr><th>Valeur</th><th>Secteur</th><th>PER</th>
+      <th>ROE</th><th>DY net %</th><th>Avis</th></tr><tbody id="screenerCorps"></tbody></table>
+  </div>`;
+}
+
+function filtrerEtRendreScreener(V){
+  const s=etatScreener;
+  const filtrees=V.filter(x=>
+    (s.secteur==="TOUS"||x.sect===s.secteur) &&
+    (s.reco==="TOUS"||x.reco===s.reco) &&
+    (x.per==null||x.per<=s.perMax) &&
+    (x.roe==null||x.roe>=s.roeMin)
+  );
+  const badge=r=>r?`<span class="badge b${r[0]}">${r}</span>`:"";
+  const corps=document.getElementById('screenerCorps');
+  if(!corps) return;
+  // DocumentFragment : une seule injection DOM, pas de reflow ligne par ligne
+  const frag=document.createDocumentFragment();
+  for(const x of filtrees){
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td><span class="tick" tabindex="0" role="button"
+        onclick="ouvrirFiche('${x.tk}')" onkeydown="if(event.key==='Enter')ouvrirFiche('${x.tk}')"
+        >${x.tk}</span> <span style="color:var(--gris);font-size:11px">${(x.nom||"").slice(0,18)}</span></td>
+      <td>${LIB_SECTEURS[x.sect]||x.sect||"—"}</td>
+      <td>${x.per!=null?fmt(x.per)+"x":"—"}</td>
+      <td>${x.roe!=null?fmt(x.roe)+" %":"—"}</td>
+      <td>${x.dyNet!=null?fmt(x.dyNet):"—"}</td>
+      <td>${badge(x.reco)}</td>`;
+    frag.appendChild(tr);
+  }
+  corps.replaceChildren(frag);
+  document.getElementById('screenerCompteur').textContent=
+    `${filtrees.length} valeur(s) sur ${V.length} correspondent aux critères.`;
+}
+
+function installerEcouteursScreener(V){
+  const maj=()=>filtrerEtRendreScreener(V);
+  const secteurEl=document.getElementById('screenerSecteur');
+  const recoEl=document.getElementById('screenerReco');
+  const perEl=document.getElementById('screenerPer');
+  const roeEl=document.getElementById('screenerRoe');
+  if(!secteurEl) return;
+  secteurEl.value=etatScreener.secteur;
+  recoEl.value=etatScreener.reco;
+  perEl.value=etatScreener.perMax;
+  roeEl.value=etatScreener.roeMin;
+  document.getElementById('screenerPerVal').textContent=etatScreener.perMax;
+  document.getElementById('screenerRoeVal').textContent=etatScreener.roeMin;
+  secteurEl.addEventListener('change',e=>{etatScreener.secteur=e.target.value; maj();});
+  recoEl.addEventListener('change',e=>{etatScreener.reco=e.target.value; maj();});
+  perEl.addEventListener('input',e=>{etatScreener.perMax=+e.target.value;
+    document.getElementById('screenerPerVal').textContent=e.target.value; maj();});
+  roeEl.addEventListener('input',e=>{etatScreener.roeMin=+e.target.value;
+    document.getElementById('screenerRoeVal').textContent=e.target.value; maj();});
+  maj();
+}
+
 async function rendreFiltres(){
   const zone=document.getElementById('contenuFiltres');
   const tousTickers=(cours.valeurs||[]).map(v=>v.ticker);
@@ -1008,7 +1136,7 @@ async function rendreFiltres(){
       cCA:cagrJS(serie("ca")), cRN:cagrJS(serie("rn")), cBPA:cagrJS(serie("bnpa")),
       tend:te.tendance_provisoire_mensuelle, var1m:te.var_1m,
       mm20:te.mm20, mm50:te.mm50, mm200:te.mm200,
-      pbr:dern("pbr"), bnpa:dern("bnpa"),
+      pbr:dern("pbr"), bnpa:dern("bnpa"), per:dern("per"), roe:dern("roe_pct"),
       div:(()=>{for(let i=exs.length-1;i>=Math.max(0,exs.length-2);i--){
         const x=fo.exercices[exs[i]].dividende;
         if(x&&x.valeur!=null) return x.valeur;} return null;})(),
@@ -1023,7 +1151,7 @@ async function rendreFiltres(){
     >${sparklineSVG(x.tk)} ${x.tk}</span>
     <span style="color:var(--gris);font-size:11px">${(x.nom||"").slice(0,20)}</span>`;
 
-  let html=`<div class="carte"><h2 style="margin-top:0">Segment Croissance
+  let html=rendreCarteScreener(V)+`<div class="carte"><h2 style="margin-top:0">Segment Croissance
     (cible : 80 % du portefeuille)</h2>
     <p class="regle">CA, résultat net et BPA en croissance sur les exercices disponibles,
     et tendance de cours haussière. Cliquez sur un en-tête pour trier.</p>`;
@@ -1091,6 +1219,7 @@ async function rendreFiltres(){
     </div></div>`;
 
   zone.innerHTML=html;
+  installerEcouteursScreener(V);
 
   document.getElementById('btnComparer').onclick=()=>{
     const sel=document.getElementById('comparateurSelect');
