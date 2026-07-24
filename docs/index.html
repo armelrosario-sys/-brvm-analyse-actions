@@ -172,7 +172,8 @@ th.tri-actif{text-decoration:underline;text-underline-offset:3px;color:var(--txt
 .bouton-csv:hover{background:var(--survol)}
 
 /* --- Sparkline --- */
-.spark{vertical-align:middle;margin-left:4px}
+.nom-tronque{color:var(--gris);font-size:11px;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;max-width:128px;display:block}
 
 /* --- Comparateur --- */
 .comparateur select{height:110px}
@@ -936,22 +937,6 @@ function medianeJS(l){const s=l.filter(x=>x!=null).sort((a,b)=>a-b);
 let specsFiltres={};
 let ecouteurFiltresInstalle=false;
 
-function sparklineSVG(tk){
-  const hst=cacheHisto.get(tk);
-  if(!hst) return '';
-  const m=(hst.mensuel||[]).slice(-12).map(x=>x.cours).filter(v=>v!=null);
-  if(m.length<2) return '';
-  const w=54,ht=20;
-  const min=Math.min(...m), max=Math.max(...m);
-  const norm=v=> max===min ? ht/2 : ht-((v-min)/(max-min))*ht;
-  const step=w/(m.length-1);
-  const pts=m.map((v,i)=>`${(i*step).toFixed(1)},${norm(v).toFixed(1)}`).join(' ');
-  const coul = m[m.length-1]>=m[0] ? couleurCss('--vert') : couleurCss('--rouge');
-  return `<svg class="spark" width="${w}" height="${ht}" viewBox="0 0 ${w} ${ht}"
-    aria-hidden="true" focusable="false"><polyline points="${pts}" fill="none"
-    stroke="${coul}" stroke-width="1.6"/></svg>`;
-}
-
 function rendreTableDepuisSpec(id){
   const spec=specsFiltres[id];
   if(!spec.donnees.length) return '<p class="vide">Aucune valeur ne satisfait actuellement tous les critères.</p>';
@@ -1074,9 +1059,10 @@ function filtrerEtRendreScreener(V){
   const frag=document.createDocumentFragment();
   for(const x of filtrees){
     const tr=document.createElement('tr');
-    tr.innerHTML=`<td><span class="tick" tabindex="0" role="button"
+    tr.innerHTML=`<td><div style="display:flex;flex-direction:column;min-width:0;max-width:120px">
+        <span class="tick" tabindex="0" role="button"
         onclick="ouvrirFiche('${x.tk}')" onkeydown="if(event.key==='Enter')ouvrirFiche('${x.tk}')"
-        >${x.tk}</span> <span style="color:var(--gris);font-size:11px">${(x.nom||"").slice(0,18)}</span></td>
+        >${x.tk}</span><span class="nom-tronque" title="${x.nom||''}">${x.nom||''}</span></div></td>
       <td>${LIB_SECTEURS[x.sect]||x.sect||"—"}</td>
       <td>${x.per!=null?fmt(x.per)+"x":"—"}</td>
       <td>${x.roe!=null?fmt(x.roe)+" %":"—"}</td>
@@ -1113,17 +1099,6 @@ function installerEcouteursScreener(V){
 
 async function rendreFiltres(){
   const zone=document.getElementById('contenuFiltres');
-  const tousTickers=(cours.valeurs||[]).map(v=>v.ticker);
-  const manquants=tousTickers.filter(tk=>!cacheHisto.has(tk));
-  if(manquants.length){
-    zone.innerHTML='<p class="desc" style="color:var(--gris)">Chargement des historiques '+
-      'pour les mini-graphiques…</p>';
-    await Promise.all(manquants.map(async tk=>{
-      const d=await fetch('data/historique/'+tk+'.json').then(r=>r.json()).catch(()=>null);
-      cacheHisto.set(tk, d);
-    }));
-  }
-
   const badge=r=>r?`<span class="badge b${r[0]}">${r}</span>`:"";
   const V=[];
   for(const v of (cours.valeurs||[])){
@@ -1146,10 +1121,11 @@ async function rendreFiltres(){
     o.exc=(o.div&&o.bnpa&&o.bnpa>0)?(o.div/o.bnpa*100>150):false;
     V.push(o);
   }
-  const lien=x=>`<span class="tick" tabindex="0" role="button"
-    onclick="ouvrirFiche('${x.tk}')" onkeydown="if(event.key==='Enter')ouvrirFiche('${x.tk}')"
-    >${sparklineSVG(x.tk)} ${x.tk}</span>
-    <span style="color:var(--gris);font-size:11px">${(x.nom||"").slice(0,20)}</span>`;
+  const lien=x=>`<div style="display:flex;flex-direction:column;min-width:0;max-width:128px">
+    <span class="tick" tabindex="0" role="button"
+      onclick="ouvrirFiche('${x.tk}')" onkeydown="if(event.key==='Enter')ouvrirFiche('${x.tk}')"
+      >${x.tk}</span>
+    <span class="nom-tronque" title="${x.nom||''}">${x.nom||''}</span></div>`;
 
   let html=rendreCarteScreener(V)+`<div class="carte"><h2 style="margin-top:0">Segment Croissance
     (cible : 80 % du portefeuille)</h2>
@@ -1159,9 +1135,12 @@ async function rendreFiltres(){
     .sort((a,b)=>b.cRN-a.cRN);
   html+=construireTableTriable('croissance', cr, [
     ["Valeur",lien,null],["Cours",x=>colCours(x),x=>x.cours],
-    ["CA %/an",x=>colVar(x.cCA),x=>x.cCA],["RN %/an",x=>colVar(x.cRN),x=>x.cRN],
-    ["BPA %/an",x=>colVar(x.cBPA),x=>x.cBPA],
+    ["CA %/an",x=>colVar(x.cCA),x=>x.cCA],["BPA %/an",x=>colVar(x.cBPA),x=>x.cBPA],
     ["Avis",x=>badge(x.reco),x=>RANG_RECO[x.reco]??-1]]);
+  html+=`<p class="notebas">La croissance du résultat net par action (BPA) est affichée plutôt
+    que celle du résultat net total : à nombre d'actions stable, les deux évoluent presque
+    toujours à l'identique ; un écart entre elles signale généralement une émission ou un
+    rachat d'actions.</p>`;
   html+="</div>";
 
   html+=`<div class="carte"><h2 style="margin-top:0">Segment Rendement
