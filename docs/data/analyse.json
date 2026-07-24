@@ -1,6 +1,6 @@
 {
- "maj": "2026-07-23T23:55:24+00:00",
- "date_analyse": "23/07/2026",
+ "maj": "2026-07-24T00:13:44+00:00",
+ "date_analyse": "24/07/2026",
  "valeurs": {
   "ABJC": {
    "scores": {
@@ -77,7 +77,9 @@
    "marge_categorie": 6.8,
    "proche_seuil": false,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BICB": {
    "scores": {
@@ -154,7 +156,9 @@
    "marge_categorie": 2.5,
    "proche_seuil": true,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BICC": {
    "scores": {
@@ -231,7 +235,9 @@
    "marge_categorie": 17.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BNBC": {
    "scores": {
@@ -297,7 +303,9 @@
    "marge_categorie": 25.5,
    "proche_seuil": false,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "BOAB": {
    "scores": {
@@ -374,7 +382,9 @@
    "marge_categorie": 12.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BOABF": {
    "scores": {
@@ -451,7 +461,9 @@
    "marge_categorie": 8.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BOAC": {
    "scores": {
@@ -528,7 +540,9 @@
    "marge_categorie": 21.2,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BOAM": {
    "scores": {
@@ -605,7 +619,9 @@
    "marge_categorie": 0.5,
    "proche_seuil": true,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BOAN": {
    "scores": {
@@ -680,7 +696,9 @@
    "marge_categorie": 8.8,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "BOAS": {
    "scores": {
@@ -757,7 +775,9 @@
    "marge_categorie": 19.2,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "CABC": {
    "scores": {
@@ -822,19 +842,22 @@
      }
     ]
    },
-   "reco": "Acheter",
+   "reco": "Conserver",
    "fourchette": [
     2476,
     2818
    ],
    "conclusion": [
-    "Nous recommandons d'acheter SICABLE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
+    "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des 20 % les moins échangés du marché (risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), indépendamment de la qualité de ses fondamentaux.",
+    "Nous recommandons de conserver SICABLE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
     "Au cours actuel de 3 940 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 476 et 2 818 FCFA, soit environ 28 % à 37 % sous le cours actuel."
    ],
-   "marge_categorie": 17.0,
+   "marge_categorie": 7,
    "proche_seuil": false,
    "secteur_taille": 6,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "CBIBF": {
    "scores": {
@@ -911,7 +934,9 @@
    "marge_categorie": 15.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "CFAC": {
    "scores": {
@@ -988,7 +1013,9 @@
    "marge_categorie": 1.5,
    "proche_seuil": true,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "CIEC": {
    "scores": {
@@ -1065,7 +1092,9 @@
    "marge_categorie": 3.8,
    "proche_seuil": true,
    "secteur_taille": 2,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "ECOC": {
    "scores": {
@@ -1142,7 +1171,9 @@
    "marge_categorie": 15.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "ETIT": {
    "scores": {
@@ -1219,7 +1250,9 @@
    "marge_categorie": 0.5,
    "proche_seuil": true,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "FTSC": {
    "scores": {
@@ -1290,7 +1323,9 @@
    "marge_categorie": 6.8,
    "proche_seuil": false,
    "secteur_taille": 6,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "LNBB": {
    "scores": {
@@ -1367,7 +1402,9 @@
    "marge_categorie": 5.8,
    "proche_seuil": false,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "NEIC": {
    "scores": {
@@ -1432,19 +1469,22 @@
      }
     ]
    },
-   "reco": "Acheter",
+   "reco": "Conserver",
    "fourchette": [
     1545,
     1758
    ],
    "conclusion": [
-    "Nous recommandons d'acheter NEI-CEDA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
+    "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des 20 % les moins échangés du marché (risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), indépendamment de la qualité de ses fondamentaux.",
+    "Nous recommandons de conserver NEI-CEDA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
     "Au cours actuel de 2 190 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 545 et 1 758 FCFA, soit environ 20 % à 29 % sous le cours actuel."
    ],
-   "marge_categorie": 9.0,
+   "marge_categorie": 7,
    "proche_seuil": false,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "NSBC": {
    "scores": {
@@ -1521,7 +1561,9 @@
    "marge_categorie": 4.8,
    "proche_seuil": true,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "NTLC": {
    "scores": {
@@ -1598,7 +1640,9 @@
    "marge_categorie": 9.8,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "ONTBF": {
    "scores": {
@@ -1675,7 +1719,9 @@
    "marge_categorie": 5.8,
    "proche_seuil": false,
    "secteur_taille": 3,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "ORAC": {
    "scores": {
@@ -1752,7 +1798,9 @@
    "marge_categorie": 10.8,
    "proche_seuil": false,
    "secteur_taille": 3,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "ORGT": {
    "scores": {
@@ -1821,7 +1869,9 @@
    "marge_categorie": 7.8,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "PALC": {
    "scores": {
@@ -1898,7 +1948,9 @@
    "marge_categorie": 1.5,
    "proche_seuil": true,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "PRSC": {
    "scores": {
@@ -1975,7 +2027,9 @@
    "marge_categorie": 8.0,
    "proche_seuil": false,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "SAFC": {
    "scores": {
@@ -2037,7 +2091,9 @@
    "marge_categorie": 13.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SCRC": {
    "scores": {
@@ -2102,7 +2158,9 @@
    "marge_categorie": 13.0,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SDCC": {
    "scores": {
@@ -2179,7 +2237,9 @@
    "marge_categorie": 10.0,
    "proche_seuil": false,
    "secteur_taille": 2,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SDSC": {
    "scores": {
@@ -2256,7 +2316,9 @@
    "marge_categorie": 17.0,
    "proche_seuil": false,
    "secteur_taille": 6,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SEMC": {
    "scores": {
@@ -2331,7 +2393,9 @@
    "marge_categorie": 8.8,
    "proche_seuil": false,
    "secteur_taille": 6,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SGBC": {
    "scores": {
@@ -2408,7 +2472,9 @@
    "marge_categorie": 15.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SHEC": {
    "scores": {
@@ -2485,7 +2551,9 @@
    "marge_categorie": 3.8,
    "proche_seuil": true,
    "secteur_taille": 4,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SIBC": {
    "scores": {
@@ -2562,7 +2630,9 @@
    "marge_categorie": 15.0,
    "proche_seuil": false,
    "secteur_taille": 16,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SICC": {
    "scores": {
@@ -2624,7 +2694,9 @@
    "marge_categorie": 25.5,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "SIVC": {
    "scores": {
@@ -2690,7 +2762,9 @@
    "marge_categorie": 0.5,
    "proche_seuil": true,
    "secteur_taille": 6,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SLBC": {
    "scores": {
@@ -2767,7 +2841,9 @@
    "marge_categorie": 27.5,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SMBC": {
    "scores": {
@@ -2844,7 +2920,9 @@
    "marge_categorie": 15.0,
    "proche_seuil": false,
    "secteur_taille": 4,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SNTS": {
    "scores": {
@@ -2921,7 +2999,9 @@
    "marge_categorie": 27.5,
    "proche_seuil": false,
    "secteur_taille": 3,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SOGC": {
    "scores": {
@@ -2998,7 +3078,9 @@
    "marge_categorie": 4.5,
    "proche_seuil": true,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "SPHC": {
    "scores": {
@@ -3075,7 +3157,9 @@
    "marge_categorie": 13.0,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "STAC": {
    "scores": {
@@ -3140,7 +3224,9 @@
    "marge_categorie": 3.8,
    "proche_seuil": true,
    "secteur_taille": 6,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "STBC": {
    "scores": {
@@ -3217,7 +3303,9 @@
    "marge_categorie": 19.2,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "TTLC": {
    "scores": {
@@ -3294,7 +3382,9 @@
    "marge_categorie": 0.5,
    "proche_seuil": true,
    "secteur_taille": 4,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "TTLS": {
    "scores": {
@@ -3371,7 +3461,9 @@
    "marge_categorie": 8.0,
    "proche_seuil": false,
    "secteur_taille": 4,
-   "secteur_repli_marche": true
+   "secteur_repli_marche": true,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   },
   "UNLC": {
    "scores": {
@@ -3433,7 +3525,9 @@
    "marge_categorie": 25.5,
    "proche_seuil": false,
    "secteur_taille": 9,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
+   "recommandation_en_attente_confirmation": false
   },
   "UNXC": {
    "scores": {
@@ -3498,7 +3592,9 @@
    "marge_categorie": 2.5,
    "proche_seuil": true,
    "secteur_taille": 7,
-   "secteur_repli_marche": false
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
   }
  }
 }
