@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-24T03:21:18+00:00",
+ "maj": "2026-07-24T17:04:58+00:00",
  "valeurs": {
   "ABJC": [
    {
@@ -154,7 +154,7 @@
    {
     "date": "2026-07-24",
     "reco": "Conserver",
-    "score_moyen": 60.5
+    "score_moyen": 55.0
    }
   ],
   "CIEC": [
@@ -490,7 +490,7 @@
    {
     "date": "2026-07-24",
     "reco": "Acheter",
-    "score_moyen": 75.0
+    "score_moyen": 83.2
    }
   ],
   "STAC": [
