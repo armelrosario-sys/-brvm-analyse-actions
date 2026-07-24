@@ -276,7 +276,7 @@ def texte_conclusion(t, nom, reco, fourchette, scores, m):
 
 SEUIL_TAILLE_SECTEUR = 5  # en-dessous, la mediane sectorielle est jugee trop
                           # fragile statistiquement -> repli sur la mediane de marche
-CHAMPS_SECTORIELS = ("per", "pbr", "roe", "marge_nette", "dy_net")
+CHAMPS_SECTORIELS = ("per", "pbr", "roe", "marge_nette", "dy_net", "dette_cp")
 
 
 SEUIL_PERCENTILE_LIQUIDITE = 0.20  # 20e percentile le moins echange du marche
@@ -395,9 +395,19 @@ def principal():
 
     con.commit()
 
+    medianes_export = {
+        "marche": {**med_marche_champs, "var_1a": med_marche["var_1a"]},
+        "secteurs": {
+            code: {**med_sect[code], "taille": taille_secteur[code],
+                  "repli_marche": taille_secteur[code] < SEUIL_TAILLE_SECTEUR}
+            for code in med_sect
+        },
+    }
+
     (D / "analyse.json").write_text(json.dumps({
         "maj": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "date_analyse": datetime.now(timezone.utc).strftime("%d/%m/%Y"),
+        "medianes": medianes_export,
         "valeurs": sortie,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
