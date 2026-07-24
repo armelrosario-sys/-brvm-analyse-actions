@@ -18,6 +18,7 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from pydantic import BaseModel, ValidationError, field_validator
 
 RACINE = Path(__file__).resolve().parent.parent
 CHEMIN_DB = RACINE / "data" / "marche.db"
@@ -121,9 +122,63 @@ def extraire(html, ticker, anomalies):
         break
     if not exercices:
         anomalies.append(f"{ticker} : tableau des exercices introuvable sur la fiche Sika.")
+    series = valider_series(series, exercices, ticker, anomalies)
     donnees["exercices"] = exercices
     donnees["series"] = series
     return donnees
+
+
+class LigneFondamentale(BaseModel):
+    """Schema de plausibilite pour un exercice extrait de la fiche Sika. Une
+    valeur hors bornes revele le plus souvent un decalage de colonnes ou un
+    changement de structure HTML - elle est ecartee (mise a None) et
+    consignee, jamais utilisee telle quelle."""
+    ca: float | None = None
+    croissance_ca: float | None = None
+    rn: float | None = None
+    croissance_rn: float | None = None
+    bnpa: float | None = None
+    per: float | None = None
+    dividende: float | None = None
+
+    @field_validator("ca", "dividende")
+    @classmethod
+    def _non_negatif(cls, v):
+        if v is not None and v < 0:
+            raise ValueError(f"valeur negative implausible ({v})")
+        return v
+
+    @field_validator("per")
+    @classmethod
+    def _per_borne(cls, v):
+        if v is not None and not (0 < v < 2000):
+            raise ValueError(f"PER hors bornes plausibles ({v})")
+        return v
+
+    @field_validator("croissance_ca", "croissance_rn")
+    @classmethod
+    def _croissance_bornee(cls, v):
+        if v is not None and not (-100 <= v <= 2000):
+            raise ValueError(f"taux de croissance hors bornes plausibles ({v}%)")
+        return v
+
+
+def valider_series(series, exercices, ticker, anomalies):
+    """Valide chaque exercice (colonne) via LigneFondamentale. Un champ hors
+    bornes pour un exercice donne est neutralise (None) individuellement -
+    les autres champs/exercices du meme ticker restent exploitables."""
+    for i, exercice in enumerate(exercices):
+        ligne = {champ: (series[champ][i] if champ in series and i < len(series[champ]) else None)
+                 for champ in ("ca", "croissance_ca", "rn", "croissance_rn", "bnpa", "per", "dividende")}
+        try:
+            LigneFondamentale.model_validate(ligne)
+        except ValidationError as exc:
+            for e in exc.errors():
+                champ_fautif = e["loc"][0] if e["loc"] else "?"
+                anomalies.append(f"{ticker} {exercice} : champ '{champ_fautif}' rejete - {e['msg']}")
+                if champ_fautif in series and i < len(series[champ_fautif]):
+                    series[champ_fautif][i] = None
+    return series
 
 
 JOURS_ALERTE_FRAICHEUR = 365  # au-dela, une correction manuelle est signalee
