@@ -1,0 +1,20 @@
+{
+ "maj": "2026-07-24T02:21:23+00:00",
+ "note": "Compare les recommandations 'Acheter' a un indice composite INTERNE (proxy pondere par le nombre de titres, reconstruit a partir des cours deja collectes par ce projet) - PAS l'indice officiel BRVM Composite, dont l'historique n'est pas telechargeable gratuitement en masse aupres de la BRVM (fourni uniquement sur demande). Les resultats ne deviennent statistiquement significatifs qu'apres plusieurs mois d'accumulation.",
+ "horizons": {
+  "30j": {
+   "nb_cas_exploitables": 0,
+   "taux_de_reussite_pct": null,
+   "rendement_moyen_titre_pct": null,
+   "rendement_moyen_proxy_pct": null,
+   "detail": []
+  },
+  "90j": {
+   "nb_cas_exploitables": 0,
+   "taux_de_reussite_pct": null,
+   "rendement_moyen_titre_pct": null,
+   "rendement_moyen_proxy_pct": null,
+   "detail": []
+  }
+ }
+}
