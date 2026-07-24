@@ -1,6 +1,89 @@
 {
- "maj": "2026-07-24T02:21:23+00:00",
+ "maj": "2026-07-24T03:21:18+00:00",
  "date_analyse": "24/07/2026",
+ "medianes": {
+  "marche": {
+   "per": 16.34,
+   "pbr": null,
+   "roe": null,
+   "marge_nette": 10.16,
+   "dy_net": 3.895,
+   "dette_cp": null,
+   "var_1a": 72.27
+  },
+  "secteurs": {
+   "FIN": {
+    "per": 13.85,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 37.965,
+    "dy_net": 3.8449999999999998,
+    "dette_cp": null,
+    "taille": 16,
+    "repli_marche": false
+   },
+   "IND": {
+    "per": 47.82,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 1.615,
+    "dy_net": 3.2300000000000004,
+    "dette_cp": null,
+    "taille": 6,
+    "repli_marche": false
+   },
+   "TEL": {
+    "per": 16.34,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.16,
+    "dy_net": 3.895,
+    "dette_cp": null,
+    "taille": 3,
+    "repli_marche": true
+   },
+   "SPU": {
+    "per": 16.34,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.16,
+    "dy_net": 3.895,
+    "dette_cp": null,
+    "taille": 2,
+    "repli_marche": true
+   },
+   "CB": {
+    "per": 14.38,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 7.85,
+    "dy_net": 4.215,
+    "dette_cp": null,
+    "taille": 9,
+    "repli_marche": false
+   },
+   "CD": {
+    "per": 25.69,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 4.66,
+    "dy_net": 3.56,
+    "dette_cp": null,
+    "taille": 7,
+    "repli_marche": false
+   },
+   "ENE": {
+    "per": 16.34,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.16,
+    "dy_net": 3.895,
+    "dette_cp": null,
+    "taille": 4,
+    "repli_marche": true
+   }
+  }
+ },
  "valeurs": {
   "ABJC": {
    "scores": {
