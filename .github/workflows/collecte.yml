@@ -55,6 +55,10 @@ jobs:
         if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
         run: python scripts/calculs_analyse.py
 
+      - name: Backtest des recommandations (vs indice proxy interne)
+        if: github.event.schedule == '30 15 * * 1-5' || github.event_name == 'workflow_dispatch'
+        run: python scripts/backtest_recos.py
+
       - name: Enregistrer les resultats
         run: |
           git config user.name "github-actions[bot]"
