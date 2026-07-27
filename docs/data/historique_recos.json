@@ -1,5 +1,5 @@
 {
- "maj": "2026-07-24T17:04:58+00:00",
+ "maj": "2026-07-27T17:17:37+00:00",
  "valeurs": {
   "ABJC": [
    {
@@ -9,6 +9,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 68.8
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 68.8
    }
@@ -23,6 +28,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 64.5
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 58.2
    }
   ],
   "BICC": [
@@ -35,6 +45,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 79.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 72.8
    }
   ],
   "BNBC": [
@@ -45,6 +60,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Vendre",
+    "score_moyen": 12.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Vendre",
     "score_moyen": 12.5
    }
@@ -59,6 +79,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 50.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 56.2
    }
   ],
   "BOABF": [
@@ -69,6 +94,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 54.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 54.0
    }
@@ -83,6 +113,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 83.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Acheter",
+    "score_moyen": 83.2
    }
   ],
   "BOAM": [
@@ -93,6 +128,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 62.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 62.5
    }
@@ -107,6 +147,11 @@
     "date": "2026-07-24",
     "reco": "Vendre",
     "score_moyen": 29.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Vendre",
+    "score_moyen": 29.2
    }
   ],
   "BOAS": [
@@ -117,6 +162,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 81.2
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 81.2
    }
@@ -131,6 +181,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 55.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 55.0
    }
   ],
   "CBIBF": [
@@ -141,6 +196,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 77.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 77.0
    }
@@ -155,6 +215,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 55.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 55.0
    }
   ],
   "CIEC": [
@@ -165,6 +230,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 58.2
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 58.2
    }
@@ -179,6 +249,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 77.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 77.0
    }
   ],
   "ETIT": [
@@ -189,6 +264,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Acheter",
+    "score_moyen": 62.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Acheter",
     "score_moyen": 62.5
    }
@@ -203,6 +283,11 @@
     "date": "2026-07-24",
     "reco": "Vendre",
     "score_moyen": 31.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Vendre",
+    "score_moyen": 25.0
    }
   ],
   "LNBB": [
@@ -213,6 +298,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 43.8
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 43.8
    }
@@ -227,6 +317,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 55.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 55.0
    }
   ],
   "NSBC": [
@@ -237,6 +332,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 66.8
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 66.8
    }
@@ -251,6 +351,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 47.8
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 47.8
    }
   ],
   "ONTBF": [
@@ -261,6 +366,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 56.2
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 56.2
    }
@@ -275,6 +385,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 72.8
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Acheter",
+    "score_moyen": 72.8
    }
   ],
   "ORGT": [
@@ -285,6 +400,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 45.8
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 45.8
    }
@@ -299,6 +419,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 60.5
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 60.5
    }
   ],
   "PRSC": [
@@ -309,6 +434,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 54.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 54.0
    }
@@ -323,6 +453,11 @@
     "date": "2026-07-24",
     "reco": "Vendre",
     "score_moyen": 25.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Vendre",
+    "score_moyen": 25.0
    }
   ],
   "SCRC": [
@@ -333,6 +468,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Vendre",
+    "score_moyen": 25.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Vendre",
     "score_moyen": 25.0
    }
@@ -347,6 +487,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 52.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 52.0
    }
   ],
   "SDSC": [
@@ -357,6 +502,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Acheter",
+    "score_moyen": 79.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Acheter",
     "score_moyen": 79.0
    }
@@ -371,6 +521,11 @@
     "date": "2026-07-24",
     "reco": "Vendre",
     "score_moyen": 29.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Vendre",
+    "score_moyen": 29.2
    }
   ],
   "SGBC": [
@@ -381,6 +536,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Acheter",
+    "score_moyen": 77.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Acheter",
     "score_moyen": 77.0
    }
@@ -395,6 +555,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 58.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 58.2
    }
   ],
   "SIBC": [
@@ -405,6 +570,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 77.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 77.0
    }
@@ -419,6 +589,11 @@
     "date": "2026-07-24",
     "reco": "Vendre",
     "score_moyen": 12.5
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Vendre",
+    "score_moyen": 12.5
    }
   ],
   "SIVC": [
@@ -429,6 +604,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Vendre",
+    "score_moyen": 37.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Vendre",
     "score_moyen": 37.5
    }
@@ -443,6 +623,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 89.5
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Acheter",
+    "score_moyen": 89.5
    }
   ],
   "SMBC": [
@@ -453,6 +638,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Acheter",
+    "score_moyen": 77.0
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Acheter",
     "score_moyen": 77.0
    }
@@ -467,6 +657,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 89.5
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Acheter",
+    "score_moyen": 89.5
    }
   ],
   "SOGC": [
@@ -477,6 +672,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Acheter",
+    "score_moyen": 66.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Acheter",
     "score_moyen": 66.5
    }
@@ -491,6 +691,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 83.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Acheter",
+    "score_moyen": 75.0
    }
   ],
   "STAC": [
@@ -501,6 +706,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Conserver",
+    "score_moyen": 41.8
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Conserver",
     "score_moyen": 41.8
    }
@@ -515,6 +725,11 @@
     "date": "2026-07-24",
     "reco": "Acheter",
     "score_moyen": 81.2
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Acheter",
+    "score_moyen": 81.2
    }
   ],
   "TTLC": [
@@ -525,6 +740,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Vendre",
+    "score_moyen": 37.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Vendre",
     "score_moyen": 37.5
    }
@@ -539,6 +759,11 @@
     "date": "2026-07-24",
     "reco": "Conserver",
     "score_moyen": 46.0
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Conserver",
+    "score_moyen": 46.0
    }
   ],
   "UNLC": [
@@ -551,6 +776,11 @@
     "date": "2026-07-24",
     "reco": "Vendre",
     "score_moyen": 12.5
+   },
+   {
+    "date": "2026-07-27",
+    "reco": "Vendre",
+    "score_moyen": 12.5
    }
   ],
   "UNXC": [
@@ -561,6 +791,11 @@
    },
    {
     "date": "2026-07-24",
+    "reco": "Vendre",
+    "score_moyen": 35.5
+   },
+   {
+    "date": "2026-07-27",
     "reco": "Vendre",
     "score_moyen": 35.5
    }
