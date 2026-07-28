@@ -639,19 +639,29 @@
    "date": "2026-07-27",
    "cours": 73.0,
    "volume": 609604.0
+  },
+  {
+   "date": "2026-07-28",
+   "cours": 71.0,
+   "volume": 983206.0
   }
  ],
  "seance": {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "points": [
    {
-    "h": "12:44",
+    "h": "11:37",
     "cours": 73.0,
-    "volume": 609604.0
+    "volume": 396478.0
+   },
+   {
+    "h": "13:17",
+    "cours": 71.0,
+    "volume": 983206.0
    }
   ],
-  "veille": 73.0,
-  "ouverture": 73.0
+  "veille": 71.0,
+  "ouverture": 74.0
  },
  "dividendes": [
   {
