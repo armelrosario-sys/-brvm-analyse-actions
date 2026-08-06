@@ -1,5 +1,5 @@
 {
- "maj": "2026-08-06T11:49:58+00:00",
+ "maj": "2026-08-06T14:58:19+00:00",
  "nb_valeurs": 47,
  "valeurs": [
   {
@@ -55,7 +55,7 @@
   {
    "ticker": "BOABF",
    "nom": "BANK OF AFRICA BURKINA FASO",
-   "volume": 14247.0,
+   "volume": 14488.0,
    "cours_veille": 7230.0,
    "ouverture": 7500.0,
    "cours": 7230.0,
