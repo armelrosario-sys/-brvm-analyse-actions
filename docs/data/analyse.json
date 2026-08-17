@@ -1,86 +1,86 @@
 {
- "maj": "2026-08-14T16:22:42+00:00",
- "date_analyse": "14/08/2026",
+ "maj": "2026-08-17T15:49:33+00:00",
+ "date_analyse": "17/08/2026",
  "medianes": {
   "marche": {
-   "per": 17.145,
+   "per": 17.55,
    "pbr": null,
    "roe": null,
-   "marge_nette": 9.085,
-   "dy_net": 3.7,
+   "marge_nette": 8.01,
+   "dy_net": 3.705,
    "dette_cp": null,
-   "var_1a": 89.92
+   "var_1a": 87.5
   },
   "secteurs": {
    "FIN": {
-    "per": 13.95,
+    "per": 14.27,
     "pbr": null,
     "roe": null,
     "marge_nette": 37.965,
-    "dy_net": 3.74,
+    "dy_net": 3.715,
     "dette_cp": null,
     "taille": 16,
     "repli_marche": false
    },
-   "IND": {
-    "per": 82.02000000000001,
+   "TEL": {
+    "per": 17.55,
     "pbr": null,
     "roe": null,
-    "marge_nette": 1.15,
-    "dy_net": 3.4450000000000003,
+    "marge_nette": 8.01,
+    "dy_net": 3.705,
     "dette_cp": null,
-    "taille": 6,
-    "repli_marche": false
+    "taille": 3,
+    "repli_marche": true
    },
    "ENE": {
-    "per": 17.145,
+    "per": 17.55,
     "pbr": null,
     "roe": null,
-    "marge_nette": 9.085,
-    "dy_net": 3.7,
+    "marge_nette": 8.01,
+    "dy_net": 3.705,
     "dette_cp": null,
     "taille": 4,
     "repli_marche": true
    },
-   "CD": {
-    "per": 24.32,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 4.66,
-    "dy_net": 3.65,
-    "dette_cp": null,
-    "taille": 7,
-    "repli_marche": false
-   },
    "SPU": {
-    "per": 17.145,
+    "per": 17.55,
     "pbr": null,
     "roe": null,
-    "marge_nette": 9.085,
-    "dy_net": 3.7,
+    "marge_nette": 8.01,
+    "dy_net": 3.705,
     "dette_cp": null,
     "taille": 2,
     "repli_marche": true
    },
-   "CB": {
-    "per": 13.655000000000001,
+   "IND": {
+    "per": 92.32,
     "pbr": null,
     "roe": null,
-    "marge_nette": 7.875,
-    "dy_net": 4.035,
+    "marge_nette": 1.15,
+    "dy_net": 3.4349999999999996,
     "dette_cp": null,
-    "taille": 8,
+    "taille": 6,
     "repli_marche": false
    },
-   "TEL": {
-    "per": 17.145,
+   "CD": {
+    "per": 25.61,
     "pbr": null,
     "roe": null,
-    "marge_nette": 9.085,
-    "dy_net": 3.7,
+    "marge_nette": 4.66,
+    "dy_net": 3.68,
     "dette_cp": null,
-    "taille": 3,
-    "repli_marche": true
+    "taille": 7,
+    "repli_marche": false
+   },
+   "CB": {
+    "per": 13.57,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 7.85,
+    "dy_net": 4.0,
+    "dette_cp": null,
+    "taille": 9,
+    "repli_marche": false
    }
   }
  },
@@ -88,7 +88,7 @@
   "ABJC": {
    "scores": {
     "performances": 100,
-    "perspectives": 83,
+    "perspectives": 100,
     "remuneration": 50,
     "valorisation": 25
    },
@@ -119,13 +119,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +88.7 % (médiane du marché : +89.9 %).",
-      "coul": "orange"
+      "txt": "Performance sur 1 an de +96.4 % (médiane du marché : +87.5 %).",
+      "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.85 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.62 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -139,31 +139,30 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 24.3x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 25.6x contre 25.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 24.3x contre une médiane historique propre de 15.2x.",
+      "txt": "PER actuel de 25.6x contre une médiane historique propre de 15.2x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    2196,
-    2499
+    2253,
+    2564
    ],
    "conclusion": [
-    "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des 20 % les moins échangés du marché (risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), indépendamment de la qualité de ses fondamentaux.",
     "Nous recommandons de conserver SERVAIR ABIDJAN  COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Attention : le dernier dividende (206 FCFA par action) représente 167 % du bénéfice — un versement exceptionnel, vraisemblablement non reconductible, qui ne doit pas être interprété comme un rendement récurrent. Au cours actuel de 3 170 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 196 et 2 499 FCFA, soit environ 21 % à 31 % sous le cours actuel."
+    "Attention : le dernier dividende (206 FCFA par action) représente 167 % du bénéfice — un versement exceptionnel, vraisemblablement non reconductible, qui ne doit pas être interprété comme un rendement récurrent. Au cours actuel de 3 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 253 et 2 564 FCFA, soit environ 22 % à 32 % sous le cours actuel."
    ],
-   "score_global": 55,
-   "marge_categorie": 7,
+   "score_global": 68.8,
+   "marge_categorie": 6.8,
    "proche_seuil": false,
    "secteur_taille": 7,
    "secteur_repli_marche": false,
-   "liquidite_insuffisante": true,
+   "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
   },
   "BICB": {
@@ -200,13 +199,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +60.4 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +60.3 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.70 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.70 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -220,23 +219,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 18.1x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 20.3x contre 14.3x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 18.1x contre une médiane historique propre de 10.0x.",
+      "txt": "PER actuel de 20.3x contre une médiane historique propre de 10.0x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    5516,
-    6277
+    5514,
+    6274
    ],
    "conclusion": [
     "Nous recommandons de conserver BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN. L'entreprise affiche une rentabilité solide et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 8 500 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 516 et 6 277 FCFA, soit environ 26 % à 35 % sous le cours actuel."
+    "Au cours actuel de 8 495 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 514 et 6 274 FCFA, soit environ 26 % à 35 % sous le cours actuel."
    ],
    "score_global": 58.2,
    "marge_categorie": 3.8,
@@ -280,13 +279,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +68.2 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +70.1 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.63 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.59 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -300,23 +299,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.3x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 13.1x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.3x contre une médiane historique propre de 10.7x.",
+      "txt": "PER actuel de 13.1x contre une médiane historique propre de 10.7x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    22698,
-    25829
+    22839,
+    25990
    ],
    "conclusion": [
     "Nous recommandons de conserver BICI COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 28 670 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 22 698 et 25 829 FCFA, soit environ 10 % à 21 % sous le cours actuel."
+    "Au cours actuel de 28 995 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 22 839 et 25 990 FCFA, soit environ 10 % à 21 % sous le cours actuel."
    ],
    "score_global": 72.8,
    "marge_categorie": 10.8,
@@ -360,7 +359,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +53.9 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +52.7 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
@@ -372,11 +371,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 563.8x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 593.5x contre 25.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 563.8x contre une médiane historique propre de 88.1x.",
+      "txt": "PER actuel de 593.5x contre une médiane historique propre de 88.1x.",
       "coul": "rouge"
      }
     ]
@@ -400,13 +399,13 @@
     "performances": 50,
     "perspectives": 83,
     "remuneration": 67,
-    "valorisation": 0
+    "valorisation": 25
    },
    "libelles": {
     "performances": "Bon",
     "perspectives": "Excellent",
     "remuneration": "Bon",
-    "valorisation": "Mauvais"
+    "valorisation": "Mitigé"
    },
    "pastilles": {
     "performances": [
@@ -429,13 +428,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +101.4 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +103.7 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.05 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.98 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -449,8 +448,8 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 17.6x contre 13.9x en médiane sectorielle.",
-      "coul": "rouge"
+      "txt": "PER de 17.6x contre 14.3x en médiane sectorielle.",
+      "coul": "orange"
      },
      {
       "txt": "PER actuel de 17.6x contre une médiane historique propre de 7.6x.",
@@ -460,15 +459,15 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    5430,
-    6179
+    5473,
+    6228
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA BENIN. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 8 700 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 430 et 6 179 FCFA, soit environ 29 % à 38 % sous le cours actuel."
+    "Au cours actuel de 8 800 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 473 et 6 228 FCFA, soit environ 29 % à 38 % sous le cours actuel."
    ],
-   "score_global": 50.0,
-   "marge_categorie": 12.0,
+   "score_global": 56.2,
+   "marge_categorie": 5.8,
    "proche_seuil": false,
    "secteur_taille": 16,
    "secteur_repli_marche": false,
@@ -509,13 +508,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +97.8 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +103.3 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.03 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.89 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -529,23 +528,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 16.5x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 16.2x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 16.5x contre une médiane historique propre de 5.9x.",
+      "txt": "PER actuel de 16.2x contre une médiane historique propre de 5.9x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    4220,
-    4802
+    4307,
+    4901
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA BURKINA FASO. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 7 100 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 220 et 4 802 FCFA, soit environ 32 % à 41 % sous le cours actuel."
+    "Au cours actuel de 7 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 307 et 4 901 FCFA, soit environ 33 % à 41 % sous le cours actuel."
    ],
    "score_global": 54.0,
    "marge_categorie": 8.0,
@@ -589,13 +588,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +115.2 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +123.5 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.17 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.01 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -609,23 +608,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.1x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 14.5x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.1x contre une médiane historique propre de 7.3x.",
+      "txt": "PER actuel de 14.5x contre une médiane historique propre de 7.3x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    8435,
-    9598
+    8652,
+    9846
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 12 900 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 8 435 et 9 598 FCFA, soit environ 26 % à 35 % sous le cours actuel."
+    "Au cours actuel de 13 400 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 8 652 et 9 846 FCFA, soit environ 27 % à 35 % sous le cours actuel."
    ],
    "score_global": 81.2,
    "marge_categorie": 19.2,
@@ -669,13 +668,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +82.2 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +83.3 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.46 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.44 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -689,23 +688,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.8x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 15.2x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.8x contre une médiane historique propre de 10.2x.",
+      "txt": "PER actuel de 15.2x contre une médiane historique propre de 10.2x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    4468,
-    5084
+    4483,
+    5102
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA MALI. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 6 150 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 468 et 5 084 FCFA, soit environ 17 % à 27 % sous le cours actuel."
+    "Au cours actuel de 6 185 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 483 et 5 102 FCFA, soit environ 18 % à 28 % sous le cours actuel."
    ],
    "score_global": 62.5,
    "marge_categorie": 0.5,
@@ -749,13 +748,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +104.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +105.2 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.68 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.66 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -769,11 +768,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 264.2x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 260.2x contre 14.3x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 264.2x contre une médiane historique propre de 7.8x.",
+      "txt": "PER actuel de 260.2x contre une médiane historique propre de 7.8x.",
       "coul": "rouge"
      }
     ]
@@ -827,13 +826,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +75.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +77.3 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.26 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.19 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -847,7 +846,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.7x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 12.7x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
@@ -858,12 +857,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    5197,
-    5914
+    5240,
+    5963
    ],
    "conclusion": [
     "Nous recommandons de conserver BANK OF AFRICA SENEGAL. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 7 700 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 197 et 5 914 FCFA, soit environ 23 % à 33 % sous le cours actuel."
+    "Au cours actuel de 7 800 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 5 240 et 5 963 FCFA, soit environ 24 % à 33 % sous le cours actuel."
    ],
    "score_global": 77.0,
    "marge_categorie": 15.0,
@@ -907,13 +906,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +191.7 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +200.0 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.91 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.80 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -927,24 +926,24 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.3x contre 82.0x en médiane sectorielle.",
+      "txt": "PER de 12.2x contre 92.3x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 12.3x contre une médiane historique propre de 6.1x.",
+      "txt": "PER actuel de 12.2x contre une médiane historique propre de 6.1x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    2285,
-    2600
+    2328,
+    2649
    ],
    "conclusion": [
     "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des 20 % les moins échangés du marché (risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), indépendamment de la qualité de ses fondamentaux.",
     "Nous recommandons de conserver SICABLE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 3 500 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 285 et 2 600 FCFA, soit environ 26 % à 35 % sous le cours actuel."
+    "Au cours actuel de 3 600 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 328 et 2 649 FCFA, soit environ 26 % à 35 % sous le cours actuel."
    ],
    "score_global": 55,
    "marge_categorie": 7,
@@ -988,13 +987,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +195.9 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +191.9 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.82 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.86 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -1008,23 +1007,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.8x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 14.0x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.8x contre une médiane historique propre de 5.3x.",
+      "txt": "PER actuel de 14.0x contre une médiane historique propre de 5.3x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    17185,
-    19556
+    17018,
+    19365
    ],
    "conclusion": [
     "Nous recommandons de conserver CORIS BANK INTERNATIONAL BURKINA FASO. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 28 700 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 17 185 et 19 556 FCFA, soit environ 32 % à 40 % sous le cours actuel."
+    "Au cours actuel de 28 315 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 17 018 et 19 365 FCFA, soit environ 32 % à 40 % sous le cours actuel."
    ],
    "score_global": 77.0,
    "marge_categorie": 15.0,
@@ -1068,13 +1067,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +152.3 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +152.3 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 0.38 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 0.38 % (médiane du marché : 3.71 %).",
       "coul": "rouge"
      },
      {
@@ -1088,11 +1087,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 36.6x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 35.9x contre 25.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 36.6x contre une médiane historique propre de 26.0x.",
+      "txt": "PER actuel de 35.9x contre une médiane historique propre de 26.0x.",
       "coul": "rouge"
      }
     ]
@@ -1120,13 +1119,13 @@
     "performances": 50,
     "perspectives": 100,
     "remuneration": 83,
-    "valorisation": 25
+    "valorisation": 0
    },
    "libelles": {
     "performances": "Bon",
     "perspectives": "Excellent",
     "remuneration": "Excellent",
-    "valorisation": "Mitigé"
+    "valorisation": "Mauvais"
    },
    "pastilles": {
     "performances": [
@@ -1135,7 +1134,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Marge nette de 4.3 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 4.3 % (médiane du secteur : 8.0 %).",
       "coul": "rouge"
      }
     ],
@@ -1149,13 +1148,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +139.8 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +157.4 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.58 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.41 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -1169,26 +1168,26 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 21.4x contre 17.1x en médiane sectorielle.",
-      "coul": "orange"
+      "txt": "PER de 23.5x contre 17.6x en médiane sectorielle.",
+      "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 21.4x contre une médiane historique propre de 12.4x.",
+      "txt": "PER actuel de 23.5x contre une médiane historique propre de 12.4x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    3663,
-    4168
+    3839,
+    4369
    ],
    "conclusion": [
     "Nous recommandons de conserver CIE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 5 515 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 663 et 4 168 FCFA, soit environ 24 % à 34 % sous le cours actuel."
+    "Au cours actuel de 5 920 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 839 et 4 369 FCFA, soit environ 26 % à 35 % sous le cours actuel."
    ],
-   "score_global": 64.5,
-   "marge_categorie": 2.5,
+   "score_global": 58.2,
+   "marge_categorie": 3.8,
    "proche_seuil": true,
    "secteur_taille": 2,
    "secteur_repli_marche": true,
@@ -1229,13 +1228,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +37.9 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +38.0 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.40 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.39 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -1249,23 +1248,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.1x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 13.9x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 14.1x contre une médiane historique propre de 10.0x.",
+      "txt": "PER actuel de 13.9x contre une médiane historique propre de 10.0x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    11956,
-    13605
+    11958,
+    13608
    ],
    "conclusion": [
     "Nous recommandons de conserver ECOBANK COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 16 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 11 956 et 13 605 FCFA, soit environ 15 % à 25 % sous le cours actuel."
+    "Au cours actuel de 16 005 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 11 958 et 13 608 FCFA, soit environ 15 % à 25 % sous le cours actuel."
    ],
    "score_global": 77.0,
    "marge_categorie": 15.0,
@@ -1309,13 +1308,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +325.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +306.2 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 1.22 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 1.27 % (médiane du marché : 3.71 %).",
       "coul": "rouge"
      },
      {
@@ -1329,23 +1328,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 6.5x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 6.8x contre 14.3x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 6.5x contre une médiane historique propre de 1.3x.",
+      "txt": "PER actuel de 6.8x contre une médiane historique propre de 1.3x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Acheter",
    "fourchette": [
-    35,
-    40
+    34,
+    39
    ],
    "conclusion": [
     "Nous recommandons d'acheter Ecobank Transnational Incorporated TOGO. L'entreprise affiche une dynamique favorable.",
-    "Au cours actuel de 68 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 35 et 40 FCFA, soit environ 41 % à 49 % sous le cours actuel."
+    "Au cours actuel de 65 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 34 et 39 FCFA, soit environ 40 % à 48 % sous le cours actuel."
    ],
    "score_global": 62.5,
    "marge_categorie": 0.5,
@@ -1385,13 +1384,13 @@
       "coul": "rouge"
      },
      {
-      "txt": "Performance sur 1 an de -56.1 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de -56.9 % (médiane du marché : +87.5 %).",
       "coul": "rouge"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 70.95 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 72.27 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -1405,11 +1404,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 60.5x contre 82.0x en médiane sectorielle.",
+      "txt": "PER de 66.3x contre 92.3x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 60.5x contre une médiane historique propre de 6.7x.",
+      "txt": "PER actuel de 66.3x contre une médiane historique propre de 6.7x.",
       "coul": "rouge"
      }
     ]
@@ -1426,7 +1425,7 @@
    "proche_seuil": false,
    "secteur_taille": 6,
    "secteur_repli_marche": false,
-   "liquidite_insuffisante": false,
+   "liquidite_insuffisante": true,
    "recommandation_en_attente_confirmation": false
   },
   "LNBB": {
@@ -1434,13 +1433,13 @@
     "performances": 25,
     "perspectives": 67,
     "remuneration": 33,
-    "valorisation": 50
+    "valorisation": 75
    },
    "libelles": {
     "performances": "Mitigé",
     "perspectives": "Bon",
     "remuneration": "Mitigé",
-    "valorisation": "Bon"
+    "valorisation": "Excellent"
    },
    "pastilles": {
     "performances": [
@@ -1463,13 +1462,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de -10.9 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de -11.8 % (médiane du marché : +87.5 %).",
       "coul": "rouge"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.05 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 6.11 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -1483,26 +1482,26 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 18.6x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 17.7x contre 25.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 18.6x contre une médiane historique propre de 15.0x.",
-      "coul": "rouge"
+      "txt": "PER actuel de 17.7x contre une médiane historique propre de 15.0x.",
+      "coul": "orange"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    3289,
-    3743
+    3270,
+    3721
    ],
    "conclusion": [
     "Nous recommandons de conserver LOTERIE NATIONALE DU BENIN. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 4 100 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 289 et 3 743 FCFA, soit environ 9 % à 20 % sous le cours actuel."
+    "Au cours actuel de 4 055 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 270 et 3 721 FCFA, soit environ 8 % à 19 % sous le cours actuel."
    ],
-   "score_global": 43.8,
-   "marge_categorie": 5.8,
+   "score_global": 50.0,
+   "marge_categorie": 12.0,
    "proche_seuil": false,
    "secteur_taille": 7,
    "secteur_repli_marche": false,
@@ -1543,13 +1542,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +269.8 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +265.6 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.35 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.38 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -1563,24 +1562,24 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.3x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 13.8x contre 25.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 13.3x contre une médiane historique propre de 8.5x.",
+      "txt": "PER actuel de 13.8x contre une médiane historique propre de 8.5x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    1549,
-    1763
+    1538,
+    1750
    ],
    "conclusion": [
     "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des 20 % les moins échangés du marché (risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), indépendamment de la qualité de ses fondamentaux.",
     "Nous recommandons de conserver NEI-CEDA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 2 200 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 549 et 1 763 FCFA, soit environ 20 % à 30 % sous le cours actuel."
+    "Au cours actuel de 2 175 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 538 et 1 750 FCFA, soit environ 20 % à 29 % sous le cours actuel."
    ],
    "score_global": 55,
    "marge_categorie": 7,
@@ -1624,13 +1623,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +139.7 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +140.1 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.61 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.61 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -1644,23 +1643,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.3x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 14.0x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 14.3x contre une médiane historique propre de 5.4x.",
+      "txt": "PER actuel de 14.0x contre une médiane historique propre de 5.4x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    13892,
-    15808
+    13908,
+    15826
    ],
    "conclusion": [
     "Nous recommandons de conserver NSIA BANQUE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 23 015 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 13 892 et 15 808 FCFA, soit environ 31 % à 40 % sous le cours actuel."
+    "Au cours actuel de 23 050 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 13 908 et 15 826 FCFA, soit environ 31 % à 40 % sous le cours actuel."
    ],
    "score_global": 66.8,
    "marge_categorie": 4.8,
@@ -1690,7 +1689,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Marge nette de 7.9 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de 7.9 % (médiane du secteur : 7.8 %).",
       "coul": "orange"
      }
     ],
@@ -1704,13 +1703,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +45.4 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +44.9 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.72 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.73 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -1724,28 +1723,28 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 19.9x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 20.9x contre 13.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 19.9x contre une médiane historique propre de 12.5x.",
+      "txt": "PER actuel de 20.9x contre une médiane historique propre de 12.5x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    12132,
-    13806
+    12111,
+    13781
    ],
    "conclusion": [
     "Nous recommandons de conserver NESTLE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 17 450 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 12 132 et 13 806 FCFA, soit environ 21 % à 30 % sous le cours actuel."
+    "Au cours actuel de 17 400 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 12 111 et 13 781 FCFA, soit environ 21 % à 30 % sous le cours actuel."
    ],
    "score_global": 47.8,
    "marge_categorie": 9.8,
    "proche_seuil": false,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
@@ -1770,7 +1769,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Marge nette de 10.9 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 10.9 % (médiane du secteur : 8.0 %).",
       "coul": "vert"
      }
     ],
@@ -1784,13 +1783,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +16.7 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +20.8 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.67 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.51 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -1804,24 +1803,24 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.6x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 12.0x contre 17.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 12.6x contre une médiane historique propre de 8.2x.",
+      "txt": "PER actuel de 12.0x contre une médiane historique propre de 8.2x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    2053,
-    2336
+    2096,
+    2386
    ],
    "conclusion": [
     "Signal du jour : Acheter, non encore confirmé (la recommandation ne change qu'après 2 séances consécutives dans le même sens).",
     "Nous recommandons de conserver ONATEL BURKINA FASO. L'entreprise affiche un dividende bien assis.",
-    "Au cours actuel de 2 800 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 053 et 2 336 FCFA, soit environ 17 % à 27 % sous le cours actuel."
+    "Au cours actuel de 2 900 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 096 et 2 386 FCFA, soit environ 18 % à 28 % sous le cours actuel."
    ],
    "score_global": 62.5,
    "marge_categorie": 0.5,
@@ -1851,7 +1850,7 @@
       "coul": "orange"
      },
      {
-      "txt": "Marge nette de 14.0 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 14.0 % (médiane du secteur : 8.0 %).",
       "coul": "vert"
      }
     ],
@@ -1865,13 +1864,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +28.1 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +32.0 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.52 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.42 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -1885,23 +1884,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 15.4x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 16.2x contre 17.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 15.4x contre une médiane historique propre de 13.8x.",
+      "txt": "PER actuel de 16.2x contre une médiane historique propre de 13.8x.",
       "coul": "orange"
      }
     ]
    },
    "reco": "Acheter",
    "fourchette": [
-    14520,
-    16522
+    14759,
+    16795
    ],
    "conclusion": [
     "Nous recommandons d'acheter ORANGE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 18 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 14 520 et 16 522 FCFA, soit environ 8 % à 19 % sous le cours actuel."
+    "Au cours actuel de 18 550 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 14 759 et 16 795 FCFA, soit environ 9 % à 20 % sous le cours actuel."
    ],
    "score_global": 72.8,
    "marge_categorie": 10.8,
@@ -1945,7 +1944,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +85.5 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +85.5 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
@@ -1957,11 +1956,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 10.0x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 9.8x contre 14.3x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 10.0x contre une médiane historique propre de 10.4x.",
+      "txt": "PER actuel de 9.8x contre une médiane historique propre de 10.4x.",
       "coul": "orange"
      }
     ]
@@ -2003,7 +2002,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Marge nette de 7.8 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de 7.8 % (médiane du secteur : 7.8 %).",
       "coul": "orange"
      }
     ],
@@ -2017,13 +2016,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +7.9 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +10.1 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.35 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.27 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -2037,28 +2036,28 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 8.9x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 9.1x contre 13.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 8.9x contre une médiane historique propre de 4.9x.",
+      "txt": "PER actuel de 9.1x contre une médiane historique propre de 4.9x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    6116,
-    6960
+    6196,
+    7051
    ],
    "conclusion": [
     "Nous recommandons de conserver PALM COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 9 115 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 6 116 et 6 960 FCFA, soit environ 24 % à 33 % sous le cours actuel."
+    "Au cours actuel de 9 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 6 196 et 7 051 FCFA, soit environ 24 % à 33 % sous le cours actuel."
    ],
    "score_global": 60.5,
    "marge_categorie": 1.5,
    "proche_seuil": true,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
@@ -2097,13 +2096,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +67.7 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +66.0 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.65 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.68 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -2117,7 +2116,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 19.4x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 19.4x contre 25.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
@@ -2128,12 +2127,12 @@
    },
    "reco": "Conserver",
    "fourchette": [
-    3034,
-    3453
+    3015,
+    3431
    ],
    "conclusion": [
     "Nous recommandons de conserver TRACTAFRIC MOTORS COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 4 495 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 034 et 3 453 FCFA, soit environ 23 % à 33 % sous le cours actuel."
+    "Au cours actuel de 4 450 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 3 015 et 3 431 FCFA, soit environ 23 % à 32 % sous le cours actuel."
    ],
    "score_global": 54.0,
    "marge_categorie": 8.0,
@@ -2173,7 +2172,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +630.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +616.2 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
@@ -2185,11 +2184,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 60.8x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 67.7x contre 14.3x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 60.8x contre une médiane historique propre de 43.6x.",
+      "txt": "PER actuel de 67.7x contre une médiane historique propre de 43.6x.",
       "coul": "rouge"
      }
     ]
@@ -2224,7 +2223,7 @@
    "pastilles": {
     "performances": [
      {
-      "txt": "Marge nette de -7.6 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de -7.6 % (médiane du secteur : 7.8 %).",
       "coul": "rouge"
      }
     ],
@@ -2238,7 +2237,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +266.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +259.0 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
@@ -2250,28 +2249,28 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 26.9x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 27.7x contre 13.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 26.9x contre une médiane historique propre de 7.6x.",
+      "txt": "PER actuel de 27.7x contre une médiane historique propre de 7.6x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Vendre",
    "fourchette": [
-    2027,
-    2306
+    1996,
+    2272
    ],
    "conclusion": [
     "Nous recommandons de vendre SUCRIVOIRE COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. Cette recommandation s'appuie sur des performances dégradées et une valorisation exigeante.",
-    "Au cours actuel de 3 660 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 027 et 2 306 FCFA, soit environ 37 % à 45 % sous le cours actuel."
+    "Au cours actuel de 3 590 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 996 et 2 272 FCFA, soit environ 37 % à 44 % sous le cours actuel."
    ],
    "score_global": 25.0,
    "marge_categorie": 13.0,
    "proche_seuil": false,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
@@ -2296,7 +2295,7 @@
       "coul": "orange"
      },
      {
-      "txt": "Marge nette de 2.5 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 2.5 % (médiane du secteur : 8.0 %).",
       "coul": "rouge"
      }
     ],
@@ -2310,13 +2309,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +96.8 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +101.6 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.73 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.66 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -2330,23 +2329,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 23.0x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 22.4x contre 17.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 23.0x contre une médiane historique propre de 9.4x.",
+      "txt": "PER actuel de 22.4x contre une médiane historique propre de 9.4x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    7162,
-    8150
+    7286,
+    8291
    ],
    "conclusion": [
     "Nous recommandons de conserver SODE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 11 610 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 7 162 et 8 150 FCFA, soit environ 30 % à 38 % sous le cours actuel."
+    "Au cours actuel de 11 895 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 7 286 et 8 291 FCFA, soit environ 30 % à 39 % sous le cours actuel."
    ],
    "score_global": 52.0,
    "marge_categorie": 10.0,
@@ -2390,13 +2389,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +92.7 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +87.5 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.98 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.07 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -2410,11 +2409,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 175.4x contre 82.0x en médiane sectorielle.",
+      "txt": "PER de 192.4x contre 92.3x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 175.4x contre une médiane historique propre de 4.6x.",
+      "txt": "PER actuel de 192.4x contre une médiane historique propre de 4.6x.",
       "coul": "rouge"
      }
     ]
@@ -2468,13 +2467,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +112.9 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +111.4 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 0.85 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 0.85 % (médiane du marché : 3.71 %).",
       "coul": "rouge"
      },
      {
@@ -2488,11 +2487,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 807.3x contre 82.0x en médiane sectorielle.",
+      "txt": "PER de 832.4x contre 92.3x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 807.3x contre une médiane historique propre de 17.4x.",
+      "txt": "PER actuel de 832.4x contre une médiane historique propre de 17.4x.",
       "coul": "rouge"
      }
     ]
@@ -2546,13 +2545,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +67.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +68.3 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.80 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.77 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -2566,23 +2565,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 11.7x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 12.0x contre 14.3x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 11.7x contre une médiane historique propre de 6.7x.",
+      "txt": "PER actuel de 12.0x contre une médiane historique propre de 6.7x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Acheter",
    "fourchette": [
-    26523,
-    30182
+    26654,
+    30330
    ],
    "conclusion": [
     "Nous recommandons d'acheter SOCIETE GENERALE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 39 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 26 523 et 30 182 FCFA, soit environ 23 % à 32 % sous le cours actuel."
+    "Au cours actuel de 39 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 26 654 et 30 330 FCFA, soit environ 23 % à 32 % sous le cours actuel."
    ],
    "score_global": 77.0,
    "marge_categorie": 15.0,
@@ -2612,7 +2611,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Marge nette de 1.0 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 1.0 % (médiane du secteur : 8.0 %).",
       "coul": "rouge"
      }
     ],
@@ -2626,13 +2625,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +112.6 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +127.0 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.08 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.88 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -2646,31 +2645,30 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 23.9x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 23.0x contre 17.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 23.9x contre une médiane historique propre de 14.0x.",
+      "txt": "PER actuel de 23.0x contre une médiane historique propre de 14.0x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    1541,
-    1753
+    1606,
+    1827
    ],
    "conclusion": [
-    "Recommandation plafonnée à \"Conserver\" : ce titre fait partie des 20 % les moins échangés du marché (risque de ne pas pouvoir exécuter un ordre dans de bonnes conditions), indépendamment de la qualité de ses fondamentaux.",
     "Nous recommandons de conserver VIVO ENERGY COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 2 200 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 541 et 1 753 FCFA, soit environ 20 % à 30 % sous le cours actuel."
+    "Au cours actuel de 2 350 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 606 et 1 827 FCFA, soit environ 22 % à 32 % sous le cours actuel."
    ],
-   "score_global": 55,
-   "marge_categorie": 7,
-   "proche_seuil": false,
+   "score_global": 58.2,
+   "marge_categorie": 3.8,
+   "proche_seuil": true,
    "secteur_taille": 4,
    "secteur_repli_marche": true,
-   "liquidite_insuffisante": true,
+   "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
   },
   "SIBC": {
@@ -2707,13 +2705,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +91.2 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +93.8 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.24 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.19 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -2727,23 +2725,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 16.7x contre 13.9x en médiane sectorielle.",
+      "txt": "PER de 16.5x contre 14.3x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 16.7x contre une médiane historique propre de 8.6x.",
+      "txt": "PER actuel de 16.5x contre une médiane historique propre de 8.6x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    6064,
-    6900
+    6118,
+    6962
    ],
    "conclusion": [
     "Nous recommandons de conserver SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 9 175 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 6 064 et 6 900 FCFA, soit environ 25 % à 34 % sous le cours actuel."
+    "Au cours actuel de 9 300 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 6 118 et 6 962 FCFA, soit environ 25 % à 34 % sous le cours actuel."
    ],
    "score_global": 77.0,
    "marge_categorie": 15.0,
@@ -2769,7 +2767,7 @@
    "pastilles": {
     "performances": [
      {
-      "txt": "Marge nette de -23.6 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de -23.6 % (médiane du secteur : 7.8 %).",
       "coul": "rouge"
      }
     ],
@@ -2783,7 +2781,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +214.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +217.8 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
@@ -2795,11 +2793,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 220.9x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 314.3x contre 13.6x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 220.9x contre une médiane historique propre de 65.9x.",
+      "txt": "PER actuel de 314.3x contre une médiane historique propre de 65.9x.",
       "coul": "rouge"
      }
     ]
@@ -2813,7 +2811,7 @@
    "score_global": 16.8,
    "marge_categorie": 21.2,
    "proche_seuil": false,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": true,
    "recommandation_en_attente_confirmation": false
@@ -2852,7 +2850,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +376.5 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +372.6 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
@@ -2864,11 +2862,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 103.5x contre 82.0x en médiane sectorielle.",
+      "txt": "PER de 118.4x contre 92.3x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 103.5x contre une médiane historique propre de 10.8x.",
+      "txt": "PER actuel de 118.4x contre une médiane historique propre de 10.8x.",
       "coul": "rouge"
      }
     ]
@@ -2907,7 +2905,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Marge nette de 12.1 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de 12.1 % (médiane du secteur : 7.8 %).",
       "coul": "vert"
      }
     ],
@@ -2921,13 +2919,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +100.3 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +104.3 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 2.59 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 2.54 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -2941,41 +2939,41 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.3x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 13.4x contre 13.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.3x contre une médiane historique propre de 16.1x.",
+      "txt": "PER actuel de 13.4x contre une médiane historique propre de 16.1x.",
       "coul": "vert"
      }
     ]
    },
    "reco": "Acheter",
    "fourchette": [
-    35620,
-    40533
+    35946,
+    40904
    ],
    "conclusion": [
     "Nous recommandons d'acheter SOLIBRA COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 37 250 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (35 620 à 40 533 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 38 000 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (35 946 à 40 904 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ],
    "score_global": 89.5,
    "marge_categorie": 27.5,
    "proche_seuil": false,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
   },
   "SMBC": {
    "scores": {
-    "performances": 50,
+    "performances": 75,
     "perspectives": 83,
     "remuneration": 83,
     "valorisation": 50
    },
    "libelles": {
-    "performances": "Bon",
+    "performances": "Excellent",
     "perspectives": "Excellent",
     "remuneration": "Excellent",
     "valorisation": "Bon"
@@ -2987,8 +2985,8 @@
       "coul": "vert"
      },
      {
-      "txt": "Marge nette de 6.3 % (médiane du secteur : 9.1 %).",
-      "coul": "rouge"
+      "txt": "Marge nette de 6.3 % (médiane du secteur : 8.0 %).",
+      "coul": "orange"
      }
     ],
     "perspectives": [
@@ -3001,13 +2999,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +81.7 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +82.7 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.39 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.37 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -3021,27 +3019,27 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 9.9x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 9.8x contre 17.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 9.9x contre une médiane historique propre de 8.1x.",
+      "txt": "PER actuel de 9.8x contre une médiane historique propre de 8.1x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Acheter",
    "fourchette": [
-    13006,
-    14800
+    13045,
+    14845
    ],
    "conclusion": [
-    "Nous recommandons d'acheter SMB COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 16 355 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 13 006 et 14 800 FCFA, soit environ 10 % à 20 % sous le cours actuel."
+    "Nous recommandons d'acheter SMB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
+    "Au cours actuel de 16 445 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 13 045 et 14 845 FCFA, soit environ 10 % à 21 % sous le cours actuel."
    ],
-   "score_global": 66.5,
-   "marge_categorie": 4.5,
-   "proche_seuil": true,
+   "score_global": 72.8,
+   "marge_categorie": 10.8,
+   "proche_seuil": false,
    "secteur_taille": 4,
    "secteur_repli_marche": true,
    "liquidite_insuffisante": false,
@@ -3067,7 +3065,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Marge nette de 21.5 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 21.5 % (médiane du secteur : 8.0 %).",
       "coul": "vert"
      }
     ],
@@ -3081,13 +3079,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +27.6 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +27.6 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 4.91 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 4.91 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -3101,11 +3099,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 7.5x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 7.7x contre 17.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 7.5x contre une médiane historique propre de 6.5x.",
+      "txt": "PER actuel de 7.7x contre une médiane historique propre de 6.5x.",
       "coul": "orange"
      }
     ]
@@ -3147,7 +3145,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Marge nette de 12.7 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de 12.7 % (médiane du secteur : 7.8 %).",
       "coul": "vert"
      }
     ],
@@ -3161,13 +3159,13 @@
       "coul": "rouge"
      },
      {
-      "txt": "Performance sur 1 an de +3.3 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +3.3 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 6.05 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 6.05 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -3181,11 +3179,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.0x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 13.6x contre 13.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 14.0x contre une médiane historique propre de 13.1x.",
+      "txt": "PER actuel de 13.6x contre une médiane historique propre de 13.1x.",
       "coul": "orange"
      }
     ]
@@ -3202,7 +3200,7 @@
    "score_global": 58.2,
    "marge_categorie": 3.8,
    "proche_seuil": true,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
@@ -3227,7 +3225,7 @@
       "coul": "orange"
      },
      {
-      "txt": "Marge nette de 7.3 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de 7.3 % (médiane du secteur : 7.8 %).",
       "coul": "orange"
      }
     ],
@@ -3241,13 +3239,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +23.1 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +29.2 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 3.64 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 3.47 % (médiane du marché : 3.71 %).",
       "coul": "orange"
      },
      {
@@ -3261,28 +3259,28 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 7.8x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 8.2x contre 13.6x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 7.8x contre une médiane historique propre de 9.6x.",
+      "txt": "PER actuel de 8.2x contre une médiane historique propre de 9.6x.",
       "coul": "vert"
      }
     ]
    },
    "reco": "Acheter",
    "fourchette": [
-    7554,
-    8596
+    7726,
+    8791
    ],
    "conclusion": [
     "Nous recommandons d'acheter SAPH COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable.",
-    "Au cours actuel de 8 005 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (7 554 à 8 596 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
+    "Au cours actuel de 8 400 FCFA, le titre se situe dans ou sous la fourchette d'entrée calculée (7 726 à 8 791 FCFA), un niveau d'achat jugé raisonnable au regard des fondamentaux."
    ],
    "score_global": 79.0,
    "marge_categorie": 17.0,
    "proche_seuil": false,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
    "recommandation_en_attente_confirmation": false
@@ -3317,7 +3315,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +358.3 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +342.6 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
@@ -3329,23 +3327,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 32.1x contre 82.0x en médiane sectorielle.",
+      "txt": "PER de 31.6x contre 92.3x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 32.1x contre une médiane historique propre de 5.3x.",
+      "txt": "PER actuel de 31.6x contre une médiane historique propre de 5.3x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    1337,
-    1522
+    1298,
+    1477
    ],
    "conclusion": [
     "Nous recommandons de conserver SETAO COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 2 635 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 337 et 1 522 FCFA, soit environ 42 % à 49 % sous le cours actuel."
+    "Au cours actuel de 2 545 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 298 et 1 477 FCFA, soit environ 42 % à 49 % sous le cours actuel."
    ],
    "score_global": 41.8,
    "marge_categorie": 3.8,
@@ -3360,13 +3358,13 @@
     "performances": 100,
     "perspectives": 83,
     "remuneration": 67,
-    "valorisation": 25
+    "valorisation": 50
    },
    "libelles": {
     "performances": "Excellent",
     "perspectives": "Excellent",
     "remuneration": "Bon",
-    "valorisation": "Mitigé"
+    "valorisation": "Bon"
    },
    "pastilles": {
     "performances": [
@@ -3375,7 +3373,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Marge nette de 13.6 % (médiane du secteur : 7.9 %).",
+      "txt": "Marge nette de 13.6 % (médiane du secteur : 7.8 %).",
       "coul": "vert"
      }
     ],
@@ -3389,13 +3387,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +19.3 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +16.8 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 8.03 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 8.20 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -3409,44 +3407,45 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.3x contre 13.7x en médiane sectorielle.",
+      "txt": "PER de 11.6x contre 13.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 12.3x contre une médiane historique propre de 9.7x.",
-      "coul": "rouge"
+      "txt": "PER actuel de 11.6x contre une médiane historique propre de 9.7x.",
+      "coul": "orange"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    18811,
-    21406
+    18596,
+    21161
    ],
    "conclusion": [
-    "Nous recommandons de conserver SITAB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable. En revanche, une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 23 495 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 18 811 et 21 406 FCFA, soit environ 9 % à 20 % sous le cours actuel."
+    "Signal du jour : Acheter, non encore confirmé (la recommandation ne change qu'après 2 séances consécutives dans le même sens).",
+    "Nous recommandons de conserver SITAB COTE D'IVOIRE. L'entreprise affiche une rentabilité solide et un dividende bien assis et une dynamique favorable.",
+    "Au cours actuel de 23 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 18 596 et 21 161 FCFA, soit environ 8 % à 19 % sous le cours actuel."
    ],
-   "score_global": 68.8,
-   "marge_categorie": 6.8,
+   "score_global": 75.0,
+   "marge_categorie": 13.0,
    "proche_seuil": false,
-   "secteur_taille": 8,
+   "secteur_taille": 9,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
-   "recommandation_en_attente_confirmation": false
+   "recommandation_en_attente_confirmation": true
   },
   "TTLC": {
    "scores": {
     "performances": 0,
     "perspectives": 83,
     "remuneration": 67,
-    "valorisation": 50
+    "valorisation": 25
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Excellent",
     "remuneration": "Bon",
-    "valorisation": "Bon"
+    "valorisation": "Mitigé"
    },
    "pastilles": {
     "performances": [
@@ -3455,7 +3454,7 @@
       "coul": "rouge"
      },
      {
-      "txt": "Marge nette de 1.5 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 1.5 % (médiane du secteur : 8.0 %).",
       "coul": "rouge"
      }
     ],
@@ -3469,13 +3468,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +24.8 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +27.1 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.59 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.49 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -3489,26 +3488,26 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 19.4x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 21.8x contre 17.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 19.4x contre une médiane historique propre de 16.8x.",
-      "coul": "orange"
+      "txt": "PER actuel de 21.8x contre une médiane historique propre de 16.8x.",
+      "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    2423,
-    2757
+    2449,
+    2786
    ],
    "conclusion": [
-    "Nous recommandons de conserver TOTALENERGIES MARKETING COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées appellent à la vigilance.",
-    "Au cours actuel de 3 150 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 423 et 2 757 FCFA, soit environ 12 % à 23 % sous le cours actuel."
+    "Nous recommandons de conserver TOTALENERGIES MARKETING COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
+    "Au cours actuel de 3 210 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 449 et 2 786 FCFA, soit environ 13 % à 24 % sous le cours actuel."
    ],
-   "score_global": 50.0,
-   "marge_categorie": 12.0,
+   "score_global": 43.8,
+   "marge_categorie": 5.8,
    "proche_seuil": false,
    "secteur_taille": 4,
    "secteur_repli_marche": true,
@@ -3535,7 +3534,7 @@
       "coul": "orange"
      },
      {
-      "txt": "Marge nette de 1.4 % (médiane du secteur : 9.1 %).",
+      "txt": "Marge nette de 1.4 % (médiane du secteur : 8.0 %).",
       "coul": "rouge"
      }
     ],
@@ -3549,13 +3548,13 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +43.4 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +48.0 % (médiane du marché : +87.5 %).",
       "coul": "orange"
      }
     ],
     "remuneration": [
      {
-      "txt": "Rendement net d'IRVM de 5.58 % (médiane du marché : 3.70 %).",
+      "txt": "Rendement net d'IRVM de 5.41 % (médiane du marché : 3.71 %).",
       "coul": "vert"
      },
      {
@@ -3569,23 +3568,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 18.6x contre 17.1x en médiane sectorielle.",
+      "txt": "PER de 19.0x contre 17.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 18.6x contre une médiane historique propre de 14.1x.",
+      "txt": "PER actuel de 19.0x contre une médiane historique propre de 14.1x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Conserver",
    "fourchette": [
-    2713,
-    3087
+    2763,
+    3144
    ],
    "conclusion": [
     "Nous recommandons de conserver TOTALENERGIES MARKETING SENEGAL. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
-    "Au cours actuel de 3 585 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 713 et 3 087 FCFA, soit environ 14 % à 24 % sous le cours actuel."
+    "Au cours actuel de 3 700 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 2 763 et 3 144 FCFA, soit environ 15 % à 25 % sous le cours actuel."
    ],
    "score_global": 46.0,
    "marge_categorie": 8.0,
@@ -3593,6 +3592,71 @@
    "secteur_taille": 4,
    "secteur_repli_marche": true,
    "liquidite_insuffisante": false,
+   "recommandation_en_attente_confirmation": false
+  },
+  "UNLC": {
+   "scores": {
+    "performances": 0,
+    "perspectives": 50,
+    "remuneration": 0,
+    "valorisation": 0
+   },
+   "libelles": {
+    "performances": "Mauvais",
+    "perspectives": "Bon",
+    "remuneration": "Mauvais",
+    "valorisation": "Mauvais"
+   },
+   "pastilles": {
+    "performances": [
+     {
+      "txt": "Marge nette de 1.9 % (médiane du secteur : 7.8 %).",
+      "coul": "rouge"
+     }
+    ],
+    "perspectives": [
+     {
+      "txt": "Croissance du chiffre d'affaires de -11.9 %/an.",
+      "coul": "rouge"
+     },
+     {
+      "txt": "Tendance de fond haussière (cours vs moyenne 12 mois).",
+      "coul": "vert"
+     },
+     {
+      "txt": "Performance sur 1 an de +18.4 % (médiane du marché : +87.5 %).",
+      "coul": "orange"
+     }
+    ],
+    "remuneration": [
+     {
+      "txt": "Aucun dividende récent identifié.",
+      "coul": "rouge"
+     }
+    ],
+    "valorisation": [
+     {
+      "txt": "PER de 783.0x contre 13.6x en médiane sectorielle.",
+      "coul": "rouge"
+     },
+     {
+      "txt": "PER actuel de 783.0x contre une médiane historique propre de 112.5x.",
+      "coul": "rouge"
+     }
+    ]
+   },
+   "reco": "Vendre",
+   "fourchette": null,
+   "conclusion": [
+    "Fourchette d'entrée non calculée : bénéfices trop faibles ou déprimés pour une valorisation fiable par les multiples.",
+    "Nous recommandons de vendre UNILEVER COTE D'IVOIRE. Cette recommandation s'appuie sur des performances dégradées et une valorisation exigeante."
+   ],
+   "score_global": 12.5,
+   "marge_categorie": 25.5,
+   "proche_seuil": false,
+   "secteur_taille": 9,
+   "secteur_repli_marche": false,
+   "liquidite_insuffisante": true,
    "recommandation_en_attente_confirmation": false
   },
   "UNXC": {
@@ -3625,7 +3689,7 @@
       "coul": "vert"
      },
      {
-      "txt": "Performance sur 1 an de +254.0 % (médiane du marché : +89.9 %).",
+      "txt": "Performance sur 1 an de +272.6 % (médiane du marché : +87.5 %).",
       "coul": "vert"
      }
     ],
@@ -3637,23 +3701,23 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 28.1x contre 24.3x en médiane sectorielle.",
+      "txt": "PER de 29.6x contre 25.6x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 28.1x contre une médiane historique propre de 11.5x.",
+      "txt": "PER actuel de 29.6x contre une médiane historique propre de 11.5x.",
       "coul": "rouge"
      }
     ]
    },
    "reco": "Vendre",
    "fourchette": [
-    1207,
-    1374
+    1253,
+    1426
    ],
    "conclusion": [
     "Nous recommandons de vendre UNIWAX COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. Cette recommandation s'appuie sur des performances dégradées et une valorisation exigeante.",
-    "Au cours actuel de 2 000 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 207 et 1 374 FCFA, soit environ 31 % à 40 % sous le cours actuel."
+    "Au cours actuel de 2 105 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 253 et 1 426 FCFA, soit environ 32 % à 40 % sous le cours actuel."
    ],
    "score_global": 35.5,
    "marge_categorie": 2.5,
