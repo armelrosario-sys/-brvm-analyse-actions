@@ -523,5 +523,13 @@
   "horodatage": "2026-08-21T15:11:41+00:00",
   "nb_valeurs": 47,
   "anomalies": []
+ },
+ {
+  "horodatage": "2026-08-24T10:20:21+00:00",
+  "nb_valeurs": 46,
+  "anomalies": [
+   "brvm.org : ligne rejetee pour UNLC - Value error, cours hors bornes plausibles : 0.0",
+   "brvm.org : 1 ligne(s) rejetee(s) par la validation de schema sur 47 extraites."
+  ]
  }
 ]
