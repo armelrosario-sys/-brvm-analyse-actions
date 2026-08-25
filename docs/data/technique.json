@@ -1,5 +1,5 @@
 {
- "maj": "2026-08-24T16:03:42+00:00",
+ "maj": "2026-08-25T16:07:56+00:00",
  "note": "MM et RSI calcules uniquement sur cours quotidiens reellement collectes ; null tant que l'historique quotidien est insuffisant.",
  "valeurs": {
   "ABJC": {
@@ -7,18 +7,18 @@
    "var_1m": 9.76,
    "var_ytd": 24.14,
    "var_1a": 114.29,
-   "mm20": 3163.5,
+   "mm20": 3187.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 90.0,
+   "rsi14": 90.6,
    "haut_52s": 3705.0,
    "bas_52s": 1750.0,
-   "volume_moyen_20": 2869,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 3113,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -27,18 +27,18 @@
    "var_1m": 44.84,
    "var_ytd": 70.75,
    "var_1a": 60.28,
-   "mm20": 7979.75,
+   "mm20": 8012.5,
    "mm50": null,
    "mm200": null,
-   "rsi14": 70.1,
+   "rsi14": 77.4,
    "haut_52s": 8500.0,
    "bas_52s": 4900.0,
-   "volume_moyen_20": 18858,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 18589,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -47,18 +47,18 @@
    "var_1m": -1.38,
    "var_ytd": 47.08,
    "var_1a": 67.74,
-   "mm20": 28971.5,
+   "mm20": 28961.5,
    "mm50": null,
    "mm200": null,
    "rsi14": 39.8,
    "haut_52s": 29250.0,
    "bas_52s": 15515.0,
-   "volume_moyen_20": 607,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 621,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -67,18 +67,18 @@
    "var_1m": 0.25,
    "var_ytd": 41.13,
    "var_1a": 53.08,
-   "mm20": 1948.5,
+   "mm20": 1953.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 68.8,
+   "rsi14": 73.3,
    "haut_52s": 2000.0,
    "bas_52s": 1395.0,
-   "volume_moyen_20": 2038,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2129,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -87,18 +87,18 @@
    "var_1m": 10.69,
    "var_ytd": 70.77,
    "var_1a": 131.25,
-   "mm20": 8912.25,
+   "mm20": 8986.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 81.3,
+   "rsi14": 82.1,
    "haut_52s": 9990.0,
    "bas_52s": 4540.0,
-   "volume_moyen_20": 6678,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 6732,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -107,18 +107,18 @@
    "var_1m": 36.75,
    "var_ytd": 113.33,
    "var_1a": 122.84,
-   "mm20": 7276.25,
+   "mm20": 7318.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 78.2,
+   "rsi14": 78.7,
    "haut_52s": 8000.0,
    "bas_52s": 3500.0,
-   "volume_moyen_20": 7127,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 7582,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -127,18 +127,18 @@
    "var_1m": 37.41,
    "var_ytd": 80.85,
    "var_1a": 116.6,
-   "mm20": 12105.25,
+   "mm20": 12210.0,
    "mm50": null,
    "mm200": null,
    "rsi14": 79.9,
    "haut_52s": 13450.0,
    "bas_52s": 6490.0,
-   "volume_moyen_20": 8906,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 9263,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -147,18 +147,18 @@
    "var_1m": 31.53,
    "var_ytd": 63.75,
    "var_1a": 94.07,
-   "mm20": 5916.75,
+   "mm20": 5969.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 94.9,
+   "rsi14": 95.3,
    "haut_52s": 6550.0,
    "bas_52s": 3620.0,
-   "volume_moyen_20": 5493,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 5531,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -167,18 +167,18 @@
    "var_1m": 27.41,
    "var_ytd": 104.79,
    "var_1a": 112.95,
-   "mm20": 5189.5,
+   "mm20": 5196.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 74.7,
+   "rsi14": 78.7,
    "haut_52s": 5385.0,
    "bas_52s": 2495.0,
-   "volume_moyen_20": 5994,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 5882,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -187,18 +187,18 @@
    "var_1m": 14.25,
    "var_ytd": 62.21,
    "var_1a": 93.18,
-   "mm20": 7812.5,
+   "mm20": 7840.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 85.7,
+   "rsi14": 94.1,
    "haut_52s": 8500.0,
    "bas_52s": 4710.0,
-   "volume_moyen_20": 10363,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 10561,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -207,18 +207,18 @@
    "var_1m": -19.56,
    "var_ytd": 53.39,
    "var_1a": 201.67,
-   "mm20": 3561.0,
+   "mm20": 3557.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 66.7,
+   "rsi14": 64.6,
    "haut_52s": 4500.0,
    "bas_52s": 1330.0,
-   "volume_moyen_20": 2532,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2495,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -227,18 +227,18 @@
    "var_1m": 23.4,
    "var_ytd": 169.02,
    "var_1a": 198.97,
-   "mm20": 28445.0,
+   "mm20": 28535.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 58.2,
+   "rsi14": 59.6,
    "haut_52s": 30000.0,
    "bas_52s": 9735.0,
-   "volume_moyen_20": 1302,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 1308,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -247,18 +247,18 @@
    "var_1m": 0.28,
    "var_ytd": 23.43,
    "var_1a": 167.42,
-   "mm20": 1674.0,
+   "mm20": 1678.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 58.1,
+   "rsi14": 62.1,
    "haut_52s": 2310.0,
    "bas_52s": 795.0,
-   "volume_moyen_20": 2737,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2920,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -267,18 +267,18 @@
    "var_1m": 31.14,
    "var_ytd": 195.34,
    "var_1a": 203.04,
-   "mm20": 5628.25,
+   "mm20": 5714.25,
    "mm50": null,
    "mm200": null,
    "rsi14": 88.6,
    "haut_52s": 7190.0,
    "bas_52s": 2235.0,
-   "volume_moyen_20": 4675,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4958,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -287,18 +287,18 @@
    "var_1m": 1.39,
    "var_ytd": 5.19,
    "var_1a": 45.09,
-   "mm20": 16299.75,
+   "mm20": 16329.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 66.2,
+   "rsi14": 66.6,
    "haut_52s": 17005.0,
    "bas_52s": 11980.0,
-   "volume_moyen_20": 4420,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4599,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -307,18 +307,18 @@
    "var_1m": 67.5,
    "var_ytd": 191.3,
    "var_1a": 318.75,
-   "mm20": 66.7,
+   "mm20": 66.5,
    "mm50": null,
    "mm200": null,
-   "rsi14": 57.1,
+   "rsi14": 55.0,
    "haut_52s": 75.0,
    "bas_52s": 17.0,
-   "volume_moyen_20": 1582795,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 1619168,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -327,18 +327,18 @@
    "var_1m": 7.5,
    "var_ytd": -3.15,
    "var_1a": -56.91,
-   "mm20": 2075.25,
+   "mm20": 2086.75,
    "mm50": null,
    "mm200": null,
    "rsi14": 73.7,
    "haut_52s": 4790.0,
    "bas_52s": 1910.0,
-   "volume_moyen_20": 4094,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4022,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "baissiere"
   },
@@ -347,18 +347,18 @@
    "var_1m": -8.22,
    "var_ytd": -5.12,
    "var_1a": -11.41,
-   "mm20": 4253.0,
+   "mm20": 4241.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 31.8,
+   "rsi14": 38.8,
    "haut_52s": 4795.0,
    "bas_52s": 3725.0,
-   "volume_moyen_20": 5827,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 5978,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -367,18 +367,18 @@
    "var_1m": 7.3,
    "var_ytd": 108.33,
    "var_1a": 320.17,
-   "mm20": 2250.5,
+   "mm20": 2265.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 66.9,
+   "rsi14": 67.4,
    "haut_52s": 2500.0,
    "bas_52s": 630.0,
-   "volume_moyen_20": 1385,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 1552,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -387,18 +387,18 @@
    "var_1m": 16.03,
    "var_ytd": 99.21,
    "var_1a": 137.5,
-   "mm20": 23367.25,
+   "mm20": 23338.5,
    "mm50": null,
    "mm200": null,
-   "rsi14": 17.5,
+   "rsi14": 18.6,
    "haut_52s": 24000.0,
    "bas_52s": 10000.0,
-   "volume_moyen_20": 1922,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2058,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -407,18 +407,18 @@
    "var_1m": 9.07,
    "var_ytd": 58.69,
    "var_1a": 40.77,
-   "mm20": 16875.25,
+   "mm20": 16895.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 56.6,
+   "rsi14": 60.6,
    "haut_52s": 17450.0,
    "bas_52s": 10650.0,
-   "volume_moyen_20": 641,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 652,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -427,18 +427,18 @@
    "var_1m": 3.21,
    "var_ytd": 16.3,
    "var_1a": 20.42,
-   "mm20": 2891.0,
+   "mm20": 2895.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 44.2,
+   "rsi14": 48.7,
    "haut_52s": 2995.0,
    "bas_52s": 2335.0,
-   "volume_moyen_20": 4321,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4402,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -447,18 +447,18 @@
    "var_1m": 26.57,
    "var_ytd": 48.77,
    "var_1a": 50.89,
-   "mm20": 17975.75,
+   "mm20": 18199.5,
    "mm50": null,
    "mm200": null,
-   "rsi14": 96.2,
+   "rsi14": 96.0,
    "haut_52s": 21200.0,
    "bas_52s": 14250.0,
-   "volume_moyen_20": 2049,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2389,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -467,18 +467,18 @@
    "var_1m": 18.59,
    "var_ytd": 32.92,
    "var_1a": 93.33,
-   "mm20": 3082.5,
+   "mm20": 3104.5,
    "mm50": null,
    "mm200": null,
-   "rsi14": 55.3,
+   "rsi14": 56.0,
    "haut_52s": 3655.0,
    "bas_52s": 1705.0,
-   "volume_moyen_20": 4170,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4366,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -487,18 +487,18 @@
    "var_1m": 9.2,
    "var_ytd": 17.28,
    "var_1a": 12.43,
-   "mm20": 9143.75,
+   "mm20": 9169.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 70.3,
+   "rsi14": 71.4,
    "haut_52s": 9640.0,
    "bas_52s": 7310.0,
-   "volume_moyen_20": 2364,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2463,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -507,18 +507,18 @@
    "var_1m": -4.89,
    "var_ytd": 15.35,
    "var_1a": 66.79,
-   "mm20": 4457.75,
+   "mm20": 4456.5,
    "mm50": null,
    "mm200": null,
    "rsi14": 58.3,
    "haut_52s": 4875.0,
    "bas_52s": 2345.0,
-   "volume_moyen_20": 644,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 559,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -527,18 +527,18 @@
    "var_1m": 23.4,
    "var_ytd": 75.49,
    "var_1a": 625.0,
-   "mm20": 5340.0,
+   "mm20": 5385.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 65.8,
+   "rsi14": 68.5,
    "haut_52s": 7030.0,
    "bas_52s": 1300.0,
-   "volume_moyen_20": 7086,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 6868,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -547,18 +547,18 @@
    "var_1m": 2.13,
    "var_ytd": 216.98,
    "var_1a": 236.0,
-   "mm20": 3587.5,
+   "mm20": 3575.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 31.0,
+   "rsi14": 35.0,
    "haut_52s": 3800.0,
    "bas_52s": 990.0,
-   "volume_moyen_20": 7921,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 8175,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -567,18 +567,18 @@
    "var_1m": 0.0,
    "var_ytd": 106.9,
    "var_1a": 103.39,
-   "mm20": 11866.0,
+   "mm20": 11871.0,
    "mm50": null,
    "mm200": null,
    "rsi14": 54.6,
    "haut_52s": 12145.0,
    "bas_52s": 5800.0,
-   "volume_moyen_20": 1274,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 1372,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -587,18 +587,18 @@
    "var_1m": 10.43,
    "var_ytd": 78.22,
    "var_1a": 87.5,
-   "mm20": 2654.0,
+   "mm20": 2656.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 57.1,
+   "rsi14": 69.3,
    "haut_52s": 2820.0,
    "bas_52s": 1400.0,
-   "volume_moyen_20": 18196,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 18071,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -607,18 +607,18 @@
    "var_1m": 0.98,
    "var_ytd": 121.43,
    "var_1a": 121.43,
-   "mm20": 1503.5,
+   "mm20": 1506.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 62.1,
+   "rsi14": 69.2,
    "haut_52s": 2325.0,
    "bas_52s": 700.0,
-   "volume_moyen_20": 6735,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 6651,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -627,18 +627,18 @@
    "var_1m": 0.05,
    "var_ytd": 30.41,
    "var_1a": 66.92,
-   "mm20": 38643.75,
+   "mm20": 38683.0,
    "mm50": null,
    "mm200": null,
    "rsi14": 60.6,
    "haut_52s": 40000.0,
    "bas_52s": 26000.0,
-   "volume_moyen_20": 5352,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 5550,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -647,18 +647,18 @@
    "var_1m": 14.55,
    "var_ytd": 71.63,
    "var_1a": 139.61,
-   "mm20": 2300.75,
+   "mm20": 2317.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 69.1,
+   "rsi14": 73.7,
    "haut_52s": 2480.0,
    "bas_52s": 1150.0,
-   "volume_moyen_20": 4370,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4315,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -673,12 +673,12 @@
    "rsi14": 41.7,
    "haut_52s": 9500.0,
    "bas_52s": 4975.0,
-   "volume_moyen_20": 8643,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 9366,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -687,18 +687,18 @@
    "var_1m": 74.02,
    "var_ytd": 142.58,
    "var_1a": 149.38,
-   "mm20": 7959.0,
+   "mm20": 8064.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 58.6,
+   "rsi14": 58.7,
    "haut_52s": 10200.0,
    "bas_52s": 3300.0,
-   "volume_moyen_20": 199,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 215,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -707,18 +707,18 @@
    "var_1m": -4.8,
    "var_ytd": 50.63,
    "var_1a": 366.67,
-   "mm20": 2284.25,
+   "mm20": 2295.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 70.9,
+   "rsi14": 76.5,
    "haut_52s": 3000.0,
    "bas_52s": 600.0,
-   "volume_moyen_20": 3195,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 3288,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -727,18 +727,18 @@
    "var_1m": -3.59,
    "var_ytd": 29.93,
    "var_1a": 101.88,
-   "mm20": 37719.75,
+   "mm20": 37622.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 49.0,
+   "rsi14": 48.9,
    "haut_52s": 44075.0,
    "bas_52s": 18000.0,
-   "volume_moyen_20": 1860,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 1218,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -747,18 +747,18 @@
    "var_1m": -5.27,
    "var_ytd": 76.84,
    "var_1a": 86.67,
-   "mm20": 16286.75,
+   "mm20": 16331.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 83.7,
+   "rsi14": 68.1,
    "haut_52s": 17735.0,
    "bas_52s": 9350.0,
-   "volume_moyen_20": 1982,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2357,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -767,18 +767,18 @@
    "var_1m": 28.07,
    "var_ytd": 39.74,
    "var_1a": 46.0,
-   "mm20": 32318.75,
+   "mm20": 32593.75,
    "mm50": null,
    "mm200": null,
    "rsi14": 86.1,
    "haut_52s": 36980.0,
    "bas_52s": 25000.0,
-   "volume_moyen_20": 12195,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 12385,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -787,18 +787,18 @@
    "var_1m": -1.73,
    "var_ytd": 4.43,
    "var_1a": 8.55,
-   "mm20": 8069.5,
+   "mm20": 8072.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 46.9,
+   "rsi14": 54.8,
    "haut_52s": 8725.0,
    "bas_52s": 7100.0,
-   "volume_moyen_20": 10247,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 10271,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -807,18 +807,18 @@
    "var_1m": 20.52,
    "var_ytd": 17.09,
    "var_1a": 42.31,
-   "mm20": 8108.5,
+   "mm20": 8201.0,
    "mm50": null,
    "mm200": null,
-   "rsi14": 73.9,
+   "rsi14": 73.4,
    "haut_52s": 9660.0,
    "bas_52s": 6800.0,
-   "volume_moyen_20": 6083,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 6378,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -827,18 +827,18 @@
    "var_1m": -26.9,
    "var_ytd": 95.85,
    "var_1a": 351.3,
-   "mm20": 2670.0,
+   "mm20": 2655.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 24.1,
+   "rsi14": 31.7,
    "haut_52s": 3550.0,
    "bas_52s": 680.0,
-   "volume_moyen_20": 4125,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 4038,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -847,18 +847,18 @@
    "var_1m": -8.4,
    "var_ytd": 15.77,
    "var_1a": 16.3,
-   "mm20": 23612.75,
+   "mm20": 23598.25,
    "mm50": null,
    "mm200": null,
-   "rsi14": 38.9,
+   "rsi14": 33.5,
    "haut_52s": 25000.0,
    "bas_52s": 18900.0,
-   "volume_moyen_20": 3684,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 3740,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -867,18 +867,18 @@
    "var_1m": 18.47,
    "var_ytd": 45.61,
    "var_1a": 34.65,
-   "mm20": 3052.75,
+   "mm20": 3072.75,
    "mm50": null,
    "mm200": null,
    "rsi14": 76.8,
    "haut_52s": 3400.0,
    "bas_52s": 2335.0,
-   "volume_moyen_20": 6242,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 6748,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -887,18 +887,18 @@
    "var_1m": -1.16,
    "var_ytd": 54.0,
    "var_1a": 54.0,
-   "mm20": 3662.5,
+   "mm20": 3672.5,
    "mm50": null,
    "mm200": null,
-   "rsi14": 65.9,
+   "rsi14": 60.7,
    "haut_52s": 4500.0,
    "bas_52s": 2490.0,
-   "volume_moyen_20": 2157,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 2182,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   },
@@ -927,18 +927,18 @@
    "var_1m": 36.71,
    "var_ytd": 78.21,
    "var_1a": 341.59,
-   "mm20": 2056.25,
+   "mm20": 2083.75,
    "mm50": null,
    "mm200": null,
-   "rsi14": 92.3,
+   "rsi14": 94.3,
    "haut_52s": 2495.0,
    "bas_52s": 875.0,
-   "volume_moyen_20": 13190,
-   "seances_disponibles": 26,
+   "volume_moyen_20": 15037,
+   "seances_disponibles": 27,
    "seances_manquantes": {
     "mm20": 0,
-    "mm50": 24,
-    "mm200": 174
+    "mm50": 23,
+    "mm200": 173
    },
    "tendance_provisoire_mensuelle": "haussiere"
   }
