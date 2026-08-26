@@ -619,5 +619,10 @@
    "brvm.org : ligne rejetee pour UNLC - Value error, cours hors bornes plausibles : 0.0",
    "brvm.org : 1 ligne(s) rejetee(s) par la validation de schema sur 47 extraites."
   ]
+ },
+ {
+  "horodatage": "2026-08-26T10:10:23+00:00",
+  "nb_valeurs": 47,
+  "anomalies": []
  }
 ]
