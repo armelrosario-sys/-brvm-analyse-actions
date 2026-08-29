@@ -1,6 +1,6 @@
 {
- "maj": "2026-08-28T00:30:14+00:00",
- "date_analyse": "28/08/2026",
+ "maj": "2026-08-29T00:03:23+00:00",
+ "date_analyse": "29/08/2026",
  "medianes": {
   "marche": {
    "per": 18.86,
@@ -12,46 +12,6 @@
    "var_1a": 93.64
   },
   "secteurs": {
-   "CD": {
-    "per": 27.06,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 4.66,
-    "dy_net": 3.61,
-    "dette_cp": null,
-    "taille": 7,
-    "repli_marche": false
-   },
-   "SPU": {
-    "per": 18.86,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 8.01,
-    "dy_net": 3.705,
-    "dette_cp": null,
-    "taille": 2,
-    "repli_marche": true
-   },
-   "FIN": {
-    "per": 14.635,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 37.965,
-    "dy_net": 3.695,
-    "dette_cp": null,
-    "taille": 16,
-    "repli_marche": false
-   },
-   "CB": {
-    "per": 14.14,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 7.85,
-    "dy_net": 4.07,
-    "dette_cp": null,
-    "taille": 9,
-    "repli_marche": false
-   },
    "ENE": {
     "per": 18.86,
     "pbr": null,
@@ -72,6 +32,26 @@
     "taille": 3,
     "repli_marche": true
    },
+   "CD": {
+    "per": 27.06,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 4.66,
+    "dy_net": 3.61,
+    "dette_cp": null,
+    "taille": 7,
+    "repli_marche": false
+   },
+   "FIN": {
+    "per": 14.635,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 37.965,
+    "dy_net": 3.695,
+    "dette_cp": null,
+    "taille": 16,
+    "repli_marche": false
+   },
    "IND": {
     "per": 90.71000000000001,
     "pbr": null,
@@ -81,6 +61,26 @@
     "dette_cp": null,
     "taille": 6,
     "repli_marche": false
+   },
+   "CB": {
+    "per": 14.14,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 7.85,
+    "dy_net": 4.07,
+    "dette_cp": null,
+    "taille": 9,
+    "repli_marche": false
+   },
+   "SPU": {
+    "per": 18.86,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 8.01,
+    "dy_net": 3.705,
+    "dette_cp": null,
+    "taille": 2,
+    "repli_marche": true
    }
   }
  },
