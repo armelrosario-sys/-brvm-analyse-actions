@@ -1,6 +1,7 @@
 {
- "maj": "2026-08-22T07:30:27+00:00",
+ "maj": "2026-08-29T12:58:42+00:00",
  "anomalies": [
+  "BNBC 2024 : champ 'per' rejete - Value error, PER hors bornes plausibles (2090.91)",
   "CABC 2022 : champ 'croissance_rn' rejete - Value error, taux de croissance hors bornes plausibles (2587.5%)"
  ],
  "valeurs": {
@@ -9,7 +10,7 @@
    "description": "SERVAIR ABIDJAN anciennement Abidjan Catering, est une société créée en 1968 opérant sur l'avitaillement, la fourniture de repas et le nettoyage des compagnies aériennes qui desservent l'aéroport d'Abidjan. Depuis 2012, SERVAIR ABIDJAN développe aussi des activités Hors Aérienne. En effet, afin de développer son portefeuille clients  et tirer profit de la croissance économique du pays, la société a commencé à développer la restauration collective (scolaire, entreprise), son service traiteur événementiel (Grain de Sel) et propose ses services pour le catering  et l’avitaillement de Bases Vies (FOXTROT).",
    "nombre_titres": 10912000.0,
    "flottant_pct": 19.99,
-   "capitalisation_mfcfa": 36555.0,
+   "capitalisation_mfcfa": 40265.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -25,7 +26,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 38.34,
+      "valeur": 42.23,
       "source": "sikafinance"
      },
      "dividende": {
@@ -55,7 +56,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 28.81,
+      "valeur": 31.74,
       "source": "sikafinance"
      },
      "dividende": {
@@ -85,7 +86,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 27.46,
+      "valeur": 30.25,
       "source": "sikafinance"
      },
      "dividende": {
@@ -115,7 +116,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 24.06,
+      "valeur": 26.5,
       "source": "sikafinance"
      }
     },
@@ -141,7 +142,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 27.06,
+      "valeur": 29.81,
       "source": "sikafinance"
      },
      "dividende": {
@@ -156,7 +157,7 @@
    "description": "Issue de la fusion réussie, en 2020, entre la Banque Africaine de l’Industrie et du Commerce (BAIC) et la Banque Internationale du Bénin pour l’Économie (BIBE), la Banque Internationale pour l’Industrie et le Commerce (BIIC) s’est rapidement imposée comme l’un des acteurs majeurs du secteur bancaire au Bénin. Dotée d’un capital de 82,514 milliards de FCFA, la BIIC se distingue par sa solidité, son esprit d’innovation et sa volonté affirmée d’accompagner les ambitions de ses clients tout en contribuant activement au développement de l’économie nationale.",
    "nombre_titres": 57759800.0,
    "flottant_pct": 33.0,
-   "capitalisation_mfcfa": 473630.0,
+   "capitalisation_mfcfa": 490958.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -172,7 +173,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 82.0,
+      "valeur": 85.0,
       "source": "sikafinance"
      }
     },
@@ -198,7 +199,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 44.32,
+      "valeur": 45.95,
       "source": "sikafinance"
      }
     },
@@ -224,7 +225,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.37,
+      "valeur": 18.01,
       "source": "sikafinance"
      }
     },
@@ -250,7 +251,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.61,
+      "valeur": 16.18,
       "source": "sikafinance"
      },
      "dividende": {
@@ -280,7 +281,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 19.59,
+      "valeur": 20.3,
       "source": "sikafinance"
      },
      "dividende": {
@@ -295,7 +296,7 @@
    "description": "La Banque internationale pour le commerce et l'industrie de la Côte d'Ivoire, abrégée en BICICI.",
    "nombre_titres": 16666670.0,
    "flottant_pct": 32.51,
-   "capitalisation_mfcfa": 480000.0,
+   "capitalisation_mfcfa": 491667.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -311,7 +312,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 49.98,
+      "valeur": 51.2,
       "source": "sikafinance"
      },
      "dividende": {
@@ -341,7 +342,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 38.74,
+      "valeur": 39.68,
       "source": "sikafinance"
      },
      "dividende": {
@@ -371,7 +372,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 28.74,
+      "valeur": 29.44,
       "source": "sikafinance"
      },
      "dividende": {
@@ -401,7 +402,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 18.3,
+      "valeur": 18.74,
       "source": "sikafinance"
      },
      "dividende": {
@@ -439,7 +440,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.14,
+      "valeur": 13.46,
       "source": "sikafinance"
      },
      "dividende": {
@@ -454,7 +455,7 @@
    "description": "BERNABE CI a été créé en 1951 par Descours & Cabaud (Afrique). Avec 61 ans d'existence, BERNABE excelle dans la commercialisation et la distribution de produits de quincaillerie, de matériel industriel, de produits métallurgiques et de matériaux de construction. BERNABE CI offre des produits à travers un réseau de distribution de 3 agences en Côte-d'Ivoire.",
    "nombre_titres": 6624000.0,
    "flottant_pct": 32.51,
-   "capitalisation_mfcfa": 13182.0,
+   "capitalisation_mfcfa": 15235.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -470,7 +471,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 8.25,
+      "valeur": 9.53,
       "source": "sikafinance"
      }
     },
@@ -496,7 +497,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 7.29,
+      "valeur": 8.42,
       "source": "sikafinance"
      },
      "dividende": {
@@ -526,7 +527,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 398.0,
+      "valeur": 460.0,
       "source": "sikafinance"
      }
     },
@@ -549,10 +550,6 @@
      },
      "bnpa": {
       "valeur": 1.1,
-      "source": "sikafinance"
-     },
-     "per": {
-      "valeur": 1809.09,
       "source": "sikafinance"
      }
     },
@@ -578,7 +575,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 590.5,
+      "valeur": 682.49,
       "source": "sikafinance"
      }
     }
@@ -589,7 +586,7 @@
    "description": "BANK OF AFRICA BENIN, est une filiale du groupe BOA, ouverte au public en janvier 1990. Elle est la seule banque et la seule entreprise béninoise cotée en bourse à la Bourse Régionale des Valeurs Mobilière (BRVM). Leader du secteur bancaire du Bénin en termes de total d'actif  suivie par Ecobank et Diamond Bank. Elle est profondément impliquée dans le financement de l'économie béninoise, en particulier les activités agricoles et portuaires. En fin 2024, la banque affichait un total bilan de 940 milliards FCFA, un total dépôt de la clientèle de 734 milliards FCFA.",
    "nombre_titres": 40561048.0,
    "flottant_pct": 44.69,
-   "capitalisation_mfcfa": 405002.0,
+   "capitalisation_mfcfa": 415142.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -605,7 +602,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 24.3,
+      "valeur": 24.91,
       "source": "sikafinance"
      },
      "dividende": {
@@ -635,7 +632,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 21.16,
+      "valeur": 21.69,
       "source": "sikafinance"
      },
      "dividende": {
@@ -665,7 +662,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 18.81,
+      "valeur": 19.28,
       "source": "sikafinance"
      },
      "dividende": {
@@ -695,7 +692,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.63,
+      "valeur": 21.15,
       "source": "sikafinance"
      },
      "dividende": {
@@ -725,7 +722,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.14,
+      "valeur": 20.65,
       "source": "sikafinance"
      },
      "dividende": {
@@ -740,7 +737,7 @@
    "description": "BOA BURKINA est une filiale du groupe BOA. Elle a été mis en place en 1998 (après les filiales du Mali, du Bénin, du Niger et de la Côte d'Ivoire).",
    "nombre_titres": 44000000.0,
    "flottant_pct": 29.1,
-   "capitalisation_mfcfa": 334400.0,
+   "capitalisation_mfcfa": 391600.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -756,7 +753,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.74,
+      "valeur": 18.43,
       "source": "sikafinance"
      },
      "dividende": {
@@ -786,7 +783,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.13,
+      "valeur": 15.37,
       "source": "sikafinance"
      },
      "dividende": {
@@ -816,7 +813,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.51,
+      "valeur": 13.47,
       "source": "sikafinance"
      },
      "dividende": {
@@ -846,7 +843,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.9,
+      "valeur": 17.45,
       "source": "sikafinance"
      },
      "dividende": {
@@ -876,7 +873,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.37,
+      "valeur": 20.34,
       "source": "sikafinance"
      },
      "dividende": {
@@ -891,7 +888,7 @@
    "description": "BOA CI est une filiale du groupe BOA. Elle a été ouverte en 1996 (après les filiales du Mali, du Bénin et du Niger). À la fin décembre 2024, la banque affichait un total bilan de  1 075 milliards FCFA et un total dépôt de la clientèle de 856 milliards FCFA.Comme les autres banques du Groupe BOA, BOA  COTE D'IVOIRE est une banque commerciale universelle intervenant sur les marchés Retail et Corporate.",
    "nombre_titres": 40000000.0,
    "flottant_pct": 27.48,
-   "capitalisation_mfcfa": 519400.0,
+   "capitalisation_mfcfa": 496000.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -907,7 +904,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 31.22,
+      "valeur": 29.81,
       "source": "sikafinance"
      },
      "dividende": {
@@ -937,7 +934,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 25.88,
+      "valeur": 24.71,
       "source": "sikafinance"
      },
      "dividende": {
@@ -967,7 +964,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 19.38,
+      "valeur": 18.51,
       "source": "sikafinance"
      },
      "dividende": {
@@ -997,7 +994,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.21,
+      "valeur": 15.48,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1027,7 +1024,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.61,
+      "valeur": 13.96,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1042,7 +1039,7 @@
    "description": "BANK OF AFRICA - MALI (BOA-MALI), ouverte au public en janvier 1982, détient actuellement un capital de 27,45 milliards FCFA.",
    "nombre_titres": 27450000.0,
    "flottant_pct": 21.44,
-   "capitalisation_mfcfa": 178151.0,
+   "capitalisation_mfcfa": 178288.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -1058,7 +1055,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 85.03,
+      "valeur": 85.09,
       "source": "sikafinance"
      }
     },
@@ -1084,7 +1081,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 72.41,
+      "valeur": 72.46,
       "source": "sikafinance"
      },
      "capitaux_propres": {
@@ -1118,7 +1115,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 30.83,
+      "valeur": 30.86,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1148,7 +1145,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 19.55,
+      "valeur": 19.56,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1178,7 +1175,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.08,
+      "valeur": 16.09,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1193,7 +1190,7 @@
    "description": "BANK OF AFRICA - NIGER (BOA-NIGER) est issue d’une reprise des activités de la NIGERIA INTERNATIONAL BANK (NIB, banque affiliée à la CITIBANK) par le Groupe BANK OF AFRICA.",
    "nombre_titres": 20800000.0,
    "flottant_pct": 40.52,
-   "capitalisation_mfcfa": 109824.0,
+   "capitalisation_mfcfa": 114400.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -1209,7 +1206,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.69,
+      "valeur": 12.17,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1239,7 +1236,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.84,
+      "valeur": 11.29,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1269,7 +1266,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.9,
+      "valeur": 11.35,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1307,7 +1304,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 22.0,
+      "valeur": 22.92,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1337,7 +1334,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 268.29,
+      "valeur": 279.47,
       "source": "sikafinance"
      }
     }
@@ -1348,7 +1345,7 @@
    "description": "BOAS , ouverte au public en 2001, détient actuellement un capital de 24 milliards FCFA.",
    "nombre_titres": 36000000.0,
    "flottant_pct": 29.99,
-   "capitalisation_mfcfa": 288000.0,
+   "capitalisation_mfcfa": 298800.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -1364,7 +1361,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 26.02,
+      "valeur": 26.99,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1394,7 +1391,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 18.48,
+      "valeur": 19.18,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1424,7 +1421,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.22,
+      "valeur": 15.79,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1454,7 +1451,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.41,
+      "valeur": 14.95,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1484,7 +1481,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.15,
+      "valeur": 13.64,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1499,7 +1496,7 @@
    "description": "Crée en 1976, la SICABLE est une entreprise ivoirienne, filiale du Groupe PRYSMIAN, elle est spécialisée dans la fabrication de câbles électriques. La société commercialise des câbles de basse, moyenne et haute tension pour l’utilisation dans l'industrie, la construction, l'infrastructure et les réseaux aériens. La SICABLE exporte vers les pays de la sous-région ouest africain.",
    "nombre_titres": 5920000.0,
    "flottant_pct": 48.7,
-   "capitalisation_mfcfa": 21549.0,
+   "capitalisation_mfcfa": 20690.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -1515,7 +1512,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 537.67,
+      "valeur": 516.25,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1541,7 +1538,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.04,
+      "valeur": 19.24,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1571,7 +1568,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.04,
+      "valeur": 14.44,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1601,7 +1598,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.58,
+      "valeur": 16.88,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1631,7 +1628,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.64,
+      "valeur": 12.14,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1655,7 +1652,7 @@
       "source": "calcule"
      },
      "pbr": {
-      "valeur": 28.42,
+      "valeur": 27.28,
       "source": "calcule"
      }
     }
@@ -1666,7 +1663,7 @@
    "description": "Coris Bank International (CBI) est une banque commerciale fortement orientée vers le financement des activités agricoles et des petites et moyennes entreprises (PME). Fondé en 2008 sur une ancienne institution financière non bancaire « l’ex Financière du Burkina » (FIB-SA), Coris Bank International est le premier groupe bancaire burkinabé avec un total bilan de 2 683 milliards FCFA à fin 2024. Déjà présente en Côte d’Ivoire, au Benin, au Mali, au Sénégal et au Togo, la banque continue de poursuivre sa stratégie de croissance en Afrique de l’ouest.",
    "nombre_titres": 32000000.0,
    "flottant_pct": 20.0,
-   "capitalisation_mfcfa": 960000.0,
+   "capitalisation_mfcfa": 947200.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -1682,7 +1679,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.62,
+      "valeur": 20.35,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1712,7 +1709,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.0,
+      "valeur": 16.77,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1742,7 +1739,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.94,
+      "valeur": 14.74,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1772,7 +1769,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.03,
+      "valeur": 19.76,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1802,7 +1799,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.66,
+      "valeur": 14.46,
       "source": "sikafinance"
      },
      "dividende": {
@@ -1968,7 +1965,7 @@
    "description": "Créé le 24 août 1990 par le groupe français BOUYGUES et la société d'électricité EDF, CIE est une société privée ivoirienne de monopole qui détient une concession de service public pour la production, le transport, l'exportation, l'importation, la distribution et la commercialisation d'électricité. Après deux périodes de quinze années chacune de collaboration (allant de 1990 à 2005 et de 2005 à 2020), l'état de Côte d'Ivoire et la CIE ont renouvelé leur partenariat pour une période 12 ans, soit de 2020 à 2032. La compagnie exporte de l'électricité vers le Bénin, le Burkina Faso, le Ghana, le Togo, le Mali et bientôt la Guinée.",
    "nombre_titres": 56000000.0,
    "flottant_pct": 30.95,
-   "capitalisation_mfcfa": 386400.0,
+   "capitalisation_mfcfa": 375200.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -1984,7 +1981,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 39.6,
+      "valeur": 38.45,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2014,7 +2011,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 39.35,
+      "valeur": 38.21,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2044,7 +2041,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 36.32,
+      "valeur": 35.26,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2090,7 +2087,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 38.33,
+      "valeur": 37.22,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2120,7 +2117,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 29.44,
+      "valeur": 28.58,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2135,7 +2132,7 @@
    "description": "Créée en 1988, Ecobank Côte d’Ivoire constitue l’une des premières fliales du Groupe ECOBANK. Elle a démarré ses activités commerciales en 1989 avec un capital social de 2 milliards FCFA suite à l’acquisition de la Chase Manhattan Bank. Au fil des années, Ecobank Côte d’Ivoire a su se hisser parmi les banques leaders du marché ivoirien grâce à un réseau densifié et à une importante capacité de collecte et de distribution de crédits sur les segments des particuliers, PME et Institutionnels. Ecobank Côte d’Ivoire se positionne, au 31 décembre 2024 comme la cinquième (5eme) banque du marché ivoirien avec un total bilan de 2 050 milliards FCFA.",
    "nombre_titres": 55050600.0,
    "flottant_pct": 20.44,
-   "capitalisation_mfcfa": 924575.0,
+   "capitalisation_mfcfa": 927327.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -2151,7 +2148,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 26.95,
+      "valeur": 27.03,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2181,7 +2178,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.73,
+      "valeur": 20.79,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2211,7 +2208,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 19.24,
+      "valeur": 19.3,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2241,7 +2238,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.09,
+      "valeur": 16.14,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2271,7 +2268,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.56,
+      "valeur": 14.61,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2286,7 +2283,7 @@
    "description": "Ecobank Transnational Incorporated (ETI) est une banque fondée au Togo en 1985 et présente dans 36 pays du continent.",
    "nombre_titres": 18084106722.0,
    "flottant_pct": 33.48,
-   "capitalisation_mfcfa": 1193551.0,
+   "capitalisation_mfcfa": 1175467.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -2302,7 +2299,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 6.16,
+      "valeur": 6.06,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2332,7 +2329,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 5.22,
+      "valeur": 5.14,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2362,7 +2359,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 4.84,
+      "valeur": 4.76,
       "source": "sikafinance"
      }
     },
@@ -2388,7 +2385,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 3.98,
+      "valeur": 3.92,
       "source": "sikafinance"
      }
     },
@@ -2414,7 +2411,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 6.6,
+      "valeur": 6.5,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2429,7 +2426,7 @@
    "description": "Filtisac ou filature tissage sac, est une unité de fabrication de sacs en fibre naturelle de l'entreprise IPS (Industrial Promotion Services). Fondée en 1965, la société s’est aujourd’hui diversifiée avec la création d’une unité de fabrication d’emballages en fibres synthétiques pour des produits tels que: le coton, le riz, les engrais, le cacao, le café et l’anacarde ainsi que la production d'emballages rigides (préformes, bouteilles, boîtes). Leader en Afrique subsaharienne, FILTISAC possède de nombreuses filiales en Afrique de l'Ouest et du Centre.",
    "nombre_titres": 14103740.0,
    "flottant_pct": 33.48,
-   "capitalisation_mfcfa": 30746.0,
+   "capitalisation_mfcfa": 30464.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -2459,7 +2456,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 200.37,
+      "valeur": 198.53,
       "source": "sikafinance"
      }
     },
@@ -2485,7 +2482,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.0,
+      "valeur": 9.91,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2515,7 +2512,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 1.65,
+      "valeur": 1.64,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2545,7 +2542,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 65.98,
+      "valeur": 65.38,
       "source": "sikafinance"
      }
     }
@@ -2556,7 +2553,7 @@
    "description": "La Loterie Nationale du Bénin (LNB) est une institution publique béninoise chargée de l’organisation et de la régulation des jeux de hasard et de loterie. Créée pour générer des revenus pour l'État, elle propose divers produits, tels que des jeux de tirage, des tickets à gratter et des paris sportifs. La LNB joue également un rôle socio-économique en soutenant des initiatives sociales et en finançant des projets dans des domaines tels que l’éducation, la santé et le développement communautaire. Elle s'efforce de promouvoir le jeu responsable tout en contribuant au développement du pays.",
    "nombre_titres": 20000000.0,
    "flottant_pct": 45.0,
-   "capitalisation_mfcfa": 81900.0,
+   "capitalisation_mfcfa": 80000.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -2572,7 +2569,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.12,
+      "valeur": 15.75,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2602,7 +2599,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.15,
+      "valeur": 11.87,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2632,7 +2629,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.89,
+      "valeur": 20.41,
       "source": "sikafinance"
      }
     },
@@ -2658,7 +2655,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.41,
+      "valeur": 11.15,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2688,7 +2685,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.72,
+      "valeur": 17.31,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2703,7 +2700,7 @@
    "description": "Les Nouvelles Editions Ivoirienne (NEI) est une maison d’édition fondée en 1992 en côte d’ivoire. En 2012, NEI réalisent une fusion absorption avec le Centre d’Edition et de Diffusion Africaine (CEDA) pour former NEI-CEDA. Cette nouvelle société est specialisée dans la distribution des titres de manuels de l’enseignement primaire et secondaire et propose des collections de littérature populaire.",
    "nombre_titres": 12765825.0,
    "flottant_pct": 17.99,
-   "capitalisation_mfcfa": 30638.0,
+   "capitalisation_mfcfa": 38297.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -2719,7 +2716,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 31.25,
+      "valeur": 39.07,
       "source": "sikafinance"
      }
     },
@@ -2745,7 +2742,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 25.27,
+      "valeur": 31.59,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2775,7 +2772,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 26.37,
+      "valeur": 32.97,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2815,7 +2812,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.04,
+      "valeur": 18.8,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2830,7 +2827,7 @@
    "description": "Le capital social de NSIA BANQUE CÔTE D'IVOIRE était de 20 milliards FCFA. Les actionnaires majoritaires sont pour la plupart des personnes morales. Ses activités s'articulent autour de deux pôles d'activités stratégiques: la banque de détail et la banque de financement et d'investissement.",
    "nombre_titres": 24734572.0,
    "flottant_pct": 20.0,
-   "capitalisation_mfcfa": 566422.0,
+   "capitalisation_mfcfa": 556528.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -2846,7 +2843,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 23.89,
+      "valeur": 23.47,
       "source": "sikafinance"
      },
      "capitaux_propres": {
@@ -2880,7 +2877,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.49,
+      "valeur": 17.19,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2918,7 +2915,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.28,
+      "valeur": 15.99,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2956,7 +2953,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.86,
+      "valeur": 14.6,
       "source": "sikafinance"
      },
      "dividende": {
@@ -2994,7 +2991,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.91,
+      "valeur": 13.67,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3009,7 +3006,7 @@
    "description": "En Côte d'Ivoire, NESTLÉ est le leader dans la fabrication de produits de café, du thé, la production de soupes déshydratées, les assaisonnements et la distribution de produits laitiers pour enfants.  La société dispose de deux grandes usines et d'un centre de recherche & développement à Abidjan.",
    "nombre_titres": 22070400.0,
    "flottant_pct": 19.13,
-   "capitalisation_mfcfa": 375197.0,
+   "capitalisation_mfcfa": 350919.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -3025,7 +3022,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.64,
+      "valeur": 16.5,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3055,7 +3052,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 22.57,
+      "valeur": 21.11,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3085,7 +3082,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 22.67,
+      "valeur": 21.2,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3115,7 +3112,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.68,
+      "valeur": 19.34,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3145,7 +3142,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.36,
+      "valeur": 19.04,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3160,7 +3157,7 @@
    "description": "ONATEL offre des services de téléphonie mobile. Premier opérateur Burkinabé de télécommunication mobile, ONATEL possède le plus important réseau en termes de couverture, la plus importante part de marché en termes de chiffre d'affaires et le plus important réseau de distributeurs. ONATEL dispose ainsi en fin 2017 d’un parc mobile et fixe de 7 millions d’abonnés. Depuis le 29 décembre 2006, le groupe Maroc Telecom est le nouvel actionnaire majoritaire de Onatel.",
    "nombre_titres": 68000000.0,
    "flottant_pct": 23.0,
-   "capitalisation_mfcfa": 196180.0,
+   "capitalisation_mfcfa": 197200.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -3176,7 +3173,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 6.06,
+      "valeur": 6.09,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3206,7 +3203,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 8.77,
+      "valeur": 8.81,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3236,7 +3233,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.28,
+      "valeur": 9.32,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3266,7 +3263,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.13,
+      "valeur": 9.18,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3296,7 +3293,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.35,
+      "valeur": 12.41,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3311,7 +3308,7 @@
    "description": "Le Groupe Orange Côte d’Ivoire (Groupe OCI) est une entreprise intégrée de télécommunications qui offre des solutions dans les domaines du fixe, du mobile, de l’Internet, des services de paiement mobile et des données au service des particuliers et des entreprises.",
    "nombre_titres": 150655350.0,
    "flottant_pct": 9.95,
-   "capitalisation_mfcfa": 3166022.0,
+   "capitalisation_mfcfa": 3224024.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -3327,7 +3324,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.32,
+      "valeur": 20.69,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3357,7 +3354,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.63,
+      "valeur": 21.01,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3387,7 +3384,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.44,
+      "valeur": 20.82,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3417,7 +3414,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.01,
+      "valeur": 20.38,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3447,7 +3444,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 18.86,
+      "valeur": 19.21,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3462,7 +3459,7 @@
    "description": "ORAGROUP SA est une holding au capital social de 63,3 milliards de FCFA basée au Togo. C’est la société mère du groupe bancaire ORABANK.",
    "nombre_titres": 69415031.0,
    "flottant_pct": 20.0,
-   "capitalisation_mfcfa": 216922.0,
+   "capitalisation_mfcfa": 219004.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -3478,7 +3475,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.96,
+      "valeur": 11.06,
       "source": "sikafinance"
      }
     },
@@ -3504,7 +3501,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.28,
+      "valeur": 11.39,
       "source": "sikafinance"
      }
     },
@@ -3562,7 +3559,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.02,
+      "valeur": 10.12,
       "source": "sikafinance"
      }
     }
@@ -3573,7 +3570,7 @@
    "description": "PALMCI est une filiale du groupe agro-industriel ivoirien SIFCA. Elle est le principal producteur d’huile de palme brute de la région.",
    "nombre_titres": 15459316.0,
    "flottant_pct": 33.0,
-   "capitalisation_mfcfa": 148873.0,
+   "capitalisation_mfcfa": 145318.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -3589,7 +3586,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 3.51,
+      "valeur": 3.42,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3619,7 +3616,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 3.57,
+      "valeur": 3.49,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3649,7 +3646,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 7.69,
+      "valeur": 7.51,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3679,7 +3676,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.39,
+      "valeur": 9.16,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3725,7 +3722,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.6,
+      "valeur": 9.37,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3749,7 +3746,7 @@
       "source": "calcule"
      },
      "pbr": {
-      "valeur": 1.04,
+      "valeur": 1.02,
       "source": "calcule"
      }
     }
@@ -3760,7 +3757,7 @@
    "description": "TRACTAFRIC Motors CI est une filiale du groupe TRACTAFRIC Motors Corporation, elle-même filiale de la Compagnie OPTORG.",
    "nombre_titres": 10240000.0,
    "flottant_pct": 14.06,
-   "capitalisation_mfcfa": 45773.0,
+   "capitalisation_mfcfa": 45978.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -3776,7 +3773,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.92,
+      "valeur": 14.99,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3806,7 +3803,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.56,
+      "valeur": 12.62,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3836,7 +3833,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 21.91,
+      "valeur": 22.01,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3882,7 +3879,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 19.52,
+      "valeur": 19.61,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3928,7 +3925,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 19.33,
+      "valeur": 19.42,
       "source": "sikafinance"
      },
      "dividende": {
@@ -3943,7 +3940,7 @@
    "description": "La Société africaine de crédit automobile (Safca), est établie en Côte d'ivoire depuis 1958. Elle est spécialisée dans le crédit-bail et assure le financement des biens mobiliers et immobiliers à travers divers produits financiers.",
    "nombre_titres": 11869750.0,
    "flottant_pct": 29.43,
-   "capitalisation_mfcfa": 67658.0,
+   "capitalisation_mfcfa": 69616.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4015,7 +4012,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 96.51,
+      "valeur": 99.31,
       "source": "sikafinance"
      },
      "capitaux_propres": {
@@ -4027,7 +4024,7 @@
       "source": "calcule"
      },
      "pbr": {
-      "valeur": 11.44,
+      "valeur": 11.77,
       "source": "calcule"
      }
     }
@@ -4038,7 +4035,7 @@
    "description": "SUCRIVOIRE, filiale du groupe agro-industriel SIFCA, a été introduite le 29 décembre 2016, à la Bourse Régionale des Valeurs Mobilières (BRVM).",
    "nombre_titres": 19600000.0,
    "flottant_pct": 23.0,
-   "capitalisation_mfcfa": 66248.0,
+   "capitalisation_mfcfa": 66150.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4112,7 +4109,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 25.61,
+      "valeur": 25.57,
       "source": "sikafinance"
      }
     },
@@ -4137,7 +4134,7 @@
    "description": "La Société de Distribution d’Eau de Côte d’Ivoire « SODECI » a été créée en 1959 en tant que successeur et filiale de la société française « Saur ».",
    "nombre_titres": 9000000.0,
    "flottant_pct": 49.53,
-   "capitalisation_mfcfa": 109305.0,
+   "capitalisation_mfcfa": 117000.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4153,7 +4150,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 25.12,
+      "valeur": 26.88,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4183,7 +4180,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 22.75,
+      "valeur": 24.35,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4213,7 +4210,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 22.28,
+      "valeur": 23.85,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4243,7 +4240,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 30.67,
+      "valeur": 32.83,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4273,7 +4270,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 23.44,
+      "valeur": 25.09,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4288,7 +4285,7 @@
    "description": "MEDITERRANEAN SHIPPING COMPANY CI (MSC CI) est l'un des principaux acteurs du secteur du transport, de la manutention et de la logistique. La société est connue pour ses offres multisectorielles et multi-entreprises. Sa mission est de contrôler l'ensemble de la chaîne d'approvisionnement, ce qui permet à l'entreprise de fournir à ses clients un service complet: expédition de fret, manutention (levage et terrain), distribution (groupage et express) et logistique contractuelle.",
    "nombre_titres": 54435300.0,
    "flottant_pct": 22.2,
-   "capitalisation_mfcfa": 151330.0,
+   "capitalisation_mfcfa": 149697.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4304,7 +4301,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.85,
+      "valeur": 10.74,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4334,7 +4331,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.07,
+      "valeur": 14.9,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4364,7 +4361,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 8.83,
+      "valeur": 8.73,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4410,7 +4407,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 7.18,
+      "valeur": 7.11,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4440,7 +4437,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 192.78,
+      "valeur": 190.7,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4455,7 +4452,7 @@
    "description": "En Côte-d’Ivoire, CROWN SIEM est leader dans la conception et la fabrication des emballages métalliques. Elle est rattachée à une organisation qui regroupe des unités dans la fabrication de boites alimentaires et non alimentaires. Les produits sont destinés notamment au conditionnement de boissons (limonades, jus de fruits, boissons énergétiques), des produits alimentaires (poissons, fruits, salades, plats préparés, aliments pour bébés, condiments) et des produits divers (chimie, insecticide, peinture, colle, bouchon couronne).",
    "nombre_titres": 25189600.0,
    "flottant_pct": 10.42,
-   "capitalisation_mfcfa": 39044.0,
+   "capitalisation_mfcfa": 37784.0,
    "exercices": {
     "2020": {
      "ca": {
@@ -4471,7 +4468,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 53.01,
+      "valeur": 51.3,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4501,7 +4498,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.38,
+      "valeur": 15.85,
       "source": "sikafinance"
      }
     },
@@ -4527,7 +4524,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 10.12,
+      "valeur": 9.79,
       "source": "sikafinance"
      }
     },
@@ -4553,7 +4550,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 38.75,
+      "valeur": 37.5,
       "source": "sikafinance"
      }
     },
@@ -4579,7 +4576,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 865.92,
+      "valeur": 837.99,
       "source": "sikafinance"
      }
     }
@@ -4590,7 +4587,7 @@
    "description": "La Société Générale de Banques en Côte d’Ivoire (SGBCI) est une filiale de la Société Générale, l’un des plus grands groupes bancaires au monde. Présente depuis plus de 50 ans dans le pays, elle occupe une position dominante depuis de longue date en Côte dIvoire et joue un rôle prépondérant dans le financement de l’économie ivoirienne et ouest africaine. Première banque ivoirienne avec un produit net bancaire de 150 milliards FCFA et un total bilan de 2 152 milliards FCFA. La banque occupe également la 1ère place en termes de prêts à la clientèle et la 1ère place en termes de dépôts clients avec près 20% de part de marché. Malgré la concurrence intense sur le marché, la banque a toujours réussi à rester comme étant l'une des plus grandes banques du pays.",
    "nombre_titres": 31111110.0,
    "flottant_pct": 43.35,
-   "capitalisation_mfcfa": 1219400.0,
+   "capitalisation_mfcfa": 1182222.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4606,7 +4603,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 18.08,
+      "valeur": 17.53,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4636,7 +4633,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.34,
+      "valeur": 15.85,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4666,7 +4663,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.54,
+      "valeur": 12.16,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4696,7 +4693,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.05,
+      "valeur": 11.68,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4726,7 +4723,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.03,
+      "valeur": 11.66,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4741,7 +4738,7 @@
    "description": "VIVO ENERGY Côte d'Ivoire est l'un des principaux acteurs du marché des carburants différenciés et des lubrifiants.",
    "nombre_titres": 63000000.0,
    "flottant_pct": 28.33,
-   "capitalisation_mfcfa": 154980.0,
+   "capitalisation_mfcfa": 153720.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4757,7 +4754,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 72.42,
+      "valeur": 71.83,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4787,7 +4784,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 41.3,
+      "valeur": 40.97,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4817,7 +4814,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 38.44,
+      "valeur": 38.13,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4847,7 +4844,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 28.95,
+      "valeur": 28.71,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4877,7 +4874,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 25.71,
+      "valeur": 25.5,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4892,7 +4889,7 @@
    "description": "La Société Ivoirienne de Banque (SIB) est une Société anonyme de droit ivoirien créée en 1962. Elle fait partie des cinq principales banques de la Côte d'ivoire, quatrième banque de côte d’Ivoire en termes de dépôts à la clientèle et troisième en Prêts clientèle. La SIB est implantée dans 15 villes avec un réseau fort de 54 agences, et plus de 300 000 clients Particuliers, Professionnels et Entreprises de toute taille. En septembre 2015, le groupe Attijariwafa bank, à travers sa filiale Attijari Ivoire Holding Offshore SA, a procédé à l’acquisition de 39% du capital et des droits de vote de la Société Ivoirienne de Banque auprès de l’Etat de Côte d’Ivoire, modifiant ainsi la structure du capital et la composition du Conseil d’Administration. Ainsi, le groupe Attijariwafa bank qui détenait 51% du capital de la SIB depuis 2009 renforce sa position d’actionnaire de référence, disposant désormais de 75% après son introduction en bourse.",
    "nombre_titres": 100000000.0,
    "flottant_pct": 20.0,
-   "capitalisation_mfcfa": 900000.0,
+   "capitalisation_mfcfa": 920000.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -4908,7 +4905,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 26.45,
+      "valeur": 27.03,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4938,7 +4935,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 22.45,
+      "valeur": 22.95,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4968,7 +4965,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.69,
+      "valeur": 21.15,
       "source": "sikafinance"
      },
      "dividende": {
@@ -4998,7 +4995,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.93,
+      "valeur": 18.33,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5028,7 +5025,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 16.18,
+      "valeur": 16.54,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5043,7 +5040,7 @@
    "description": "La Société Ivoirienne de Coco Râpé (SICOR) est une entreprise engagée dans le secteur de fabrication de produits alimentaires. Elle commercialise des noix de coco et des produits dérivés, notamment le coco desséché. SICOR est l’unique entreprise de transformation de noix de  coco en Afrique de l’ouest.",
    "nombre_titres": 600000.0,
    "flottant_pct": 12.56,
-   "capitalisation_mfcfa": 5190.0,
+   "capitalisation_mfcfa": 4797.0,
    "exercices": {
     "2020": {
      "ca": {
@@ -5059,7 +5056,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 47.25,
+      "valeur": 43.67,
       "source": "sikafinance"
      }
     },
@@ -5085,7 +5082,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 43.53,
+      "valeur": 40.23,
       "source": "sikafinance"
      }
     },
@@ -5121,7 +5118,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 269.68,
+      "valeur": 249.26,
       "source": "sikafinance"
      }
     },
@@ -5146,7 +5143,7 @@
    "description": "Air Liquide est présent en Côte d’Ivoire depuis bientôt 70 ans. La société est spécialisée dans la production et la distribution de gaz industriels et médicaux (azote gazeux, azote liquide, oxygène gazeux, oxygène liquide, acétylène, argon, propane, butane, protoxyde d'azote, monoxyde d'azote, etc.). La société opère dans différents secteurs d’activités : Gaz et pétrole, mines et carrières, Agro-alimentaires, fabrication métallique et construction, santé, industrie pharmaceutique, laboratoires et centres de recherche.",
    "nombre_titres": 8734000.0,
    "flottant_pct": 27.92,
-   "capitalisation_mfcfa": 20700.0,
+   "capitalisation_mfcfa": 20176.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -5162,7 +5159,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 28.55,
+      "valeur": 27.83,
       "source": "sikafinance"
      }
     },
@@ -5188,7 +5185,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 51.41,
+      "valeur": 50.11,
       "source": "sikafinance"
      }
     },
@@ -5214,7 +5211,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 23.1,
+      "valeur": 22.51,
       "source": "sikafinance"
      }
     },
@@ -5240,7 +5237,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 54.91,
+      "valeur": 53.52,
       "source": "sikafinance"
      }
     },
@@ -5266,7 +5263,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 115.44,
+      "valeur": 112.52,
       "source": "sikafinance"
      }
     }
@@ -5277,7 +5274,7 @@
    "description": "SOLIBRA (Societé de Limonaderie et Brasserie d'Afrique) produit et distribue de la bière, d'autres boissons alcooliques et non alcoolisées en côte d’ivoire.",
    "nombre_titres": 16460840.0,
    "flottant_pct": 18.6,
-   "capitalisation_mfcfa": 609133.0,
+   "capitalisation_mfcfa": 609051.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -5323,7 +5320,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 500.54,
+      "valeur": 500.47,
       "source": "sikafinance"
      }
     },
@@ -5349,7 +5346,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 40.4,
+      "valeur": 40.39,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5379,7 +5376,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 28.38,
+      "valeur": 28.37,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5409,7 +5406,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.31,
+      "valeur": 13.3,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5424,7 +5421,7 @@
    "description": "SMB, la Compagnie Multinationale de Bitumes, a été créée en 1976, avec pour mission le désenclavement des régions éloignées des pôles de développement.",
    "nombre_titres": 7795200.0,
    "flottant_pct": 16.5,
-   "capitalisation_mfcfa": 129556.0,
+   "capitalisation_mfcfa": 134038.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -5440,7 +5437,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 15.02,
+      "valeur": 15.54,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5470,7 +5467,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.75,
+      "valeur": 14.23,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5508,7 +5505,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 7.51,
+      "valeur": 7.77,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5554,7 +5551,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.89,
+      "valeur": 15.41,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5600,7 +5597,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.91,
+      "valeur": 10.25,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5624,7 +5621,7 @@
       "source": "calcule"
      },
      "pbr": {
-      "valeur": 3.02,
+      "valeur": 3.12,
       "source": "calcule"
      }
     }
@@ -5635,7 +5632,7 @@
    "description": "La Société Nationale des Télécommunications du Sénégal (SONATEL), premier opérateur téléphonique au Sénégal, a été créée en 1985 suite à la fusion du «Bureau des postes et télécommunications» et de «TV Senegal».",
    "nombre_titres": 100000000.0,
    "flottant_pct": 22.47,
-   "capitalisation_mfcfa": 3698000.0,
+   "capitalisation_mfcfa": 3670000.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -5651,7 +5648,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.65,
+      "valeur": 14.54,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5681,7 +5678,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.26,
+      "valeur": 13.16,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5711,7 +5708,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.15,
+      "valeur": 11.06,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5741,7 +5738,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.39,
+      "valeur": 9.32,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5771,7 +5768,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 8.94,
+      "valeur": 8.87,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5786,7 +5783,7 @@
    "description": "Créée en 1969 dans le but de désenclaver la région du sud-ouest, la SOGB dispose d’un centre agro-industriel qui couvre 34 712 hectares divisés en 16 840 ha pour le caoutchouc, 7 471 ha pour l'huile de palme et le reste pour les usines et les plantations villageoises. L'activité principale de SOGB est la culture du caoutchouc et la vente de produits en caoutchouc fabriqués ainsi que la transformation et la fabrication de l'huile de palme.",
    "nombre_titres": 21601840.0,
    "flottant_pct": 26.84,
-   "capitalisation_mfcfa": 176595.0,
+   "capitalisation_mfcfa": 177135.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -5802,7 +5799,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.99,
+      "valeur": 12.03,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5848,7 +5845,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.28,
+      "valeur": 11.32,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5894,7 +5891,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 33.5,
+      "valeur": 33.61,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5940,7 +5937,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 13.47,
+      "valeur": 13.51,
       "source": "sikafinance"
      },
      "dividende": {
@@ -5986,7 +5983,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.14,
+      "valeur": 14.18,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6001,7 +5998,7 @@
    "description": "Filiale de SIFCA depuis 1999, la Société Africaine de Plantations d’Hévéas (SAPH) est le 1er producteur de caoutchouc naturel d’Afrique de l’Ouest, avec plus de 163 000 tonnes usinées par an. Forte de 5 400 employés et d’un réseau de 5 Unités Agricoles Intégrées, SAPH exploite 24 400 hectares de plantations indus-trielles, et assure l’encadrement de quelques 29 000 planteurs d’hévéa. La société est cotée à la Bourse Régionale des Valeurs Mobilières (BRVM - Abidjan) depuis 1996.",
    "nombre_titres": 25558005.0,
    "flottant_pct": 23.54,
-   "capitalisation_mfcfa": 241268.0,
+   "capitalisation_mfcfa": 242801.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -6017,7 +6014,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.63,
+      "valeur": 11.7,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6047,7 +6044,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.45,
+      "valeur": 14.54,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6093,7 +6090,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 66.48,
+      "valeur": 66.9,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6139,7 +6136,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 12.84,
+      "valeur": 12.93,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6185,7 +6182,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.66,
+      "valeur": 9.72,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6209,7 +6206,7 @@
       "source": "calcule"
      },
      "pbr": {
-      "valeur": 27.89,
+      "valeur": 28.07,
       "source": "calcule"
      }
     }
@@ -6323,7 +6320,7 @@
    "description": "La Société Ivoirienne des Tabacs (Sitab), filiale du britannique Imperial Brands est le leader du marché ivoirien et le seul fabricant de cigarettes en côte d’ivoire. La Sitab, contrôle environ 60 % du marché ivoirien des cigarettes. L'acquisition de la SITAB par Imperial Tobacco Group en avril 2011 a permis à la société de se positionner sur le marché du tabac en Afrique de l'Ouest avec l'ambition de servir les pays de la sous-région.",
    "nombre_titres": 17955000.0,
    "flottant_pct": 26.95,
-   "capitalisation_mfcfa": 411170.0,
+   "capitalisation_mfcfa": 401294.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -6339,7 +6336,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 43.28,
+      "valeur": 42.24,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6369,7 +6366,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 35.73,
+      "valeur": 34.87,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6407,7 +6404,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 33.0,
+      "valeur": 32.2,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6437,7 +6434,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 9.19,
+      "valeur": 8.97,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6467,7 +6464,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 11.28,
+      "valeur": 11.01,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6678,7 +6675,7 @@
    "description": "Présent au Sénégal depuis 1954, TOTAL est le leader du marketing des produits pétroliers dans le pays. La société est cotée à la bourse régionale (BRVM) depuis le 20 février 2015.",
    "nombre_titres": 32577700.0,
    "flottant_pct": 30.86,
-   "capitalisation_mfcfa": 127053.0,
+   "capitalisation_mfcfa": 123632.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -6694,7 +6691,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 27.07,
+      "valeur": 26.35,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6724,7 +6721,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 14.99,
+      "valeur": 14.59,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6754,7 +6751,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 30.0,
+      "valeur": 29.19,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6784,7 +6781,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 17.89,
+      "valeur": 17.41,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6814,7 +6811,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 20.67,
+      "valeur": 20.11,
       "source": "sikafinance"
      },
      "dividende": {
@@ -6924,7 +6921,7 @@
    "description": "UNIWAX, leader de l'industrie textile en Côte d'Ivoire conçoit, produit et commercialise des tissus uniques et colorés. Ces textiles expressifs de haute qualité sont distribués dans les pays africains.",
    "nombre_titres": 20750000.0,
    "flottant_pct": 27.71,
-   "capitalisation_mfcfa": 51149.0,
+   "capitalisation_mfcfa": 50941.0,
    "exercices": {
     "2021": {
      "ca": {
@@ -6940,7 +6937,7 @@
       "source": "sikafinance"
      },
      "per": {
-      "valeur": 36.52,
+      "valeur": 36.37,
       "source": "sikafinance"
      },
      "dividende": {
