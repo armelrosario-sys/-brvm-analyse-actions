@@ -1,9 +1,9 @@
 {
- "maj": "2026-08-29T00:03:23+00:00",
- "date_analyse": "29/08/2026",
+ "maj": "2026-08-31T20:57:55+00:00",
+ "date_analyse": "31/08/2026",
  "medianes": {
   "marche": {
-   "per": 18.86,
+   "per": 19.21,
    "pbr": null,
    "roe": null,
    "marge_nette": 8.01,
@@ -13,7 +13,7 @@
   },
   "secteurs": {
    "ENE": {
-    "per": 18.86,
+    "per": 19.21,
     "pbr": null,
     "roe": null,
     "marge_nette": 8.01,
@@ -22,18 +22,8 @@
     "taille": 4,
     "repli_marche": true
    },
-   "TEL": {
-    "per": 18.86,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 8.01,
-    "dy_net": 3.705,
-    "dette_cp": null,
-    "taille": 3,
-    "repli_marche": true
-   },
    "CD": {
-    "per": 27.06,
+    "per": 29.81,
     "pbr": null,
     "roe": null,
     "marge_nette": 4.66,
@@ -42,8 +32,18 @@
     "taille": 7,
     "repli_marche": false
    },
+   "TEL": {
+    "per": 19.21,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 8.01,
+    "dy_net": 3.705,
+    "dette_cp": null,
+    "taille": 3,
+    "repli_marche": true
+   },
    "FIN": {
-    "per": 14.635,
+    "per": 14.535,
     "pbr": null,
     "roe": null,
     "marge_nette": 37.965,
@@ -52,18 +52,18 @@
     "taille": 16,
     "repli_marche": false
    },
-   "IND": {
-    "per": 90.71000000000001,
+   "SPU": {
+    "per": 19.21,
     "pbr": null,
     "roe": null,
-    "marge_nette": 1.15,
-    "dy_net": 3.49,
+    "marge_nette": 8.01,
+    "dy_net": 3.705,
     "dette_cp": null,
-    "taille": 6,
-    "repli_marche": false
+    "taille": 2,
+    "repli_marche": true
    },
    "CB": {
-    "per": 14.14,
+    "per": 14.18,
     "pbr": null,
     "roe": null,
     "marge_nette": 7.85,
@@ -72,15 +72,15 @@
     "taille": 9,
     "repli_marche": false
    },
-   "SPU": {
-    "per": 18.86,
+   "IND": {
+    "per": 88.94999999999999,
     "pbr": null,
     "roe": null,
-    "marge_nette": 8.01,
-    "dy_net": 3.705,
+    "marge_nette": 1.15,
+    "dy_net": 3.49,
     "dette_cp": null,
-    "taille": 2,
-    "repli_marche": true
+    "taille": 6,
+    "repli_marche": false
    }
   }
  },
@@ -139,11 +139,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 27.1x contre 27.1x en médiane sectorielle.",
+      "txt": "PER de 29.8x contre 29.8x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 27.1x contre une médiane historique propre de 15.2x.",
+      "txt": "PER actuel de 29.8x contre une médiane historique propre de 15.2x.",
       "coul": "rouge"
      }
     ]
@@ -219,11 +219,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 19.6x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 20.3x contre 14.5x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 19.6x contre une médiane historique propre de 10.0x.",
+      "txt": "PER actuel de 20.3x contre une médiane historique propre de 10.0x.",
       "coul": "rouge"
      }
     ]
@@ -299,11 +299,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.1x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 13.5x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.1x contre une médiane historique propre de 10.7x.",
+      "txt": "PER actuel de 13.5x contre une médiane historique propre de 10.7x.",
       "coul": "rouge"
      }
     ]
@@ -371,11 +371,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 590.5x contre 27.1x en médiane sectorielle.",
+      "txt": "PER de 682.5x contre 29.8x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 590.5x contre une médiane historique propre de 88.1x.",
+      "txt": "PER actuel de 682.5x contre une médiane historique propre de 88.1x.",
       "coul": "rouge"
      }
     ]
@@ -448,11 +448,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 20.1x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 20.6x contre 14.5x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 20.1x contre une médiane historique propre de 7.6x.",
+      "txt": "PER actuel de 20.6x contre une médiane historique propre de 7.6x.",
       "coul": "rouge"
      }
     ]
@@ -479,13 +479,13 @@
     "performances": 25,
     "perspectives": 83,
     "remuneration": 83,
-    "valorisation": 25
+    "valorisation": 0
    },
    "libelles": {
     "performances": "Mitigé",
     "perspectives": "Excellent",
     "remuneration": "Excellent",
-    "valorisation": "Mitigé"
+    "valorisation": "Mauvais"
    },
    "pastilles": {
     "performances": [
@@ -528,11 +528,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 17.4x contre 14.6x en médiane sectorielle.",
-      "coul": "orange"
+      "txt": "PER de 20.3x contre 14.5x en médiane sectorielle.",
+      "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 17.4x contre une médiane historique propre de 5.9x.",
+      "txt": "PER actuel de 20.3x contre une médiane historique propre de 5.9x.",
       "coul": "rouge"
      }
     ]
@@ -546,8 +546,8 @@
     "Nous recommandons de conserver BANK OF AFRICA BURKINA FASO. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
     "Au cours actuel de 8 600 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 4 873 et 5 545 FCFA, soit environ 36 % à 43 % sous le cours actuel."
    ],
-   "score_global": 54.0,
-   "marge_categorie": 8.0,
+   "score_global": 47.8,
+   "marge_categorie": 9.8,
    "proche_seuil": false,
    "secteur_taille": 16,
    "secteur_repli_marche": false,
@@ -608,11 +608,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.6x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 14.0x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 14.6x contre une médiane historique propre de 7.3x.",
+      "txt": "PER actuel de 14.0x contre une médiane historique propre de 7.3x.",
       "coul": "rouge"
      }
     ]
@@ -688,7 +688,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 16.1x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 16.1x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
@@ -768,11 +768,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 268.3x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 279.5x contre 14.5x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 268.3x contre une médiane historique propre de 7.8x.",
+      "txt": "PER actuel de 279.5x contre une médiane historique propre de 7.8x.",
       "coul": "rouge"
      }
     ]
@@ -846,11 +846,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.2x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 13.6x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.2x contre une médiane historique propre de 7.0x.",
+      "txt": "PER actuel de 13.6x contre une médiane historique propre de 7.0x.",
       "coul": "rouge"
      }
     ]
@@ -926,11 +926,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.6x contre 90.7x en médiane sectorielle.",
+      "txt": "PER de 12.1x contre 88.9x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 12.6x contre une médiane historique propre de 6.1x.",
+      "txt": "PER actuel de 12.1x contre une médiane historique propre de 6.1x.",
       "coul": "rouge"
      }
     ]
@@ -1007,11 +1007,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.7x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 14.5x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 14.7x contre une médiane historique propre de 5.3x.",
+      "txt": "PER actuel de 14.5x contre une médiane historique propre de 5.3x.",
       "coul": "rouge"
      }
     ]
@@ -1087,7 +1087,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 37.5x contre 27.1x en médiane sectorielle.",
+      "txt": "PER de 37.5x contre 29.8x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
@@ -1168,11 +1168,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 29.4x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 28.6x contre 19.2x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 29.4x contre une médiane historique propre de 12.4x.",
+      "txt": "PER actuel de 28.6x contre une médiane historique propre de 12.4x.",
       "coul": "rouge"
      }
     ]
@@ -1248,7 +1248,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.6x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 14.6x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
@@ -1328,11 +1328,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 6.6x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 6.5x contre 14.5x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 6.6x contre une médiane historique propre de 1.3x.",
+      "txt": "PER actuel de 6.5x contre une médiane historique propre de 1.3x.",
       "coul": "rouge"
      }
     ]
@@ -1404,11 +1404,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 66.0x contre 90.7x en médiane sectorielle.",
+      "txt": "PER de 65.4x contre 88.9x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 66.0x contre une médiane historique propre de 6.7x.",
+      "txt": "PER actuel de 65.4x contre une médiane historique propre de 6.7x.",
       "coul": "rouge"
      }
     ]
@@ -1482,11 +1482,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 17.7x contre 27.1x en médiane sectorielle.",
+      "txt": "PER de 17.3x contre 29.8x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 17.7x contre une médiane historique propre de 15.0x.",
+      "txt": "PER actuel de 17.3x contre une médiane historique propre de 15.0x.",
       "coul": "orange"
      }
     ]
@@ -1562,11 +1562,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 15.0x contre 27.1x en médiane sectorielle.",
+      "txt": "PER de 18.8x contre 29.8x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 15.0x contre une médiane historique propre de 8.5x.",
+      "txt": "PER actuel de 18.8x contre une médiane historique propre de 8.5x.",
       "coul": "rouge"
      }
     ]
@@ -1643,11 +1643,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.9x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 13.7x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 13.9x contre une médiane historique propre de 5.4x.",
+      "txt": "PER actuel de 13.7x contre une médiane historique propre de 5.4x.",
       "coul": "rouge"
      }
     ]
@@ -1723,11 +1723,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 20.4x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 19.0x contre 14.2x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 20.4x contre une médiane historique propre de 12.5x.",
+      "txt": "PER actuel de 19.0x contre une médiane historique propre de 12.5x.",
       "coul": "rouge"
      }
     ]
@@ -1803,11 +1803,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.3x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 12.4x contre 19.2x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 12.3x contre une médiane historique propre de 8.2x.",
+      "txt": "PER actuel de 12.4x contre une médiane historique propre de 8.2x.",
       "coul": "rouge"
      }
     ]
@@ -1884,11 +1884,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 18.9x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 19.2x contre 19.2x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 18.9x contre une médiane historique propre de 13.8x.",
+      "txt": "PER actuel de 19.2x contre une médiane historique propre de 13.8x.",
       "coul": "rouge"
      }
     ]
@@ -1956,11 +1956,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 10.0x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 10.1x contre 14.5x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 10.0x contre une médiane historique propre de 10.4x.",
+      "txt": "PER actuel de 10.1x contre une médiane historique propre de 10.4x.",
       "coul": "orange"
      }
     ]
@@ -2036,11 +2036,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 9.6x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 9.4x contre 14.2x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 9.6x contre une médiane historique propre de 4.9x.",
+      "txt": "PER actuel de 9.4x contre une médiane historique propre de 4.9x.",
       "coul": "rouge"
      }
     ]
@@ -2116,11 +2116,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 19.3x contre 27.1x en médiane sectorielle.",
+      "txt": "PER de 19.4x contre 29.8x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 19.3x contre une médiane historique propre de 10.7x.",
+      "txt": "PER actuel de 19.4x contre une médiane historique propre de 10.7x.",
       "coul": "rouge"
      }
     ]
@@ -2184,11 +2184,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 96.5x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 99.3x contre 14.5x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 96.5x contre une médiane historique propre de 43.6x.",
+      "txt": "PER actuel de 99.3x contre une médiane historique propre de 43.6x.",
       "coul": "rouge"
      }
     ]
@@ -2249,7 +2249,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 25.6x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 25.6x contre 14.2x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
@@ -2280,13 +2280,13 @@
     "performances": 25,
     "perspectives": 100,
     "remuneration": 83,
-    "valorisation": 25
+    "valorisation": 0
    },
    "libelles": {
     "performances": "Mitigé",
     "perspectives": "Excellent",
     "remuneration": "Excellent",
-    "valorisation": "Mitigé"
+    "valorisation": "Mauvais"
    },
    "pastilles": {
     "performances": [
@@ -2329,11 +2329,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 23.4x contre 18.9x en médiane sectorielle.",
-      "coul": "orange"
+      "txt": "PER de 25.1x contre 19.2x en médiane sectorielle.",
+      "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 23.4x contre une médiane historique propre de 9.4x.",
+      "txt": "PER actuel de 25.1x contre une médiane historique propre de 9.4x.",
       "coul": "rouge"
      }
     ]
@@ -2347,9 +2347,9 @@
     "Nous recommandons de conserver SODE COTE D'IVOIRE. L'entreprise affiche un dividende bien assis et une dynamique favorable. En revanche, des performances dégradées et une valorisation exigeante appellent à la vigilance.",
     "Au cours actuel de 12 390 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 7 501 et 8 536 FCFA, soit environ 31 % à 39 % sous le cours actuel."
    ],
-   "score_global": 58.2,
-   "marge_categorie": 3.8,
-   "proche_seuil": true,
+   "score_global": 52.0,
+   "marge_categorie": 10.0,
+   "proche_seuil": false,
    "secteur_taille": 2,
    "secteur_repli_marche": true,
    "liquidite_insuffisante": false,
@@ -2409,11 +2409,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 192.8x contre 90.7x en médiane sectorielle.",
+      "txt": "PER de 190.7x contre 88.9x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 192.8x contre une médiane historique propre de 4.6x.",
+      "txt": "PER actuel de 190.7x contre une médiane historique propre de 4.6x.",
       "coul": "rouge"
      }
     ]
@@ -2488,11 +2488,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 865.9x contre 90.7x en médiane sectorielle.",
+      "txt": "PER de 838.0x contre 88.9x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 865.9x contre une médiane historique propre de 17.4x.",
+      "txt": "PER actuel de 838.0x contre une médiane historique propre de 17.4x.",
       "coul": "rouge"
      }
     ]
@@ -2566,11 +2566,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 12.0x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 11.7x contre 14.5x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 12.0x contre une médiane historique propre de 6.7x.",
+      "txt": "PER actuel de 11.7x contre une médiane historique propre de 6.7x.",
       "coul": "rouge"
      }
     ]
@@ -2646,11 +2646,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 25.7x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 25.5x contre 19.2x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 25.7x contre une médiane historique propre de 14.0x.",
+      "txt": "PER actuel de 25.5x contre une médiane historique propre de 14.0x.",
       "coul": "rouge"
      }
     ]
@@ -2726,11 +2726,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 16.2x contre 14.6x en médiane sectorielle.",
+      "txt": "PER de 16.5x contre 14.5x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 16.2x contre une médiane historique propre de 8.6x.",
+      "txt": "PER actuel de 16.5x contre une médiane historique propre de 8.6x.",
       "coul": "rouge"
      }
     ]
@@ -2794,11 +2794,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 269.7x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 249.3x contre 14.2x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 269.7x contre une médiane historique propre de 65.9x.",
+      "txt": "PER actuel de 249.3x contre une médiane historique propre de 65.9x.",
       "coul": "rouge"
      }
     ]
@@ -2863,11 +2863,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 115.4x contre 90.7x en médiane sectorielle.",
+      "txt": "PER de 112.5x contre 88.9x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
-      "txt": "PER actuel de 115.4x contre une médiane historique propre de 10.8x.",
+      "txt": "PER actuel de 112.5x contre une médiane historique propre de 10.8x.",
       "coul": "rouge"
      }
     ]
@@ -2940,7 +2940,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 13.3x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 13.3x contre 14.2x en médiane sectorielle.",
       "coul": "orange"
      },
      {
@@ -3020,11 +3020,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 9.9x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 10.2x contre 19.2x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 9.9x contre une médiane historique propre de 8.1x.",
+      "txt": "PER actuel de 10.2x contre une médiane historique propre de 8.1x.",
       "coul": "rouge"
      }
     ]
@@ -3100,7 +3100,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 8.9x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 8.9x contre 19.2x en médiane sectorielle.",
       "coul": "vert"
      },
      {
@@ -3180,11 +3180,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 14.1x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 14.2x contre 14.2x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 14.1x contre une médiane historique propre de 13.1x.",
+      "txt": "PER actuel de 14.2x contre une médiane historique propre de 13.1x.",
       "coul": "orange"
      }
     ]
@@ -3261,7 +3261,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 9.7x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 9.7x contre 14.2x en médiane sectorielle.",
       "coul": "vert"
      },
      {
@@ -3329,7 +3329,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 31.2x contre 90.7x en médiane sectorielle.",
+      "txt": "PER de 31.2x contre 88.9x en médiane sectorielle.",
       "coul": "vert"
      },
      {
@@ -3409,11 +3409,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 11.3x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 11.0x contre 14.2x en médiane sectorielle.",
       "coul": "vert"
      },
      {
-      "txt": "PER actuel de 11.3x contre une médiane historique propre de 9.7x.",
+      "txt": "PER actuel de 11.0x contre une médiane historique propre de 9.7x.",
       "coul": "orange"
      }
     ]
@@ -3490,7 +3490,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 23.6x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 23.6x contre 19.2x en médiane sectorielle.",
       "coul": "orange"
      },
      {
@@ -3570,11 +3570,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 20.7x contre 18.9x en médiane sectorielle.",
+      "txt": "PER de 20.1x contre 19.2x en médiane sectorielle.",
       "coul": "orange"
      },
      {
-      "txt": "PER actuel de 20.7x contre une médiane historique propre de 14.1x.",
+      "txt": "PER actuel de 20.1x contre une médiane historique propre de 14.1x.",
       "coul": "rouge"
      }
     ]
@@ -3638,7 +3638,7 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 748.6x contre 14.1x en médiane sectorielle.",
+      "txt": "PER de 748.6x contre 14.2x en médiane sectorielle.",
       "coul": "rouge"
      },
      {
@@ -3666,13 +3666,13 @@
     "performances": 0,
     "perspectives": 67,
     "remuneration": 50,
-    "valorisation": 0
+    "valorisation": 25
    },
    "libelles": {
     "performances": "Mauvais",
     "perspectives": "Bon",
     "remuneration": "Bon",
-    "valorisation": "Mauvais"
+    "valorisation": "Mitigé"
    },
    "pastilles": {
     "performances": [
@@ -3703,11 +3703,11 @@
     ],
     "valorisation": [
      {
-      "txt": "PER de 36.5x contre 27.1x en médiane sectorielle.",
-      "coul": "rouge"
+      "txt": "PER de 36.4x contre 29.8x en médiane sectorielle.",
+      "coul": "orange"
      },
      {
-      "txt": "PER actuel de 36.5x contre une médiane historique propre de 11.5x.",
+      "txt": "PER actuel de 36.4x contre une médiane historique propre de 11.5x.",
       "coul": "rouge"
      }
     ]
@@ -3721,9 +3721,9 @@
     "Nous recommandons de vendre UNIWAX COTE D'IVOIRE. L'entreprise affiche une dynamique favorable. Cette recommandation s'appuie sur des performances dégradées et une valorisation exigeante.",
     "Au cours actuel de 2 490 FCFA, le titre se traite au-dessus de la fourchette d'entrée calculée. Pour entrer ou renforcer, le prix conseillé se situe entre 1 420 et 1 616 FCFA, soit environ 35 % à 43 % sous le cours actuel."
    ],
-   "score_global": 29.2,
-   "marge_categorie": 8.8,
-   "proche_seuil": false,
+   "score_global": 35.5,
+   "marge_categorie": 2.5,
+   "proche_seuil": true,
    "secteur_taille": 7,
    "secteur_repli_marche": false,
    "liquidite_insuffisante": false,
