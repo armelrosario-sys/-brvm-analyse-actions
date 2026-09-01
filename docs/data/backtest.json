@@ -1,12 +1,12 @@
 {
- "maj": "2026-08-31T20:57:55+00:00",
+ "maj": "2026-09-01T18:43:22+00:00",
  "note": "Compare les recommandations 'Acheter' a un indice composite INTERNE (proxy pondere par le nombre de titres, reconstruit a partir des cours deja collectes par ce projet) - PAS l'indice officiel BRVM Composite, dont l'historique n'est pas telechargeable gratuitement en masse aupres de la BRVM (fourni uniquement sur demande). Les resultats ne deviennent statistiquement significatifs qu'apres plusieurs mois d'accumulation.",
  "horizons": {
   "30j": {
-   "nb_cas_exploitables": 37,
-   "taux_de_reussite_pct": 35.1,
-   "rendement_moyen_titre_pct": 7.09,
-   "rendement_moyen_proxy_pct": 7.9,
+   "nb_cas_exploitables": 81,
+   "taux_de_reussite_pct": 37.0,
+   "rendement_moyen_titre_pct": 8.42,
+   "rendement_moyen_proxy_pct": 9.57,
    "detail": [
     {
      "ticker": "BICC",
@@ -49,6 +49,38 @@
      "a_bat_le_proxy": true
     },
     {
+     "ticker": "BOAC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 14.78,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "BOAC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 11.66,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "BOAC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 15.74,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "BOAC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 15.58,
+     "rendement_proxy_pct": 10.93,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "CABC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -78,6 +110,38 @@
      "date_observation": "2026-08-26",
      "rendement_titre_pct": -8.22,
      "rendement_proxy_pct": 9.55,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "ETIT",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -5.63,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "ETIT",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 4.69,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "ETIT",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -1.47,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "ETIT",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 1.52,
+     "rendement_proxy_pct": 10.93,
      "a_bat_le_proxy": false
     },
     {
@@ -113,6 +177,38 @@
      "a_bat_le_proxy": true
     },
     {
+     "ticker": "ORAC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 27.35,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "ORAC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 27.16,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "ORAC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 27.09,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "ORAC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 25.33,
+     "rendement_proxy_pct": 10.93,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "SDSC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -134,6 +230,38 @@
      "date_observation": "2026-08-26",
      "rendement_titre_pct": 0.0,
      "rendement_proxy_pct": 9.55,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SDSC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 7.75,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SDSC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 6.34,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SDSC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 5.56,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SDSC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 5.95,
+     "rendement_proxy_pct": 10.93,
      "a_bat_le_proxy": false
     },
     {
@@ -161,6 +289,38 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "SGBC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -0.45,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SGBC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 0.08,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SGBC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 0.08,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SGBC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 0.08,
+     "rendement_proxy_pct": 10.93,
+     "a_bat_le_proxy": false
+    },
+    {
      "ticker": "SLBC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -182,6 +342,38 @@
      "date_observation": "2026-08-26",
      "rendement_titre_pct": -4.41,
      "rendement_proxy_pct": 9.55,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SLBC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -3.92,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SLBC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 0.66,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SLBC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -4.38,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SLBC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 0.53,
+     "rendement_proxy_pct": 10.93,
      "a_bat_le_proxy": false
     },
     {
@@ -209,6 +401,38 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "SMBC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 8.49,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SMBC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 7.81,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SMBC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 10.01,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SMBC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 11.33,
+     "rendement_proxy_pct": 10.93,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "SNTS",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -230,6 +454,38 @@
      "date_observation": "2026-08-26",
      "rendement_titre_pct": 15.89,
      "rendement_proxy_pct": 9.55,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SNTS",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 19.35,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SNTS",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 19.35,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SNTS",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 19.35,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SNTS",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 19.35,
+     "rendement_proxy_pct": 10.93,
      "a_bat_le_proxy": true
     },
     {
@@ -257,6 +513,38 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "SOGC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 0.67,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SOGC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -0.54,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SOGC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 1.91,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SOGC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -0.6,
+     "rendement_proxy_pct": 10.93,
+     "a_bat_le_proxy": false
+    },
+    {
      "ticker": "SPHC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -281,6 +569,38 @@
      "a_bat_le_proxy": true
     },
     {
+     "ticker": "SPHC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 34.93,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SPHC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 33.49,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SPHC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 33.58,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SPHC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": 31.99,
+     "rendement_proxy_pct": 10.93,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "STBC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -302,6 +622,38 @@
      "date_observation": "2026-08-26",
      "rendement_titre_pct": -1.6,
      "rendement_proxy_pct": 9.55,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "STBC",
+     "date_reco": "2026-07-28",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -3.41,
+     "rendement_proxy_pct": 10.7,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "STBC",
+     "date_reco": "2026-07-29",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -2.59,
+     "rendement_proxy_pct": 11.03,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "STBC",
+     "date_reco": "2026-07-30",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -3.45,
+     "rendement_proxy_pct": 11.2,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "STBC",
+     "date_reco": "2026-07-31",
+     "date_observation": "2026-09-01",
+     "rendement_titre_pct": -3.45,
+     "rendement_proxy_pct": 10.93,
      "a_bat_le_proxy": false
     }
    ]
