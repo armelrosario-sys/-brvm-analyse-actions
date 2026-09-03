@@ -1,12 +1,12 @@
 {
- "maj": "2026-09-02T18:51:46+00:00",
+ "maj": "2026-09-03T18:49:34+00:00",
  "note": "Compare les recommandations 'Acheter' a un indice composite INTERNE (proxy pondere par le nombre de titres, reconstruit a partir des cours deja collectes par ce projet) - PAS l'indice officiel BRVM Composite, dont l'historique n'est pas telechargeable gratuitement en masse aupres de la BRVM (fourni uniquement sur demande). Les resultats ne deviennent statistiquement significatifs qu'apres plusieurs mois d'accumulation.",
  "horizons": {
   "30j": {
-   "nb_cas_exploitables": 91,
-   "taux_de_reussite_pct": 37.4,
-   "rendement_moyen_titre_pct": 8.53,
-   "rendement_moyen_proxy_pct": 9.71,
+   "nb_cas_exploitables": 101,
+   "taux_de_reussite_pct": 37.6,
+   "rendement_moyen_titre_pct": 8.94,
+   "rendement_moyen_proxy_pct": 10.01,
    "detail": [
     {
      "ticker": "BICC",
@@ -153,6 +153,14 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "ETIT",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 9.38,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": false
+    },
+    {
      "ticker": "NEIC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -225,6 +233,14 @@
      "a_bat_le_proxy": true
     },
     {
+     "ticker": "ORAC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 24.47,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "SDSC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -289,6 +305,14 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "SDSC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 23.77,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "SGBC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -350,6 +374,14 @@
      "date_observation": "2026-09-02",
      "rendement_titre_pct": 0.22,
      "rendement_proxy_pct": 10.88,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "SGBC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 2.49,
+     "rendement_proxy_pct": 12.74,
      "a_bat_le_proxy": false
     },
     {
@@ -417,6 +449,14 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "SLBC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 0.84,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": false
+    },
+    {
      "ticker": "SMBC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -481,6 +521,14 @@
      "a_bat_le_proxy": true
     },
     {
+     "ticker": "SMBC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 9.87,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": false
+    },
+    {
      "ticker": "SNTS",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -542,6 +590,14 @@
      "date_observation": "2026-09-02",
      "rendement_titre_pct": 19.52,
      "rendement_proxy_pct": 10.88,
+     "a_bat_le_proxy": true
+    },
+    {
+     "ticker": "SNTS",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 20.7,
+     "rendement_proxy_pct": 12.74,
      "a_bat_le_proxy": true
     },
     {
@@ -609,6 +665,14 @@
      "a_bat_le_proxy": false
     },
     {
+     "ticker": "SOGC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 5.36,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": false
+    },
+    {
      "ticker": "SPHC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -673,6 +737,14 @@
      "a_bat_le_proxy": true
     },
     {
+     "ticker": "SPHC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": 38.45,
+     "rendement_proxy_pct": 12.74,
+     "a_bat_le_proxy": true
+    },
+    {
      "ticker": "STBC",
      "date_reco": "2026-07-23",
      "date_observation": "2026-08-24",
@@ -734,6 +806,14 @@
      "date_observation": "2026-09-02",
      "rendement_titre_pct": -7.42,
      "rendement_proxy_pct": 10.88,
+     "a_bat_le_proxy": false
+    },
+    {
+     "ticker": "STBC",
+     "date_reco": "2026-08-04",
+     "date_observation": "2026-09-03",
+     "rendement_titre_pct": -8.71,
+     "rendement_proxy_pct": 12.74,
      "a_bat_le_proxy": false
     }
    ]
