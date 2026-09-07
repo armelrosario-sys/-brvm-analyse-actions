@@ -1,5 +1,5 @@
 {
- "maj": "2026-09-04T18:31:47+00:00",
+ "maj": "2026-09-07T19:19:57+00:00",
  "valeurs": {
   "ABJC": [
    {
@@ -154,6 +154,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 68.8
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 68.8
    }
@@ -313,6 +318,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 62.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 62.5
    }
   ],
   "BICC": [
@@ -468,6 +478,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 72.8
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 72.8
    }
@@ -627,6 +642,11 @@
     "date": "2026-09-04",
     "reco": "Vendre",
     "score_moyen": 12.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Vendre",
+    "score_moyen": 12.5
    }
   ],
   "BOAB": [
@@ -782,6 +802,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 50.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 50.0
    }
@@ -941,6 +966,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 47.8
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 47.8
    }
   ],
   "BOAC": [
@@ -1096,6 +1126,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 81.2
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 81.2
    }
@@ -1255,6 +1290,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 62.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 62.5
    }
   ],
   "BOAN": [
@@ -1410,6 +1450,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Vendre",
+    "score_moyen": 29.2
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Vendre",
     "score_moyen": 29.2
    }
@@ -1569,6 +1614,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 77.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 77.0
    }
   ],
   "CABC": [
@@ -1724,6 +1774,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 55.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 55.0
    }
@@ -1883,6 +1938,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 77.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 77.0
    }
   ],
   "CFAC": [
@@ -2038,6 +2098,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 55.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 55.0
    }
@@ -2197,6 +2262,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 58.2
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 58.2
    }
   ],
   "ECOC": [
@@ -2352,6 +2422,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 77.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 77.0
    }
@@ -2511,6 +2586,11 @@
     "date": "2026-09-04",
     "reco": "Acheter",
     "score_moyen": 62.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Acheter",
+    "score_moyen": 62.5
    }
   ],
   "FTSC": [
@@ -2666,6 +2746,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 50.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 50.0
    }
@@ -2825,6 +2910,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 41.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 41.5
    }
   ],
   "NEIC": [
@@ -2980,6 +3070,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 55.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 55.0
    }
@@ -3139,6 +3234,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 66.8
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 66.8
    }
   ],
   "NTLC": [
@@ -3296,6 +3396,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 47.8
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 43.8
    }
   ],
   "ONTBF": [
@@ -3451,6 +3556,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 62.5
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 62.5
    }
@@ -3610,6 +3720,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 66.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 66.5
    }
   ],
   "ORGT": [
@@ -3767,6 +3882,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 48.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 52.0
    }
   ],
   "PALC": [
@@ -3922,6 +4042,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 60.5
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 60.5
    }
@@ -4081,6 +4206,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 54.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 55.0
    }
   ],
   "SAFC": [
@@ -4236,6 +4366,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Vendre",
+    "score_moyen": 25.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Vendre",
     "score_moyen": 25.0
    }
@@ -4395,6 +4530,11 @@
     "date": "2026-09-04",
     "reco": "Vendre",
     "score_moyen": 25.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Vendre",
+    "score_moyen": 25.0
    }
   ],
   "SDCC": [
@@ -4550,6 +4690,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 52.0
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 52.0
    }
@@ -4709,6 +4854,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 39.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 39.5
    }
   ],
   "SEMC": [
@@ -4864,6 +5014,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Vendre",
+    "score_moyen": 29.2
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Vendre",
     "score_moyen": 29.2
    }
@@ -5023,6 +5178,11 @@
     "date": "2026-09-04",
     "reco": "Acheter",
     "score_moyen": 77.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Acheter",
+    "score_moyen": 77.0
    }
   ],
   "SHEC": [
@@ -5178,6 +5338,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 58.2
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 58.2
    }
@@ -5337,6 +5502,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 72.8
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 72.8
    }
   ],
   "SICC": [
@@ -5492,6 +5662,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Vendre",
+    "score_moyen": 16.8
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Vendre",
     "score_moyen": 16.8
    }
@@ -5651,6 +5826,11 @@
     "date": "2026-09-04",
     "reco": "Vendre",
     "score_moyen": 37.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Vendre",
+    "score_moyen": 37.5
    }
   ],
   "SLBC": [
@@ -5808,6 +5988,11 @@
     "date": "2026-09-04",
     "reco": "Acheter",
     "score_moyen": 89.5
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Acheter",
+    "score_moyen": 85.2
    }
   ],
   "SMBC": [
@@ -5963,6 +6148,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Acheter",
+    "score_moyen": 72.8
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Acheter",
     "score_moyen": 72.8
    }
@@ -6122,6 +6312,11 @@
     "date": "2026-09-04",
     "reco": "Acheter",
     "score_moyen": 83.2
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Acheter",
+    "score_moyen": 83.2
    }
   ],
   "SOGC": [
@@ -6277,6 +6472,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 66.5
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 66.5
    }
@@ -6436,6 +6636,11 @@
     "date": "2026-09-04",
     "reco": "Acheter",
     "score_moyen": 72.8
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Acheter",
+    "score_moyen": 72.8
    }
   ],
   "STAC": [
@@ -6591,6 +6796,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 41.8
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 41.8
    }
@@ -6750,6 +6960,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 81.2
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 81.2
    }
   ],
   "TTLC": [
@@ -6905,6 +7120,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Conserver",
+    "score_moyen": 43.8
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Conserver",
     "score_moyen": 43.8
    }
@@ -7064,6 +7284,11 @@
     "date": "2026-09-04",
     "reco": "Conserver",
     "score_moyen": 46.0
+   },
+   {
+    "date": "2026-09-07",
+    "reco": "Conserver",
+    "score_moyen": 46.0
    }
   ],
   "UNLC": [
@@ -7204,6 +7429,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Vendre",
+    "score_moyen": 12.5
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Vendre",
     "score_moyen": 12.5
    }
@@ -7361,6 +7591,11 @@
    },
    {
     "date": "2026-09-04",
+    "reco": "Vendre",
+    "score_moyen": 35.5
+   },
+   {
+    "date": "2026-09-07",
     "reco": "Vendre",
     "score_moyen": 35.5
    }
