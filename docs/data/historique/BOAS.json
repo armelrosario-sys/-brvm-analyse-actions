@@ -774,19 +774,24 @@
    "date": "2026-09-07",
    "cours": 8265.0,
    "volume": 9149.0
+  },
+  {
+   "date": "2026-09-08",
+   "cours": 8230.0,
+   "volume": 8670.0
   }
  ],
  "seance": {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "points": [
    {
-    "h": "15:12",
-    "cours": 8265.0,
-    "volume": 9149.0
+    "h": "13:49",
+    "cours": 8230.0,
+    "volume": 8670.0
    }
   ],
-  "veille": 8240.0,
-  "ouverture": 8240.0
+  "veille": 8265.0,
+  "ouverture": 8265.0
  },
  "dividendes": [
   {
