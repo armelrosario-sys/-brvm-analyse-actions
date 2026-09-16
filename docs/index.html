@@ -221,7 +221,8 @@ html[data-theme="sombre"]{
   --bleu:#5b8def;--bleu-clair:#16213a;
   --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
   --rouge:#f2695c;--rouge-clair:#2a1418;
-  --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b
+  --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b;
+  --accent-premium:#d4a54a
 }
 @media (prefers-color-scheme: dark){
   html:not([data-theme="clair"]){
@@ -230,9 +231,33 @@ html[data-theme="sombre"]{
     --bleu:#5b8def;--bleu-clair:#16213a;
     --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
     --rouge:#f2695c;--rouge-clair:#2a1418;
-    --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b
+    --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b;
+    --accent-premium:#d4a54a
   }
 }
+
+/* --- Pouls du marche (inspire d'une reference externe) --- */
+.pouls-marche{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
+@media (min-width:640px){.pouls-marche{grid-template-columns:repeat(4,1fr)}}
+.pouls-carte{background:var(--carte);border:1px solid var(--ligne);border-radius:12px;
+  padding:12px 14px}
+.pouls-carte .lib{font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--gris)}
+.pouls-carte .val{font-size:22px;font-weight:800;margin-top:4px}
+.pouls-carte .sous{font-size:11px;color:var(--gris);margin-top:2px}
+
+/* --- Heatmap sectorielle --- */
+.heatmap-secteur{margin-bottom:8px;font-size:12px;color:var(--gris);
+  text-transform:uppercase;letter-spacing:.03em;display:flex;justify-content:space-between}
+.heatmap-grille{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:18px}
+@media (min-width:640px){.heatmap-grille{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:1000px){.heatmap-grille{grid-template-columns:repeat(6,1fr)}}
+.heatmap-tuile{border-radius:10px;padding:10px 12px;cursor:pointer;border:none;
+  text-align:left;font-family:inherit;color:#fff}
+.heatmap-tuile .tk{font-weight:800;font-size:13.5px;display:block}
+.heatmap-tuile .var{font-weight:700;font-size:13px;display:block;margin-top:2px}
+.heatmap-tuile .nom{font-size:10px;opacity:.85;display:block;margin-top:4px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* --- Impression / export PDF : ne garder que le contenu utile --- */
 @media print{
@@ -948,7 +973,7 @@ function rendreAnalyse(t){
   html+='<div class="grille-cartes grille-analyse">';
   for(const dim of ["performances","perspectives","remuneration","valorisation"]){
     const sc=a.scores[dim], lib=a.libelles[dim];
-    const coulLib = sc==null?couleurCss('--gris-clair'):sc<25?COUL.rouge:sc<50?COUL.orange:COUL.vert;
+    const coulLib = sc==null?couleurCss('--gris-clair'):sc<25?COUL.rouge:sc<50?COUL.orange:sc<75?COUL.vert:couleurCss('--accent-premium');
     html+=`<div class="carte"><h2 style="margin-top:0">${TITRES[dim]}</h2>${jaugeSVG(sc, lib)}
       <p style="text-align:center;font-weight:800;color:${coulLib};margin:2px 0 2px">${lib}</p>
       <span class="score-jauge">${sc!=null?sc+"/100":"Donnée indisponible"}</span>`;
@@ -1189,6 +1214,58 @@ function installerEcouteursScreener(V){
   maj();
 }
 
+function couleurHeatmap(v){
+  if(v==null) return couleurCss('--gris-clair');
+  const intensite = Math.min(1, Math.abs(v)/25);
+  if(v>0) return `hsl(155,60%,${Math.round(34-intensite*14)}%)`;
+  if(v<0) return `hsl(5,55%,${Math.round(42-intensite*12)}%)`;
+  return couleurCss('--gris-clair');
+}
+
+function rendrePoulsMarche(){
+  const vals=(cours.valeurs||[]).filter(v=>v.variation_pct!=null);
+  if(!vals.length) return "";
+  const hausse=vals.filter(v=>v.variation_pct>0).length;
+  const baisse=vals.filter(v=>v.variation_pct<0).length;
+  const top=vals.slice().sort((a,b)=>b.variation_pct-a.variation_pct)[0];
+  const flop=vals.slice().sort((a,b)=>a.variation_pct-b.variation_pct)[0];
+  const carte=(lib,val,sous,coul)=>`<div class="pouls-carte">
+    <div class="lib">${lib}</div><div class="val" style="color:${coul}">${val}</div>
+    <div class="sous">${sous||''}</div></div>`;
+  return `<div class="pouls-marche">
+    ${carte('Valeurs en hausse', hausse, `sur ${vals.length} cotées`, couleurCss('--vert'))}
+    ${carte('Valeurs en baisse', baisse, `sur ${vals.length} cotées`, couleurCss('--rouge'))}
+    ${carte('Top hausse', top.ticker+' '+(top.variation_pct>=0?'+':'')+fmt(top.variation_pct)+' %',
+      (top.nom||'').slice(0,26), couleurCss('--vert'))}
+    ${carte('Top baisse', flop.ticker+' '+fmt(flop.variation_pct)+' %',
+      (flop.nom||'').slice(0,26), couleurCss('--rouge'))}
+  </div>`;
+}
+
+function rendreHeatmap(){
+  const parSecteur={};
+  for(const v of (cours.valeurs||[])){
+    const code=secteurs[v.ticker]||'Autre';
+    (parSecteur[code]=parSecteur[code]||[]).push(v);
+  }
+  let html='<div class="carte"><h2 style="margin-top:0">Heatmap du marché</h2>'+
+    '<p class="regle">Performance du jour par secteur — plus la couleur est marquée, plus '+
+    'le mouvement (hausse ou baisse) est important. Toucher une tuile ouvre la fiche.</p>';
+  for(const code of Object.keys(parSecteur).sort()){
+    const groupe=parSecteur[code].slice().sort((a,b)=>(b.variation_pct||-999)-(a.variation_pct||-999));
+    html+=`<div class="heatmap-secteur"><span>${LIB_SECTEURS[code]||code}</span><span>${groupe.length} valeur(s)</span></div>`;
+    html+='<div class="heatmap-grille">'+groupe.map(v=>{
+      const c=couleurHeatmap(v.variation_pct);
+      const varTxt=v.variation_pct!=null?(v.variation_pct>=0?'+':'')+fmt(v.variation_pct)+' %':'—';
+      return `<button type="button" class="heatmap-tuile" style="background:${c}"
+        onclick="ouvrirFiche('${v.ticker}')" title="${(v.nom||'').replace(/"/g,'')}">
+        <span class="tk">${v.ticker}</span><span class="var">${varTxt}</span>
+        <span class="nom">${v.nom||''}</span></button>`;
+    }).join('')+'</div>';
+  }
+  return html+'</div>';
+}
+
 async function rendreFiltres(){
   const zone=document.getElementById('contenuFiltres');
   const badge=r=>r?`<span class="badge b${r[0]}">${r}</span>`:"";
@@ -1219,7 +1296,7 @@ async function rendreFiltres(){
       >${x.tk}</span>
     <span class="nom-tronque" title="${x.nom||''}">${x.nom||''}</span></div>`;
 
-  let html='<div class="grille-cartes">'+rendreCarteScreener(V)+`<div class="carte"><h2 style="margin-top:0">Segment Croissance
+  let html=rendrePoulsMarche()+rendreHeatmap()+'<div class="grille-cartes">'+rendreCarteScreener(V)+`<div class="carte"><h2 style="margin-top:0">Segment Croissance
     (cible : 80 % du portefeuille)</h2>
     <p class="regle">CA, résultat net et BPA en croissance sur les exercices disponibles,
     et tendance de cours haussière. Cliquez sur un en-tête pour trier.</p>`;
