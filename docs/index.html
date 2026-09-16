@@ -83,6 +83,15 @@ border-bottom:1px solid var(--pastel);font-size:14.5px}
 .liste .lib{color:var(--txt-secondaire)}
 .liste .val{font-weight:600}
 .indispo{color:var(--gris-clair)}
+details.ligne-info{border-bottom:1px solid var(--pastel)}
+details.ligne-info summary{display:flex;justify-content:space-between;align-items:center;
+  padding:9px 0;cursor:pointer;list-style:none;font-size:14.5px;color:var(--txt)}
+details.ligne-info summary::-webkit-details-marker{display:none}
+details.ligne-info .lib-info{color:var(--txt-secondaire)}
+details.ligne-info .lib-info::after{content:" ⓘ";color:var(--bleu);font-size:10px}
+details.ligne-info[open] summary{border-bottom:none}
+details.ligne-info .explication{padding:0 0 12px;color:var(--gris);font-size:12.5px;
+  line-height:1.5;text-align:justify;hyphens:auto}
 #graphDiv{height:180px;position:relative;margin-top:10px}
 .notebas{color:var(--gris);font-size:12px;margin-top:10px}
 .onglets button{font-size:13.5px}
@@ -297,6 +306,70 @@ const fmtEntier = n => n==null ? "—" : new Intl.NumberFormat('fr-FR',{maximumF
 const fmtMds = m => m==null ? "—" : (m>=1e6 ? fmt(m/1e6)+" Bds" : fmt(m/1e3)+" Mds");
 const fmtK = n => n==null ? "—" : (n>=1e6 ? fmt(n/1e6)+" M" :
   n>=1000 ? new Intl.NumberFormat('fr-FR',{maximumFractionDigits:1}).format(n/1000)+" K" : fmtEntier(n));
+// --- Infobulles pedagogiques (langage simple), avec comparaison sectorielle/marche
+// en direct quand la mediane correspondante existe (Bloc 1 : analyse.medianes) ---
+const EXPLICATIONS = {
+  per: {texte:"Indique combien d'années de bénéfices actuels il faudrait pour \"rembourser\" "+
+    "le prix payé pour une action. Plus il est bas, moins cher le titre paraît par rapport à "+
+    "ses bénéfices — mais un PER très bas peut aussi traduire une méfiance du marché plutôt "+
+    "qu'une bonne affaire.", champ:"per", unite:"x"},
+  bpa: {texte:"La part du bénéfice annuel de l'entreprise qui revient, en théorie, à chaque "+
+    "action. Plus il est élevé et en croissance, mieux c'est pour l'actionnaire."},
+  capitalisation: {texte:"La valeur totale de l'entreprise en bourse (cours de l'action × "+
+    "nombre d'actions). Donne une idée de la taille de l'entreprise sur le marché."},
+  nb_actions: {texte:"Le nombre total de titres qui composent le capital de l'entreprise. "+
+    "Sert à calculer plusieurs indicateurs \"par action\" (bénéfice, dividende, valeur "+
+    "comptable...)."},
+  rsi: {texte:"Mesure (de 0 à 100) si un titre a été acheté ou vendu de façon intense "+
+    "récemment. En dessous de 30, on parle de titre \"survendu\" (un rebond est parfois "+
+    "attendu) ; au-dessus de 70, de titre \"suracheté\" (un repli est parfois attendu). "+
+    "Entre les deux, rien de particulier à signaler."},
+  pbr: {texte:"Compare le cours de l'action à sa valeur comptable (ce que vaudrait, sur le "+
+    "papier, chaque action si l'entreprise était liquidée). Sous 1, l'action se traite en "+
+    "dessous de sa valeur comptable — à vérifier avant d'y voir une bonne affaire, cela peut "+
+    "aussi traduire un doute du marché sur la qualité réelle des actifs.", champ:"pbr", unite:"x"},
+  vc_action: {texte:"La part des capitaux propres de l'entreprise (ce qu'elle possède, moins "+
+    "ses dettes) qui revient à chaque action selon sa comptabilité. C'est la référence "+
+    "utilisée pour calculer le PBR."},
+  roe: {texte:"Mesure le rendement que l'entreprise génère sur l'argent apporté par ses "+
+    "actionnaires. Plus il est élevé, plus l'entreprise est efficace à faire fructifier ses "+
+    "fonds propres.", champ:"roe", unite:" %"},
+  dette_cp: {texte:"Compare les dettes financières de l'entreprise à ses fonds propres. En "+
+    "dessous de 0,5, la structure financière est généralement jugée solide ; au-dessus de "+
+    "1,2, l'endettement devient un point de vigilance.", champ:"dette_cp", unite:""},
+  mm: {texte:"Le cours moyen des dernières séances de bourse (sur la période indiquée). "+
+    "Sert à lisser les à-coups du marché pour repérer la tendance de fond : un cours "+
+    "durablement au-dessus de sa moyenne mobile est généralement considéré en tendance "+
+    "haussière, et inversement en dessous."},
+  exercice_div: {texte:"L'année comptable (exercice) à laquelle se rapporte le dividende "+
+    "affiché — pas nécessairement l'année où il a été payé."},
+  div_brut: {texte:"Le montant versé par action au titre de cet exercice, avant impôt."},
+  div_net: {texte:"Le montant que l'actionnaire touche réellement après la retenue fiscale "+
+    "de 10 % (IRVM) appliquée dans l'espace UEMOA sur les dividendes des valeurs mobilières."},
+};
+
+function comparaisonMediane(champ, unite, sect){
+  if(!champ || !analyse || !analyse.medianes) return "";
+  const m = analyse.medianes;
+  const secMed = sect && m.secteurs && m.secteurs[sect] ? m.secteurs[sect][champ] : null;
+  const mktMed = m.marche ? m.marche[champ] : null;
+  if(secMed==null && mktMed==null) return "";
+  const parties=[];
+  if(secMed!=null) parties.push(`secteur : ${fmt(secMed)}${unite}`);
+  if(mktMed!=null) parties.push(`marché : ${fmt(mktMed)}${unite}`);
+  return ` Pour comparer, la médiane du ${parties.join(', ')}.`;
+}
+
+function ligneInfo(label, valeur, classeVal, cle, sect){
+  const info = EXPLICATIONS[cle];
+  let explication = info ? info.texte : "";
+  if(info && info.champ) explication += comparaisonMediane(info.champ, info.unite||"", sect);
+  return `<details class="ligne-info"><summary>
+      <span class="lib-info">${label}</span>
+      <span class="${classeVal||''}">${valeur}</span>
+    </summary>${explication?`<div class="explication">${explication}</div>`:''}</details>`;
+}
+
 const LIB_SECTEURS = {FIN:"Finances", CB:"Consommation de base", CD:"Consommation discrétionnaire",
   IND:"Industriels", ENE:"Énergie", TEL:"Télécommunications", SPU:"Services publics"};
 const LIB_PERIODE = {"1S":"1 semaine","1M":"1 mois","3M":"3 mois","6M":"6 mois",
@@ -563,34 +636,34 @@ async function afficher(t){
   const vc = (dernierEx.capitaux_propres!=null && fo.nombre_titres) ?
              dernierEx.capitaux_propres*1e6/fo.nombre_titres : null;
   const lignes = [
-    ["PER", dernierEx.per!=null?fmt(dernierEx.per)+"x":null],
-    ["BPA", dernierEx.bnpa!=null?fmt(dernierEx.bnpa)+" FCFA":null],
-    ["Capitalisation", fo.capitalisation_mfcfa!=null?fmtMds(fo.capitalisation_mfcfa):null],
-    ["Nombre d'actions", fo.nombre_titres!=null?fmtEntier(fo.nombre_titres):null],
-    ["RSI (14)", te.rsi14!=null?fmt(te.rsi14):null],
-    ["Price-to-Book (PBR)", dernierEx.pbr!=null?fmt(dernierEx.pbr)+"x":null],
-    ["Valeur comptable / action", vc!=null?fmtEntier(vc)+" FCFA":null],
+    ["PER", dernierEx.per!=null?fmt(dernierEx.per)+"x":null, "per"],
+    ["BPA", dernierEx.bnpa!=null?fmt(dernierEx.bnpa)+" FCFA":null, "bpa"],
+    ["Capitalisation", fo.capitalisation_mfcfa!=null?fmtMds(fo.capitalisation_mfcfa):null, "capitalisation"],
+    ["Nombre d'actions", fo.nombre_titres!=null?fmtEntier(fo.nombre_titres):null, "nb_actions"],
+    ["RSI (14)", te.rsi14!=null?fmt(te.rsi14):null, "rsi"],
+    ["Price-to-Book (PBR)", dernierEx.pbr!=null?fmt(dernierEx.pbr)+"x":null, "pbr"],
+    ["Valeur comptable / action", vc!=null?fmtEntier(vc)+" FCFA":null, "vc_action"],
     ["ROE"+(dernierEx.exercice_roe?" ("+dernierEx.exercice_roe+")":""),
-      dernierEx.roe_pct!=null?fmt(dernierEx.roe_pct)+" %":null],
-    ["Dette / Capitaux propres", dernierEx.dette_sur_cp!=null?fmt(dernierEx.dette_sur_cp):null],
-    ["Moy. mobile (20)", te.mm20!=null?fmtEntier(te.mm20):null],
-    ["Moy. mobile (50)", te.mm50!=null?fmtEntier(te.mm50):null],
-    ["Moy. mobile (200)", te.mm200!=null?fmtEntier(te.mm200):null],
+      dernierEx.roe_pct!=null?fmt(dernierEx.roe_pct)+" %":null, "roe"],
+    ["Dette / Capitaux propres", dernierEx.dette_sur_cp!=null?fmt(dernierEx.dette_sur_cp):null, "dette_cp"],
+    ["Moy. mobile (20)", te.mm20!=null?fmtEntier(te.mm20):null, "mm"],
+    ["Moy. mobile (50)", te.mm50!=null?fmtEntier(te.mm50):null, "mm"],
+    ["Moy. mobile (200)", te.mm200!=null?fmtEntier(te.mm200):null, "mm"],
   ];
-  document.getElementById('indicateurs').innerHTML = "<dl class='liste'>" + lignes.map(l=>
-    `<div><dt>${l[0]}</dt><dd class="${l[1]==null?'indispo':''}">${l[1]??'—'}</dd></div>`
-  ).join('') + "</dl>";
+  document.getElementById('indicateurs').innerHTML = lignes.map(l=>
+    ligneInfo(l[0], l[1]??'—', l[1]==null?'indispo':'', l[2], secteurs[t])
+  ).join('');
 
   const divs = (histo&&histo.dividendes)||[];
   const dernier = divs.length?divs[divs.length-1]:null;
   const bloc = [
-    ["Exercice fiscal", dernier?dernier.exercice:null],
-    ["Dividende / action (brut)", dernier?fmt(dernier.montant)+" FCFA":null],
-    ["Dividende net / action (IRVM 10 %)", dernier?fmt(dernier.montant*0.9)+" FCFA":null],
+    ["Exercice fiscal", dernier?dernier.exercice:null, "exercice_div"],
+    ["Dividende / action (brut)", dernier?fmt(dernier.montant)+" FCFA":null, "div_brut"],
+    ["Dividende net / action (IRVM 10 %)", dernier?fmt(dernier.montant*0.9)+" FCFA":null, "div_net"],
   ];
-  document.getElementById('blocDividendes').innerHTML = "<dl class='liste'>" + bloc.map(l=>
-    `<div><dt>${l[0]}</dt><dd class="${l[1]==null?'indispo':''}">${l[1]??'—'}</dd></div>`
-  ).join('') + "</dl>";
+  document.getElementById('blocDividendes').innerHTML = bloc.map(l=>
+    ligneInfo(l[0], l[1]??'—', l[1]==null?'indispo':'', l[2], secteurs[t])
+  ).join('');
 
   document.getElementById('noteSources').textContent =
     "Sources : BRVM (cours), Sika Finance et rapports annuels (fondamentaux). " +
