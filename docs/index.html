@@ -9,16 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* Palette affinee - tons plus riches, typiques d'un tableau de bord financier,
-     tout en restant proches des teintes Famaya deja validees */
-  --bleu:#2952e3;--bleu-clair:#eef1fd;
-  --vert:#0e9f6e;--vert-clair:#e7f7f1;
-  --rouge:#d92d20;--rouge-clair:#fdeeed;
-  --ambre:#d97706;--ambre-clair:#fef3c7;
-  --txt:#101828;--txt-secondaire:#475467;--gris:#667085;--gris-clair:#98a2b3;
-  --vert-doux:#3cc98a;--ambre-texte:#92400e;
-  --fond:#ffffff;--ligne:#e4e7ec;--pastel:#f7f8fa;--carte:#f7f8fa;
-  /* Alias semantiques (utilises pour les ajouts au-dela de la fiche Famaya) */
+  /* Identite unique du site : sombre + or, inspiree de brvm.chainsolutions.fr.
+     Plus de bascule clair/sombre - ces valeurs s'appliquent partout. */
+  --bleu:#d4a54a;--bleu-clair:#2a2113;
+  --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
+  --rouge:#f2695c;--rouge-clair:#2a1418;
+  --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b;
+  --txt:#eef1f6;--txt-secondaire:#a3aebd;--gris:#7b8aa3;--gris-clair:#4c5a72;
+  --fond:#080d16;--ligne:#1e2536;--pastel:#0f1420;--carte:#0d1220;--survol:#171d2b;
+  --accent-premium:#d4a54a;
   --positif:var(--vert);--negatif:var(--rouge);--attention:var(--ambre)
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -217,35 +216,19 @@ dl.liste dt{color:var(--txt-secondaire);font-weight:400}
 dl.liste dd{font-weight:600;margin:0}
 ul.liste-pastilles{list-style:none}
 
-/* --- Mode sombre : palette marine inspiree d'un ecran de suivi quantitatif
-   (fond profond, surfaces legerement plus claires, tons vifs pour les scores) --- */
-html[data-theme="sombre"]{
-  --fond:#080d16;--txt:#eef1f6;--txt-secondaire:#a3aebd;--gris:#7b8aa3;
-  --gris-clair:#4c5a72;--ligne:#1e2536;--pastel:#0f1420;--carte:#0d1220;--survol:#171d2b;
-  --bleu:#d4a54a;--bleu-clair:#2a2113;
-  --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
-  --rouge:#f2695c;--rouge-clair:#2a1418;
-  --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b;
-  --accent-premium:#d4a54a
-}
-@media (prefers-color-scheme: dark){
-  html:not([data-theme="clair"]){
-    --fond:#080d16;--txt:#eef1f6;--txt-secondaire:#a3aebd;--gris:#7b8aa3;
-    --gris-clair:#4c5a72;--ligne:#1e2536;--pastel:#0f1420;--carte:#0d1220;--survol:#171d2b;
-    --bleu:#d4a54a;--bleu-clair:#2a2113;
-    --vert:#2dd4a7;--vert-clair:#122a26;--vert-doux:#3ee0b0;
-    --rouge:#f2695c;--rouge-clair:#2a1418;
-    --ambre:#f2b84b;--ambre-clair:#2a2113;--ambre-texte:#f2b84b;
-    --accent-premium:#d4a54a
-  }
-}
-
 
 /* --- Impression / export PDF : ne garder que le contenu utile --- */
 @media print{
   .lien-evitement,.entete-outils,.recherche-valeur,#btnFavori,.periodes,.onglets,
   .bandeau-alerte,.bloc-alerte,.bouton-csv,.barre-outils-table{display:none !important}
   body{max-width:100%}
+  /* Le site est sombre a l'ecran, mais un document imprime doit rester lisible
+     et econome en encre : on repasse en clair uniquement pour l'impression/PDF. */
+  :root{
+    --fond:#ffffff;--txt:#101828;--txt-secondaire:#475467;--gris:#667085;
+    --gris-clair:#98a2b3;--ligne:#e4e7ec;--pastel:#f7f8fa;--carte:#ffffff;
+    --bleu:#2952e3;--bleu-clair:#eef1fd;--ambre-texte:#92400e
+  }
 }
 </style>
 </head>
@@ -253,8 +236,6 @@ html[data-theme="sombre"]{
 <a href="#contenuPrincipal" class="lien-evitement">Aller au contenu</a>
 <header>
   <div class="entete-outils">
-    <button id="btnTheme" class="btn-icone" type="button" title="Changer de thème"
-      aria-label="Basculer entre thème clair et sombre">🌙</button>
     <button id="btnExport" class="btn-icone" type="button" title="Exporter en PDF"
       aria-label="Exporter cette fiche en PDF">🖶</button>
   </div>
@@ -396,24 +377,8 @@ function sauverFavoris(liste){
 }
 function estFavori(t){ return chargerFavoris().includes(t); }
 
-// --- Theme clair/sombre (bascule manuelle, sinon suit le systeme) ---
-function appliquerTheme(){
-  const t = localStorage.getItem('brvm_theme');
-  if(t==='clair'||t==='sombre') document.documentElement.setAttribute('data-theme', t);
-  else document.documentElement.removeAttribute('data-theme');
-  const btn=document.getElementById('btnTheme');
-  if(btn) btn.textContent = (document.documentElement.getAttribute('data-theme')==='sombre'||
-    (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) ? '☀' : '🌙';
-}
-function basculerTheme(){
-  const actuel = document.documentElement.getAttribute('data-theme') ||
-    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'sombre' : 'clair');
-  const suivant = actuel==='sombre' ? 'clair' : 'sombre';
-  localStorage.setItem('brvm_theme', suivant);
-  appliquerTheme();
-  try{ dessinerGraphique(); dessinerDividendes((histo&&histo.dividendes)||[]); }catch(e){}
-}
-// Couleur lue depuis la variable CSS active (s'adapte automatiquement au theme)
+// Couleur lue depuis la variable CSS active (theme unique, mais reste utile pour
+// que les graphiques Chart.js/SVG restent coherents avec la palette definie en CSS)
 function couleurCss(nom){
   return getComputedStyle(document.documentElement).getPropertyValue(nom).trim() || '#9ca3af';
 }
@@ -473,12 +438,6 @@ function majFavoriUI(t){
 }
 
 async function chargerBase(){
-  appliquerTheme();
-  if(window.matchMedia){
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ()=>{
-      if(!localStorage.getItem('brvm_theme')) appliquerTheme();
-    });
-  }
   const chartOk = await chargerChartJs();
   if(!chartOk){ const m=document.getElementById('msgGraph');
     m.style.display='flex'; m.textContent="Graphique indisponible (bibliothèque non chargée)"; }
@@ -510,7 +469,6 @@ async function chargerBase(){
     repeupler(document.getElementById('rechercheValeur').value);
     sel.value = t;
   });
-  document.getElementById('btnTheme').addEventListener('click', basculerTheme);
   document.getElementById('btnExport').addEventListener('click', ()=>window.print());
 
   // Valeur de depart : lien direct (?valeur=TICK) > derniere consultee > premiere alphabetique
