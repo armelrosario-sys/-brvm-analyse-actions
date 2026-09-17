@@ -704,5 +704,15 @@
    "brvm.org : ligne rejetee pour SICC - Value error, cours hors bornes plausibles : 0.0",
    "brvm.org : 3 ligne(s) rejetee(s) par la validation de schema sur 47 extraites."
   ]
+ },
+ {
+  "horodatage": "2026-09-17T14:25:34+00:00",
+  "nb_valeurs": 44,
+  "anomalies": [
+   "brvm.org : ligne rejetee pour SCRC - Value error, cours hors bornes plausibles : 0.0",
+   "brvm.org : ligne rejetee pour SEMC - Value error, cours hors bornes plausibles : 0.0",
+   "brvm.org : ligne rejetee pour SICC - Value error, cours hors bornes plausibles : 0.0",
+   "brvm.org : 3 ligne(s) rejetee(s) par la validation de schema sur 47 extraites."
+  ]
  }
 ]
