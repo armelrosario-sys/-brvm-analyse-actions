@@ -14,7 +14,7 @@ PALC,2025,142638.984,796.559,VALIDE,plausible|rn_concorde_sika|bilan_equilibre|e
 PRSC,2023,11015.041885999999,1.6e-05,VALIDE,plausible|rn_concorde_sika|unite_corrigee_milliers|exercice_deduit_du_nom_de_fichier,PRSC_c55474bd29.json
 PRSC,2024,11283.033493,1.6e-05,VALIDE,plausible|rn_concorde_sika|unite_corrigee_milliers|exercice_deduit_du_nom_de_fichier,PRSC_521a9634dc.json
 SAFC,2025,5916.0,,VALIDE,plausible|rn_concorde_sika|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SAFC_241fbc6904.json
-SCRC,2023,17363.224113,35876.628027000006,VALIDE,plausible|rn_concorde_sika|unite_corrigee_milliers,SCRC_29538cde42.json
+SCRC,2023,22310.492,,VALIDE,plausible|bilan_equilibre|exercice_deduit_du_nom_de_fichier,SCRC_7f7aa9f5aa.json
 SDSC,2023,61034.257,10733.982,VALIDE,plausible|rn_concorde_sika,SDSC_e59445b835.json
 SICC,2019,2895608.308,0.016,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SICC_f83924273a.json
 SICC,2025,2975325.212,16896.226,PROBABLE,plausible|exercice_deduit_du_nom_de_fichier,SICC_a729d42381.json

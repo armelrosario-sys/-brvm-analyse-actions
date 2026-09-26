@@ -325,7 +325,13 @@
   "fichier": "SCRC_006a0480ee.json",
   "ticker": "SCRC",
   "exercice": "2022",
-  "motif": "signe_divergent(8755.668861 vs -8756.0)"
+  "motif": "implausible (cp=2.768736648836443e+18, dettes=4.377784616232956e+18)"
+ },
+ {
+  "fichier": "SCRC_29538cde42.json",
+  "ticker": "SCRC",
+  "exercice": "2023",
+  "motif": "implausible (cp=17363224.113, dettes=35876628.027)"
  },
  {
   "fichier": "SCRC_379617f6e5.json",
@@ -335,19 +341,13 @@
   "fichier": "SCRC_58ec05c482.json",
   "ticker": "SCRC",
   "exercice": "2022",
-  "motif": "signe_divergent(8755.668861 vs -8756.0)"
+  "motif": "implausible (cp=2.022, dettes=43777846.162)"
  },
  {
   "fichier": "SCRC_7205e9d88e.json",
   "ticker": "SCRC",
   "exercice": "2025",
-  "motif": "signe_divergent(6131.800225999999 vs -6132.0)"
- },
- {
-  "fichier": "SCRC_7f7aa9f5aa.json",
-  "ticker": "SCRC",
-  "exercice": "2023",
-  "motif": "signe_divergent(9010.129 vs -8756.0)"
+  "motif": "implausible (cp=13822035.189, dettes=69108844.43)"
  },
  {
   "fichier": "SDCC_9b40ccacec.json",
