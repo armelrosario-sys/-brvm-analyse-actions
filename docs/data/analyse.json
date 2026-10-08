@@ -1,6 +1,6 @@
 {
- "maj": "2026-10-07T20:42:12+00:00",
- "date_analyse": "07/10/2026",
+ "maj": "2026-10-08T20:45:25+00:00",
+ "date_analyse": "08/10/2026",
  "medianes": {
   "marche": {
    "per": 16.71,
@@ -12,15 +12,15 @@
    "var_1a": 87.5
   },
   "secteurs": {
-   "CB": {
-    "per": 13.58,
+   "TEL": {
+    "per": 16.71,
     "pbr": null,
     "roe": null,
-    "marge_nette": 7.875,
-    "dy_net": 4.675000000000001,
+    "marge_nette": 10.515,
+    "dy_net": 3.81,
     "dette_cp": null,
-    "taille": 8,
-    "repli_marche": false
+    "taille": 3,
+    "repli_marche": true
    },
    "IND": {
     "per": 59.93,
@@ -32,26 +32,6 @@
     "taille": 5,
     "repli_marche": false
    },
-   "TEL": {
-    "per": 16.71,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 10.515,
-    "dy_net": 3.81,
-    "dette_cp": null,
-    "taille": 3,
-    "repli_marche": true
-   },
-   "SPU": {
-    "per": 16.71,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 10.515,
-    "dy_net": 3.81,
-    "dette_cp": null,
-    "taille": 2,
-    "repli_marche": true
-   },
    "CD": {
     "per": 28.28,
     "pbr": null,
@@ -61,6 +41,16 @@
     "dette_cp": null,
     "taille": 7,
     "repli_marche": false
+   },
+   "ENE": {
+    "per": 16.71,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.515,
+    "dy_net": 3.81,
+    "dette_cp": null,
+    "taille": 4,
+    "repli_marche": true
    },
    "FIN": {
     "per": 15.25,
@@ -72,14 +62,24 @@
     "taille": 16,
     "repli_marche": false
    },
-   "ENE": {
+   "CB": {
+    "per": 13.58,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 7.875,
+    "dy_net": 4.675000000000001,
+    "dette_cp": null,
+    "taille": 8,
+    "repli_marche": false
+   },
+   "SPU": {
     "per": 16.71,
     "pbr": null,
     "roe": null,
     "marge_nette": 10.515,
     "dy_net": 3.81,
     "dette_cp": null,
-    "taille": 4,
+    "taille": 2,
     "repli_marche": true
    }
   }
