@@ -854,19 +854,24 @@
    "date": "2026-10-20",
    "cours": 1700.0,
    "volume": 3552.0
+  },
+  {
+   "date": "2026-10-21",
+   "cours": 1610.0,
+   "volume": 4302.0
   }
  ],
  "seance": {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "points": [
    {
-    "h": "14:27",
-    "cours": 1700.0,
-    "volume": 3552.0
+    "h": "14:38",
+    "cours": 1610.0,
+    "volume": 4302.0
    }
   ],
-  "veille": 1700.0,
-  "ouverture": 1715.0
+  "veille": 1600.0,
+  "ouverture": 1695.0
  },
  "dividendes": [
   {
