@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-02T23:10:23+00:00",
- "date_analyse": "02/11/2026",
+ "maj": "2026-11-03T21:11:30+00:00",
+ "date_analyse": "03/11/2026",
  "medianes": {
   "marche": {
    "per": 16.57,
@@ -12,16 +12,6 @@
    "var_1a": 86.25
   },
   "secteurs": {
-   "IND": {
-    "per": 54.33,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 1.45,
-    "dy_net": 4.58,
-    "dette_cp": null,
-    "taille": 5,
-    "repli_marche": false
-   },
    "FIN": {
     "per": 14.555,
     "pbr": null,
@@ -61,6 +51,16 @@
     "dette_cp": null,
     "taille": 3,
     "repli_marche": true
+   },
+   "IND": {
+    "per": 54.33,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 1.45,
+    "dy_net": 4.58,
+    "dette_cp": null,
+    "taille": 5,
+    "repli_marche": false
    },
    "ENE": {
     "per": 16.57,
