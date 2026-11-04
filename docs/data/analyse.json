@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-03T21:11:30+00:00",
- "date_analyse": "03/11/2026",
+ "maj": "2026-11-04T21:24:20+00:00",
+ "date_analyse": "04/11/2026",
  "medianes": {
   "marche": {
    "per": 16.57,
@@ -32,15 +32,15 @@
     "taille": 8,
     "repli_marche": false
    },
-   "CD": {
-    "per": 27.06,
+   "SPU": {
+    "per": 16.57,
     "pbr": null,
     "roe": null,
-    "marge_nette": 4.66,
-    "dy_net": 4.33,
+    "marge_nette": 10.515,
+    "dy_net": 4.29,
     "dette_cp": null,
-    "taille": 7,
-    "repli_marche": false
+    "taille": 2,
+    "repli_marche": true
    },
    "TEL": {
     "per": 16.57,
@@ -72,15 +72,15 @@
     "taille": 4,
     "repli_marche": true
    },
-   "SPU": {
-    "per": 16.57,
+   "CD": {
+    "per": 27.06,
     "pbr": null,
     "roe": null,
-    "marge_nette": 10.515,
-    "dy_net": 4.29,
+    "marge_nette": 4.66,
+    "dy_net": 4.33,
     "dette_cp": null,
-    "taille": 2,
-    "repli_marche": true
+    "taille": 7,
+    "repli_marche": false
    }
   }
  },
