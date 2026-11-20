@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-19T22:43:29+00:00",
- "date_analyse": "19/11/2026",
+ "maj": "2026-11-20T22:17:13+00:00",
+ "date_analyse": "20/11/2026",
  "medianes": {
   "marche": {
    "per": 16.185000000000002,
@@ -12,16 +12,6 @@
    "var_1a": 86.25
   },
   "secteurs": {
-   "CD": {
-    "per": 26.01,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 4.66,
-    "dy_net": 4.33,
-    "dette_cp": null,
-    "taille": 7,
-    "repli_marche": false
-   },
    "CB": {
     "per": 12.675,
     "pbr": null,
@@ -30,6 +20,26 @@
     "dy_net": 5.015000000000001,
     "dette_cp": null,
     "taille": 8,
+    "repli_marche": false
+   },
+   "ENE": {
+    "per": 16.185000000000002,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.515,
+    "dy_net": 4.29,
+    "dette_cp": null,
+    "taille": 4,
+    "repli_marche": true
+   },
+   "IND": {
+    "per": 51.45,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 1.45,
+    "dy_net": 4.58,
+    "dette_cp": null,
+    "taille": 5,
     "repli_marche": false
    },
    "FIN": {
@@ -42,26 +52,6 @@
     "taille": 16,
     "repli_marche": false
    },
-   "TEL": {
-    "per": 16.185000000000002,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 10.515,
-    "dy_net": 4.29,
-    "dette_cp": null,
-    "taille": 3,
-    "repli_marche": true
-   },
-   "ENE": {
-    "per": 16.185000000000002,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 10.515,
-    "dy_net": 4.29,
-    "dette_cp": null,
-    "taille": 4,
-    "repli_marche": true
-   },
    "SPU": {
     "per": 16.185000000000002,
     "pbr": null,
@@ -72,15 +62,25 @@
     "taille": 2,
     "repli_marche": true
    },
-   "IND": {
-    "per": 51.45,
+   "CD": {
+    "per": 26.01,
     "pbr": null,
     "roe": null,
-    "marge_nette": 1.45,
-    "dy_net": 4.58,
+    "marge_nette": 4.66,
+    "dy_net": 4.33,
     "dette_cp": null,
-    "taille": 5,
+    "taille": 7,
     "repli_marche": false
+   },
+   "TEL": {
+    "per": 16.185000000000002,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.515,
+    "dy_net": 4.29,
+    "dette_cp": null,
+    "taille": 3,
+    "repli_marche": true
    }
   }
  },
