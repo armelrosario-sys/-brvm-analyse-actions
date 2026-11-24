@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T02:28:01+00:00",
+ "maj": "2026-11-24T23:59:35+00:00",
  "note": "MM et RSI calcules uniquement sur cours quotidiens reellement collectes ; null tant que l'historique quotidien est insuffisant.",
  "valeurs": {
   "ABJC": {
