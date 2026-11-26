@@ -1,6 +1,6 @@
 {
- "maj": "2026-11-25T23:43:40+00:00",
- "date_analyse": "25/11/2026",
+ "maj": "2026-11-26T23:56:25+00:00",
+ "date_analyse": "26/11/2026",
  "medianes": {
   "marche": {
    "per": 15.15,
@@ -12,36 +12,6 @@
    "var_1a": 86.25
   },
   "secteurs": {
-   "CB": {
-    "per": 11.82,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 7.875,
-    "dy_net": 5.015000000000001,
-    "dette_cp": null,
-    "taille": 8,
-    "repli_marche": false
-   },
-   "IND": {
-    "per": 48.43,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 1.45,
-    "dy_net": 4.58,
-    "dette_cp": null,
-    "taille": 5,
-    "repli_marche": false
-   },
-   "CD": {
-    "per": 24.24,
-    "pbr": null,
-    "roe": null,
-    "marge_nette": 4.66,
-    "dy_net": 4.33,
-    "dette_cp": null,
-    "taille": 7,
-    "repli_marche": false
-   },
    "TEL": {
     "per": 15.15,
     "pbr": null,
@@ -50,6 +20,16 @@
     "dy_net": 4.29,
     "dette_cp": null,
     "taille": 3,
+    "repli_marche": true
+   },
+   "ENE": {
+    "per": 15.15,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 10.515,
+    "dy_net": 4.29,
+    "dette_cp": null,
+    "taille": 4,
     "repli_marche": true
    },
    "FIN": {
@@ -62,6 +42,26 @@
     "taille": 16,
     "repli_marche": false
    },
+   "CD": {
+    "per": 24.24,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 4.66,
+    "dy_net": 4.33,
+    "dette_cp": null,
+    "taille": 7,
+    "repli_marche": false
+   },
+   "CB": {
+    "per": 11.82,
+    "pbr": null,
+    "roe": null,
+    "marge_nette": 7.875,
+    "dy_net": 5.015000000000001,
+    "dette_cp": null,
+    "taille": 8,
+    "repli_marche": false
+   },
    "SPU": {
     "per": 15.15,
     "pbr": null,
@@ -72,15 +72,15 @@
     "taille": 2,
     "repli_marche": true
    },
-   "ENE": {
-    "per": 15.15,
+   "IND": {
+    "per": 48.43,
     "pbr": null,
     "roe": null,
-    "marge_nette": 10.515,
-    "dy_net": 4.29,
+    "marge_nette": 1.45,
+    "dy_net": 4.58,
     "dette_cp": null,
-    "taille": 4,
-    "repli_marche": true
+    "taille": 5,
+    "repli_marche": false
    }
   }
  },
